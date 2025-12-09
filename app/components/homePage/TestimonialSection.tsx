@@ -86,27 +86,35 @@ const TestimonialSection = () => {
                         </p>
 
                         {/* Ratings */}
-                        <div className="flex items-center gap-8">
+                        <div className="flex items-center gap-10 mt-6">
+
                             {/* Trustpilot Rating */}
                             <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center w-12 h-12 bg-teal-500 rounded-lg">
-                                    <Star className="w-6 h-6 text-white fill-white" />
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="text-white text-xl font-bold">4.5K</span>
-                                </div>
+                                {/* Star Icon */}
+                                <img
+                                    src="/icons/star.png"
+                                    alt="star"
+                                    className="w-6 h-6"
+                                />
+                                <div className="h-6 w-[1px] bg-white/40"></div>
+                                <span className="text-white text-[16px] font-medium">4.5K</span>
                             </div>
 
                             {/* Google Rating */}
                             <div className="flex items-center gap-3">
-                                <div className="flex items-center justify-center w-12 h-12 bg-white rounded-lg">
-                                    <span className="text-2xl font-bold text-blue-600">G</span>
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="text-white text-xl font-bold">4.5K</span>
-                                </div>
+                                {/* Google Icon */}
+                                <img
+                                    src="/icons/google.png"
+                                    alt="google"
+                                    className="w-6 h-6"
+                                />
+                                <div className="h-6 w-[1px] bg-white/40"></div>
+                                <span className="text-white text-[16px] font-medium">4.5K</span>
                             </div>
+
                         </div>
+
+
                     </div>
                 </div>
 
