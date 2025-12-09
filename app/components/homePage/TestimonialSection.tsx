@@ -37,7 +37,7 @@ const TestimonialSection = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-black flex items-center justify-center px-4 py-12">
+        <div className="w-full min-h-screen bg-black flex items-center justify-center section-padding">
             <div className="w-full max-w-[1680px] h-auto lg:h-[495px] flex flex-col lg:flex-row gap-5">
 
                 {/* Left Side Container */}
@@ -45,43 +45,20 @@ const TestimonialSection = () => {
                     <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start gap-8">
 
                         {/* Testimonials Label */}
-                        <div className="flex items-center gap-3">
-                            <div className="w-[40px] h-[2px] bg-[#FF5900]"></div>
-                            <span
-                                className="text-white/80"
-                                style={{
-                                    fontFamily: 'Plus Jakarta Sans, sans-serif',
-                                    fontSize: '16px',
-                                    fontWeight: '500'
-                                }}
-                            >
+                        <div className="section-label">
+                            <div className="section-label-line"></div>
+                            <span className="sub-heading">
                                 Testimonials
                             </span>
                         </div>
 
                         {/* Main Heading */}
-                        <h2
-                            style={{
-                                fontFamily: 'Plus Jakarta Sans, sans-serif',
-                                fontSize: 'clamp(32px, 5vw, 48px)',
-                                fontWeight: '700',
-                                lineHeight: '110%',
-                                color: 'rgba(232, 232, 234, 1)'
-                            }}
-                        >
+                        <h2 className="heading" style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}>
                             WHAT OUR<br />CLIENT SAYS
                         </h2>
 
                         {/* Description */}
-                        <p
-                            className="text-white/70"
-                            style={{
-                                fontFamily: 'Plus Jakarta Sans, sans-serif',
-                                fontSize: '16px',
-                                fontWeight: '400',
-                                lineHeight: '160%'
-                            }}
-                        >
+                        <p className="body-text">
                             Trusted By Locals, Loved by Professionals, here's what our Riders in Reading have to say about Taaaxi.com Executive Cars Services.
                         </p>
 
@@ -200,7 +177,7 @@ const TestimonialSection = () => {
                                     }}
                                 >
                                     {/* Quote Icon */}
-                                    <div className="text-orange-500 text-5xl md:text-6xl font-serif leading-none">"</div>
+                                    <div className="text-orange-500 text-5xl md:text-6xl font-serif leading-none">“</div>
 
                                     {/* Testimonial Text */}
                                     <p
@@ -243,12 +220,7 @@ const TestimonialSection = () => {
                                 {/* Image Section */}
                                 <div
                                     className="w-full md:w-[45%] bg-gradient-to-br from-gray-300 to-gray-400 relative overflow-hidden"
-                                    style={{
-                                        paddingTop: '23.27px',
-                                        paddingRight: '18.61px',
-                                        paddingBottom: '23.27px',
-                                        paddingLeft: '18.61px'
-                                    }}
+
                                 >
                                     <div className="w-full h-full rounded-2xl overflow-hidden">
                                         <img

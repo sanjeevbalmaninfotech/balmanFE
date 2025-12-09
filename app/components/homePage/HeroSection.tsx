@@ -11,48 +11,10 @@ import 'swiper/css/pagination';
 import OurServices from './OurServices';
 import TestimonialSection from './TestimonialSection';
 import AboutSection from './AboutSection';
+import FounderSection from './FounderSection';
 
 export default function HeroSection() {
 
-    const services = [
-        {
-            title: "Digital Marketing",
-            description: "We excel in building scalable, secure, and feature-rich apps that drive business success."
-        },
-        {
-            title: "Branding Services",
-            description: "We excel in building scalable, secure, and feature-rich apps that drive business success."
-        },
-        {
-            title: "Web Designing",
-            description: "We excel in building scalable, secure, and feature-rich apps that drive business success."
-        },
-        {
-            title: "App Development",
-            description: "We excel in building scalable, secure, and feature-rich apps that drive business success."
-        },
-        {
-            title: "Web Development",
-            description: "We excel in building scalable, secure, and feature-rich apps that drive business success."
-        },
-    ];
-
-    const getClipPath = (index: number) => {
-        switch (index) {
-            case 0:
-                return 'polygon(0 0, 100% 5%, 100% 95%, 0% 100%)';
-            case 1:
-                return 'polygon(0 0, 100% 2%, 100% 98%, 0% 100%)';
-            case 2:
-                return 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)';
-            case 3:
-                return 'polygon(0 2%, 100% 0, 100% 100%, 0 98%)';
-            case 4:
-                return 'polygon(0 5%, 100% 0, 100% 100%, 0 95%)';
-            default:
-                return 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)';
-        }
-    };
 
 
     return (
@@ -92,29 +54,12 @@ export default function HeroSection() {
                             Your Growth <span style={{ fontWeight: '700' }}>Partner</span>
                         </h1>
                         {/* Description */}
-                        <p
-                            className="mb-[25px] sm:mb-[35px] md:mb-[45px] max-w-[550px] pr-4 sm:pr-0"
-                            style={{
-                                fontFamily: 'Plus Jakarta Sans, sans-serif',
-                                fontSize: 'clamp(14px, 3vw, 16.13px)',
-                                fontWeight: '400',
-                                lineHeight: '150%',
-                                letterSpacing: '0%',
-                                color: 'rgba(232, 232, 234, 1)'
-                            }}
-                        >
+                        <p className="body-text mb-[25px] sm:mb-[35px] md:mb-[45px] max-w-[550px]">
                             To empower businesses with expressive brand identities and seamless digital experiences by blending creativity, strategy, and technology, delivering quality with consistency and purpose.
                         </p>
 
                         {/* Get Started Button */}
-                        <button
-                            className="min-w-[145px] h-[48px] px-6 py-3 rounded-lg border border-black bg-[#FF5900] text-white transition-all duration-300 hover:bg-black hover:border-[#FF5900] hover:text-white touch-manipulation"
-                            style={{
-                                fontFamily: 'Poppins, sans-serif',
-                                fontSize: 'clamp(15px, 3vw, 17px)',
-                                fontWeight: '400'
-                            }}
-                        >
+                        <button className="btn-primary touch-manipulation">
                             Get Started
                         </button>
                     </div>
@@ -164,7 +109,7 @@ export default function HeroSection() {
             <AboutSection />
             <OurServices />
             <TestimonialSection />
-
+            <FounderSection />
 
 
         </>
