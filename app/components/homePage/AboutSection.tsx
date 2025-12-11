@@ -19,7 +19,7 @@ export default function AboutSection() {
 
                                 {/* Heading */}
                                 <h2 className="heading">
-                                    We're More Than A <br className="hidden sm:block" /><span className="sm:hidden"> </span>Digital Agency
+                                    We&apos;re More Than A <br className="hidden sm:block" /><span className="sm:hidden"> </span>Digital Agency
                                 </h2>
 
                             </div>
@@ -34,12 +34,12 @@ export default function AboutSection() {
                         <div className="lg:w-[70%] lg:pl-8">
                             {/* Paragraph 1 */}
                             <p className="body-text mb-4 sm:mb-5 md:mb-6">
-                                At Balman Infotech, we believe technology is more than just code — it's a tool to create impact. Our mission is to empower businesses through smart, scalable, and secure solutions that deliver measurable results. From concept to completion, we focus on understanding each client's unique needs and providing customized services that combine creativity, technical expertise, and strategic thinking.
+                                At Balman Infotech, we believe technology is more than just code — it&apos;s a tool to create impact. Our mission is to empower businesses through smart, scalable, and secure solutions that deliver measurable results. From concept to completion, we focus on understanding each client&apos;s unique needs and providing customized services that combine creativity, technical expertise, and strategic thinking.
                             </p>
 
                             {/* Paragraph 2 */}
                             <p className="body-text mb-4 sm:mb-5 md:mb-6">
-                                Our team consists of experienced developers, designers, and IT professionals who are passionate about innovation and excellence. Using modern frameworks, agile methodologies, and cutting-edge technologies, we build solutions that are robust, user-friendly, and future-ready. Whether it's automating processes, building enterprise platforms, or enhancing user experience, we ensure every project reflects our commitment to quality and performance.
+                                Our team consists of experienced developers, designers, and IT professionals who are passionate about innovation and excellence. Using modern frameworks, agile methodologies, and cutting-edge technologies, we build solutions that are robust, user-friendly, and future-ready. Whether it&aposs automating processes, building enterprise platforms, or enhancing user experience, we ensure every project reflects our commitment to quality and performance.
                             </p>
 
                             {/* Paragraph 3 */}

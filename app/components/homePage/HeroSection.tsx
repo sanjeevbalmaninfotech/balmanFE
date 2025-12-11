@@ -12,6 +12,10 @@ import OurServices from './OurServices';
 import TestimonialSection from './TestimonialSection';
 import AboutSection from './AboutSection';
 import FounderSection from './FounderSection';
+import BrandAnalysisCTA from './BrandAnalysisCTA';
+import TeamSection from './TeamSection';
+import BlogSection from './BlogSection';
+import FAQSection from './FAQSection';
 
 export default function HeroSection() {
 
@@ -110,7 +114,10 @@ export default function HeroSection() {
             <OurServices />
             <TestimonialSection />
             <FounderSection />
-
+            <BrandAnalysisCTA />
+            <TeamSection />
+            <BlogSection />
+            <FAQSection />
 
         </>
     );
