@@ -21,13 +21,13 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="bg-black py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Main Heading */}
+    <section className="relative w-full bg-black section-padding-y">
+      <div className="relative w-full mx-auto section-padding-x">
+
         <h2
           className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
           style={{
-            fontSize: "clamp(24px, 5vw, 48px)",
+            fontSize: "clamp(24px, 5vw, 36px)",
             backgroundImage:
               "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
             WebkitBackgroundClip: "text",
@@ -37,9 +37,9 @@ export default function FAQSection() {
         >
           Everything You Need To Know Before Starting Your Next Project With Us.
         </h2>
-        
-        {/* Decorative underline */}
-        <div className="w-16 h-0.5 bg-orange-500 mx-auto mb-12"></div>
+
+
+        <div className="w-20 h-1 bg-orange-500 mx-auto mb-12 rounded-full"></div>
 
         {/* FAQ Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-12">

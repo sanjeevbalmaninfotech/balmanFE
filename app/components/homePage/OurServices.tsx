@@ -17,18 +17,24 @@ export default function ServicesSection() {
       <div className="relative w-full mx-auto section-padding-x">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
-          {/* Label with line */}
-          <div className="section-label justify-center">
-            <div className="section-label-line" />
-            <span className="sub-heading">
-              Our Services
-            </span>
-          </div>
 
-          {/* Main Heading */}
-          <h2 className="heading">
+
+
+          <h2
+            className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
+            style={{
+              fontSize: "clamp(32px, 6vw, 36px)",
+              backgroundImage:
+                "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
             Experience In Different Industries
           </h2>
+          <div className="w-20 h-1 bg-orange-500 mx-auto mb-12 rounded-full"></div>
+
         </div>
 
         {/* Swiper Section */}

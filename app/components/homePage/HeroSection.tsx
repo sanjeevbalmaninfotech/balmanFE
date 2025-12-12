@@ -16,6 +16,8 @@ import BrandAnalysisCTA from './BrandAnalysisCTA';
 import TeamSection from './TeamSection';
 import BlogSection from './BlogSection';
 import FAQSection from './FAQSection';
+import NewsletterSection from './NewsletterSection';
+import Footer from '../footer/Footer';
 
 export default function HeroSection() {
 
@@ -118,6 +120,8 @@ export default function HeroSection() {
             <TeamSection />
             <BlogSection />
             <FAQSection />
+            <NewsletterSection />
+            <Footer />
 
         </>
     );

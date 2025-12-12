@@ -37,30 +37,41 @@ const TestimonialSection = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-black flex items-center justify-center section-padding">
+        <div className="w-full  bg-black flex items-center justify-center section-padding">
             <div className="w-full max-w-[1680px] h-auto lg:h-[495px] flex flex-col lg:flex-row gap-5">
 
                 {/* Left Side Container */}
                 <div className="relative lg:w-[572px] lg:pr-8">
                     <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start gap-8">
 
-                        {/* Testimonials Label */}
-                        <div className="section-label">
-                            <div className="section-label-line"></div>
-                            <span className="sub-heading">
-                                Testimonials
-                            </span>
+                        <div className="flex items-center gap-3 mb-4">
+
                         </div>
 
-                        {/* Main Heading */}
-                        <h2 className="heading" style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}>
-                            WHAT OUR<br />CLIENT SAYS
+                        {/* Heading */}
+                        <h2
+                            className="font-['Plus_Jakarta_Sans'] font-bold leading-[110%] tracking-tight mb-2"
+                            style={{
+                                fontSize: "clamp(32px, 6vw, 36px)",
+                                backgroundImage:
+                                    "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor: "transparent",
+                                backgroundClip: "text",
+                            }}
+                        >
+                            WHAT OUR <br />
+                            CLIENT SAYS
+                            <div className="w-20 h-1 bg-orange-500 mt-2 rounded-full"></div>
                         </h2>
+
+
 
                         {/* Description */}
                         <p className="body-text">
-                            Trusted By Locals, Loved by Professionals, here's what our Riders in Reading have to say about Taaaxi.com Executive Cars Services.
+                            Trusted by locals, loved by professionals, here&apos;s what our riders in Reading have to say about Taaaxi.com Executive Car Services.
                         </p>
+
 
                         {/* Ratings */}
                         <div className="flex items-center gap-10 mt-6">
