@@ -46,7 +46,7 @@ export default function BlogSection() {
           >
             Stay Informed. Stay Inspired.
           </h2>
-          <div className="w-16 h-0.5 bg-primary mx-auto mb-12"></div>
+          <div className="heading-underline mx-auto mb-12"></div>
           <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-sm hover:text-gray-300 transition-colors flex items-center gap-2">
             See More
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

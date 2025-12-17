@@ -22,7 +22,7 @@ export default function AboutSection() {
                   We&apos;re More Than A <br />
 
                   Digital Agency
-                  <span className="absolute left-0 -bottom-2 w-20 h-1 bg-primary rounded-full"></span>
+                  <span className="absolute left-0 -bottom-2 heading-underline"></span>
 
                 </h2>
               </div>

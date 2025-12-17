@@ -33,7 +33,7 @@ export default function ServicesSection() {
           >
             Experience In Different Industries
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full"></div>
+          <div className="heading-underline mx-auto mb-12"></div>
 
         </div>
 

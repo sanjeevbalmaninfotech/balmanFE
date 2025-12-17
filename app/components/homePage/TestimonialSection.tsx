@@ -62,7 +62,7 @@ const TestimonialSection = () => {
                         >
                             WHAT OUR <br />
                             CLIENT SAYS
-                            <div className="w-20 h-1 bg-primary mt-2 rounded-full"></div>
+                            <div className="heading-underline mt-2"></div>
                         </h2>
 
 

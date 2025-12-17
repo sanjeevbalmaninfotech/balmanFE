@@ -82,7 +82,7 @@ export default function AboutExperienceSection() {
           {/* Right Side - Content */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-0.5 bg-primary"></div>
+              <div className="heading-underline"></div>
               <span className="text-gray-400 text-sm">About Us</span>
             </div>
 

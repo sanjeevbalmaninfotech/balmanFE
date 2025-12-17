@@ -49,7 +49,7 @@ const FounderSection = () => {
                 </h2>
 
                 {/* Orange underline - positioned under second line */}
-                <div className="w-20 h-1 bg-primary -mt-2 rounded-full"></div>
+                <div className="heading-underline"></div>
               </div>
             </div>
 

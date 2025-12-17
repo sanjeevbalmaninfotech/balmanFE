@@ -43,7 +43,7 @@ export default function BlogList() {
       {/* Header Section */}
       <header className="px-4 sm:px-6 lg:px-20 xl:px-32 pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-12">
         <div className="flex items-center gap-3 mb-4 sm:mb-6">
-          <div className="w-10 sm:w-12 h-0.5 bg-primary"></div>
+          <div className="heading-underline"></div>
           <span className="text-gray-400 text-sm sm:text-base">Blogs</span>
         </div>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">

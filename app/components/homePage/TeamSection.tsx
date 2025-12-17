@@ -59,7 +59,7 @@ export default function TeamSection() {
                     </h2>
 
 
-                    <div className="w-20 h-1 bg-primary rounded-full"></div>
+                    <div className="heading-underline"></div>
 
                 </div>
 

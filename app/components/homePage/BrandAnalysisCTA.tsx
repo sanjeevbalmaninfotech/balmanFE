@@ -27,7 +27,7 @@ export default function BrandAnalysisCTA() {
                             Let&apos;s Analyse Your Brand - For Free!
                         </h2>
 
-                        <div className="w-20 h-1 bg-primary rounded-full"></div>
+                        <div className="heading-underline"></div>
                     </div>
 
                     <p className="text-center leading-[150%] text-[#E8E8EA] mb-3 sm:mb-4 md:mb-6 font-['Plus_Jakarta_Sans']"
