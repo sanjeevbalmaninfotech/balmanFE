@@ -7,7 +7,18 @@ const FounderSection = () => {
       <div className="w-full mx-auto section-padding-x">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
           {/* Image Section - Left Side */}
-          <div className="w-full lg:w-[45%] aspect-[760/852] relative flex-shrink-0">
+          <div
+            className="w-full lg:w-[45%] aspect-[760/852] relative flex-shrink-0 rounded-lg transition-all duration-300"
+            style={{
+              boxShadow: '0 0 0 0 rgba(0, 0, 0, 0)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 0 50px 15px rgba(255, 89, 0, 0.6)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '0 0 0 0 rgba(0, 0, 0, 0)';
+            }}
+          >
             <Image
               src="/oner.png"
               alt="Founder Portrait"
@@ -38,13 +49,13 @@ const FounderSection = () => {
                 </h2>
 
                 {/* Orange underline - positioned under second line */}
-                <div className="w-20 h-1 bg-orange-500 -mt-2 rounded-full"></div>
+                <div className="w-20 h-1 bg-primary -mt-2 rounded-full"></div>
               </div>
             </div>
 
             {/* Body Text */}
             <p className="body-text">
-              Balman Infotech was built on a simple vision — to empower
+              Balman Infotech was built on a simple vision - to empower
               businesses through smart, scalable, and future-ready technology.
               Under the leadership of our founder, the company has grown from a
               small idea into a trusted digital partner for clients across

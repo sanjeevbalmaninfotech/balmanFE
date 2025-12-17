@@ -18,6 +18,7 @@ import BlogSection from './BlogSection';
 import FAQSection from './FAQSection';
 import NewsletterSection from './NewsletterSection';
 import Footer from '../footer/Footer';
+import TeamLeadsSection from './TeamLeadsSection';
 
 export default function HeroSection() {
 
@@ -117,7 +118,8 @@ export default function HeroSection() {
             <TestimonialSection />
             <FounderSection />
             <BrandAnalysisCTA />
-            <TeamSection />
+            {/* <TeamSection /> */}
+            <TeamLeadsSection />
             <BlogSection />
             <FAQSection />
             <NewsletterSection />

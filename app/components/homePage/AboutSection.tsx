@@ -22,7 +22,7 @@ export default function AboutSection() {
                   We&apos;re More Than A <br />
 
                   Digital Agency
-                  <span className="absolute left-0 -bottom-2 w-20 h-1 bg-orange-500 rounded-full"></span>
+                  <span className="absolute left-0 -bottom-2 w-20 h-1 bg-primary rounded-full"></span>
 
                 </h2>
               </div>
@@ -36,7 +36,7 @@ export default function AboutSection() {
               {/* Paragraph 1 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
                 At Balman Infotech, we believe technology is more than just code
-                — it&apos;s a tool to create impact. Our mission is to empower
+                - it&apos;s a tool to create impact. Our mission is to empower
                 businesses through smart, scalable, and secure solutions that
                 deliver measurable results. From concept to completion, we focus
                 on understanding each client&apos;s unique needs and providing
@@ -70,7 +70,7 @@ export default function AboutSection() {
                 Our vision is to become a global leader in technology services
                 by continuously evolving, innovating, and creating digital
                 ecosystems that drive success for our clients. Guided by our
-                core values — integrity, innovation, and excellence — Balman
+                core values - integrity, innovation, and excellence - Balman
                 Infotech continues to shape the future of technology and help
                 businesses adapt, grow, and succeed in the digital era.
               </p>

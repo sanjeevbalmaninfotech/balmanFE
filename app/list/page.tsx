@@ -102,7 +102,7 @@ export default function CoverflowSlider() {
             width: 100%;
             height: 100%;
             background: #000000;
-            border: 1px solid #ff6600;
+            border: 1px solid var(--primary-color);
             border-radius: 20px;
             padding: 30px 20px;
             display: flex;
@@ -111,14 +111,14 @@ export default function CoverflowSlider() {
             align-items: flex-start;
             text-align: left;
             color: white;
-            box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+            box-shadow: 0 0 20px rgba(255, 89, 0, 0.3);
             transition: all 0.3s ease-in-out;
             cursor: pointer;
             position: relative;
         }
 
         .swiper-slide.swiper-slide-active .service-card:hover {
-            box-shadow: 0 0 40px 15px rgba(255, 102, 0, 0.8) !important;
+            box-shadow: 0 0 40px 15px rgba(255, 89, 0, 0.8) !important;
             transform: translateY(0px);
         }
 
@@ -127,7 +127,7 @@ export default function CoverflowSlider() {
         }
 
         .swiper-slide:not(.swiper-slide-active) .service-card:hover {
-            box-shadow: 0 0 20px rgba(255, 102, 0, 0.3) !important;
+            box-shadow: 0 0 20px rgba(255, 89, 0, 0.3) !important;
             transform: none;
         }
 
@@ -135,7 +135,7 @@ export default function CoverflowSlider() {
             width: 50px;
             height: 50px;
             background: #1a1a1a;
-            border: 1px solid #ff6600;
+            border: 1px solid var(--primary-color);
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -164,7 +164,7 @@ export default function CoverflowSlider() {
 
         /* Pagination color */
         .swiper-pagination-bullet-active {
-            background: #ff6600 !important;
+            background: var(--primary-color) !important;
         }
 
         .swiper-pagination-bullet {

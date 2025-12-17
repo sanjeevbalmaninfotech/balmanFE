@@ -21,7 +21,7 @@ export default function Navbar() {
                 <div
                     className="w-full rounded-lg"
                     style={{
-                        border: '3px solid #FF5900',
+                        border: '3px solid var(--primary-color)',
                         position: 'relative'
                     }}
                 >
@@ -60,8 +60,8 @@ export default function Navbar() {
                                         href={item.href}
                                         onClick={() => setActiveItem(item.name)}
                                         className={`px-2 py-3 rounded transition-colors duration-200 ${activeItem === item.name
-                                            ? 'text-[#FF5722]'
-                                            : 'text-white hover:text-[#FF5722]'
+                                            ? 'text-primary'
+                                            : 'text-white hover:text-primary'
                                             }`}
                                         style={{
                                             fontFamily: 'Plus Jakarta Sans, sans-serif',
@@ -111,8 +111,8 @@ export default function Navbar() {
                                                 setIsMenuOpen(false);
                                             }}
                                             className={`px-4 py-3 rounded transition-colors duration-200 ${activeItem === item.name
-                                                ? 'text-[#FF5722] bg-gray-900'
-                                                : 'text-white hover:text-[#FF5722] hover:bg-gray-900'
+                                                ? 'text-primary bg-gray-900'
+                                                : 'text-white hover:text-primary hover:bg-gray-900'
                                                 }`}
                                             style={{
                                                 fontFamily: 'Plus Jakarta Sans, sans-serif',

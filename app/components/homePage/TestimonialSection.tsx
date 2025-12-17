@@ -62,7 +62,7 @@ const TestimonialSection = () => {
                         >
                             WHAT OUR <br />
                             CLIENT SAYS
-                            <div className="w-20 h-1 bg-orange-500 mt-2 rounded-full"></div>
+                            <div className="w-20 h-1 bg-primary mt-2 rounded-full"></div>
                         </h2>
 
 
@@ -111,12 +111,12 @@ const TestimonialSection = () => {
 
                     {/* Left Preview Card - Shows Next Testimonial with Left Shadow */}
                     <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[180px] h-[300px] rounded-2xl opacity-70 overflow-hidden hidden lg:block z-0">
-                        <div className="relative w-full h-full bg-gradient-to-br from-orange-50 to-gray-100 flex">
+                        <div className="relative w-full h-full bg-gradient-to-br from-[rgba(255,89,0,0.05)] to-gray-100 flex">
                             {/* Left side shadow overlay */}
                             <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
 
                             <div className="w-[60%] p-4 flex flex-col justify-between relative z-0">
-                                <div className="text-orange-400 text-2xl font-serif">"</div>
+                                <div className="text-primary text-2xl font-serif">"</div>
                                 <div className="text-[10px] text-gray-700 line-clamp-6 leading-tight">
                                     {testimonials[(currentIndex + 1) % testimonials.length].text}
                                 </div>
@@ -141,12 +141,12 @@ const TestimonialSection = () => {
 
                     {/* Right Preview Card - Shows Previous Testimonial with Right Shadow */}
                     <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[180px] h-[300px] rounded-2xl opacity-70 overflow-hidden hidden lg:block z-0">
-                        <div className="relative w-full h-full bg-gradient-to-br from-orange-50 to-gray-100 flex">
+                        <div className="relative w-full h-full bg-gradient-to-br from-[rgba(255,89,0,0.05)] to-gray-100 flex">
                             {/* Right side shadow overlay */}
                             <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black/80 to-transparent z-10"></div>
 
                             <div className="w-[60%] p-4 flex flex-col justify-between relative z-0">
-                                <div className="text-orange-400 text-2xl font-serif">"</div>
+                                <div className="text-primary text-2xl font-serif">"</div>
                                 <div className="text-[10px] text-gray-700 line-clamp-6 leading-tight">
                                     {testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length].text}
                                 </div>
@@ -172,9 +172,9 @@ const TestimonialSection = () => {
                     {/* Main Testimonial Card with Orange Shadow */}
                     <div className="relative w-full max-w-[720px] h-auto lg:h-[410px] z-10">
                         {/* Orange Shadow/Glow Effect */}
-                        <div className="absolute -inset-1 bg-gradient-to-br from-orange-500/40 via-orange-600/30 to-transparent rounded-3xl blur-xl"></div>
+                        <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 via-primary/30 to-transparent rounded-3xl blur-xl"></div>
 
-                        <div className="relative bg-gradient-to-br from-orange-50 to-gray-100 rounded-3xl shadow-2xl overflow-hidden">
+                        <div className="relative bg-gradient-to-br from-[rgba(255,89,0,0.05)] to-gray-100 rounded-3xl shadow-2xl overflow-hidden">
                             <div className="flex flex-col md:flex-row h-full">
 
                                 {/* Text Content Container */}
@@ -188,7 +188,7 @@ const TestimonialSection = () => {
                                     }}
                                 >
                                     {/* Quote Icon */}
-                                    <div className="text-orange-500 text-5xl md:text-6xl font-serif leading-none">“</div>
+                                    <div className="text-primary text-5xl md:text-6xl font-serif leading-none">“</div>
 
                                     {/* Testimonial Text */}
                                     <p
@@ -268,7 +268,7 @@ const TestimonialSection = () => {
                             <button
                                 key={index}
                                 onClick={() => setCurrentIndex(index)}
-                                className={`h-2 rounded-full transition-all ${index === currentIndex ? 'bg-orange-500 w-8' : 'bg-gray-400 w-2'
+                                className={`h-2 rounded-full transition-all ${index === currentIndex ? 'bg-primary w-8' : 'bg-gray-400 w-2'
                                     }`}
                                 aria-label={`Go to testimonial ${index + 1}`}
                             />

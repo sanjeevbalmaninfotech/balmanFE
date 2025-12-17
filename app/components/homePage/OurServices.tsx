@@ -33,7 +33,7 @@ export default function ServicesSection() {
           >
             Experience In Different Industries
           </h2>
-          <div className="w-20 h-1 bg-orange-500 mx-auto mb-12 rounded-full"></div>
+          <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full"></div>
 
         </div>
 
@@ -94,7 +94,7 @@ export default function ServicesSection() {
                     ${index === activeIndex ? 'active-slide' : ''}
                   `}
                   style={{
-                    boxShadow: '0 0 20px rgba(255, 102, 0, 0.3)',
+                    boxShadow: '0 0 20px rgba(255, 89, 0, 0.3)',
                   }}
                 >
                   {/* Icon Container */}
@@ -141,7 +141,7 @@ export default function ServicesSection() {
 
         /* Hover effect only for active slide */
         .services-swiper .swiper-slide.swiper-slide-active .active-slide:hover {
-          box-shadow: 0 0 40px 15px rgba(255, 102, 0, 0.8) !important;
+          box-shadow: 0 0 40px 15px rgba(255, 89, 0, 0.8) !important;
           transform: translateY(0px);
         }
 
@@ -151,13 +151,13 @@ export default function ServicesSection() {
 
         /* Non-active slides hover effect */
         .services-swiper .swiper-slide:not(.swiper-slide-active) > div:hover {
-          box-shadow: 0 0 20px rgba(255, 102, 0, 0.3) !important;
+          box-shadow: 0 0 20px rgba(255, 89, 0, 0.3) !important;
           transform: none;
         }
 
         /* Pagination styling */
         .services-swiper .swiper-pagination-bullet-active {
-          background: #ff6600 !important;
+          background: var(--primary-color) !important;
         }
 
         .services-swiper .swiper-pagination-bullet {

@@ -39,11 +39,11 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-6">
               <div className="flex items-center gap-3">
-                <div className="w-24 h-24 bg-gradient-to-br from-orange-600 to-orange-800 rounded-lg flex items-center justify-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-white text-xs mb-1">
                       <svg className="w-8 h-8 mx-auto" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L4 7v10c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-5zm0 18c-3.31-1-6-5.46-6-9V8.3l6-4.5 6 4.5V11c0 3.54-2.69 8-6 9z"/>
+                        <path d="M12 2L4 7v10c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-5zm0 18c-3.31-1-6-5.46-6-9V8.3l6-4.5 6 4.5V11c0 3.54-2.69 8-6 9z" />
                       </svg>
                     </div>
                     <div className="text-white font-bold text-sm">BALMAN</div>
@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="mb-6">
               <h3 className="font-semibold mb-2">Address:</h3>
               <p className="text-gray-400 text-sm">
-              4th Floor Verma Tech Park, Plot No 88, Sector 73, S.A.S Nagar Mohali 140301
+                4th Floor Verma Tech Park, Plot No 88, Sector 73, S.A.S Nagar Mohali 140301
               </p>
             </div>
 
@@ -74,19 +74,19 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex gap-4">
-              <a href="#" className="text-white hover:text-orange-500 transition-colors">
+              <a href="#" className="text-white hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-white hover:text-orange-500 transition-colors">
+              <a href="#" className="text-white hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-white hover:text-orange-500 transition-colors">
+              <a href="#" className="text-white hover:text-primary transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-white hover:text-orange-500 transition-colors">
+              <a href="#" className="text-white hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-white hover:text-orange-500 transition-colors">
+              <a href="#" className="text-white hover:text-primary transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
@@ -142,16 +142,16 @@ export default function Footer() {
                 </ul>
                 {/* Social Icons for Contact Column */}
                 <div className="flex gap-3 mt-4">
-                  <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <a href="#" className="text-white hover:text-primary transition-colors">
                     <Facebook size={18} />
                   </a>
-                  <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <a href="#" className="text-white hover:text-primary transition-colors">
                     <Instagram size={18} />
                   </a>
-                  <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <a href="#" className="text-white hover:text-primary transition-colors">
                     <Youtube size={18} />
                   </a>
-                  <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <a href="#" className="text-white hover:text-primary transition-colors">
                     <Twitter size={18} />
                   </a>
                 </div>

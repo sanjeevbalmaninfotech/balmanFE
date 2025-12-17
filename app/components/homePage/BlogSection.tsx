@@ -30,60 +30,60 @@ export default function BlogSection() {
 
   return (
     <section className="relative w-full bg-black section-padding-y">
-  <div className="relative w-full mx-auto section-padding-x">
-    {/* Header */}
-    <div className="relative mb-12 text-center">
-      <h2
-        className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
-        style={{
-          fontSize: "clamp(24px, 5vw, 36px)",
-          backgroundImage:
-            "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text",
-        }}
-      >
-        Stay Informed. Stay Inspired.
-      </h2>
-      <div className="w-16 h-0.5 bg-orange-500 mx-auto mb-12"></div>
-      <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-sm hover:text-gray-300 transition-colors flex items-center gap-2">
-        See More
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
+      <div className="relative w-full mx-auto section-padding-x">
+        {/* Header */}
+        <div className="relative mb-12 text-center">
+          <h2
+            className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
+            style={{
+              fontSize: "clamp(24px, 5vw, 36px)",
+              backgroundImage:
+                "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            Stay Informed. Stay Inspired.
+          </h2>
+          <div className="w-16 h-0.5 bg-primary mx-auto mb-12"></div>
+          <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-sm hover:text-gray-300 transition-colors flex items-center gap-2">
+            See More
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
 
-    {/* Blog Cards Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {blogPosts.map((post) => (
-        <div
-          key={post.id}
-          className="group cursor-pointer rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300"
-        >
-          {/* Image Container */}
-          <div className="relative h-64 overflow-hidden">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
-            {/* Content (Positioned at the Bottom-Left) */}
-            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white text-left">
-              {/* Content aligned to the left */}
-              <div>
-                <h3 className="text-xl font-semibold">{post.title}</h3>
-                <p className="text-sm">{post.description}</p>
+        {/* Blog Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.map((post) => (
+            <div
+              key={post.id}
+              className="group cursor-pointer rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300"
+            >
+              {/* Image Container */}
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Content (Positioned at the Bottom-Left) */}
+                <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white text-left">
+                  {/* Content aligned to the left */}
+                  <div>
+                    <h3 className="text-xl font-semibold">{post.title}</h3>
+                    <p className="text-sm">{post.description}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-  
+
   );
 }

@@ -122,14 +122,14 @@ export default function TiltedCardsSection() {
                     }}
                   >
                     {/* Card */}
-                    <div className="w-full h-full bg-black border border-white/20 rounded-3xl p-6 flex flex-col items-start justify-between hover:border-orange-500/50 transition-all duration-300">
+                    <div className="w-full h-full bg-black border border-white/20 rounded-3xl p-6 flex flex-col items-start justify-between hover:border-primary/50 transition-all duration-300">
                       {/* Icon */}
-                      <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                         <div className="grid grid-cols-2 gap-1">
-                          <div className="w-2 h-2 bg-orange-500 rounded-sm"></div>
-                          <div className="w-2 h-2 bg-orange-500 rounded-sm"></div>
-                          <div className="w-2 h-2 bg-orange-500 rounded-sm"></div>
-                          <div className="w-2 h-2 bg-orange-500 rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary rounded-sm"></div>
                         </div>
                       </div>
 
@@ -166,10 +166,9 @@ export default function TiltedCardsSection() {
                       clipPath: `
                 polygon(
                   0 0,
-                  100% ${
-                    ((cardStyles.right - cardStyles.left) / cardStyles.left) *
-                    100
-                  }%,
+                  100% ${((cardStyles.right - cardStyles.left) / cardStyles.left) *
+                        100
+                        }%,
                   100% 100%,
                   0 100%
                 )
@@ -180,7 +179,7 @@ export default function TiltedCardsSection() {
                     <div
                       className="w-full bg-black border border-white/20 rounded-3xl p-6 flex flex-col justify-between
               transition-all duration-300 overflow-visible
-              group-hover:border-orange-500
+              group-hover:border-primary
               group-hover:shadow-[0_0_35px_rgba(255,89,0,0.55)]"
                       style={{
                         height: `${cardStyles.left}px`,
@@ -188,18 +187,18 @@ export default function TiltedCardsSection() {
                     >
                       {/* ICON */}
                       <div
-                        className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4 
-                group-hover:bg-orange-500/20 transition-all duration-300"
+                        className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 
+                group-hover:bg-primary/20 transition-all duration-300"
                       >
                         <div className="grid grid-cols-2 gap-1">
-                          <div className="w-2 h-2 bg-orange-500 group-hover:bg-orange-400 rounded-sm"></div>
-                          <div className="w-2 h-2 bg-orange-500 group-hover:bg-orange-400 rounded-sm"></div>
-                          <div className="w-2 h-2 bg-orange-500 group-hover:bg-orange-400 rounded-sm"></div>
-                          <div className="w-2 h-2 bg-orange-500 group-hover:bg-orange-400 rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary group-hover:bg-primary rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary group-hover:bg-primary rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary group-hover:bg-primary rounded-sm"></div>
+                          <div className="w-2 h-2 bg-primary group-hover:bg-primary rounded-sm"></div>
                         </div>
                       </div>
 
-                      <h3 className="text-white text-xl font-bold mb-3 group-hover:text-orange-500 transition-colors">
+                      <h3 className="text-white text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                         {service.title}
                       </h3>
 
@@ -220,7 +219,7 @@ export default function TiltedCardsSection() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 Experience in Different{" "}
-                <span className="text-orange-500">Industries</span>
+                <span className="text-primary">Industries</span>
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
                 We provide comprehensive solutions across various domains to
@@ -249,7 +248,7 @@ export default function TiltedCardsSection() {
                       {/* Card Container with Rotation */}
                       <div
                         className="relative overflow-hidden rounded-2xl border border-gray-800 transition-all duration-500
-                    group-hover:border-orange-500 group-hover:shadow-[0_10px_30px_rgba(255,89,0,0.25)]
+                    group-hover:border-primary group-hover:shadow-[0_10px_30px_rgba(255,89,0,0.25)]
                     group-hover:scale-[1.02] group-hover:-translate-y-2"
                         style={{
                           height: `${cardStyles.height}px`,
@@ -270,8 +269,8 @@ export default function TiltedCardsSection() {
 
                         {/* Hover Overlay */}
                         <div
-                          className="absolute inset-0 bg-gradient-to-b from-orange-500/0 via-orange-500/0 to-orange-500/0 
-                    group-hover:from-orange-500/10 group-hover:via-orange-500/5 group-hover:to-orange-500/20 
+                          className="absolute inset-0 bg-gradient-to-b from-primary/0 via-primary/0 to-primary/0 
+                    group-hover:from-primary/10 group-hover:via-primary/5 group-hover:to-primary/20 
                     transition-all duration-500"
                         ></div>
 
@@ -280,18 +279,18 @@ export default function TiltedCardsSection() {
                           {/* Icon/Number */}
                           <div className="mb-6">
                             <div
-                              className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500/20 to-orange-500/10 
-                        flex items-center justify-center border border-orange-500/30 group-hover:border-orange-500/50 
+                              className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 
+                        flex items-center justify-center border border-primary/30 group-hover:border-primary/50 
                         transition-all duration-300"
                             >
-                              <span className="text-2xl font-bold text-orange-500">
+                              <span className="text-2xl font-bold text-primary">
                                 {index + 1}
                               </span>
                             </div>
                           </div>
 
                           {/* Title */}
-                          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-500 transition-colors">
+                          <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
                             {service.title}
                           </h3>
 
@@ -301,9 +300,9 @@ export default function TiltedCardsSection() {
                           </p>
 
                           {/* Learn More Link */}
-                          <div className="mt-6 pt-4 border-t border-gray-800 group-hover:border-orange-500/30 transition-colors">
+                          <div className="mt-6 pt-4 border-t border-gray-800 group-hover:border-primary/30 transition-colors">
                             <span
-                              className="text-orange-500 text-sm font-medium inline-flex items-center gap-2
+                              className="text-primary text-sm font-medium inline-flex items-center gap-2
                         group-hover:gap-3 transition-all duration-300"
                             >
                               Learn more

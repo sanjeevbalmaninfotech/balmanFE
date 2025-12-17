@@ -59,7 +59,7 @@ export default function TeamSection() {
                     </h2>
 
 
-                    <div className="w-20 h-1 bg-orange-500 rounded-full"></div>
+                    <div className="w-20 h-1 bg-primary rounded-full"></div>
 
                 </div>
 
@@ -75,7 +75,7 @@ export default function TeamSection() {
                                 className={`transition-all duration-300 ${index % 2 === 1 ? "md:mt-[60px]" : ""
                                     }`}
                             >
-                                <div className="relative w-[120px] h-[220px] sm:w-[140px] sm:h-[260px] md:w-[160px] md:h-[400px] rounded-[100px] overflow-hidden border border-white/10 group-hover:border-[#FF5900] transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(255,89,0,0.4)] ">
+                                <div className="relative w-[120px] h-[220px] sm:w-[140px] sm:h-[260px] md:w-[160px] md:h-[400px] rounded-[100px] overflow-hidden border border-white/10 group-hover:border-primary transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(255,89,0,0.4)] ">
                                     <img
                                         src={member.image}
                                         alt={member.name}

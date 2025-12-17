@@ -16,7 +16,7 @@ export default function FAQSection() {
     },
     {
       question: "Do you work with startups or only large companies?",
-      answer: "We collaborate with businesses of all sizes — from startups looking to build their first product to enterprises seeking complex digital solutions."
+      answer: "We collaborate with businesses of all sizes - from startups looking to build their first product to enterprises seeking complex digital solutions."
     }
   ];
 
@@ -39,7 +39,7 @@ export default function FAQSection() {
         </h2>
 
 
-        <div className="w-20 h-1 bg-orange-500 mx-auto mb-12 rounded-full"></div>
+        <div className="w-20 h-1 bg-primary mx-auto mb-12 rounded-full"></div>
 
         {/* FAQ Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-12">
@@ -53,6 +53,7 @@ export default function FAQSection() {
               </p>
             </div>
           ))}
+
         </div>
 
         {/* CTA Section */}
@@ -60,7 +61,7 @@ export default function FAQSection() {
           <p className="text-white text-base sm:text-lg mb-4">
             Still have questions?
           </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-8 py-3 rounded-lg transition-colors duration-300">
+          <button className="bg-primary hover:bg-primary/90 text-white font-medium px-8 py-3 rounded-lg transition-colors duration-300">
             Contact us
           </button>
         </div>
