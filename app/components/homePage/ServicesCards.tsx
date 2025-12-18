@@ -122,7 +122,7 @@ export default function ServicesCards() {
                             <div
                                 key={index}
                                 onClick={() => router.push(service.url)}
-                                className="relative group w-full transition-transform duration-500 ease-out [transform:none] lg:[transform:rotateY(var(--rotate-y))]"
+                                className="relative group w-full cursor-pointer transition-transform duration-500 ease-out [transform:none] lg:[transform:rotateY(var(--rotate-y))]"
                                 style={{
                                     height: `${maxHeight}px`,
                                     '--rotate-y': `${rotateY}deg`,

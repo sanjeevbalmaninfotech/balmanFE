@@ -115,7 +115,7 @@ export default function HeroSection() {
             </section>
 
             <AboutSection />
-            <OurServices />
+            {/* <OurServices /> */}
             <ServicesCards />
             <TestimonialSection />
             <FounderSection />
