@@ -31,7 +31,9 @@ export default function AboutExperienceSection() {
                 <Image
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
                   alt="Team collaboration"
-                  className="w-full h-[378px] object-cover rounded-[10px]"
+                  width={600}
+                  height={378}
+                  className="object-cover rounded-[10px]"
                 />
 
                 {/* Best Ratings Badge - Below left image */}
@@ -63,7 +65,9 @@ export default function AboutExperienceSection() {
                         <Image
                           src={avatar}
                           alt={`Customer ${idx + 1}`}
-                          className="w-10 h-10 rounded-full border-2 border-gray-800 object-cover"
+                          width={40}
+                          height={40}
+                          className="rounded-full border-2 border-gray-800 object-cover"
                         />
                       </div>
                     ))}
@@ -74,8 +78,11 @@ export default function AboutExperienceSection() {
                 <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
                   alt="Business presentation"
-                  className="w-full h-[378px] object-cover rounded-[10px]"
+                  width={600}       // required
+                  height={378}      // required
+                  className="object-cover rounded-[10px]"
                 />
+
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import ourServices from '@/app/constants/ourServices';
-
+import Image from 'next/image';
 // Sample service data
 
 
@@ -99,7 +99,12 @@ export default function ServicesSection() {
                 >
                   {/* Icon Container */}
                   <div className="w-12 h-12 md:w-14 md:h-14 bg-[#1a1a1a] border border-primary rounded-xl flex items-center justify-center mb-5 md:mb-6">
-                    <span className="text-2xl md:text-3xl">{service.icon}</span>
+                    {/* <span className="text-2xl md:text-3xl">{service.icon}</span> */}
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                    />
                   </div>
 
                   {/* Title */}
