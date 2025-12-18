@@ -1,6 +1,6 @@
 import React from 'react';
 import { TrendingUp } from 'lucide-react';
-
+import Image from "next/image";
 export default function AboutExperienceSection() {
   const avatars = [
     'https://i.pravatar.cc/150?img=1',
@@ -28,7 +28,7 @@ export default function AboutExperienceSection() {
               {/* LEFT SECTION */}
               <div className="flex flex-col gap-4 justify-end">
                 {/* Left Image - Team Meeting */}
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
                   alt="Team collaboration"
                   className="w-full h-[378px] object-cover rounded-[10px]"
@@ -60,7 +60,7 @@ export default function AboutExperienceSection() {
                   <div className="grid grid-cols-4 gap-2">
                     {avatars.map((avatar, idx) => (
                       <div key={idx} className="relative">
-                        <img
+                        <Image
                           src={avatar}
                           alt={`Customer ${idx + 1}`}
                           className="w-10 h-10 rounded-full border-2 border-gray-800 object-cover"
@@ -71,7 +71,7 @@ export default function AboutExperienceSection() {
                 </div>
 
                 {/* Right Image - Presentation */}
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
                   alt="Business presentation"
                   className="w-full h-[378px] object-cover rounded-[10px]"

@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function TeamLeadsSection() {
     const leads = [
         {
@@ -76,7 +77,7 @@ export default function TeamLeadsSection() {
                         >
                             {/* Image Container */}
                             <div className="relative w-full aspect-[9/14] overflow-hidden rounded-2xl">
-                                <img
+                                <Image
                                     src={lead.image}
                                     alt={lead.name}
                                     className="w-full h-full object-cover"

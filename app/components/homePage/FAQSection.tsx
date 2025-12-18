@@ -39,7 +39,7 @@ export default function FAQSection() {
         </h2>
 
 
-        <div className="heading-underline mx-auto mb-12"></div>
+        <div className="heading-underline mx-auto mb-12 "></div>
 
         {/* FAQ Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-12">

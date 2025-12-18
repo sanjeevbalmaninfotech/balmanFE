@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TechTreeHero() {
   return (
     <section className="relative w-full bg-black overflow-hidden">
@@ -7,7 +9,7 @@ export default function TechTreeHero() {
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/40 via-black to-black"></div>
 
         {/* Tech tree image */}
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1680&h=541&fit=crop&q=80"
           alt="Technology Circuit Tree"
           className="w-full h-full object-cover object-center opacity-90"

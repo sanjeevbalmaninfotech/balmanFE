@@ -1,5 +1,7 @@
 import React from 'react';
 import { Facebook, Instagram, Youtube, Twitter, Linkedin } from 'lucide-react';
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const linkColumns = [
@@ -39,15 +41,22 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-6">
               <div className="flex items-center gap-3">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center">
+                <div className="w-42 h-24 rounded-lg flex">
                   <div className="text-center">
-                    <div className="text-white text-xs mb-1">
-                      <svg className="w-8 h-8 mx-auto" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L4 7v10c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V7l-8-5zm0 18c-3.31-1-6-5.46-6-9V8.3l6-4.5 6 4.5V11c0 3.54-2.69 8-6 9z" />
-                      </svg>
-                    </div>
-                    <div className="text-white font-bold text-sm">BALMAN</div>
-                    <div className="text-white text-xs">INFOTECH</div>
+
+                    <Link href="/" className="flex-shrink-0 cursor-pointer">
+                      <Image
+                        src="/logo.png"
+                        alt="Logo"
+                        width={160}   // control size via width/height
+                        height={64}
+                        className="h-16 w-auto"
+                        priority      // loads logo immediately (good for headers)
+                      />
+                    </Link>
+
+
+
                   </div>
                 </div>
               </div>

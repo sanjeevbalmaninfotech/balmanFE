@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from "next/image";
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 const TestimonialSection = () => {
@@ -79,7 +80,7 @@ const TestimonialSection = () => {
                             {/* Trustpilot Rating */}
                             <div className="flex items-center gap-3">
                                 {/* Star Icon */}
-                                <img
+                                <Image
                                     src="/icons/star.png"
                                     alt="star"
                                     className="w-6 h-6"
@@ -91,7 +92,7 @@ const TestimonialSection = () => {
                             {/* Google Rating */}
                             <div className="flex items-center gap-3">
                                 {/* Google Icon */}
-                                <img
+                                <Image
                                     src="/icons/google.png"
                                     alt="google"
                                     className="w-6 h-6"
@@ -130,7 +131,7 @@ const TestimonialSection = () => {
                                 </div>
                             </div>
                             <div className="w-[40%] bg-gray-300">
-                                <img
+                                <Image
                                     src={testimonials[(currentIndex + 1) % testimonials.length].image}
                                     alt=""
                                     className="w-full h-full object-cover"
@@ -160,7 +161,7 @@ const TestimonialSection = () => {
                                 </div>
                             </div>
                             <div className="w-[40%] bg-gray-300">
-                                <img
+                                <Image
                                     src={testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length].image}
                                     alt=""
                                     className="w-full h-full object-cover"
@@ -234,7 +235,7 @@ const TestimonialSection = () => {
 
                                 >
                                     <div className="w-full h-full rounded-2xl overflow-hidden">
-                                        <img
+                                        <Image
                                             src={testimonials[currentIndex].image}
                                             alt={testimonials[currentIndex].name}
                                             className="w-full h-full object-cover"

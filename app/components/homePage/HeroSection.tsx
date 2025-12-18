@@ -3,7 +3,7 @@ import React from 'react';
 import { Smartphone } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
-
+import Image from "next/image";
 // 2. Import Swiper Styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -77,7 +77,7 @@ export default function HeroSection() {
                     >
                         {/* Tree Image with tooltips */}
                         <div className="relative w-full h-full flex items-center justify-center">
-                            {/* <img
+                            {/*  <Image
                             src="/api/placeholder/908/833"
                             alt="Digital Growth Tree"
                             className="w-auto h-full max-w-full object-contain"

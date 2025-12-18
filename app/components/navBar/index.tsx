@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-
+import Link from "next/link";
+import Image from "next/image";
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeItem, setActiveItem] = useState('Home');
@@ -42,13 +43,16 @@ export default function Navbar() {
                         <div className="flex items-center justify-between h-[76px] gap-6 px-4 sm:px-8 lg:px-[100px]">
                             {/* Logo - Left */}
                             <div className="flex-shrink-0">
-                                <a href="#home" onClick={() => setActiveItem('Home')} className="flex-shrink-0 cursor-pointer">
-                                    <img
-                                        src="logo.png"
+                                <Link href="/" className="flex-shrink-0 cursor-pointer">
+                                    <Image
+                                        src="/logo.png"
                                         alt="Logo"
-                                        className="h-16 w-auto"  // Increase the height (h-16) for a larger logo
+                                        width={160}   // control size via width/height
+                                        height={64}
+                                        className="h-16 w-auto"
+                                        priority      // loads logo immediately (good for headers)
                                     />
-                                </a>
+                                </Link>
 
                             </div>
 

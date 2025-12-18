@@ -61,7 +61,7 @@ export default function BlogList() {
             >
               {/* Image */}
               <div className="relative overflow-hidden rounded-xl aspect-[16/9] max-h-[360px] shadow-md group">
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover transition-transform duration-500"
@@ -79,7 +79,7 @@ export default function BlogList() {
                 {/* Author Info */}
                 <div className="flex items-center gap-3 sm:gap-4">
                   <div className="w-12 h-10 sm:w-20 sm:h-12 overflow-hidden rounded-[50%] flex-shrink-0">
-                    <img
+                    <Image
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=120&fit=crop"
                       alt={post.author}
                       className="w-full h-full object-cover"

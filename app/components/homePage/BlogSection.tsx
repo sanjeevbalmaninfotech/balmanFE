@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function BlogSection() {
   const blogPosts = [
@@ -64,7 +65,7 @@ export default function BlogSection() {
             >
               {/* Image Container */}
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

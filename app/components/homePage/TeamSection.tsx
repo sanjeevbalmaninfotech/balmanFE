@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function TeamSection() {
     const teamMembers = [
         {
@@ -76,7 +77,7 @@ export default function TeamSection() {
                                     }`}
                             >
                                 <div className="relative w-[120px] h-[220px] sm:w-[140px] sm:h-[260px] md:w-[160px] md:h-[400px] rounded-[100px] overflow-hidden border border-white/10 group-hover:border-primary transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(255,89,0,0.4)] ">
-                                    <img
+                                    <Image
                                         src={member.image}
                                         alt={member.name}
                                         className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"

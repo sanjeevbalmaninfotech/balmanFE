@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from "next/image";
 export default function BlogSection() {
-    const mainHeading = 'Why Every Business Needs a Professional Website in 2025';
+    const mainHeading = 'Branding Services';
 
     const subHeadings = [
         "Your website is your digital identity-here's why it matters more than ever in today's competitive market."
@@ -48,10 +48,12 @@ For companies aiming for rapid growth, digital marketing isn't optional-it's the
                 {/* Date */}
                 <div className="flex items-center gap-3 mb-4 sm:mb-6 lg:mb-8">
                     <div className="w-6 h-[2px] sm:w-8 bg-orange-600"></div>
-                    <span className="text-xs text-gray-400 tracking-wider font-medium">10 Aug, 2025</span>
-                </div>
+                    <span
+                        className="font-medium text-[27.63px] leading-[1] tracking-normal capitalize text-[#8E8E8E] font-['Plus_Jakarta_Sans']">
+                        Service
+                    </span>
 
-                {/* Main Heading - Responsive */}
+                </div>
                 <h1
                     className="font-['Plus Jakarta Sans'] font-bold mb-8 sm:mb-10 lg:mb-12"
                     style={{
