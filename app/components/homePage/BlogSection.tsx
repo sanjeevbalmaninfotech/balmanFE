@@ -64,21 +64,25 @@ export default function BlogSection() {
               className="group cursor-pointer rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300"
             >
               {/* Image Container */}
-              <div className="relative h-64 overflow-hidden">
+
+              <div className="relative h-64 overflow-hidden group">
                 <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  sizes="100vw"
                 />
+
                 {/* Content (Positioned at the Bottom-Left) */}
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black via-black/70 to-transparent text-white text-left">
-                  {/* Content aligned to the left */}
                   <div>
                     <h3 className="text-xl font-semibold">{post.title}</h3>
                     <p className="text-sm">{post.description}</p>
                   </div>
                 </div>
               </div>
+
             </div>
           ))}
         </div>

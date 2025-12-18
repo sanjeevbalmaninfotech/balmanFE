@@ -76,17 +76,21 @@ export default function TeamLeadsSection() {
                             }}
                         >
                             {/* Image Container */}
+
+
                             <div className="relative w-full aspect-[9/14] overflow-hidden rounded-2xl">
                                 <Image
                                     src={lead.image}
                                     alt={lead.name}
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
+                                    sizes="100vw"
                                 />
 
                                 {/* Overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-2xl"></div>
 
-                                {/* Info Container - ON IMAGE */}
+                                {/* Info Container */}
                                 <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 flex flex-col gap-2">
                                     {/* Name */}
                                     <h3
@@ -102,7 +106,7 @@ export default function TeamLeadsSection() {
                                         {lead.name}
                                     </h3>
 
-                                    {/* Title/Details */}
+                                    {/* Title */}
                                     <p
                                         className="font-['Plus Jakarta Sans'] font-normal"
                                         style={{
@@ -116,6 +120,7 @@ export default function TeamLeadsSection() {
                                     </p>
                                 </div>
                             </div>
+
                         </div>
                     ))}
                 </div>

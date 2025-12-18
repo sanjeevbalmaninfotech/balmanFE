@@ -83,8 +83,11 @@ const TestimonialSection = () => {
                                 <Image
                                     src="/icons/star.png"
                                     alt="star"
+                                    width={24}
+                                    height={24}
                                     className="w-6 h-6"
                                 />
+
                                 <div className="h-6 w-[1px] bg-white/40"></div>
                                 <span className="text-white text-[16px] font-medium">4.5K</span>
                             </div>
@@ -95,8 +98,11 @@ const TestimonialSection = () => {
                                 <Image
                                     src="/icons/google.png"
                                     alt="google"
+                                    width={24}
+                                    height={24}
                                     className="w-6 h-6"
                                 />
+
                                 <div className="h-6 w-[1px] bg-white/40"></div>
                                 <span className="text-white text-[16px] font-medium">4.5K</span>
                             </div>
@@ -130,13 +136,18 @@ const TestimonialSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-[40%] bg-gray-300">
+
+
+                            <div className="relative w-[40%] bg-gray-300">
                                 <Image
                                     src={testimonials[(currentIndex + 1) % testimonials.length].image}
                                     alt=""
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
+                                    sizes="40vw"
                                 />
                             </div>
+
                         </div>
                     </div>
 
@@ -160,11 +171,17 @@ const TestimonialSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-[40%] bg-gray-300">
+                            <div className="relative w-[40%] bg-gray-300">
                                 <Image
-                                    src={testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length].image}
+                                    src={
+                                        testimonials[
+                                            (currentIndex - 1 + testimonials.length) % testimonials.length
+                                        ].image
+                                    }
                                     alt=""
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
+                                    sizes="40vw"
                                 />
                             </div>
                         </div>
@@ -234,11 +251,12 @@ const TestimonialSection = () => {
                                     className="w-full md:w-[45%] bg-gradient-to-br from-gray-300 to-gray-400 relative overflow-hidden"
 
                                 >
-                                    <div className="w-full h-full rounded-2xl overflow-hidden">
+                                    <div className="relative w-full h-full rounded-2xl overflow-hidden">
                                         <Image
                                             src={testimonials[currentIndex].image}
                                             alt={testimonials[currentIndex].name}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
                                         />
                                     </div>
                                 </div>
