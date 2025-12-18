@@ -19,6 +19,7 @@ import FAQSection from './FAQSection';
 import NewsletterSection from './NewsletterSection';
 import Footer from '../footer/Footer';
 import TeamLeadsSection from './TeamLeadsSection';
+import ServicesCards from './ServicesCards';
 
 export default function HeroSection() {
 
@@ -115,9 +116,11 @@ export default function HeroSection() {
 
             <AboutSection />
             <OurServices />
+            <ServicesCards />
             <TestimonialSection />
             <FounderSection />
             <BrandAnalysisCTA />
+
             {/* <TeamSection /> */}
             <TeamLeadsSection />
             <BlogSection />

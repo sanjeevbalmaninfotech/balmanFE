@@ -74,12 +74,12 @@ export default function AboutExperienceSection() {
                   </div>
                 </div>
 
-                {/* Right Image - Presentation */}
+
                 <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
                   alt="Business presentation"
-                  width={600}       // required
-                  height={378}      // required
+                  width={600}
+                  height={378}
                   className="object-cover rounded-[10px]"
                 />
 

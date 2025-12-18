@@ -71,11 +71,16 @@ For companies aiming for rapid growth, digital marketing isn't optional-it's the
                     {/* Left Side - Image + Text */}
                     <div className="lg:col-span-2 order-2 lg:order-1 space-y-6 sm:space-y-8 lg:space-y-10">
                         {/* IMAGE */}
-                        <div className="relative rounded-2xl overflow-hidden   h-[clamp(300px,_50vw,_480px)] shadow-2xl w-full">
-                            <Image src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=400&fit=crop"
-                                alt="Blog featured" className="w-full h-full object-cover" />
-                            <div className="absolute inset-0 rounded-2xl  pointer-events-none"></div>
+                        <div className="relative rounded-2xl overflow-hidden h-[clamp(300px,_50vw,_480px)] shadow-2xl w-full">
+                            <Image
+                                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=400&fit=crop"
+                                alt="Blog featured"
+                                fill
+                                className="object-cover"
+                            />
+                            <div className="absolute inset-0 rounded-2xl pointer-events-none"></div>
                         </div>
+
 
                         {/* HEADING + DESCRIPTION */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full">
