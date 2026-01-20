@@ -4,7 +4,7 @@ export default function BlogList() {
     {
       id: 1,
       title: "Branding Services",
-      author: "Dasteen",
+      author: "Dasteen 2",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
       content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
@@ -13,7 +13,7 @@ export default function BlogList() {
     {
       id: 2,
       title: "Digital Marketing",
-      author: "Dasteen",
+      author: "Dasteen 3",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
       content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
@@ -22,7 +22,7 @@ export default function BlogList() {
     {
       id: 3,
       title: "Social Media Marketing",
-      author: "Dasteen",
+      author: "Dasteen 4",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
       content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
@@ -31,7 +31,7 @@ export default function BlogList() {
     {
       id: 4,
       title: "Customer Support Marketing",
-      author: "Dasteen",
+      author: "Dasteen 5",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
       content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
@@ -42,18 +42,19 @@ export default function BlogList() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="px-4 sm:px-6 lg:px-20 xl:px-32 pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-12">
-        <div className="flex items-center gap-3 mb-4 sm:mb-6">
+      <header className="px-4 sm:px-6 lg:px-20 xl:px-32 pt-8 sm:pt-4 lg:pt-8 pb-8 sm:pb-8">
+        <div className="flex items-center gap-3 mb-2 sm:mb-2">
           <div className="heading-underline"></div>
           <span className="text-gray-400 text-sm sm:text-base">Blogs</span>
         </div>
+        {/* FIX: Changed specific article title to Generic Title to separate it from the list */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          Why Every Business Needs a Professional Website in 2025
+          Our Latest Articles & News
         </h1>
       </header>
 
       {/* Blog Posts Section */}
-      <main className="px-4 sm:px-6 lg:px-20 xl:px-32 py-8 sm:py-12 lg:py-16">
+      <main className="px-4 sm:px-6 lg:px-20 xl:px-32 py-8 sm:py-12 lg:pt-2 lg:pb-16">
         <div className="space-y-16 sm:space-y-20 lg:space-y-24">
           {blogPosts.map((post) => (
             <article
@@ -65,11 +66,11 @@ export default function BlogList() {
                 <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover transition-transform duration-500"
+                  fill
+                  className="object-cover transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
               </div>
-
 
               {/* Content */}
               <div className="space-y-4 sm:space-y-6">
@@ -79,11 +80,13 @@ export default function BlogList() {
 
                 {/* Author Info */}
                 <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="w-12 h-10 sm:w-20 sm:h-12 overflow-hidden rounded-[50%] flex-shrink-0">
+                  <div className="w-12 h-10 sm:w-20 sm:h-12 overflow-hidden rounded-[50%] flex-shrink-0 relative">
+                    {/* Added 'relative' here so the Image 'fill' works correctly */}
                     <Image
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=120&fit=crop"
                       alt={post.author}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                   </div>
 

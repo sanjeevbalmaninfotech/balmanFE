@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Navbar from '../components/navBar';
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -40,9 +41,8 @@ export default function ContactForm() {
 
     return (
         <>
-            <div className="  min-h-screen   bg-black   text-white   py-[40px] px-[16px]  sm:py-[50px] sm:px-[24px]  md:py-[60px] md:px-[60px]  lg:py-[60px] lg:px-[120px]">
-
-
+            <Navbar />
+            <div className="  min-h-screen mt-14  bg-black   text-white   py-[40px] px-[16px]  sm:py-[50px] sm:px-[24px]  md:py-[60px] md:px-[60px]  lg:py-[60px] lg:px-[120px]">
                 <div className="max-w-7xl mx-auto">
                     {/* Main Container */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
@@ -187,8 +187,8 @@ export default function ContactForm() {
                                 {/* Submit Button */}
                                 <button
                                     onClick={handleSubmit}
-                                    className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-medium px-8 py-3 rounded transition-colors font-['Plus Jakarta Sans'] text-sm md:text-base"
-                                    style={{ border: '1px solid var(--primary-color)' }}
+                                    className="btn-primary touch-manipulation"
+
                                 >
                                     Submit
                                 </button>

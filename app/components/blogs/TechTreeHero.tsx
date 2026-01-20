@@ -1,9 +1,9 @@
 import Image from "next/image";
-
+// Not using this component  now can remove this created new component  in common folder
 export default function TechTreeHero() {
   return (
     <section className="relative w-full bg-black overflow-hidden">
-      AAAA
+
       <div className="relative w-full" style={{ aspectRatio: '1680/541' }}>
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/40 via-black to-black"></div>
@@ -12,7 +12,9 @@ export default function TechTreeHero() {
         <Image
           src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1680&h=541&fit=crop&q=80"
           alt="Technology Circuit Tree"
-          className="w-full h-full object-cover object-center opacity-90"
+          width={1680}
+          height={541}
+          className="object-cover object-center opacity-90"
         />
 
         {/* Glow effect overlay */}

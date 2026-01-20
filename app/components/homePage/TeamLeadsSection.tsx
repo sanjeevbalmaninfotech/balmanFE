@@ -24,19 +24,7 @@ export default function TeamLeadsSection() {
     return (
         <div className="min-h-screen bg-black text-white" style={{ paddingTop: '60px', paddingBottom: '60px', paddingLeft: '120px', paddingRight: '120px' }}>
             <div className="max-w-7xl mx-auto">
-                {/* Heading */}
-                {/* <h1
-                    className="font-['Plus Jakarta Sans'] font-bold text-center mb-16"
-                    style={{
-                        color: '#E8E8EA',
-                        fontSize: '36px',
-                        fontWeight: 700,
-                        lineHeight: '100%',
-                        textTransform: 'capitalize'
-                    }}
-                >
-                    Meet Our Leads
-                </h1> */}
+
 
                 <div className="flex flex-col items-center justify-center mb-12 md:mb-16">
 

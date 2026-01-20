@@ -13,7 +13,7 @@ export default function NotFound() {
                 </p>
                 <Link
                     href="/"
-                    className="btn-primary inline-flex items-center justify-center no-underline"
+                    className="btn-primary touch-manipulation"
                 >
                     Go Home
                 </Link>
