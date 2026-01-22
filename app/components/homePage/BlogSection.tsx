@@ -48,12 +48,21 @@ export default function BlogSection() {
             Stay Informed. Stay Inspired.
           </h2>
           <div className="heading-underline mx-auto mb-12"></div>
-          <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-sm hover:text-gray-300 transition-colors flex items-center gap-2">
+          <button
+            className="
+    mt-4 mx-auto
+    flex items-center gap-2
+    text-white text-sm hover:text-gray-300 transition-colors
+
+    md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2
+  "
+          >
             See More
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
+
         </div>
 
         {/* Blog Cards Grid */}
