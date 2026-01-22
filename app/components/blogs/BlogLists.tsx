@@ -42,7 +42,7 @@ export default function BlogList() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="px-4 sm:px-6 lg:px-20 xl:px-32 pt-8 sm:pt-4 lg:pt-8 pb-8 sm:pb-8">
+      <header className="section-padding-x pt-8 sm:pt-4 lg:pt-8 pb-8 sm:pb-8">
         <div className="flex items-center gap-3 mb-2 sm:mb-2">
           <div className="heading-underline"></div>
           <span className="text-gray-400 text-sm sm:text-base">Blogs</span>
@@ -54,7 +54,7 @@ export default function BlogList() {
       </header>
 
       {/* Blog Posts Section */}
-      <main className="px-4 sm:px-6 lg:px-20 xl:px-32 py-8 sm:py-12 lg:pt-2 lg:pb-16">
+      <main className="section-padding-x py-8 sm:py-12 lg:pt-2 lg:pb-16">
         <div className="space-y-16 sm:space-y-20 lg:space-y-24">
           {blogPosts.map((post) => (
             <article

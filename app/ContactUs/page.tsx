@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Navbar from '../components/navBar';
+import Footer from '../components/footer/Footer';
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -42,8 +43,8 @@ export default function ContactForm() {
     return (
         <>
             <Navbar />
-            <div className="  min-h-screen mt-14  bg-black   text-white   py-[40px] px-[16px]  sm:py-[50px] sm:px-[24px]  md:py-[60px] md:px-[60px]  lg:py-[60px] lg:px-[120px]">
-                <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col  mt-14 bg-black text-white section-padding-x section-padding-y">
+                <div className="max-w-8xl mx-auto w-full flex-grow">
                     {/* Main Container */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
                         {/* Left Side - Heading */}
@@ -197,6 +198,7 @@ export default function ContactForm() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
 
     );

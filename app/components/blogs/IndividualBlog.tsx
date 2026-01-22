@@ -41,7 +41,7 @@ export default function IndividualBlog() {
                 <div className="min-h-screen bg-black text-white font-['Plus_Jakarta_Sans']">
 
 
-                    <header className="px-4 sm:px-6 md:px-12 lg:px-[120px] pt-4 sm:pt-8 lg:pt-6 pb-4 sm:pb-8 lg:pb-6">
+                    <header className="section-padding-x pt-4 sm:pt-8 lg:pt-6 pb-4 sm:pb-8 lg:pb-6">
                         <div className="flex items-center gap-3 mb-2 sm:mb-3">
                             <div className="h-[1px] w-6 bg-primary"></div>
                             <span className="text-gray-400 text-sm sm:text-base">Blogs</span>
@@ -65,7 +65,7 @@ export default function IndividualBlog() {
 
                     {/* ================= BLOG CONTENT ================= */}
                     <main className="w-full py-8 sm:py-4 lg:py-10">
-                        <div className="px-4 sm:px-6 md:px-12 lg:px-[120px]">
+                        <div className="section-padding-x">
 
                             {/* Author Bar */}
                             {/* Author Bar */}
@@ -149,7 +149,7 @@ export default function IndividualBlog() {
                     </main>
 
                     {/* ================= ALL CATEGORY SECTION ================= */}
-                    <div className=" bg-black text-white py-2 px-4 sm:px-8 md:px-16 lg:px-2 xl:px-[120px]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                    <div className=" bg-black text-white py-2 section-padding-x" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 
                         <div className="mx-auto">

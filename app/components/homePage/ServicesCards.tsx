@@ -94,7 +94,7 @@ export default function ServicesCards() {
     };
 
     return (
-        <section className="min-h-screen bg-black py-10 px-5 md:px-10 xl:px-[120px]">
+        <section className="min-h-screen bg-black py-10 section-padding-x">
             <div className="w-full max-w-[1800px] mx-auto">
 
                 {/* HEADER */}

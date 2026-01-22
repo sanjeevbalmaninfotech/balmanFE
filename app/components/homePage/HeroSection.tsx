@@ -38,10 +38,10 @@ export default function HeroSection() {
                 ></div>
 
 
-                <div className="relative w-full mx-auto min-h-screen md:min-h-[700px] lg:h-[860px] px-4 sm:px-8 lg:px-0">
+                <div className="relative w-full mx-auto min-h-screen md:min-h-[700px] lg:h-[860px] section-padding-x">
                     {/* Left Content Container */}
                     <div
-                        className="absolute left-4 sm:left-8 lg:left-[100px] top-[120px] sm:top-[180px] md:top-[240px] lg:top-[304px] max-w-[683px] z-10"
+                        className="absolute section-padding-x left-0 top-[120px] sm:top-[180px] md:top-[240px] lg:top-[304px] max-w-[683px] z-10"
                         style={{ gap: '45px' }}
                     >
                         {/* Heading */}

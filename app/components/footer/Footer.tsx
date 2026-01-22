@@ -33,7 +33,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-white pb-8">
+    <footer className="bg-black text-white pt-8 pb-8">
       <div className=" relative w-full mx-auto section-padding-x">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">

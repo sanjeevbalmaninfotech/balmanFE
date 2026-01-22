@@ -41,7 +41,7 @@ export default function Navbar() {
                     />
 
                     <div className="bg-black rounded-lg">
-                        <div className="flex items-center justify-between h-[76px] gap-6 px-4 sm:px-8 lg:px-[100px]">
+                        <div className="flex items-center justify-between h-[76px] gap-6 section-padding-x">
 
                             {/* Logo */}
                             <div className="flex-shrink-0">
@@ -108,7 +108,7 @@ export default function Navbar() {
                         {/* Mobile Menu */}
                         {isMenuOpen && (
                             <div className="lg:hidden pb-4 border-t border-gray-800">
-                                <div className="flex flex-col gap-1 pt-4 px-4 sm:px-8">
+                                <div className="flex flex-col gap-1 pt-4 section-padding-x">
                                     {navItems.map((item) => {
                                         const isActive = pathname === item.href;
                                         return (

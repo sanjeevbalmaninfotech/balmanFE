@@ -22,7 +22,7 @@ export default function TeamLeadsSection() {
     ];
 
     return (
-        <div className="min-h-screen bg-black text-white" style={{ paddingTop: '60px', paddingBottom: '60px', paddingLeft: '120px', paddingRight: '120px' }}>
+        <div className="min-h-screen bg-black text-white section-padding-x section-padding-y">
             <div className="max-w-7xl mx-auto">
 
 
@@ -113,19 +113,7 @@ export default function TeamLeadsSection() {
                     ))}
                 </div>
 
-                {/* See All Reviews Link */}
-                <div className="flex justify-center">
-                    <a
-                        href="#"
-                        className="font-['Plus Jakarta Sans'] text-base flex items-center gap-2 hover:gap-3 transition-all duration-300"
-                        style={{ color: '#E8E8EA', fontWeight: 500 }}
-                    >
-                        See all reviews by our customers
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                    </a>
-                </div>
+
             </div>
         </div>
     );

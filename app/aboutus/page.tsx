@@ -2,6 +2,7 @@ import React from 'react';
 import { TrendingUp } from 'lucide-react';
 import Image from "next/image";
 import Navbar from '../components/navBar';
+import Footer from '../components/footer/Footer';
 export default function AboutExperienceSection() {
   const avatars = [
     'https://i.pravatar.cc/150?img=1',
@@ -119,6 +120,7 @@ export default function AboutExperienceSection() {
         </div>
       </section>
 
+      <Footer />
     </>
   );
 }
