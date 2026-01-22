@@ -20,10 +20,11 @@ export default function Footer() {
   ];
 
   const quickLinks = [
-    'Contact Us',
-    'Careers',
-    'Blogs',
-    'Privacy Policy'
+    { label: 'Contact Us', href: '/contact' },
+    { label: 'Careers', href: '/careers' },
+    { label: 'Blogs', href: '/blogs' },
+    { label: 'Privacy Policy', href: '/PrivacyPolicy' },
+    { label: 'Terms and Conditions', href: '/TermsAndConditions' }
   ];
 
   const contactLinks = [
@@ -73,32 +74,15 @@ export default function Footer() {
             {/* Contact */}
             <div className="mb-6">
               <h3 className="font-semibold mb-2">Contact:</h3>
-              <a href="tel:1800123456" className="text-gray-400 hover:text-white text-sm block mb-1">
-                981236919
+              <a href="tel:+919814097251" className="text-gray-400 hover:text-white text-sm block mb-1">
+                +9198140 97251
               </a>
-              <a href="mailto:info@relume.io" className="text-gray-400 hover:text-white text-sm block">
-                info@balmaninfotech.net
+              <a href="mailto:contact@balmaninfotech.net" className="text-gray-400 hover:text-white text-sm block">
+                contact@balmaninfotech.net
               </a>
             </div>
 
-            {/* Social Icons */}
-            <div className="flex gap-4">
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-primary transition-colors">
-                <Youtube size={20} />
-              </a>
-            </div>
+
           </div>
 
           {/* Link Columns - Middle */}
@@ -123,17 +107,23 @@ export default function Footer() {
           {/* Quick Links and Contact - Right Side */}
           <div className="lg:col-span-3">
             <div className="grid grid-cols-2 gap-8">
-              {/* Quick Links */}
+
               <div>
                 <h3 className="font-semibold mb-4">Quick Links</h3>
                 <ul className="space-y-3">
-                  {quickLinks.map((link, idx) => (
-                    <li key={idx}>
-                      <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                        {link}
-                      </a>
-                    </li>
-                  ))}
+                  <ul className="space-y-3">
+                    {quickLinks.map((link, idx) => (
+                      <li key={idx}>
+                        <a
+                          href={link.href}
+                          className="text-gray-400 hover:text-white text-sm transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+
                 </ul>
               </div>
 
@@ -178,10 +168,10 @@ export default function Footer() {
             © 2024 Relume. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <a href="/PrivacyPolicy" className="text-gray-400 hover:text-white text-sm transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <a href="/TermsAndConditions" className="text-gray-400 hover:text-white text-sm transition-colors">
               Terms of Service
             </a>
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
