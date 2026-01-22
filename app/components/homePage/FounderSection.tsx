@@ -44,7 +44,7 @@ const FounderSection = () => {
                     backgroundClip: "text",
                   }}
                 >
-                  Meet The Mind That Turned A<br />
+                  Meet The Mind That Turned A<br className="hidden md:block" />
                   Vision Into Reality
                 </h2>
 
