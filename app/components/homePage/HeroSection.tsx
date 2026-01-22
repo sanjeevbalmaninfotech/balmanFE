@@ -28,9 +28,18 @@ export default function HeroSection() {
     return (
         <>
             <section className="relative w-full min-h-screen md:min-h-[700px] lg:min-h-[860px] bg-black overflow-hidden">
-                {/* Background Image */}
+                {/* Background Image - Mobile */}
                 <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+                    style={{
+                        backgroundImage: 'url(/heroImgs/orangetree.jpg)',
+                        filter: 'brightness(1.3)'
+                    }}
+                ></div>
+
+                {/* Background Image - MD and above */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
                     style={{
                         backgroundImage: 'url(/heroImgs/heroOrangeTreelarge.jpg)',
                         filter: 'brightness(1.3)'
@@ -41,17 +50,14 @@ export default function HeroSection() {
                 <div className="relative w-full mx-auto min-h-screen md:min-h-[700px] lg:h-[860px] section-padding-x">
                     {/* Left Content Container */}
                     <div
-                        className="absolute section-padding-x left-0 top-[120px] sm:top-[180px] md:top-[240px] lg:top-[304px] max-w-[683px] z-10"
+                        className="absolute section-padding-x left-0 top-[80px] sm:top-[180px] md:top-[240px] lg:top-[304px] max-w-[683px] z-10"
                         style={{ gap: '45px' }}
                     >
                         {/* Heading */}
                         <h1
-                            className="mb-[20px] sm:mb-[25px] md:mb-[30px]"
+                            className="mb-[15px] sm:mb-[25px] md:mb-[30px] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-light leading-[120%] sm:leading-[115%] md:leading-[110%]"
                             style={{
                                 fontFamily: 'Montserrat, sans-serif',
-                                fontSize: 'clamp(32px, 8vw, 60px)',
-                                fontWeight: '300',
-                                lineHeight: '110%',
                                 letterSpacing: '0%',
                                 background: 'linear-gradient(89.84deg, #FEFEFE 0.23%, #FF5900 90.05%)',
                                 WebkitBackgroundClip: 'text',
@@ -59,7 +65,7 @@ export default function HeroSection() {
                                 backgroundClip: 'text'
                             }}
                         >
-                            Your Growth <span style={{ fontWeight: '700' }}>Partner</span>
+                            Your Growth <span className="font-bold">Partner</span>
                         </h1>
                         {/* Description */}
                         <p className="body-text mb-[25px] sm:mb-[35px] md:mb-[45px] max-w-[550px]">

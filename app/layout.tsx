@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Balman Infotect – Your Growth Partner",
-  description: "Balman Infotect – Your Growth Partner",
+  title: "Balman Infotect - Your Growth Partner",
+  description: "Balman Infotect - Your Growth Partner",
   icons: {
     icon: "/headerIcon.png",
     //"C:\repos\balmanFE\public\headerIcon.png"
