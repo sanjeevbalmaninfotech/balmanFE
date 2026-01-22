@@ -47,7 +47,7 @@ export default function Navbar() {
                             <div className="flex-shrink-0">
                                 <Link href="/" className="flex-shrink-0 cursor-pointer">
                                     <Image
-                                        src="/headerIcon.png"
+                                        src="/logo.png"
                                         alt="Logo"
                                         width={160}
                                         height={64}
