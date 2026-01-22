@@ -16,7 +16,7 @@ export default function NewsletterSection() {
 
   return (
     <section className="relative w-full bg-black py-16">
-      <div className="max-w-7xl mx-auto section-padding-x w-full">
+      <div className=" mx-auto  w-full">
         <div className="relative w-full min-h-[260px] sm:min-h-[280px] md:min-h-[340px] rounded-[20px] border border-white/10 overflow-hidden flex items-center justify-center">
 
           {/* Top Right Glow */}
