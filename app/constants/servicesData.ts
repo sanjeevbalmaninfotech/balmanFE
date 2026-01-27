@@ -1,5 +1,15 @@
 // lib/servicesData.ts
 
+export interface AccordionData {
+    heading: string;
+    description: string;
+    accordion: {
+        title: string;
+        content: string;
+        items?: string[];
+    }[];
+}
+
 export interface ServiceData {
     id: string;
     mainHeading: string;
@@ -7,26 +17,40 @@ export interface ServiceData {
     descriptions: string[];
     image: string;
     services: string[];
-    accordion: {
+    accordionData?: AccordionData; // NEW: Added for accordion with heading/description
+    accordion?: {
         title: string;
         content: string;
         items?: string[];
     }[];
     process?: {
+        heading: string;
         step: string;
         title: string;
         description: string;
     }[];
-    industries?: string[];
+    industries?: {
+        heading: string;
+        items: string[];
+    };
     faqs?: {
-        question: string;
-        answer: string;
-    }[];
-    whyChooseUs?: string[];
+        heading: string;
+        items: {
+            question: string;
+            answer: string;
+        }[];
+    };
+    whyChooseUs?: {
+        heading: string;
+        items: string[];
+    };
     whySection?: {
         title: string;
         content: string;
-        items: string[];
+    };
+    ctaButtons?: {
+        text: string;
+        href: string;
     }[];
 }
 
@@ -46,120 +70,139 @@ export const servicesData: Record<string, ServiceData> = {
             "Rebranding",
             "Brand Consistency"
         ],
-        accordion: [
-            {
-                title: "Why Is Branding Important?",
-                content: "Branding is no longer only about colours and logos in today's cutthroat industry. Customers identify, trust, and choose you based on your brand.\nWhat happens if you already have a brand but it isn't working? Growth can be hampered by ambiguity, inadequate differentiation, erratic communication, and a weak emotional bond.\nAt Balman Infotech, we assist companies in creating brands that are not just aesthetically pleasing but also brands that stand out, communicate clearly, and flourish with assurance.",
-                items: [
-                    "Brand discovery & research",
-                    "Market and competitor analysis",
-                    "Brand positioning & differentiation",
-                    "Brand purpose, mission & vision",
-                    "Target audience definition"
-                ],
-            },
-            {
-                title: "Brand Strategy & Positioning",
-                content: "To guarantee clarity and consistency over all touchpoints, we establish the core of your brand.",
-                items: [
-                    "Brand discovery & research",
-                    "Market and competitor analysis",
-                    "Brand positioning & differentiation",
-                    "Brand purpose, mission & vision",
-                    "Target audience definition"
-                ]
-            },
-            {
-                title: "Brand Identity Design",
-                content: "We design graphic identities that capture the essence of your brand.",
-                items: [
-                    "Logo design & visual systems",
-                    "Colour palette & typography",
-                    "Brand style guidelines",
-                    "Iconography & visual elements",
-                    "Brand consistency frameworks"
-                ]
-            },
-            {
-                title: "Brand Messaging and Voice",
-                content: "Your writing is just as important as your appearance. We create messages that connect and foster confidence.",
-                items: [
-                    "Brand tone & voice development",
-                    "Key messaging frameworks",
-                    "Taglines & brand statements",
-                    "Website & communication copy direction",
-                    "Internal brand communication guidelines"
-                ]
-            }
-        ],
+        accordionData: {
+            heading: "Branding Solutions by Balman Infotech",
+            description: "We create quick, responsive, conversion-focused websites that effectively engage users and represent your business. The services that we offer include:",
+            accordion: [
+                {
+                    title: "Brand Strategy & Positioning",
+                    content: "To guarantee clarity and consistency over all touchpoints, we establish the core of your brand.",
+                    items: [
+                        "Brand discovery & research",
+                        "Market and competitor analysis",
+                        "Brand positioning & differentiation",
+                        "Brand purpose, mission & vision",
+                        "Target audience definition"
+                    ]
+                },
+                {
+                    title: "Brand Identity Design",
+                    content: "We design graphic identities that capture the essence of your brand.",
+                    items: [
+                        "Logo design & visual systems",
+                        "Colour palette & typography",
+                        "Brand style guidelines",
+                        "Iconography & visual elements",
+                        "Brand consistency frameworks"
+                    ]
+                },
+                {
+                    title: "Brand Messaging and Voice",
+                    content: "Your writing is just as important as your appearance. We create messages that connect and foster confidence.",
+                    items: [
+                        "Brand tone & voice development",
+                        "Key messaging frameworks",
+                        "Taglines & brand statements",
+                        "Website & communication copy direction",
+                        "Internal brand communication guidelines"
+                    ]
+                }
+            ]
+        },
+        whySection: {
+            title: "Why Is Branding Important?",
+            content: "Branding is no longer only about colours and logos in today's cutthroat industry. Customers identify, trust, and choose you based on your brand. What happens if you already have a brand but it isn't working? Growth can be hampered by ambiguity, inadequate differentiation, erratic communication, and a weak emotional bond. At Balman Infotech, we assist companies in creating brands that are not just aesthetically pleasing but also brands that stand out, communicate clearly, and flourish with assurance."
+        },
+        whyChooseUs: {
+            heading: "Why Choose Balman as Your Branding Partner?",
+            items: [
+                "Data-driven digital marketing strategies",
+                "Transparent reporting and communication",
+                "Customized campaigns for your business goals",
+                "Experience across multiple industries",
+                "AI-powered tools with human expertise",
+                "Focus on ROI and measurable results"
+            ]
+        },
         process: [
             {
+                heading: "Branding Process",
                 step: "01",
                 title: "Understanding and Discovering Brands",
                 description: "We are aware of your company's objectives, target market, and audience."
             },
             {
+                heading: "Branding Process",
                 step: "02",
                 title: "Direction and Brand Strategy",
                 description: "We establish messaging, personality, positioning, and strategic direction."
             },
             {
+                heading: "Branding Process",
                 step: "03",
                 title: "Development of Creativity",
                 description: "We create communications systems and visual identities that complement the plan."
             },
             {
+                heading: "Branding Process",
                 step: "04",
                 title: "Evaluation and Improvement",
                 description: "We preserve brand consistency while refining concepts in response to feedback."
             },
             {
+                heading: "Branding Process",
                 step: "05",
-                title: "Launch and Implementation of the Brand",
+                title: "Launch and Implementation",
                 description: "We provide brand guidelines and assist with platform implementation."
             }
         ],
-        industries: [
-            "E-commerce",
-            "Healthcare",
-            "Real Estate",
-            "Hospitality",
-            "Education",
-            "IT & SaaS",
-            "Startups & SMEs"
-        ],
-        whyChooseUs: [
-            "Data-driven digital marketing strategies",
-            "Transparent reporting and communication",
-            "Customized campaigns for your business goals",
-            "Experience across multiple industries",
-            "AI-powered tools with human expertise",
-            "Focus on ROI and measurable results"
-        ],
-        faqs: [
+        industries: {
+            heading: "Industries We Serve",
+            items: [
+                "E-commerce",
+                "Healthcare",
+                "Real Estate",
+                "Hospitality",
+                "Education",
+                "IT & SaaS",
+                "Startups & SMEs"
+            ]
+        },
+        faqs: {
+            heading: "Frequently Asked Questions",
+            items: [
+                {
+                    question: "What is included in branding services?",
+                    answer: "Branding includes strategy, visual identity, messaging, and guidelines to ensure consistency across platforms."
+                },
+                {
+                    question: "Is branding only for new businesses?",
+                    answer: "No. Branding is equally important for growing and established businesses looking to reposition or scale."
+                },
+                {
+                    question: "How long does a branding project take?",
+                    answer: "Timelines vary, but most branding projects take 4–8 weeks depending on scope."
+                },
+                {
+                    question: "Will branding help business growth?",
+                    answer: "Yes. Strong branding improves recognition, trust, conversions, and long-term loyalty."
+                },
+                {
+                    question: "Is branding a one-time activity?",
+                    answer: "Branding evolves as businesses grow. Periodic refinement ensures relevance and consistency."
+                }
+            ]
+        },
+        ctaButtons: [
             {
-                question: "What is included in branding services?",
-                answer: "Branding includes strategy, visual identity, messaging, and guidelines to ensure consistency across platforms."
+                text: "Request a Free Brand Audit",
+                href: "/contact-us"
             },
             {
-                question: "Is branding only for new businesses?",
-                answer: "No. Branding is equally important for growing and established businesses looking to reposition or scale."
-            },
-            {
-                question: "How long does a branding project take?",
-                answer: "Timelines vary, but most branding projects take 4–8 weeks depending on scope."
-            },
-            {
-                question: "Will branding help business growth?",
-                answer: "Yes. Strong branding improves recognition, trust, conversions, and long-term loyalty."
-            },
-            {
-                question: "Is branding a one-time activity?",
-                answer: "Branding evolves as businesses grow. Periodic refinement ensures relevance and consistency."
+                text: "Schedule a Strategy Call Today",
+                href: "/contact-us"
             }
-        ],
-
-
+        ]
     },
 
     "digital-marketing": {
@@ -198,69 +241,82 @@ export const servicesData: Record<string, ServiceData> = {
         ],
         process: [
             {
+                heading: "Our Digital Marketing Process",
                 step: "01",
                 title: "Business and Market Understanding",
                 description: "We understand your business goals, audience, competitors and the industry landscape."
             },
             {
+                heading: "Our Digital Marketing Process",
                 step: "02",
                 title: "Strategy and Channel Planning",
                 description: "We select the right online channels and create a custom multi-channel marketing roadmap."
             },
             {
+                heading: "Our Digital Marketing Process",
                 step: "03",
                 title: "Campaign Setup and Optimization",
                 description: "We launch and optimize campaigns across SEO, PPC, Social Media and Content platforms."
             },
             {
+                heading: "Our Digital Marketing Process",
                 step: "04",
                 title: "Performance Tracking and Analysis",
                 description: "We monitor traffic, leads, conversions and ROI with advanced analytics tools."
             },
             {
+                heading: "Our Digital Marketing Process",
                 step: "05",
                 title: "Continuous Improvement & Scaling",
                 description: "We refine strategies, scale winning campaigns and adapt to market changes."
             }
         ],
-        industries: [
-            "E-commerce",
-            "Healthcare",
-            "Real Estate",
-            "Hospitality",
-            "Education",
-            "IT and SaaS",
-            "Startups and SMEs"
-        ],
-        faqs: [
-            {
-                question: "How long do digital marketing return takes to show up?",
-                answer: "PPC and Social can show immediate results, while SEO and Content Marketing typically take 3-6 months for meaningful growth."
-            },
-            {
-                question: "Will digital marketing help increase sales?",
-                answer: "Yes, with smart mix of on-brand quality, conversions and retargeting."
-            },
-            {
-                question: "Do you offer local and international digital marketing services?",
-                answer: "Yes, we run both local and international digital marketing campaigns."
-            },
-            {
-                question: "Is digital marketing a one-time activity?",
-                answer: "No, digital marketing requires continuous optimization and adaptation to platform updates and campaigns."
-            }
-        ],
-        whyChooseUs: [
-            "Data-driven digital marketing strategies",
-            "Transparent reporting and communication",
-            "Customized campaigns for your business goals",
-            "Experience across multiple industries",
-            "AI-powered tools with human expertise",
-            "Focus on ROI and measurable results"
-        ]
+        industries: {
+            heading: "Industries We Work With",
+            items: [
+                "E-commerce",
+                "Healthcare",
+                "Real Estate",
+                "Hospitality",
+                "Education",
+                "IT and SaaS",
+                "Startups and SMEs"
+            ]
+        },
+        faqs: {
+            heading: "Digital Marketing FAQs",
+            items: [
+                {
+                    question: "How long do digital marketing return takes to show up?",
+                    answer: "PPC and Social can show immediate results, while SEO and Content Marketing typically take 3-6 months for meaningful growth."
+                },
+                {
+                    question: "Will digital marketing help increase sales?",
+                    answer: "Yes, with smart mix of on-brand quality, conversions and retargeting."
+                },
+                {
+                    question: "Do you offer local and international digital marketing services?",
+                    answer: "Yes, we run both local and international digital marketing campaigns."
+                },
+                {
+                    question: "Is digital marketing a one-time activity?",
+                    answer: "No, digital marketing requires continuous optimization and adaptation to platform updates and campaigns."
+                }
+            ]
+        },
+        whyChooseUs: {
+            heading: "Why Choose Balman for Digital Marketing?",
+            items: [
+                "Data-driven digital marketing strategies",
+                "Transparent reporting and communication",
+                "Customized campaigns for your business goals",
+                "Experience across multiple industries",
+                "AI-powered tools with human expertise",
+                "Focus on ROI and measurable results"
+            ]
+        }
     },
 
-    // Add more services here following the same structure
     "web-development": {
         id: "web-development",
         mainHeading: "Custom Web Development Solutions for Modern Businesses",
@@ -278,21 +334,27 @@ export const servicesData: Record<string, ServiceData> = {
             "Web Maintenance & Support"
         ],
         accordion: [],
-        industries: [
-            "E-commerce",
-            "Healthcare",
-            "Real Estate",
-            "Education",
-            "IT & SaaS",
-            "Finance"
-        ],
-        whyChooseUs: [
-            "Modern technology stack",
-            "Responsive & mobile-first design",
-            "SEO-optimized development",
-            "Ongoing support and maintenance",
-            "Agile development process"
-        ]
+        industries: {
+            heading: "Industries We Serve",
+            items: [
+                "E-commerce",
+                "Healthcare",
+                "Real Estate",
+                "Education",
+                "IT & SaaS",
+                "Finance"
+            ]
+        },
+        whyChooseUs: {
+            heading: "Why Choose Balman for Web Development?",
+            items: [
+                "Modern technology stack",
+                "Responsive & mobile-first design",
+                "SEO-optimized development",
+                "Ongoing support and maintenance",
+                "Agile development process"
+            ]
+        }
     },
 
     "organic-growth": {
@@ -312,20 +374,26 @@ export const servicesData: Record<string, ServiceData> = {
             "Organic Social Media Growth"
         ],
         accordion: [],
-        industries: [
-            "E-commerce",
-            "B2B SaaS",
-            "Healthcare",
-            "Education",
-            "Lifestyle Brands"
-        ],
-        whyChooseUs: [
-            "Sustainable growth strategies",
-            "No dependency on paid ads",
-            "Long-term ROI focus",
-            "Authority building",
-            "Community-driven approach"
-        ]
+        industries: {
+            heading: "Industries We Specialize In",
+            items: [
+                "E-commerce",
+                "B2B SaaS",
+                "Healthcare",
+                "Education",
+                "Lifestyle Brands"
+            ]
+        },
+        whyChooseUs: {
+            heading: "Why Partner With Us for Organic Growth?",
+            items: [
+                "Sustainable growth strategies",
+                "No dependency on paid ads",
+                "Long-term ROI focus",
+                "Authority building",
+                "Community-driven approach"
+            ]
+        }
     },
 
     "customer-support": {
@@ -345,19 +413,25 @@ export const servicesData: Record<string, ServiceData> = {
             "Help Desk Management"
         ],
         accordion: [],
-        industries: [
-            "E-commerce",
-            "SaaS",
-            "Healthcare",
-            "Financial Services",
-            "Telecommunications"
-        ],
-        whyChooseUs: [
-            "24/7 availability",
-            "Multi-channel support",
-            "Trained professionals",
-            "Quick response times",
-            "Scalable solutions"
-        ]
+        industries: {
+            heading: "Industries We Support",
+            items: [
+                "E-commerce",
+                "SaaS",
+                "Healthcare",
+                "Financial Services",
+                "Telecommunications"
+            ]
+        },
+        whyChooseUs: {
+            heading: "Why Choose Our Customer Support Services?",
+            items: [
+                "24/7 availability",
+                "Multi-channel support",
+                "Trained professionals",
+                "Quick response times",
+                "Scalable solutions"
+            ]
+        }
     }
 };

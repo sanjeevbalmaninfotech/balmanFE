@@ -1,41 +1,25 @@
 'use client';
+import { AccordionData } from '@/app/constants/servicesData';
 import { useState } from 'react';
 
-interface Section {
-    title: string;
-    content: string;
-    items?: string[];
-}
-
 interface BrandingAccordionProps {
-    sections: Section[];
+    accordionData: AccordionData; // Changed from AccordionData[] to AccordionData
 }
 
-export default function BrandingAccordion({ sections }: BrandingAccordionProps) {
+export default function BrandingAccordion({ accordionData }: BrandingAccordionProps) {
     const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
     return (
-        <div
-            className="bg-black"
-
-        >
+        <div className="bg-black">
             <div className="">
-                {/* Heading */}
+                {/* Dynamic Heading */}
                 <h2
-                    className="font-['Plus Jakarta Sans'] font-semibold lg:mb-2"
-                    style={{
-                        background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                        fontSize: '28px',
-                        lineHeight: '120%'
-                    }}
+                    className="font-['Plus Jakarta Sans'] font-semibold lg:mb-2 service-heading-h2"
                 >
-                    Branding Solutions by Balman Infotech
+                    {accordionData.heading}
                 </h2>
 
-                {/* Description */}
+                {/* Dynamic Description */}
                 <p
                     className="font-['Plus Jakarta Sans'] lg:mb-3"
                     style={{
@@ -45,16 +29,16 @@ export default function BrandingAccordion({ sections }: BrandingAccordionProps) 
                         lineHeight: '120%'
                     }}
                 >
-                    We create quick, responsive, conversion-focused websites that effectively engage users and represent your business. The services that we offer include:
+                    {accordionData.description}
                 </p>
 
                 {/* Accordion Items */}
                 <div className="space-y-0">
-                    {sections?.slice(1, 5).map((section, idx) => (
+                    {accordionData.accordion.map((section, idx) => (
                         <div key={idx} className="border-b border-gray-800">
                             <button
                                 onClick={() => setOpenAccordion(openAccordion === idx ? null : idx)}
-                                className="w-full pt-6  pb-2 flex items-center justify-between text-left hover:opacity-80 transition-opacity"
+                                className="w-full pt-6 pb-2 flex items-center justify-between text-left hover:opacity-80 transition-opacity"
                             >
                                 <span
                                     className="font-['Plus Jakarta Sans']"
@@ -79,11 +63,11 @@ export default function BrandingAccordion({ sections }: BrandingAccordionProps) 
                             </button>
 
                             <div
-                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === idx ? 'max-h-48 pb-6' : 'max-h-0'
+                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === idx ? 'max-h-96 pb-6' : 'max-h-0'
                                     }`}
                             >
                                 <p
-                                    className="font-['Plus Jakarta Sans']"
+                                    className="font-['Plus Jakarta Sans'] mb-3"
                                     style={{
                                         color: '#E8E8EA',
                                         fontSize: '16px',
@@ -93,6 +77,27 @@ export default function BrandingAccordion({ sections }: BrandingAccordionProps) 
                                 >
                                     {section.content}
                                 </p>
+
+                                {/* Show items only if they exist */}
+                                {section.items && section.items.length > 0 && (
+                                    <ul className="space-y-2 ml-4">
+                                        {section.items.map((item, itemIdx) => (
+                                            <li
+                                                key={itemIdx}
+                                                className="font-['Plus Jakarta Sans'] flex items-start"
+                                                style={{
+                                                    color: '#E8E8EA',
+                                                    fontSize: '14px',
+                                                    fontWeight: 400,
+                                                    lineHeight: '20px'
+                                                }}
+                                            >
+                                                <span className="mr-2">•</span>
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         </div>
                     ))}
