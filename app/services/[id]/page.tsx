@@ -357,7 +357,7 @@ export default async function ({ params }: PageProps) {
                                                             <h3
                                                                 className="font-['Plus Jakarta Sans'] font-semibold"
                                                                 style={{
-                                                                    background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                                    background: '#E8E8EA',
                                                                     WebkitBackgroundClip: 'text',
                                                                     WebkitTextFillColor: 'transparent',
                                                                     backgroundClip: 'text',
