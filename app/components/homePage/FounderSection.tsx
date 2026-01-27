@@ -34,7 +34,7 @@ const FounderSection = () => {
             <div className="flex flex-col gap-6">
               <div>
                 <h2
-                  className="font-['Plus_Jakarta_Sans'] font-bold leading-[110%] tracking-tight mb-2 text-left"
+                  className="font-bold leading-[110%] tracking-tight mb-2 text-left"
                   style={{
                     fontSize: "clamp(32px, 6vw, 56px)",
                     backgroundImage:

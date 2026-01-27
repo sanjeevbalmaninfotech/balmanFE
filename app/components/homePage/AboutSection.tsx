@@ -9,7 +9,7 @@ export default function AboutSection() {
             <div className="relative lg:w-[30%] lg:pr-8">
               <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start">
                 <h2
-                  className="font-['Plus_Jakarta_Sans'] font-bold leading-[110%] tracking-tight mb-2"
+                  className="font-bold leading-[110%] tracking-tight mb-2"
                   style={{
                     fontSize: "clamp(32px, 6vw, 36px)",
                     backgroundImage:

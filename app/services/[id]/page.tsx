@@ -1,135 +1,408 @@
-'use client'
+// app/services/[id]/page.tsx
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
+import { servicesData } from '@/app/constants/servicesData';
+import BrandingAccordion from '@/app/components/services/BrandingAccordion';
 
-import { useState } from 'react';
-import Image from "next/image";
-export default function BlogSection() {
-    const mainHeading = 'Branding Services';
 
-    const subHeadings = [
-        "Your website is your digital identity-here's why it matters more than ever in today's competitive market."
-    ];
+export function generateStaticParams() {
+    return Object.keys(servicesData).map((id) => ({
+        id: id,
+    }));
+}
+type PageProps = {
+    params: Promise<{ id: string }>;
+};
 
-    const descriptions = [
-        `In 2025, customers rely on online presence before trusting any business. A professional website acts as your brand's digital face and creates the first impression that shapes customer decisions. Whether you're a startup or a growing company, a modern website helps establish credibility and builds trust instantly.
+export default async function ({ params }: PageProps) {
+    const { id } = await params;
+    const service = servicesData[id];
 
-A well-designed website operates 24/7, allowing customers to explore your services anytime and from anywhere. It also becomes the central hub for your marketing activities, helping drive traffic from social media, ads, and SEO efforts. With responsive layouts, faster load times, and user-friendly navigation, a professional site improves engagement and boosts conversions.
-
-Investing in a high-quality website isn't just a trend-it's a necessity for long-term business growth.
-
-Digital marketing has transformed the way businesses connect with customers. Through SEO, Google Ads, content marketing, and social media, companies can instantly reach their target audience with precision and cost-effectiveness. Unlike traditional marketing, every click, lead, and conversion can be tracked.
-
-This data-driven approach helps businesses refine strategies, optimize performance, and increase ROI. Consistent online marketing improves brand visibility, boosts engagement, and creates a steady flow of qualified leads.
-
-For companies aiming for rapid growth, digital marketing isn't optional-it's the backbone of modern business success.`
-    ];
-
-    const BlogsServices = [
-        'Branding',
-        'Digital Marketing',
-        'Web Development',
-        'Social Media Marketing',
-        'Customer Support Services'
-    ];
+    if (!service) {
+        notFound();
+    }
 
     return (
-        <div className="relative min-h-screen bg-black text-white" style={{ paddingTop: 'clamp(30px, 5vw, 60px)', paddingBottom: 'clamp(30px, 5vw, 60px)', paddingLeft: 'clamp(16px, 8vw, 120px)', paddingRight: 'clamp(16px, 8vw, 120px)' }}>
-            {/* Top-Right Orange Blur Background */}
+        <div className="min-h-screen bg-black text-white">
+            {/* Hero Section */}
             <div
-                className="pointer-events-none absolute -top-20 -right-20 w-72 h-72 lg:w-96 lg:h-96  hidden xl:block"
+                className="relative"
                 style={{
-                    background: '#FF5900',
-                    filter: 'blur(80px)',
-                    opacity: 0.65,
-                    zIndex: 0
+                    paddingTop: 'clamp(30px, 5vw, 60px)',
+                    paddingBottom: 'clamp(30px, 5vw, 60px)',
+                    paddingLeft: 'clamp(16px, 8vw, 120px)',
+                    paddingRight: 'clamp(16px, 8vw, 120px)'
                 }}
-            />
-
-            <div className="relative w-full mx-auto z-10">
-                {/* Date */}
-                <div className="flex items-center gap-3 mb-4 sm:mb-6 lg:mb-8">
-                    <div className="w-6 h-[2px] sm:w-8 bg-orange-600"></div>
-                    <span
-                        className="font-medium text-[27.63px] leading-[1] tracking-normal capitalize text-[#8E8E8E] font-['Plus_Jakarta_Sans']">
-                        Service
-                    </span>
-
-                </div>
-                <h1
-                    className="font-['Plus Jakarta Sans'] font-bold mb-8 sm:mb-10 lg:mb-12"
+            >
+                {/* Top-Right Orange Blur Background */}
+                <div
+                    className="pointer-events-none absolute -top-20 -right-20 w-72 h-72 lg:w-96 lg:h-96 hidden xl:block"
                     style={{
-                        color: '#E8E8EA',
-                        fontSize: 'clamp(24px, 6vw, 42px)',
-                        fontWeight: 700,
-                        lineHeight: '110%',
-                        textTransform: 'capitalize',
-                        maxWidth: '100%'
+                        background: '#FF5900',
+                        filter: 'blur(80px)',
+                        opacity: 0.65,
+                        zIndex: 0
                     }}
-                >
-                    {mainHeading}
-                </h1>
+                />
 
-                {/* Main Grid Layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-stretch">
-                    {/* Left Side - Image + Text */}
-                    <div className="lg:col-span-2 order-2 lg:order-1 space-y-6 sm:space-y-8 lg:space-y-10">
-                        {/* IMAGE */}
-                        <div className="relative rounded-2xl overflow-hidden h-[clamp(300px,_50vw,_480px)] shadow-2xl w-full">
-                            <Image
-                                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=400&fit=crop"
-                                alt="Blog featured"
-                                fill
-                                className="object-cover"
-                            />
-                            <div className="absolute inset-0 rounded-2xl pointer-events-none"></div>
-                        </div>
-
-
-                        {/* HEADING + DESCRIPTION */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full">
-                            <div>
-                                <h2 className="font-['Plus Jakarta Sans'] font-medium" style={{
-                                    color: '#E8E8EA',
-                                    fontSize: 'clamp(18px, 5vw, 28px)',
-                                    fontWeight: 500,
-                                    lineHeight: '120%'
-                                }}>
-                                    {subHeadings[0]}
-                                </h2>
-                            </div>
-                            <div className="font-['Plus Jakarta Sans'] space-y-3 sm:space-y-4 lg:space-y-6" style={{
-                                color: '#E8E8EA',
-                                fontSize: 'clamp(13px, 3vw, 16px)',
-                                fontWeight: 400,
-                                lineHeight: '120%',
-                                letterSpacing: '0.12em',
-                            }}>
-                                {descriptions[0].split('\n\n').map((paragraph, idx) => (
-                                    <p key={idx} className="whitespace-pre-line break-words">
-                                        {paragraph}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
+                <div className="relative w-full mx-auto z-10">
+                    <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6 lg:mb-8">
+                        <div className="w-6 h-[2px] sm:w-8 bg-orange-600"></div>
+                        <span className="font-medium text-[27.63px] leading-[1] capitalize text-[#8E8E8E] font-['Plus_Jakarta_Sans']">
+                            Service
+                        </span>
                     </div>
+                    {/* Main Heading */}
+                    <h1
+                        className="font-['Plus Jakarta Sans'] font-semibold mb-8 sm:mb-10 lg:mb-12 text-center"
+                        style={{
+                            background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            backgroundClip: 'text',
+                            fontSize: 'clamp(24px, 6vw, 36px)',
+                            fontWeight: 600,
+                            lineHeight: '110%',
+                            letterSpacing: '0%',
+                            maxWidth: '100%'
+                        }}
+                    >
+                        {service.mainHeading}
+                    </h1>
 
-                    {/* Right Side - Services */}
-                    <div className="lg:col-span-1 order-1 lg:order-2 mb-8 lg:mb-0 w-full">
-                        <div className="border border-gray-700 rounded-xl p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col md:h-auto lg:h-[480px]">
-                            <div className="space-y-1 sm:space-y-2 md:space-y-3 lg:space-y-4 flex-1">
-                                {BlogsServices.map((service, idx) => (
-                                    <button
-                                        key={idx}
-                                        className="w-full text-left py-1 sm:py-1.5 md:py-2.5 lg:py-4 font-['Plus Jakarta Sans']"
-                                        style={{
-                                            color: '#E8E8EA',
-                                            fontSize: 'clamp(12px, 2.5vw, 24px)',
-                                            fontWeight: 500
-                                        }}
-                                    >
-                                        {service}
-                                    </button>
-                                ))}
+                    {/* Main Grid Layout */}
+                    <div className="flex flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-12">
+
+                        {/* Services List - Top on mobile/tablet, Side on desktop */}
+                        <div className="w-full xl:w-[320px] 2xl:w-[360px] flex-shrink-0">
+                            <div className="border border-gray-700 rounded-xl p-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-x-4 gap-y-2">
+                                    {service.services.map((svc, idx) => (
+                                        <button
+                                            key={idx}
+                                            className="w-full text-left py-2 font-['Plus Jakarta Sans'] hover:text-orange-500 transition-colors"
+                                            style={{
+                                                color: '#E8E8EA',
+                                                fontSize: 'clamp(12px, 1.2vw, 16px)',
+                                                fontWeight: 500
+                                            }}
+                                        >
+                                            {svc}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
+                        </div>
+
+
+
+                        {/* Left Side - Image + Content */}
+                        <div className="flex-1 order-2 space-y-6 sm:space-y-8 lg:space-y-10">
+                            {/* IMAGE */}
+                            <div className="relative rounded-2xl overflow-hidden h-[clamp(300px,_50vw,_480px)] shadow-2xl w-full">
+                                <Image
+                                    src={service.image}
+                                    alt={service.mainHeading}
+                                    fill
+                                    className="object-cover"
+                                />
+                                <div className="absolute inset-0 rounded-2xl pointer-events-none"></div>
+                            </div>
+
+                            {/* HEADING + DESCRIPTION */}
+                            <div className=" w-full">
+                                <div>
+                                    <h2 className="font-['Plus Jakarta Sans'] font-semibold" style={{
+                                        background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                        WebkitBackgroundClip: 'text',
+                                        WebkitTextFillColor: 'transparent',
+                                        backgroundClip: 'text',
+                                        fontSize: 'clamp(20px, 5vw, 28px)',
+                                        fontWeight: 600,
+                                        lineHeight: '150%',
+                                        letterSpacing: '0%'
+                                    }}>
+                                        {service.subHeadings[0]}
+                                    </h2>
+                                </div>
+                                <div className="font-['Plus Jakarta Sans'] space-y-2 sm:space-y-2 lg:space-y-2" style={{
+                                    color: '#E8E8EA',
+                                    fontSize: 'clamp(14px, 3vw, 16px)',
+                                    fontWeight: 400,
+                                    lineHeight: '150%',
+                                    letterSpacing: '0%',
+                                }}>
+                                    {service.descriptions[0].split('\n\n').map((paragraph, idx) => (
+                                        <p key={idx} className="whitespace-pre-line break-words">
+                                            {paragraph}
+                                        </p>
+                                    ))}
+
+                                    {/* Talk to an Expert Button */}
+                                    <button className="btn-primary touch-manipulation">
+                                        Talk to an Expert
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Additional Sections */}
+
+                            <>
+
+                                {/* Why Choose Us Cards Section */}
+                                {service.whyChooseUs && service.whyChooseUs.length > 0 && (
+                                    <div className="space-y-8 sm:space-y-10 lg:space-y-12">
+                                        <h2
+                                            className="font-['Plus Jakarta Sans'] font-semibold text-left"
+                                            style={{
+                                                background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                WebkitBackgroundClip: 'text',
+                                                WebkitTextFillColor: 'transparent',
+                                                backgroundClip: 'text',
+                                                fontSize: 'clamp(10px, 6vw, 36px)',
+                                                fontWeight: 600,
+                                                lineHeight: '110%',
+                                                letterSpacing: '0%'
+                                            }}
+                                        >
+                                            Why Choose Balman as Your Web Development Partner?
+                                        </h2>
+
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                            {service?.whyChooseUs?.map((reason, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className="relative border-2 border-orange-600 rounded-2xl p-8 text-center mb-6"
+                                                    style={{ background: 'black' }}
+                                                >
+                                                    <p
+                                                        className="font-['Plus Jakarta Sans'] mb-6"
+                                                        style={{
+                                                            color: '#FFFFFF',
+                                                            fontSize: 'clamp(10px, 3vw, 10px)',
+                                                            fontWeight: 400,
+                                                            lineHeight: '150%'
+                                                        }}
+                                                    >
+                                                        {reason}
+                                                    </p>
+                                                    <div
+                                                        className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-orange-600 rounded-xl px-6 py-3 font-['Plus Jakarta Sans'] font-bold"
+                                                        style={{
+                                                            fontSize: '12px',
+                                                            color: '#FFFFFF'
+                                                        }}
+                                                    >
+                                                        {String(idx + 1).padStart(2, '0')}
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Branding Solutions Dropdown Section */}
+                                {service.accordion && service.accordion.length > 0 && (
+                                    <BrandingAccordion sections={service.accordion} />
+                                )}
+
+
+                                {/* Process Section */}
+                                {service?.process && service?.process?.length > 0 && (
+                                    <div className="bg-black py-12 lg:py-20">
+                                        <div className="mx-auto">
+                                            <h2
+                                                className="font-['Plus Jakarta Sans'] font-bold mb-12 text-left"
+                                                style={{
+                                                    background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                    WebkitBackgroundClip: 'text',
+                                                    WebkitTextFillColor: 'transparent',
+                                                    backgroundClip: 'text',
+                                                    fontSize: 'clamp(28px, 5vw, 42px)',
+                                                    lineHeight: '120%'
+                                                }}
+                                            >
+                                                Branding Process
+                                            </h2>
+
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16">
+                                                {service.process.map((step, idx) => (
+                                                    <div key={idx} className="relative">
+                                                        <div className="flex flex-col items-start text-left space-y-4">
+
+                                                            {/* Circle and Line Container */}
+                                                            <div className="relative flex items-center w-full">
+                                                                <div
+                                                                    className="w-16 h-16 rounded-full border-2 border-orange-500 flex items-center justify-center font-['Plus Jakarta Sans'] font-bold relative z-10 bg-black"
+                                                                    style={{
+                                                                        fontSize: '24px',
+                                                                        color: '#FF5900',
+                                                                        flexShrink: 0
+                                                                    }}
+                                                                >
+                                                                    {step.step}
+                                                                </div>
+
+                                                                {/* Connecting Line */}
+                                                                {idx < (service.process?.length ?? 0) - 1 && (
+                                                                    <div
+                                                                        className="hidden lg:block absolute left-8 top-1/2 h-[2px] bg-[#E8E8EA]"
+                                                                        style={{
+                                                                            width: 'calc(100% + 64px)',
+                                                                            zIndex: 0,
+                                                                            transform: 'translateY(-50%)'
+                                                                        }}
+                                                                    ></div>
+                                                                )}
+                                                            </div>
+
+                                                            {/* Text Content */}
+                                                            <div className="pt-2">
+                                                                <h3
+                                                                    className="font-['Plus Jakarta Sans'] font-semibold"
+                                                                    style={{
+                                                                        background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                                        WebkitBackgroundClip: 'text',
+                                                                        WebkitTextFillColor: 'transparent',
+                                                                        backgroundClip: 'text',
+                                                                        fontSize: 'clamp(16px, 3vw, 20px)',
+                                                                        lineHeight: '130%'
+                                                                    }}
+                                                                >
+                                                                    {step.title}
+                                                                </h3>
+                                                                <p
+                                                                    className="font-['Plus Jakarta Sans'] mt-2"
+                                                                    style={{
+                                                                        color: '#B8B8B8',
+                                                                        fontSize: 'clamp(13px, 2.5vw, 15px)',
+                                                                        lineHeight: '150%'
+                                                                    }}
+                                                                >
+                                                                    {step.description}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Industries Section */}
+                                {service?.industries && service?.industries?.length > 0 && (
+                                    <div className=" ">
+                                        <div className="mx-auto">
+                                            <h2
+                                                className="font-['Plus Jakarta Sans'] font-semibold mb-8"
+                                                style={{
+                                                    background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                    WebkitBackgroundClip: 'text',
+                                                    WebkitTextFillColor: 'transparent',
+                                                    backgroundClip: 'text',
+                                                    fontSize: 'clamp(24px, 6vw, 36px)',
+                                                    fontWeight: 600,
+                                                    lineHeight: '110%',
+                                                    letterSpacing: '0%'
+                                                }}
+                                            >
+                                                Industries We Serve
+                                            </h2>
+
+                                            <ul className="list-disc list-inside space-y-4">
+                                                {service.industries.map((industry, idx) => (
+                                                    <li
+                                                        key={idx}
+                                                        className="font-['Plus Jakarta Sans']"
+                                                        style={{
+                                                            color: '#E8E8EA',
+                                                            fontSize: 'clamp(14px, 2.5vw, 16px)',
+                                                            fontWeight: 400,
+                                                            lineHeight: '150%'
+                                                        }}
+                                                    >
+                                                        {industry}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* FAQs Section */}
+                                {service?.faqs && service?.faqs?.length > 0 && (
+                                    <div className="bg-black py-12 lg:py-20">
+                                        <div className="mx-auto">
+                                            <h2
+                                                className="font-['Plus Jakarta Sans'] font-semibold mb-12 text-left"
+                                                style={{
+                                                    background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                    WebkitBackgroundClip: 'text',
+                                                    WebkitTextFillColor: 'transparent',
+                                                    backgroundClip: 'text',
+                                                    fontSize: 'clamp(24px, 6vw, 36px)',
+                                                    fontWeight: 600,
+                                                    lineHeight: '110%',
+                                                    letterSpacing: '0%'
+                                                }}
+                                            >
+                                                Frequently Asked Questions
+                                            </h2>
+
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                                                {service.faqs.map((faq, idx) => (
+                                                    <div key={idx} className="space-y-3">
+                                                        <h3
+                                                            className="font-['Plus Jakarta Sans'] font-semibold"
+                                                            style={{
+                                                                background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                                WebkitBackgroundClip: 'text',
+                                                                WebkitTextFillColor: 'transparent',
+                                                                backgroundClip: 'text',
+                                                                fontSize: 'clamp(16px, 3vw, 20px)',
+                                                                fontWeight: 600,
+                                                                lineHeight: '140%'
+                                                            }}
+                                                        >
+                                                            {faq.question}
+                                                        </h3>
+                                                        <p
+                                                            className="font-['Plus Jakarta Sans']"
+                                                            style={{
+                                                                color: '#B8B8B8',
+                                                                fontSize: 'clamp(14px, 2.5vw, 16px)',
+                                                                fontWeight: 400,
+                                                                lineHeight: '160%'
+                                                            }}
+                                                        >
+                                                            {faq.answer}
+                                                        </p>
+                                                    </div>
+                                                ))}
+                                            </div>
+
+                                            {/* CTA Buttons */}
+                                            <div className="flex flex-col sm:flex-row gap-4 justify-right mt-12">
+                                                <button
+                                                    className="btn-primary touch-manipulation"
+
+                                                >
+                                                    Request a Free Brand Audit
+                                                </button>
+                                                <button className="btn-primary touch-manipulation">
+                                                    Schedule a Strategy Call Today
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
+
+                            </>
+
+
                         </div>
                     </div>
                 </div>

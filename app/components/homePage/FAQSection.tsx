@@ -25,7 +25,7 @@ export default function FAQSection() {
       <div className="relative w-full mx-auto section-padding-x">
 
         <h2
-          className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
+          className="font-bold text-center leading-[110%] tracking-tight"
           style={{
             fontSize: "clamp(24px, 5vw, 36px)",
             backgroundImage:

@@ -53,7 +53,7 @@ export default function ContactForm() {
                                 <div className="w-12 h-px bg-primary"></div>
                                 <span className="text-xs md:text-sm text-gray-400 tracking-wider">Contact Us</span>
                             </div>
-                            <h1 className="font-['Plus Jakarta Sans'] font-bold text-3xl md:text-4xl lg:text-5xl leading-tight" style={{ color: '#E8E8EA', fontWeight: 700, lineHeight: '100%', textTransform: 'capitalize' }}>
+                            <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl leading-tight" style={{ color: '#E8E8EA', fontWeight: 700, lineHeight: '100%', textTransform: 'capitalize' }}>
                                 Our friendly team would love to hear from you
                             </h1>
                         </div>
@@ -64,25 +64,25 @@ export default function ContactForm() {
                                 {/* Name Fields */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block font-['Plus Jakarta Sans'] font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
+                                        <label className="block font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
                                             First name
                                         </label>
                                         <input
                                             type="text"
                                             value={formData.firstName}
                                             onChange={(e) => handleChange('firstName', e.target.value)}
-                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base"
                                         />
                                     </div>
                                     <div>
-                                        <label className="block font-['Plus Jakarta Sans'] font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
+                                        <label className="block font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
                                             Last name
                                         </label>
                                         <input
                                             type="text"
                                             value={formData.lastName}
                                             onChange={(e) => handleChange('lastName', e.target.value)}
-                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base"
                                         />
                                     </div>
                                 </div>
@@ -90,39 +90,39 @@ export default function ContactForm() {
                                 {/* Email and Phone */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block font-['Plus Jakarta Sans'] font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
+                                        <label className="block font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
                                             Email
                                         </label>
                                         <input
                                             type="email"
                                             value={formData.email}
                                             onChange={(e) => handleChange('email', e.target.value)}
-                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base"
                                         />
                                     </div>
                                     <div>
-                                        <label className="block font-['Plus Jakarta Sans'] font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
+                                        <label className="block font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
                                             Phone number
                                         </label>
                                         <input
                                             type="tel"
                                             value={formData.phone}
                                             onChange={(e) => handleChange('phone', e.target.value)}
-                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base"
                                         />
                                     </div>
                                 </div>
 
                                 {/* Service Select */}
                                 <div>
-                                    <label className="block font-['Plus Jakarta Sans'] font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
+                                    <label className="block font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
                                         Service Select
                                     </label>
                                     <div className="relative">
                                         <button
                                             type="button"
                                             onClick={() => setDropdownOpen(!dropdownOpen)}
-                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-left text-gray-400 focus:outline-none focus:border-primary transition-colors flex justify-between items-center font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                            className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-left text-gray-400 focus:outline-none focus:border-primary transition-colors flex justify-between items-center text-sm md:text-base"
                                         >
                                             <span>{formData.service || 'Select Service'}</span>
                                             <svg
@@ -142,7 +142,7 @@ export default function ContactForm() {
                                                         key={index}
                                                         type="button"
                                                         onClick={() => selectService(service)}
-                                                        className="w-full px-4 py-3 text-left text-black hover:bg-gray-100 transition-colors flex justify-between items-center font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                                        className="w-full px-4 py-3 text-left text-black hover:bg-gray-100 transition-colors flex justify-between items-center text-sm md:text-base"
                                                     >
                                                         <span>{service}</span>
                                                         {formData.service === service && (
@@ -159,7 +159,7 @@ export default function ContactForm() {
 
                                 {/* Message */}
                                 <div>
-                                    <label className="block font-['Plus Jakarta Sans'] font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
+                                    <label className="block font-normal text-sm md:text-base text-gray-400 mb-2" style={{ fontSize: '16px', fontWeight: 400, lineHeight: '150%' }}>
                                         Message
                                     </label>
                                     <textarea
@@ -167,7 +167,7 @@ export default function ContactForm() {
                                         onChange={(e) => handleChange('message', e.target.value)}
                                         rows={4}
                                         placeholder="Type your message..."
-                                        className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors resize-none font-['Plus Jakarta Sans'] text-sm md:text-base"
+                                        className="w-full bg-transparent border border-gray-700 rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors resize-none text-sm md:text-base"
                                     ></textarea>
                                 </div>
 
@@ -180,7 +180,7 @@ export default function ContactForm() {
                                         onChange={(e) => handleChange('acceptTerms', e.target.checked)}
                                         className="w-4 h-4 bg-transparent border border-gray-700 rounded accent-primary cursor-pointer"
                                     />
-                                    <label htmlFor="terms" className="text-xs md:text-sm text-gray-400 font-['Plus Jakarta Sans'] cursor-pointer">
+                                    <label htmlFor="terms" className="text-xs md:text-sm text-gray-400 cursor-pointer">
                                         I accept the Terms
                                     </label>
                                 </div>

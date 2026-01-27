@@ -6,21 +6,25 @@ import Image from "next/image";
 export default function Footer() {
   const linkColumns = [
     {
+      heading: 'Services',
       links: ['Link One', 'Link Two', 'Link Three', 'Link Four', 'Link Five']
     },
     {
+      heading: 'Balman Infotech',
       links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
     },
     {
+      heading: 'Legal Information',
       links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
     },
-    {
-      links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
-    }
+    // {
+    //   heading: 'Extra Column', // optional
+    //   links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
+    // }
   ];
 
   const quickLinks = [
-    { label: 'Contact Us', href: '/contact' },
+    // { label: 'Contact Us', href: '/contact' },
     { label: 'Careers', href: '/careers' },
     { label: 'Blogs', href: '/blogs' },
     { label: 'Privacy Policy', href: '/PrivacyPolicy' },
@@ -49,9 +53,9 @@ export default function Footer() {
                       <Image
                         src="/logo.png"
                         alt="Logo"
-                        width={160}   // control size via width/height
-                        height={64}
-                        className="h-16 w-auto"
+                        width={100}   // control size via width/height
+                        height={100}
+                        // className="h-16 w-auto"
                         priority      // loads logo immediately (good for headers)
                       />
                     </Link>
@@ -90,10 +94,19 @@ export default function Footer() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {linkColumns.map((column, idx) => (
                 <div key={idx}>
+                  {/* Heading */}
+                  <h3 className="font-sans font-normal text-[14px] leading-[21px] text-white mb-3">
+                    {column.heading}  {/* You can add a `heading` property to each column */}
+                  </h3>
+
+                  {/* Links */}
                   <ul className="space-y-3">
                     {column.links.map((link, linkIdx) => (
                       <li key={linkIdx}>
-                        <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                        <a
+                          href="#"
+                          className="text-gray-400 hover:text-white text-sm transition-colors"
+                        >
                           {link}
                         </a>
                       </li>
@@ -103,6 +116,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
+
 
           {/* Quick Links and Contact - Right Side */}
           <div className="lg:col-span-3">

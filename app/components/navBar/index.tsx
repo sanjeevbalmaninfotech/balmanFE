@@ -70,7 +70,6 @@ export default function Navbar() {
                                             className={`px-2 py-3 rounded transition-colors duration-200 ${isActive ? 'text-primary' : 'text-white hover:text-primary'
                                                 }`}
                                             style={{
-                                                fontFamily: 'Plus Jakarta Sans, sans-serif',
                                                 fontSize: '16px',
                                                 fontWeight: isActive ? '600' : '400'
                                             }}
@@ -119,7 +118,6 @@ export default function Navbar() {
                                                 className={`px-4 py-3 rounded transition-colors duration-200 ${isActive ? 'text-primary bg-gray-900' : 'text-white hover:text-primary hover:bg-gray-900'
                                                     }`}
                                                 style={{
-                                                    fontFamily: 'Plus Jakarta Sans, sans-serif',
                                                     fontSize: '16px',
                                                     fontWeight: isActive ? '600' : '400'
                                                 }}

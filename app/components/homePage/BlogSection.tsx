@@ -35,7 +35,7 @@ export default function BlogSection() {
         {/* Header */}
         <div className="relative mb-12 text-center">
           <h2
-            className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
+            className="font-bold text-center leading-[110%] tracking-tight"
             style={{
               fontSize: "clamp(24px, 5vw, 36px)",
               backgroundImage:

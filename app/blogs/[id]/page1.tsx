@@ -83,7 +83,7 @@ For companies aiming for rapid growth, digital marketing isn't optional-it's the
 
 
                         {/* HEADING + DESCRIPTION */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 w-full mt-8">
                             <div>
                                 <h2 className="font-['Plus Jakarta Sans'] font-medium" style={{
                                     color: '#E8E8EA',

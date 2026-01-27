@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-primary",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Balman Infotect - Your Growth Partner",
-  description: "Balman Infotect - Your Growth Partner",
+  title: "Balman Infotech - Your Growth Partner",
+  description: "Balman Infotech - Your Growth Partner",
   icons: {
     icon: "/headerIcon.png",
     //"C:\repos\balmanFE\public\headerIcon.png"
@@ -28,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${plusJakartaSans.variable} antialiased`}
       >
         {children}
       </body>
