@@ -159,8 +159,8 @@ export default async function ({ params }: PageProps) {
                                     </div>
                                 )}
 
-                                {servicesData.branding.accordionData && (
-                                    <BrandingAccordion accordionData={servicesData.branding.accordionData} />
+                                {service.accordionData && (
+                                    <BrandingAccordion accordionData={service.accordionData} />
                                 )}
 
                                 {service?.process && service?.process?.length > 0 && (
