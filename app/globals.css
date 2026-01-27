@@ -167,7 +167,7 @@ body {
   color: white;
   font-family: var(--font-button);
   font-size: clamp(15px, 3vw, 17px);
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.3s ease;
   cursor: pointer;
 }

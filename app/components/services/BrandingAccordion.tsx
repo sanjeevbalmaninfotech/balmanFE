@@ -19,17 +19,17 @@ export default function BrandingAccordion({ sections }: BrandingAccordionProps) 
             className="bg-black"
 
         >
-            <div className=" mx-auto">
+            <div className="">
                 {/* Heading */}
                 <h2
-                    className="font-['Plus Jakarta Sans'] font-bold mb-6"
+                    className="font-['Plus Jakarta Sans'] font-semibold lg:mb-2"
                     style={{
                         background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         backgroundClip: 'text',
                         fontSize: '28px',
-                        lineHeight: '150%'
+                        lineHeight: '120%'
                     }}
                 >
                     Branding Solutions by Balman Infotech
@@ -37,12 +37,12 @@ export default function BrandingAccordion({ sections }: BrandingAccordionProps) 
 
                 {/* Description */}
                 <p
-                    className="font-['Plus Jakarta Sans'] mb-12"
+                    className="font-['Plus Jakarta Sans'] lg:mb-3"
                     style={{
                         color: '#E8E8EA',
                         fontSize: '16px',
                         fontWeight: 400,
-                        lineHeight: '150%'
+                        lineHeight: '120%'
                     }}
                 >
                     We create quick, responsive, conversion-focused websites that effectively engage users and represent your business. The services that we offer include:
@@ -54,7 +54,7 @@ export default function BrandingAccordion({ sections }: BrandingAccordionProps) 
                         <div key={idx} className="border-b border-gray-800">
                             <button
                                 onClick={() => setOpenAccordion(openAccordion === idx ? null : idx)}
-                                className="w-full py-6 flex items-center justify-between text-left hover:opacity-80 transition-opacity"
+                                className="w-full pt-6  pb-2 flex items-center justify-between text-left hover:opacity-80 transition-opacity"
                             >
                                 <span
                                     className="font-['Plus Jakarta Sans']"

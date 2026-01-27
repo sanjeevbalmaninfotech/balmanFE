@@ -42,7 +42,7 @@ export default async function ({ params }: PageProps) {
 
                     <>
                         {/* Top-Right Orange Blur Background */}
-                        <OrangeBlurEffect />
+                        {/* <OrangeBlurEffect /> */}
                     </>
 
 
@@ -52,7 +52,7 @@ export default async function ({ params }: PageProps) {
 
                         {/* Main Heading */}
                         <h1
-                            className="font-['Plus Jakarta Sans'] font-semibold mb-8 sm:mb-10 lg:mb-12 text-center"
+                            className="font-['Plus Jakarta Sans'] font-semibold mb-4 sm:mb-10 lg:mb-15 text-center"
                             style={{
                                 background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
                                 WebkitBackgroundClip: 'text',
@@ -81,10 +81,10 @@ export default async function ({ params }: PageProps) {
                                             {service.services.map((svc, idx) => (
                                                 <button
                                                     key={idx}
-                                                    className="w-full text-left py-2 font-['Plus Jakarta Sans'] hover:text-orange-500 transition-colors"
+                                                    className="w-full text-left py-2 font-['Plus Jakarta Sans'] "
                                                     style={{
                                                         color: '#E8E8EA',
-                                                        fontSize: 'clamp(12px, 1.2vw, 16px)',
+                                                        fontSize: 'clamp(12px, 1.2vw, 24px)',
                                                         fontWeight: 500
                                                     }}
                                                 >
@@ -106,7 +106,7 @@ export default async function ({ params }: PageProps) {
 
                                 <>
 
-                                    <div className="relative rounded-2xl overflow-hidden h-[clamp(300px,_50vw,_480px)] shadow-2xl w-full">
+                                    <div className="relative rounded-2xl overflow-hidden h-[clamp(300px,_50vw,_480px)]   lg:mb-15 w-full">
                                         <Image
                                             src={service.image}
                                             alt={service.mainHeading}
@@ -120,8 +120,8 @@ export default async function ({ params }: PageProps) {
 
                                 {/* HEADING + DESCRIPTION */}
                                 <>
-                                    <div className=" w-full">
-                                        <div>
+                                    <div className=" w-full ">
+                                        <div className="lg:mb-3">
                                             <h2 className="font-['Plus Jakarta Sans'] font-semibold" style={{
                                                 background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
                                                 WebkitBackgroundClip: 'text',
@@ -135,24 +135,25 @@ export default async function ({ params }: PageProps) {
                                                 {service.subHeadings[0]}
                                             </h2>
                                         </div>
-                                        <div className="font-['Plus Jakarta Sans'] " style={{
+                                        <div className="font-['Plus Jakarta Sans']  " style={{
                                             color: '#E8E8EA',
                                             fontSize: 'clamp(14px, 3vw, 16px)',
                                             fontWeight: 400,
-                                            lineHeight: '150%',
+                                            lineHeight: '120%',
                                             letterSpacing: '0%',
                                         }}>
                                             {service.descriptions[0].split('\n\n').map((paragraph, idx) => (
-                                                <p key={idx} className="whitespace-pre-line break-words">
+                                                <p key={idx} className="whitespace-pre-line break-words ">
                                                     {paragraph}
                                                 </p>
                                             ))}
 
                                             {/* Talk to an Expert Button */}
-                                            <PrimaryButton 
-                                                text="Talk to an Expert" 
-                                                href="/contact-us" 
-                                            />
+                                            <div className="lg:mt-3"> <PrimaryButton
+                                                text="Talk to an Expert"
+                                                href="/contact-us"
+                                            /></div>
+
                                         </div>
                                     </div>
 
@@ -164,81 +165,88 @@ export default async function ({ params }: PageProps) {
 
                                 <>
                                     <>
-                                        {/* Why Choose Us Cards Section */}
-                                        {service.whyChooseUs && service.whyChooseUs.length > 0 && (
-                                            <div className="">
-                                                <h2
-                                                    className="font-['Plus Jakarta Sans'] font-semibold text-left"
-                                                    style={{
-                                                        background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
-                                                        WebkitBackgroundClip: 'text',
-                                                        WebkitTextFillColor: 'transparent',
-                                                        backgroundClip: 'text',
-                                                        fontSize: 'clamp(10px, 6vw, 36px)',
-                                                        fontWeight: 600,
-                                                        lineHeight: '110%',
-                                                        letterSpacing: '0%'
-                                                    }}
-                                                >
-                                                    Why Choose Balman as Your Web Development Partner?
-                                                </h2>
+                                        <div className="lg:mt-15">
+                                            {/* Why Choose Us Cards Section */}
+                                            {service.whyChooseUs && service.whyChooseUs.length > 0 && (
+                                                <div className="">
+                                                    <h2
+                                                        className="font-['Plus Jakarta Sans'] font-semibold text-left lg:mb-7"
+                                                        style={{
+                                                            background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                            WebkitBackgroundClip: 'text',
+                                                            WebkitTextFillColor: 'transparent',
+                                                            backgroundClip: 'text',
+                                                            fontSize: 'clamp(10px, 6vw, 28px)',
+                                                            fontWeight: 600,
+                                                            lineHeight: '110%',
+                                                            letterSpacing: '0%'
+                                                        }}
+                                                    >
+                                                        Why Choose Balman as Your Web Development Partner?
+                                                    </h2>
 
-                                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                                    {service?.whyChooseUs?.map((reason, idx) => (
-                                                        <div
-                                                            key={idx}
-                                                            className="relative border-2 border-orange-600 rounded-2xl p-8 text-center mb-6"
-                                                            style={{ background: 'black' }}
-                                                        >
-                                                            <p
-                                                                className="font-['Plus Jakarta Sans'] mb-6"
-                                                                style={{
-                                                                    color: '#FFFFFF',
-                                                                    fontSize: 'clamp(10px, 3vw, 10px)',
-                                                                    fontWeight: 400,
-                                                                    lineHeight: '150%'
-                                                                }}
-                                                            >
-                                                                {reason}
-                                                            </p>
+                                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                                        {service?.whyChooseUs?.map((reason, idx) => (
                                                             <div
-                                                                className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-orange-600 rounded-xl px-6 py-3 font-['Plus Jakarta Sans'] font-bold"
-                                                                style={{
-                                                                    fontSize: '12px',
-                                                                    color: '#FFFFFF'
-                                                                }}
+                                                                key={idx}
+                                                                className="relative border-2 border-orange-600 rounded-2xl p-8 text-center mb-6"
+                                                                style={{ background: 'black' }}
                                                             >
-                                                                {String(idx + 1).padStart(2, '0')}
+                                                                <p
+                                                                    className="font-['Plus Jakarta Sans'] mb-6"
+                                                                    style={{
+                                                                        color: '#FFFFFF',
+                                                                        fontSize: 'clamp(10px, 3vw, 20px)',
+                                                                        fontWeight: 400,
+                                                                        lineHeight: '150%'
+                                                                    }}
+                                                                >
+                                                                    {reason}
+                                                                </p>
+                                                                <div
+                                                                    className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-orange-600 rounded-xl px-6 py-3 font-['Plus Jakarta Sans'] font-bold"
+                                                                    style={{
+                                                                        fontSize: '18px',
+                                                                        color: '#FFFFFF'
+                                                                    }}
+                                                                >
+                                                                    {String(idx + 1).padStart(2, '0')}
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    ))}
+                                                        ))}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        )}
+                                            )}
+                                        </div>
+
                                     </>
 
                                     <>
 
 
                                         {/* Branding Solutions Dropdown Section */}
-                                        {service.accordion && service.accordion.length > 0 && (
-                                            <BrandingAccordion sections={service.accordion} />
-                                        )}
+                                        <div className="lg:mt-15">
+                                            {service.accordion && service.accordion.length > 0 && (
+                                                <BrandingAccordion sections={service.accordion} />
+                                            )}
+
+                                        </div>
+
                                     </>
 
                                     <>
                                         {/* Process Section */}
                                         {service?.process && service?.process?.length > 0 && (
-                                            <div className="bg-black ">
+                                            <div className="bg-black lg:mt-15 ">
                                                 <div className="">
                                                     <h2
-                                                        className="font-['Plus Jakarta Sans'] font-bold mb-12 text-left"
+                                                        className="font-['Plus Jakarta Sans'] font-bold lg:mb-7 text-left"
                                                         style={{
                                                             background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
                                                             WebkitBackgroundClip: 'text',
                                                             WebkitTextFillColor: 'transparent',
                                                             backgroundClip: 'text',
-                                                            fontSize: 'clamp(28px, 5vw, 42px)',
+                                                            fontSize: 'clamp(28px, 5vw, 28px)',
                                                             lineHeight: '120%'
                                                         }}
                                                     >
@@ -253,10 +261,10 @@ export default async function ({ params }: PageProps) {
                                                                     {/* Circle and Line Container */}
                                                                     <div className="relative flex items-center w-full">
                                                                         <div
-                                                                            className="w-16 h-16 rounded-full border-2 border-orange-500 flex items-center justify-center font-['Plus Jakarta Sans'] font-bold relative z-10 bg-black"
+                                                                            className="w-16 h-16 rounded-full border-2 border-[#FF5900] flex items-center justify-center font-['Plus Jakarta Sans'] font-bold relative z-10 bg-black"
                                                                             style={{
                                                                                 fontSize: '24px',
-                                                                                color: '#FF5900',
+                                                                                color: '#E8E8EA', //FF5900
                                                                                 flexShrink: 0
                                                                             }}
                                                                         >
@@ -281,12 +289,12 @@ export default async function ({ params }: PageProps) {
                                                                         <h3
                                                                             className="font-['Plus Jakarta Sans'] font-semibold"
                                                                             style={{
-                                                                                background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
+                                                                                background: '#E8E8EA',
                                                                                 WebkitBackgroundClip: 'text',
                                                                                 WebkitTextFillColor: 'transparent',
                                                                                 backgroundClip: 'text',
                                                                                 fontSize: 'clamp(16px, 3vw, 20px)',
-                                                                                lineHeight: '130%'
+                                                                                lineHeight: '120%'
                                                                             }}
                                                                         >
                                                                             {step.title}
@@ -296,7 +304,7 @@ export default async function ({ params }: PageProps) {
                                                                             style={{
                                                                                 color: '#B8B8B8',
                                                                                 fontSize: 'clamp(13px, 2.5vw, 15px)',
-                                                                                lineHeight: '150%'
+                                                                                lineHeight: '120%'
                                                                             }}
                                                                         >
                                                                             {step.description}
@@ -316,16 +324,16 @@ export default async function ({ params }: PageProps) {
 
                                         {/* Industries Section */}
                                         {service?.industries && service?.industries?.length > 0 && (
-                                            <div className=" ">
+                                            <div className=" lg:mt-15 ">
                                                 <div className="mx-auto">
                                                     <h2
-                                                        className="font-['Plus Jakarta Sans'] font-semibold mb-8"
+                                                        className="font-['Plus Jakarta Sans'] font-semibold lg:mb-3"
                                                         style={{
                                                             background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
                                                             WebkitBackgroundClip: 'text',
                                                             WebkitTextFillColor: 'transparent',
                                                             backgroundClip: 'text',
-                                                            fontSize: 'clamp(24px, 6vw, 36px)',
+                                                            fontSize: 'clamp(24px, 6vw, 28px)',
                                                             fontWeight: 600,
                                                             lineHeight: '110%',
                                                             letterSpacing: '0%'
@@ -360,16 +368,16 @@ export default async function ({ params }: PageProps) {
 
                                         {/* FAQs Section */}
                                         {service?.faqs && service?.faqs?.length > 0 && (
-                                            <div className="">
+                                            <div className="lg:mt-15">
                                                 <div className="">
                                                     <h2
-                                                        className="font-['Plus Jakarta Sans'] font-semibold mb-12 text-left"
+                                                        className="font-['Plus Jakarta Sans'] font-semibold lg:mb-3 text-left"
                                                         style={{
                                                             background: 'radial-gradient(circle, #FFFFFF 0%, #656565 100%)',
                                                             WebkitBackgroundClip: 'text',
                                                             WebkitTextFillColor: 'transparent',
                                                             backgroundClip: 'text',
-                                                            fontSize: 'clamp(24px, 6vw, 36px)',
+                                                            fontSize: 'clamp(24px, 6vw, 28px)',
                                                             fontWeight: 600,
                                                             lineHeight: '110%',
                                                             letterSpacing: '0%'
@@ -378,7 +386,7 @@ export default async function ({ params }: PageProps) {
                                                         Frequently Asked Questions
                                                     </h2>
 
-                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3">
                                                         {service.faqs.map((faq, idx) => (
                                                             <div key={idx} className="space-y-2">
                                                                 <h3
@@ -401,7 +409,7 @@ export default async function ({ params }: PageProps) {
                                                                         color: '#B8B8B8',
                                                                         fontSize: 'clamp(14px, 2.5vw, 16px)',
                                                                         fontWeight: 400,
-                                                                        lineHeight: '160%'
+                                                                        lineHeight: '120%'
                                                                     }}
                                                                 >
                                                                     {faq.answer}
@@ -411,14 +419,14 @@ export default async function ({ params }: PageProps) {
                                                     </div>
 
                                                     {/* CTA Buttons */}
-                                                    <div className="flex flex-col sm:flex-row gap-4 justify-right mt-12">
-                                                        <PrimaryButton 
-                                                            text="Request a Free Brand Audit" 
-                                                            href="/contact-us" 
+                                                    <div className="flex flex-col sm:flex-row gap-4 justify-right lg:mt-15">
+                                                        <PrimaryButton
+                                                            text="Request a Free Brand Audit"
+                                                            href="/contact-us"
                                                         />
-                                                        <PrimaryButton 
-                                                            text="Schedule a Strategy Call Today" 
-                                                            href="/contact-us" 
+                                                        <PrimaryButton
+                                                            text="Schedule a Strategy Call Today"
+                                                            href="/contact-us"
                                                         />
                                                     </div>
                                                 </div>

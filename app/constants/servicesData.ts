@@ -23,6 +23,11 @@ export interface ServiceData {
         answer: string;
     }[];
     whyChooseUs?: string[];
+    whySection?: {
+        title: string;
+        content: string;
+        items: string[];
+    }[];
 }
 
 export const servicesData: Record<string, ServiceData> = {
@@ -31,7 +36,7 @@ export const servicesData: Record<string, ServiceData> = {
         mainHeading: "Helping You Build a Strong and Memorable Brand",
         subHeadings: ["Brand Strategy & Identity"],
         descriptions: [
-            "What makes you remember a company? What makes you think of the red colour when you hear Zomato? How do you remember the virtue of being fit when Nike is mentioned? All of this happened due to strong branding done by the company.\n\nRooting your company with fixed values, voice and vision, branding is what decides how the market and the consumer perceives you. Balman Infotech wants to do exactly that.\n\nWe work with both domestic and foreign clients to develop brands that are not simply aesthetically pleasing but also clear, consistent, and built for long-term growth. \n\nOur customised branding solutions are made to fit your company's objectives, audience expectations, and future scalability, regardless of whether you are a start-up, SME, or corporation."
+            "What makes you remember a company? What makes you think of the red colour when you hear Zomato? How do you remember the virtue of being fit when Nike is mentioned? All of this happened due to strong branding done by the company. Rooting your company with fixed values, voice and vision, branding is what decides how the market and the consumer perceives you. Balman Infotech wants to do exactly that.\n\n \n We work with both domestic and foreign clients to develop brands that are not simply aesthetically pleasing but also clear, consistent, and built for long-term growth. Our customised branding solutions are made to fit your company's objectives, audience expectations, and future scalability, regardless of whether you are a start-up, SME, or corporation."
         ],
         image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=400&fit=crop",
         services: [
@@ -44,7 +49,14 @@ export const servicesData: Record<string, ServiceData> = {
         accordion: [
             {
                 title: "Why Is Branding Important?",
-                content: "Branding is no longer only about colours and logos in today's cutthroat industry. Customers identify, trust, and choose you based on your brand.\nWhat happens if you already have a brand but it isn't working? Growth can be hampered by ambiguity, inadequate differentiation, erratic communication, and a weak emotional bond.\nAt Balman Infotech, we assist companies in creating brands that are not just aesthetically pleasing but also brands that stand out, communicate clearly, and flourish with assurance."
+                content: "Branding is no longer only about colours and logos in today's cutthroat industry. Customers identify, trust, and choose you based on your brand.\nWhat happens if you already have a brand but it isn't working? Growth can be hampered by ambiguity, inadequate differentiation, erratic communication, and a weak emotional bond.\nAt Balman Infotech, we assist companies in creating brands that are not just aesthetically pleasing but also brands that stand out, communicate clearly, and flourish with assurance.",
+                items: [
+                    "Brand discovery & research",
+                    "Market and competitor analysis",
+                    "Brand positioning & differentiation",
+                    "Brand purpose, mission & vision",
+                    "Target audience definition"
+                ],
             },
             {
                 title: "Brand Strategy & Positioning",
@@ -146,6 +158,7 @@ export const servicesData: Record<string, ServiceData> = {
                 answer: "Branding evolves as businesses grow. Periodic refinement ensures relevance and consistency."
             }
         ],
+
 
     },
 
