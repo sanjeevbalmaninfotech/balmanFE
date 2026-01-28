@@ -1,9 +1,7 @@
 'use client';
-import { ProcessSection as ProcessSectionType } from '@/app/constants/servicesData';
+import { ProcessSectionProps } from '@/app/types/servicesPage';
 
-interface ProcessSectionProps {
-    data: ProcessSectionType;
-}
+
 
 export default function ProcessSection({ data }: ProcessSectionProps) {
     return (

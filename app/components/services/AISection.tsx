@@ -1,9 +1,6 @@
 'use client';
-import { AIMarketingSection as AIMarketingSectionType } from '@/app/constants/servicesData';
+import { AIMarketingSectionProps, AIMarketingSection as AIMarketingSectionType } from '@/app/types/servicesPage';
 
-interface AIMarketingSectionProps {
-    data: AIMarketingSectionType;
-}
 
 export default function AISection({ data }: AIMarketingSectionProps) {
     return (

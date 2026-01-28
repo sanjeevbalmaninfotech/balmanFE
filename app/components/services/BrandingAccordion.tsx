@@ -1,10 +1,8 @@
 'use client';
-import { AccordionData } from '@/app/constants/servicesData';
+import { BrandingAccordionProps } from '@/app/types/servicesPage';
 import { useState } from 'react';
 
-interface BrandingAccordionProps {
-    accordionData: AccordionData; // Changed from AccordionData[] to AccordionData
-}
+
 
 export default function BrandingAccordion({ accordionData }: BrandingAccordionProps) {
     const [openAccordion, setOpenAccordion] = useState<number | null>(null);
