@@ -61,13 +61,14 @@ export default async function ({ params }: PageProps) {
                             <div className="w-full xl:w-[320px] 2xl:w-[360px] flex-shrink-0">
                                 <div className="border border-gray-700 rounded-xl p-4">
                                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-x-4 gap-y-2">
-                                        {service.services.map((svc, idx) => (
-                                            <button
+                                        {service.leftSideServices.map((svc, idx) => (
+                                            <Link
                                                 key={idx}
-                                                className="w-full text-left py-2 service-list-text"
+                                                href={svc.path}
+                                                className="block w-full py-2 service-list-text"
                                             >
-                                                {svc}
-                                            </button>
+                                                {svc.label}
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
@@ -114,50 +115,85 @@ export default async function ({ params }: PageProps) {
                                 </div>
 
 
-                                {/* Additional Sections */}
-                                {service?.whySection && (
-                                    <div className="lg:mt-15">
-                                        <div className="bg-black ">
-                                            <h2 className="service-heading-h2 mb-4 lg:mb-6">
-                                                {service.whySection.title}
+                                <>
+                                    {service.whyChooseUs && service.whyChooseUs.items.length > 0 && (
+                                        <div className="lg:mt-15">
+                                            <h2 className="service-heading-h2 text-left lg:mb-7">
+                                                {service.whyChooseUs.heading}
                                             </h2>
-                                            <p className="service-body-text">
-                                                {service.whySection.content}
-                                            </p>
-                                        </div>
-                                    </div>
-                                )}
 
-                                {service.whyChooseUs && service.whyChooseUs.items.length > 0 && (
-                                    <div className="lg:mt-15">
-                                        <h2 className="service-heading-h2 text-left lg:mb-7">
-                                            {service.whyChooseUs.heading}
-                                        </h2>
-
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                            {service?.whyChooseUs?.items?.map((reason, idx) => (
-                                                <div
-                                                    key={idx}
-                                                    className="relative border-2 border-orange-600 rounded-2xl p-8 text-center mb-6"
-                                                    style={{ background: 'black' }}
-                                                >
-                                                    <p className="service-body-text mb-6 !text-white !text-[clamp(10px,3vw,20px)]">
-                                                        {reason}
-                                                    </p>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                                {service?.whyChooseUs?.items?.map((reason, idx) => (
                                                     <div
-                                                        className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-orange-600 rounded-xl px-6 py-3 font-['Plus Jakarta Sans'] font-bold"
-                                                        style={{
-                                                            fontSize: '18px',
-                                                            color: '#FFFFFF'
-                                                        }}
+                                                        key={idx}
+                                                        className="relative border-2 border-orange-600 rounded-2xl p-8 text-center mb-6"
+                                                        style={{ background: 'black' }}
                                                     >
-                                                        {String(idx + 1).padStart(2, '0')}
+                                                        <p className="service-body-text mb-6 !text-white !text-[clamp(10px,3vw,20px)]">
+                                                            {reason}
+                                                        </p>
+                                                        <div
+                                                            className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-orange-600 rounded-xl px-6 py-3 font-['Plus Jakarta Sans'] font-bold"
+                                                            style={{
+                                                                fontSize: '18px',
+                                                                color: '#FFFFFF'
+                                                            }}
+                                                        >
+                                                            {String(idx + 1).padStart(2, '0')}
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            ))}
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
+                                    )}</>
+
+                                <>
+
+                                    {/* Additional Sections */}
+                                    {service?.whySection && (
+                                        <div className="lg:mt-15">
+                                            <div className="bg-black">
+
+                                                {/* Title */}
+                                                <h2 className="service-heading-h2 mb-4 lg:mb-6">
+                                                    {service.whySection.title}
+                                                </h2>
+
+                                                {/* Description */}
+                                                <p className="service-body-text mb-4">
+                                                    {service.whySection.description}
+                                                </p>
+
+                                                {/* List Heading */}
+                                                {service.whySection.listTitle && (
+                                                    <p className="service-body-text font-semibold mb-3">
+                                                        {service.whySection.listTitle}
+                                                    </p>
+                                                )}
+
+                                                {/* Bullet Points */}
+                                                <ul className="list-disc pl-5 space-y-2 mb-4">
+                                                    {service.whySection.points.map((point, idx) => (
+                                                        <li key={idx} className="service-body-text">
+                                                            {point}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+
+                                                {/* Footer Text */}
+                                                {service.whySection.footerText && (
+                                                    <p className="service-body-text">
+                                                        {service.whySection.footerText}
+                                                    </p>
+                                                )}
+
+                                            </div>
+                                        </div>
+                                    )}
+                                </>
+
+
+
 
                                 {service.accordionData && (
                                     <BrandingAccordion accordionData={service.accordionData} />

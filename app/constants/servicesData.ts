@@ -10,13 +10,26 @@ export interface AccordionData {
     }[];
 }
 
+interface WhySection {
+    title: string;
+    description: string;
+    listTitle?: string;
+    points: string[];
+    footerText?: string;
+}
+
+interface ServiceItem {
+    label: string;
+    path: string;
+}
+
 export interface ServiceData {
     id: string;
     mainHeading: string;
     subHeadings: string[];
     descriptions: string[];
     image: string;
-    services: string[];
+    leftSideServices: ServiceItem[];
     accordionData?: AccordionData; // NEW: Added for accordion with heading/description
     accordion?: {
         title: string;
@@ -44,10 +57,7 @@ export interface ServiceData {
         heading: string;
         items: string[];
     };
-    whySection?: {
-        title: string;
-        content: string;
-    };
+    whySection?: WhySection;
     ctaButtons?: {
         text: string;
         href: string;
@@ -55,7 +65,7 @@ export interface ServiceData {
 }
 
 export const servicesData: Record<string, ServiceData> = {
-    branding: {
+    "branding": {
         id: "branding",
         mainHeading: "Helping You Build a Strong and Memorable Brand",
         subHeadings: ["Brand Strategy & Identity"],
@@ -63,12 +73,12 @@ export const servicesData: Record<string, ServiceData> = {
             "What makes you remember a company? What makes you think of the red colour when you hear Zomato? How do you remember the virtue of being fit when Nike is mentioned? All of this happened due to strong branding done by the company. Rooting your company with fixed values, voice and vision, branding is what decides how the market and the consumer perceives you. Balman Infotech wants to do exactly that.\n\n \n We work with both domestic and foreign clients to develop brands that are not simply aesthetically pleasing but also clear, consistent, and built for long-term growth. Our customised branding solutions are made to fit your company's objectives, audience expectations, and future scalability, regardless of whether you are a start-up, SME, or corporation."
         ],
         image: "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=400&fit=crop",
-        services: [
-            "Brand Strategy & Positioning",
-            "Brand Identity Design",
-            "Brand Messaging and Voice",
-            "Rebranding",
-            "Brand Consistency"
+        leftSideServices: [
+            { label: "Organic Growth", path: "/services/organic-growth" },
+            { label: "Digital Marketing", path: "/services/digital-marketing" },
+            { label: "Branding Services", path: "/services/branding" },
+            { label: "Web Development", path: "/services/web-development" },
+            { label: "Customer Support", path: "/services/customer-support" }
         ],
         accordionData: {
             heading: "Branding Solutions by Balman Infotech",
@@ -110,8 +120,19 @@ export const servicesData: Record<string, ServiceData> = {
             ]
         },
         whySection: {
-            title: "Why Is Branding Important?",
-            content: "Branding is no longer only about colours and logos in today's cutthroat industry. Customers identify, trust, and choose you based on your brand. What happens if you already have a brand but it isn't working? Growth can be hampered by ambiguity, inadequate differentiation, erratic communication, and a weak emotional bond. At Balman Infotech, we assist companies in creating brands that are not just aesthetically pleasing but also brands that stand out, communicate clearly, and flourish with assurance."
+            title: "Why is Digital Marketing important for Business Growth Today?",
+            description:
+                "Customers no longer rely on traditional marketing alone. They research, compare and make decisions online. However, if your brand is not visible across digital channels, you are losing opportunities every day.",
+            listTitle: "Digital Marketing helps your business –",
+            points: [
+                "Reach the right audience at the correct time",
+                "Increase brand awareness and trust",
+                "Generate consistent leads and sales",
+                "Measure performance with real data",
+                "Scale marketing efforts cost-effectively"
+            ],
+            footerText:
+                "At Balman Infotech, we focus on digital marketing strategies that directly impact business growth, not vanity metrics."
         },
         whyChooseUs: {
             heading: "Why Choose Balman as Your Branding Partner?",
@@ -207,38 +228,70 @@ export const servicesData: Record<string, ServiceData> = {
 
     "digital-marketing": {
         id: "digital-marketing",
-        mainHeading: "Boost Your Brand, Traffic & Revenue with Result-Driven Digital Marketing",
+        mainHeading: "Digital Marketing Balman Infotech",
         subHeadings: ["Strategic Digital Growth"],
         descriptions: [
-            "We are a service-driven digital marketing agency helping businesses attract strategy, growth, and measurable growth for local and international businesses.\n\nWhether you are a Start-up, SME or Enterprise, our customized digital marketing solutions are designed to attract the right audience and deliver real results.\n\nOur expert team combines creativity with data-driven insights to build campaigns that don't just reach people—they convert them."
+            "Balman Infotech is a full-service digital marketing agency helping businesses build strong online visibility, generate qualified leads and scale revenue in complex markets. Our digital marketing strategies combine data, creativity and AI-powered insights to deliver measurable growth for local and international businesses. Whether you are a Start-up, SME or Enterprise, our customized digital marketing solutions are designed to attract the right audience and convert them into loyal customers."
         ],
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-        services: [
-            "Search Engine Optimization (SEO)",
-            "Pay Per Click Advertising (PPC)",
-            "Social Media Marketing (SMM)",
-            "Content Marketing",
-            "Email Marketing and Automation",
-            "Conversion Rate Optimization"
+        leftSideServices: [
+            { label: "Organic Growth", path: "/services/organic-growth" },
+            { label: "Digital Marketing", path: "/services/digital-marketing" },
+            { label: "Branding Services", path: "/services/branding" },
+            { label: "Web Development", path: "/services/web-development" },
+            { label: "Customer Support", path: "/services/customer-support" }
         ],
-        accordion: [
-            {
-                title: "Why Choose Balman Infotech as your Online Marketing Partner?",
-                content: "At Balman Infotech, we focus on digital marketing strategies that directly impact business growth, not vanity metrics.",
-                items: [
-                    "Data-led Success Model",
-                    "A no-barrier stance",
-                    "Transparent results and reports",
-                    "Customised marketing processes",
-                    "Customised digital marketing strategies",
-                    "AI-assisted reach with human expertise"
-                ]
-            },
-            {
-                title: "Why is Digital Marketing Important for Business Growth Today?",
-                content: "Most businesses no longer go through traditional selling alone. They research, compare and make decisions online. However, if your brand is not visible across digital channels, you are losing opportunities every day.\n\nDigital Marketing helps your business:\n• Increase brand awareness and trust\n• Generate conversion leads and sales\n• Engage audiences in meaningful ways\n• Scaling marketing efforts cost-effectively"
-            }
-        ],
+        accordionData: {
+            heading: "Complete Digital Marketing Solutions Designed By Balman Infotech to Grow your Business",
+            description: "",
+            accordion: [
+                {
+                    title: "Search Engine Optimization (SEO)",
+                    content: "We improve your website visibility on search engines to drive long-term, high-quality organic traffic.",
+                    items: []
+                },
+                {
+                    title: "Pay Per Click Advertising (PPC)",
+                    content: "Our PPC experts create and manage high-performing paid ad campaigns that deliver instant visibility and leads.",
+
+                },
+                {
+                    title: "Social Media Marketing (SMM)",
+                    content: "We help brands build strong relationships with their audience through strategic social media marketing.",
+                    items: []
+                }, {
+                    title: "Content Marketing",
+                    content: "Content is the foundation of online growth and success. We create content that attracts, educates and converts.",
+                    items: []
+                },
+                {
+                    title: "Email Marketing and Marketing Automation",
+                    content: "We design personalized email campaigns that nurture leads and increase customer lifetime value. Our Email marketing services include.",
+                    items: []
+                }, {
+                    title: "Conversion Rate Optimization",
+                    content: "Driving Traffic is only half the job. We optimize your website and landing pages to convert visitors into customers.",
+                    items: []
+                }
+
+            ]
+        },
+        whySection: {
+            title: "Why is Digital Marketing important for Business Growth Today?",
+            description:
+                "Customers no longer rely on traditional marketing alone. They research, compare and make decisions online. However, if your brand is not visible across digital channels, you are losing opportunities every day.",
+            listTitle: "Digital Marketing helps your business –",
+            points: [
+                "Reach the right audience at the correct time",
+                "Increase brand awareness and trust",
+                "Generate consistent leads and sales",
+                "Measure performance with real data",
+                "Scale marketing efforts cost-effectively"
+            ],
+            footerText:
+                "At Balman Infotech, we focus on digital marketing strategies that directly impact business growth, not vanity metrics."
+        },
+
         process: [
             {
                 heading: "Our Digital Marketing Process",
@@ -305,14 +358,14 @@ export const servicesData: Record<string, ServiceData> = {
             ]
         },
         whyChooseUs: {
-            heading: "Why Choose Balman for Digital Marketing?",
+            heading: "Why Choose Balman Infotech as your Online Marketing Partner?",
             items: [
-                "Data-driven digital marketing strategies",
-                "Transparent reporting and communication",
-                "Customized campaigns for your business goals",
-                "Experience across multiple industries",
-                "AI-powered tools with human expertise",
-                "Focus on ROI and measurable results"
+                "Dedicated Account Manager",
+                "ROI-focused approach",
+                "Transparent reporting and insights",
+                "Experienced Marketing professionals",
+                "Customized digital marketing strategies",
+                "AI-powered tools with human expertise"
             ]
         }
     },
@@ -325,13 +378,12 @@ export const servicesData: Record<string, ServiceData> = {
             "We build fast, secure, and scalable websites and web applications that drive business growth.\n\nFrom corporate websites to complex web platforms, our development team creates solutions that combine cutting-edge technology with exceptional user experience.\n\nWhether you need a simple landing page or a complex enterprise application, we deliver custom web solutions tailored to your specific business needs."
         ],
         image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
-        services: [
-            "Corporate Website Development",
-            "E-commerce Development",
-            "Custom Web Applications",
-            "CMS Development",
-            "API Development & Integration",
-            "Web Maintenance & Support"
+        leftSideServices: [
+            { label: "Organic Growth", path: "/services/organic-growth" },
+            { label: "Digital Marketing", path: "/services/digital-marketing" },
+            { label: "Branding Services", path: "/services/branding" },
+            { label: "Web Development", path: "/services/web-development" },
+            { label: "Customer Support", path: "/services/customer-support" }
         ],
         accordion: [],
         industries: {
@@ -365,13 +417,12 @@ export const servicesData: Record<string, ServiceData> = {
             "We help businesses achieve sustainable growth through organic marketing strategies that build lasting customer relationships.\n\nOur organic growth services focus on creating valuable content, building brand authority, and establishing long-term market presence.\n\nWe combine SEO, content marketing, and community building to drive qualified traffic and conversions without paid advertising."
         ],
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
-        services: [
-            "SEO Strategy & Implementation",
-            "Content Marketing",
-            "Community Building",
-            "Influencer Partnerships",
-            "PR & Media Relations",
-            "Organic Social Media Growth"
+        leftSideServices: [
+            { label: "Organic Growth", path: "/services/organic-growth" },
+            { label: "Digital Marketing", path: "/services/digital-marketing" },
+            { label: "Branding Services", path: "/services/branding" },
+            { label: "Web Development", path: "/services/web-development" },
+            { label: "Customer Support", path: "/services/customer-support" }
         ],
         accordion: [],
         industries: {
@@ -404,13 +455,12 @@ export const servicesData: Record<string, ServiceData> = {
             "We provide round-the-clock customer support services that enhance customer satisfaction and loyalty.\n\nOur trained support team handles customer inquiries, technical issues, and service requests with professionalism and efficiency.\n\nFrom live chat to phone support, we offer multi-channel customer service solutions that keep your customers happy and your business running smoothly."
         ],
         image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=800&h=400&fit=crop",
-        services: [
-            "24/7 Live Chat Support",
-            "Phone Support",
-            "Email Support",
-            "Technical Support",
-            "Customer Service Training",
-            "Help Desk Management"
+        leftSideServices: [
+            { label: "Organic Growth", path: "/services/organic-growth" },
+            { label: "Digital Marketing", path: "/services/digital-marketing" },
+            { label: "Branding Services", path: "/services/branding" },
+            { label: "Web Development", path: "/services/web-development" },
+            { label: "Customer Support", path: "/services/customer-support" }
         ],
         accordion: [],
         industries: {
