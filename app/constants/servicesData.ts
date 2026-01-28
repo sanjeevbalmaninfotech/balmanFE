@@ -23,6 +23,29 @@ interface ServiceItem {
     path: string;
 }
 
+export interface ProcessSection {
+    mainHeading: string;
+    mainDescription: string;
+    steps: {
+        step: string;
+        title: string;
+        description: string;
+    }[];
+}
+
+export interface AIMarketingSection {
+    mainHeading: string;
+    description: string;
+    subSections: {
+        subHeading: string;
+        description: string;
+        bulletPoints?: {
+            title: string;
+            description: string;
+            subPoints?: string[];
+        }[];
+    }[];
+}
 export interface ServiceData {
     id: string;
     mainHeading: string;
@@ -31,17 +54,13 @@ export interface ServiceData {
     image: string;
     leftSideServices: ServiceItem[];
     accordionData?: AccordionData; // NEW: Added for accordion with heading/description
-    accordion?: {
-        title: string;
-        content: string;
-        items?: string[];
-    }[];
-    process?: {
-        heading: string;
-        step: string;
-        title: string;
-        description: string;
-    }[];
+    aiSection?: AIMarketingSection;
+    // accordion?: {
+    //     title: string;
+    //     content: string;
+    //     items?: string[];
+    // }[];
+    processSection?: ProcessSection;
     industries?: {
         heading: string;
         items: string[];
@@ -62,6 +81,10 @@ export interface ServiceData {
         text: string;
         href: string;
     }[];
+    mainCta?: {
+        text: string;
+        href: string;
+    };
 }
 
 export const servicesData: Record<string, ServiceData> = {
@@ -80,6 +103,43 @@ export const servicesData: Record<string, ServiceData> = {
             { label: "Web Development", path: "/services/web-development" },
             { label: "Customer Support", path: "/services/customer-support" }
         ],
+        mainCta: {
+            text: "Talk to a Branding Expert 1",
+            href: "/contact-us"
+        },
+        aiSection: {
+            mainHeading: "AI-Powered Digital Marketing Overview – Smarter Marketing Decisions",
+            description: "Digital Marketing is rapidly evolving with AI-driven platforms and algorithms. At Balman Infotech, we use AI-powered tools combined with human strategy to improve efficiency, accuracy and results.",
+            subSections: [
+                {
+                    subHeading: "How do we use AI in Digital Marketing?",
+                    description: "Our Urgent Care Centre is staffed by an exceptional mix of senior Emergency Medicine consultants and registrars, alongside experienced GPs, nurses and HCAs. This breadth of expertise means you're always seen by a professional suited to your condition - day or night."
+                },
+                {
+                    subHeading: "AI-Based Audience and Keyword Analysis?",
+                    description: "We analyse user behaviour, interests, demographics and search intent to target high-converting audiences.",
+                    bulletPoints: [
+                        {
+                            title: "AI-Optimized Content and Ads",
+                            description: "Our content and ad creatives are optimized for –",
+                            subPoints: [
+                                "Search Engines and AI-driven results",
+                                "Social Media algorithms",
+                                "Personalization and Engagement"
+                            ]
+                        },
+                        {
+                            title: "Predictive Campaign Performance",
+                            description: "AI helps us forecast trends, identify winning campaigns, and optimize budgets before performance drops."
+                        },
+                        {
+                            title: "Automation with Human Control",
+                            description: "We use AI for automation and efficiency, while our experts ensure brand consistency, ethics and strategic alignment."
+                        }
+                    ]
+                }
+            ]
+        },
         accordionData: {
             heading: "Branding Solutions by Balman Infotech",
             description: "We create quick, responsive, conversion-focused websites that effectively engage users and represent your business. The services that we offer include:",
@@ -145,38 +205,37 @@ export const servicesData: Record<string, ServiceData> = {
                 "Focus on ROI and measurable results"
             ]
         },
-        process: [
-            {
-                heading: "Branding Process",
-                step: "01",
-                title: "Understanding and Discovering Brands",
-                description: "We are aware of your company's objectives, target market, and audience."
-            },
-            {
-                heading: "Branding Process",
-                step: "02",
-                title: "Direction and Brand Strategy",
-                description: "We establish messaging, personality, positioning, and strategic direction."
-            },
-            {
-                heading: "Branding Process",
-                step: "03",
-                title: "Development of Creativity",
-                description: "We create communications systems and visual identities that complement the plan."
-            },
-            {
-                heading: "Branding Process",
-                step: "04",
-                title: "Evaluation and Improvement",
-                description: "We preserve brand consistency while refining concepts in response to feedback."
-            },
-            {
-                heading: "Branding Process",
-                step: "05",
-                title: "Launch and Implementation",
-                description: "We provide brand guidelines and assist with platform implementation."
-            }
-        ],
+        processSection: {
+            mainHeading: "Our Digital Marketing Work Process",
+            mainDescription: "At Balman Infotech, we follow structural as well as transparent process to deliver consistent results.",
+            steps: [
+                {
+                    step: "01",
+                    title: "Business and Market Understanding",
+                    description: "We understand your business goals, audience, competitors and industry landscape."
+                },
+                {
+                    step: "02",
+                    title: "Strategy and Channel Planning",
+                    description: "We select the right online channel and create a customized marketing roadmap."
+                },
+                {
+                    step: "03",
+                    title: "Campaign Setup and Optimization",
+                    description: "We launch and optimize campaigns across SEO, PPC, social media and content platforms."
+                },
+                {
+                    step: "04",
+                    title: "Performance Tracking and AnalyticsP",
+                    description: "We monitor traffic, leads, conversions, and ROI using advanced analytics tools."
+                },
+                {
+                    step: "05",
+                    title: "Continuous Improvement & Scaling",
+                    description: "We refine strategies, scale winning campaigns and adapt to market changes."
+                }
+            ]
+        },
         industries: {
             heading: "Industries We Serve",
             items: [
@@ -241,6 +300,43 @@ export const servicesData: Record<string, ServiceData> = {
             { label: "Web Development", path: "/services/web-development" },
             { label: "Customer Support", path: "/services/customer-support" }
         ],
+        mainCta: {
+            text: "Talk to a Branding Expert 2",
+            href: "/contact-us"
+        },
+        aiSection: {
+            mainHeading: "AI-Powered Digital Marketing Overview – Smarter Marketing Decisions",
+            description: "Digital Marketing is rapidly evolving with AI-driven platforms and algorithms. At Balman Infotech, we use AI-powered tools combined with human strategy to improve efficiency, accuracy and results.",
+            subSections: [
+                {
+                    subHeading: "How do we use AI in Digital Marketing?",
+                    description: "Our Urgent Care Centre is staffed by an exceptional mix of senior Emergency Medicine consultants and registrars, alongside experienced GPs, nurses and HCAs. This breadth of expertise means you're always seen by a professional suited to your condition - day or night."
+                },
+                {
+                    subHeading: "AI-Based Audience and Keyword Analysis?",
+                    description: "We analyse user behaviour, interests, demographics and search intent to target high-converting audiences.",
+                    bulletPoints: [
+                        {
+                            title: "AI-Optimized Content and Ads",
+                            description: "Our content and ad creatives are optimized for –",
+                            subPoints: [
+                                "Search Engines and AI-driven results",
+                                "Social Media algorithms",
+                                "Personalization and Engagement"
+                            ]
+                        },
+                        {
+                            title: "Predictive Campaign Performance",
+                            description: "AI helps us forecast trends, identify winning campaigns, and optimize budgets before performance drops."
+                        },
+                        {
+                            title: "Automation with Human Control",
+                            description: "We use AI for automation and efficiency, while our experts ensure brand consistency, ethics and strategic alignment."
+                        }
+                    ]
+                }
+            ]
+        },
         accordionData: {
             heading: "Complete Digital Marketing Solutions Designed By Balman Infotech to Grow your Business",
             description: "",
@@ -292,38 +388,37 @@ export const servicesData: Record<string, ServiceData> = {
                 "At Balman Infotech, we focus on digital marketing strategies that directly impact business growth, not vanity metrics."
         },
 
-        process: [
-            {
-                heading: "Our Digital Marketing Process",
-                step: "01",
-                title: "Business and Market Understanding",
-                description: "We understand your business goals, audience, competitors and the industry landscape."
-            },
-            {
-                heading: "Our Digital Marketing Process",
-                step: "02",
-                title: "Strategy and Channel Planning",
-                description: "We select the right online channels and create a custom multi-channel marketing roadmap."
-            },
-            {
-                heading: "Our Digital Marketing Process",
-                step: "03",
-                title: "Campaign Setup and Optimization",
-                description: "We launch and optimize campaigns across SEO, PPC, Social Media and Content platforms."
-            },
-            {
-                heading: "Our Digital Marketing Process",
-                step: "04",
-                title: "Performance Tracking and Analysis",
-                description: "We monitor traffic, leads, conversions and ROI with advanced analytics tools."
-            },
-            {
-                heading: "Our Digital Marketing Process",
-                step: "05",
-                title: "Continuous Improvement & Scaling",
-                description: "We refine strategies, scale winning campaigns and adapt to market changes."
-            }
-        ],
+        processSection: {
+            mainHeading: "Our Digital Marketing Work Process",
+            mainDescription: "At Balman Infotech, we follow structural as well as transparent process to deliver consistent results.",
+            steps: [
+                {
+                    step: "01",
+                    title: "Business and Market Understanding",
+                    description: "We understand your business goals, audience, competitors and industry landscape."
+                },
+                {
+                    step: "02",
+                    title: "Strategy and Channel Planning",
+                    description: "We select the right online channel and create a customized marketing roadmap."
+                },
+                {
+                    step: "03",
+                    title: "Campaign Setup and Optimization",
+                    description: "We launch and optimize campaigns across SEO, PPC, social media and content platforms."
+                },
+                {
+                    step: "04",
+                    title: "Performance Tracking and AnalyticsP",
+                    description: "We monitor traffic, leads, conversions, and ROI using advanced analytics tools."
+                },
+                {
+                    step: "05",
+                    title: "Continuous Improvement & Scaling",
+                    description: "We refine strategies, scale winning campaigns and adapt to market changes."
+                }
+            ]
+        },
         industries: {
             heading: "Industries We Work With",
             items: [
@@ -367,7 +462,16 @@ export const servicesData: Record<string, ServiceData> = {
                 "Customized digital marketing strategies",
                 "AI-powered tools with human expertise"
             ]
-        }
+        }, ctaButtons: [
+            {
+                text: "Request a Free Marketing Consultant",
+                href: "/contact-us"
+            },
+            {
+                text: "Schedule a Strategy Call Today",
+                href: "/contact-us"
+            }
+        ]
     },
 
     "web-development": {
@@ -385,7 +489,10 @@ export const servicesData: Record<string, ServiceData> = {
             { label: "Web Development", path: "/services/web-development" },
             { label: "Customer Support", path: "/services/customer-support" }
         ],
-        accordion: [],
+        mainCta: {
+            text: "Talk to a Branding Expert 3",
+            href: "/contact-us"
+        },
         industries: {
             heading: "Industries We Serve",
             items: [
@@ -424,7 +531,10 @@ export const servicesData: Record<string, ServiceData> = {
             { label: "Web Development", path: "/services/web-development" },
             { label: "Customer Support", path: "/services/customer-support" }
         ],
-        accordion: [],
+        mainCta: {
+            text: "Talk to a Branding Expert 4",
+            href: "/contact-us"
+        },
         industries: {
             heading: "Industries We Specialize In",
             items: [
@@ -462,7 +572,11 @@ export const servicesData: Record<string, ServiceData> = {
             { label: "Web Development", path: "/services/web-development" },
             { label: "Customer Support", path: "/services/customer-support" }
         ],
-        accordion: [],
+        mainCta: {
+            text: "Talk to a Customer Support Expert",
+            href: "/contact-us"
+        },
+
         industries: {
             heading: "Industries We Support",
             items: [

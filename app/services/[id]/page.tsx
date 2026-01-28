@@ -9,6 +9,8 @@ import Navbar from '@/app/components/navBar';
 import OrangeBlurEffect from '@/app/components/services/OrangeBlurEffect';
 import ServiceHeading from '@/app/components/services/Heading';
 import PrimaryButton from '@/app/components/Common/PrimaryButton';
+import AISection from '@/app/components/services/AISection';
+import ProcessSection from '@/app/components/services/ProcessSection';
 
 
 
@@ -106,10 +108,14 @@ export default async function ({ params }: PageProps) {
                                         ))}
 
                                         {/* Talk to an Expert Button */}
-                                        <div className="lg:mt-3"> <PrimaryButton
-                                            text="Talk to an Expert"
-                                            href="/contact-us"
-                                        /></div>
+                                        {service.mainCta && (
+                                            <div className="lg:mt-3">
+                                                <PrimaryButton
+                                                    text={service.mainCta.text}
+                                                    href={service.mainCta.href}
+                                                />
+                                            </div>
+                                        )}
 
                                     </div>
                                 </div>
@@ -193,60 +199,26 @@ export default async function ({ params }: PageProps) {
                                 </>
 
 
+                                <>
+
+                                    {service.aiSection && (
+                                        <AISection data={service.aiSection} />
+                                    )}
+                                </>
+
 
 
                                 {service.accordionData && (
                                     <BrandingAccordion accordionData={service.accordionData} />
                                 )}
 
-                                {service?.process && service?.process?.length > 0 && (
-                                    <div className="bg-black lg:mt-15">
-                                        <h2 className="service-heading-h2 lg:mb-7 text-left">
-                                            {service.process[0].heading}
-                                        </h2>
+                                <>
+                                    {/* Process Section - New Structure with main heading & description */}
+                                    {service.processSection && (
+                                        <ProcessSection data={service.processSection} />
+                                    )}
 
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16">
-                                            {service.process.map((step, idx) => (
-                                                <div key={idx} className="relative">
-                                                    <div className="flex flex-col items-start text-left space-y-2">
-                                                        <div className="relative flex items-center w-full">
-                                                            <div
-                                                                className="w-16 h-16 rounded-full border-2 border-[#FF5900] flex items-center justify-center font-['Plus Jakarta Sans'] font-bold relative z-10 bg-black"
-                                                                style={{
-                                                                    fontSize: '24px',
-                                                                    color: '#E8E8EA',
-                                                                    flexShrink: 0
-                                                                }}
-                                                            >
-                                                                {step.step}
-                                                            </div>
-
-                                                            {idx < (service.process?.length ?? 0) - 1 && (
-                                                                <div
-                                                                    className="hidden lg:block absolute left-8 top-1/2 h-[2px] bg-[#E8E8EA]"
-                                                                    style={{
-                                                                        width: 'calc(100% + 64px)',
-                                                                        zIndex: 0,
-                                                                        transform: 'translateY(-50%)'
-                                                                    }}
-                                                                ></div>
-                                                            )}
-                                                        </div>
-
-                                                        <div className="pt-2">
-                                                            <h3 className=" !text-[clamp(16px,3vw,20px)]  !text-[#E8E8EA]">
-                                                                {step.title}
-                                                            </h3>
-                                                            <p className="service-body-text mt-2 !text-[#B8B8B8] !text-[clamp(13px,2.5vw,15px)]">
-                                                                {step.description}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
+                                </>
 
                                 {service?.industries && service?.industries?.items?.length > 0 && (
                                     <div className="lg:mt-15">
@@ -276,16 +248,8 @@ export default async function ({ params }: PageProps) {
                                             {service.faqs.items.map((faq, idx) => (
                                                 <div key={idx} className="space-y-2">
                                                     <h3
-                                                        className="
-  
-    font-['Plus_Jakarta_Sans']
-    font-bold
-    text-[18px]
-    leading-[150%]
-    tracking-[0%]
-    text-[#E8E8EA]
-  "
-                                                    >
+                                                        className="font-['Plus_Jakarta_Sans']
+    font-bold  text-[18px] leading-[120%] tracking-[0%] text-[#E8E8EA] "  >
                                                         {faq.question}
                                                     </h3>
 
