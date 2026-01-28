@@ -5,8 +5,8 @@ import { ProcessSectionProps } from '@/app/types/servicesPage';
 
 export default function ProcessSection({ data }: ProcessSectionProps) {
     return (
-        <div className="bg-black py-12">
-            <div className="container mx-auto px-4">
+        <div className="bg-black">
+            <div className="container lg:mt-15">
                 {/* Main Heading */}
                 <h2 className="service-heading-h2 lg:mb-4 text-left">
                     {data.mainHeading}

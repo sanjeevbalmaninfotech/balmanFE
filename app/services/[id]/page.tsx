@@ -132,7 +132,7 @@ export default async function ({ params }: PageProps) {
                                                 {service?.whyChooseUs?.items?.map((reason, idx) => (
                                                     <div
                                                         key={idx}
-                                                        className="relative border-2 border-orange-600 rounded-2xl p-8 text-center mb-6"
+                                                        className="relative border-2 border-orange-600 rounded-2xl lg:p-4 text-center mb-6"
                                                         style={{ background: 'black' }}
                                                     >
                                                         <p className="service-body-text mb-6 !text-white !text-[clamp(10px,3vw,20px)]">
@@ -166,9 +166,16 @@ export default async function ({ params }: PageProps) {
                                                 </h2>
 
                                                 {/* Description */}
-                                                <p className="service-body-text mb-4">
-                                                    {service.whySection.description}
-                                                </p>
+                                                {service.whySection.description
+                                                    .split(/\n\s*\n/)
+                                                    .map((paragraph, idx) => (
+                                                        <p
+                                                            key={idx}
+                                                            className="service-body-text mb-4 whitespace-pre-line break-words"
+                                                        >
+                                                            {paragraph.trim()}
+                                                        </p>
+                                                    ))}
 
                                                 {/* List Heading */}
                                                 {service.whySection.listTitle && (
@@ -179,7 +186,7 @@ export default async function ({ params }: PageProps) {
 
                                                 {/* Bullet Points */}
                                                 <ul className="list-disc pl-5 space-y-2 mb-4">
-                                                    {service.whySection.points.map((point, idx) => (
+                                                    {service?.whySection?.points?.map((point, idx) => (
                                                         <li key={idx} className="service-body-text">
                                                             {point}
                                                         </li>
@@ -198,7 +205,12 @@ export default async function ({ params }: PageProps) {
                                     )}
                                 </>
 
+                                <>
 
+                                    {service.accordionData && (
+                                        <BrandingAccordion accordionData={service.accordionData} />
+                                    )}
+                                </>
                                 <>
 
                                     {service.aiSection && (
@@ -208,9 +220,7 @@ export default async function ({ params }: PageProps) {
 
 
 
-                                {service.accordionData && (
-                                    <BrandingAccordion accordionData={service.accordionData} />
-                                )}
+
 
                                 <>
                                     {/* Process Section - New Structure with main heading & description */}

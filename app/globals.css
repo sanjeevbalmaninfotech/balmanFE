@@ -246,14 +246,14 @@ body {
 .service-heading-h1 {
   @apply text-gradient font-semibold;
   font-size: clamp(24px, 6vw, 36px);
-  line-height: 110%;
+  line-height: 150%;
   letter-spacing: 0%;
 }
 
 .service-heading-h2 {
   @apply text-gradient font-semibold;
   font-size: clamp(20px, 5vw, 28px);
-  line-height: 150%;
+  line-height: 120%;
   letter-spacing: 0%;
 }
 
