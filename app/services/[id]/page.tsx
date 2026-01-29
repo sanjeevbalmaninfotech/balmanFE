@@ -252,14 +252,13 @@ export default async function ({ params }: PageProps) {
                                     <div className="lg:mt-15">
                                         <h2 className="service-heading-h2 lg:mb-3 text-left">
                                             {service.faqs.heading}
+                                            <div className="heading-underline"></div>
                                         </h2>
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3">
                                             {service.faqs.items.map((faq, idx) => (
                                                 <div key={idx} className="space-y-2">
-                                                    <h3
-                                                        className="font-['Plus_Jakarta_Sans']
-    font-bold  text-[18px] leading-[120%] tracking-[0%] text-[#E8E8EA] "  >
+                                                    <h3 className="service-heading-h3">
                                                         {faq.question}
                                                     </h3>
 

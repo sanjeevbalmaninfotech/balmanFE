@@ -20,10 +20,10 @@ import NewsletterSection from './NewsletterSection';
 import Footer from '../footer/Footer';
 import TeamLeadsSection from './TeamLeadsSection';
 import ServicesCards from './ServicesCards';
+import GlassCard from './GlassCard';
+import GlassCardDown from './GlassCardDown';
 
 export default function HeroSection() {
-
-
 
     return (
         <>
@@ -80,40 +80,16 @@ export default function HeroSection() {
 
                     {/* Right Image Container */}
                     <div
-                        className="absolute right-0 top-[18px] w-full sm:w-[70%] lg:w-[908px] h-[calc(100vh-100px)] sm:h-[600px] md:h-[700px] lg:h-[833px] flex items-center justify-center lg:justify-end pr-0 pointer-events-none"
+                        className="absolute right-0 top-[18px] w-full sm:w-[70%] lg:w-[908px] h-[calc(100vh-100px)] sm:h-[600px] md:h-[700px] lg:h-[833px] pointer-events-none z-20"
                     >
-                        {/* Tree Image with tooltips */}
-                        <div className="relative w-full h-full flex items-center justify-center">
-                            {/*  <Image
-                            src="/api/placeholder/908/833"
-                            alt="Digital Growth Tree"
-                            className="w-auto h-full max-w-full object-contain"
-                            style={{
-                                filter: 'drop-shadow(0 0 50px rgba(255, 87, 34, 0.5))'
-                            }}
-                        /> */}
+                        {/* Top Right Tooltip */}
+                        <div className="absolute top-[10%] right-[5%]">
+                            <GlassCard />
+                        </div>
 
-                            {/* Top Right Tooltip */}
-                            <div
-                                className="absolute top-[60px] right-[50px] bg-gray-800/90 backdrop-blur-sm rounded-lg p-3 max-w-[200px] hidden lg:block"
-                                style={{
-                                    fontFamily: 'Plus Jakarta Sans, sans-serif'
-                                }}
-                            >
-                                <h4 className="text-white font-semibold text-sm mb-1">Lorem Ipsum</h4>
-                                <p className="text-white/70 text-xs">Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-
-                            {/* Bottom Right Tooltip */}
-                            <div
-                                className="absolute bottom-[80px] right-[50px] bg-gray-800/90 backdrop-blur-sm rounded-lg p-3 max-w-[200px] hidden lg:block"
-                                style={{
-                                    fontFamily: 'Plus Jakarta Sans, sans-serif'
-                                }}
-                            >
-                                <h4 className="text-white font-semibold text-sm mb-1">Lorem Ipsum</h4>
-                                <p className="text-white/70 text-xs">Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
+                        {/* Bottom Right Tooltip */}
+                        <div className="absolute bottom-[15%] right-[10%]">
+                            <GlassCardDown />
                         </div>
                     </div>
                 </div>

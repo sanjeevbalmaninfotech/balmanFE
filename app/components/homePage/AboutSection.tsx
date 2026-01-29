@@ -35,45 +35,23 @@ export default function AboutSection() {
             <div className="lg:w-[70%] lg:pl-8">
               {/* Paragraph 1 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
-                At Balman Infotech, we believe technology is more than just code
-                - it&apos;s a tool to create impact. Our mission is to empower
-                businesses through smart, scalable, and secure solutions that
-                deliver measurable results. From concept to completion, we focus
-                on understanding each client&apos;s unique needs and providing
-                customized services that combine creativity, technical
-                expertise, and strategic thinking.
+                Every brand begins as a flicker, a quiet, imaginative spark in someone’s mind. But only a few sparks into something powerful enough to illuminate industries, shape customer experiences, and redefine how businesses show up in the world. We exist specifically to nurture that spark!
+
               </p>
 
               {/* Paragraph 2 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
-                Our team consists of experienced developers, designers, and IT
-                professionals who are passionate about innovation and
-                excellence. Using modern frameworks, agile methodologies, and
-                cutting-edge technologies, we build solutions that are robust,
-                user-friendly, and future-ready. Whether it&aposs automating
-                processes, building enterprise platforms, or enhancing user
-                experience, we ensure every project reflects our commitment to
-                quality and performance.
+                Our vision is to become a global leader in technology services by continuously evolving, innovating, and creating digital ecosystems that drive success for our clients. We are rooted in creativity, guided by strategy, and driven by the belief that every brand and every person carries a story waiting to be told. Balman Infotech stands as a rare blend: a creative-minded agency built on innovation, end to end support and guaranteed results.  We never believe in the one solution fits all strategies, as all the agencies at present do. This is why businesses trust us, not for templates, but for transformation. Our work is not about trends. It is about timelessness, building brands that look relevant today and remain iconic forever!
+
               </p>
 
               {/* Paragraph 3 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
-                What makes Balman Infotech stand out is our customer-centric
-                approach. We believe in building long-term partnerships by
-                delivering consistent value, transparency, and support. Every
-                project is handled with attention to detail, timely execution,
-                and a focus on exceeding expectations.
+                We are not just an agency. We are your Growth Partner!
               </p>
 
               {/* Paragraph 4 */}
-              <p className="body-text mb-6 sm:mb-7 md:mb-8">
-                Our vision is to become a global leader in technology services
-                by continuously evolving, innovating, and creating digital
-                ecosystems that drive success for our clients. Guided by our
-                core values - integrity, innovation, and excellence - Balman
-                Infotech continues to shape the future of technology and help
-                businesses adapt, grow, and succeed in the digital era.
-              </p>
+
 
               {/* See More Button */}
               <button className="flex items-center justify-center gap-2 mx-auto">
