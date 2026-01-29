@@ -46,14 +46,9 @@ export default function TeamSection() {
                 <div className="flex flex-col items-center justify-center mb-12 md:mb-16">
 
                     <h2
-                        className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
+                        className="text-gradient font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
                         style={{
-                            fontSize: "clamp(24px, 5vw, 36px)",
-                            backgroundImage:
-                                "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
-                            backgroundClip: "text",
+                            fontSize: "clamp(32px, 6vw, 36px)",
                         }}
                     >
                         Meet The Minds Behind Balman Infotech

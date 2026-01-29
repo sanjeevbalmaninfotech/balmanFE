@@ -27,7 +27,12 @@ export default function NewsletterSection() {
 
           {/* Content Container (centered and responsive) */}
           <div className="relative z-10 text-center section-padding-x w-full max-w-7xl">
-            <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-8">
+            <h2
+              className="text-gradient font-bold text-center leading-[110%] tracking-tight mb-8"
+              style={{
+                fontSize: "clamp(32px, 6vw, 36px)",
+              }}
+            >
               Subscribe to our newsletter
             </h2>
 
@@ -60,6 +65,5 @@ export default function NewsletterSection() {
         </div>
       </div>
     </section>
-
   );
 }

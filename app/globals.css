@@ -218,14 +218,205 @@ body {
 /* Heading Underline */
 .heading-underline {
   width: 40px;
+  --section-padding-y-tablet: 50px;
+  --section-padding-x-tablet: 32px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-primary);
+  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode disabled as per user preference */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary);
+}
+
+/* ========================================
+   TYPOGRAPHY CLASSES
+   ======================================== */
+
+/* Heading - 36px, Bold */
+.heading {
+  font-family: var(--font-primary);
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  line-height: 110%;
+  color: rgba(232, 232, 234, 1);
+}
+
+/* Sub Heading - 16px, Medium */
+.sub-heading {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: rgba(232, 232, 234, 0.8);
+}
+
+/* Body Text - 16px, Regular */
+.body-text {
+  font-family: var(--font-primary);
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: 400;
+  line-height: 150%;
+  color: rgba(232, 232, 234, 0.8);
+}
+
+/* Button Text - Poppins 17px, Regular */
+.button-text {
+  font-family: var(--font-button);
+  font-size: clamp(15px, 3vw, 17px);
+  font-weight: 400;
+}
+
+/* ========================================
+   SECTION SPACING UTILITIES
+   ======================================== */
+
+/* Full Section Padding - 60px top/bottom, 120px left/right */
+.section-padding {
+  padding-top: var(--section-padding-y-mobile);
+  padding-bottom: var(--section-padding-y-mobile);
+  padding-left: var(--section-padding-x-mobile);
+  padding-right: var(--section-padding-x-mobile);
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-top: var(--section-padding-y-tablet);
+    padding-bottom: var(--section-padding-y-tablet);
+    padding-left: var(--section-padding-x-tablet);
+    padding-right: var(--section-padding-x-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+    padding-left: var(--section-padding-x);
+    padding-right: var(--section-padding-x);
+  }
+}
+
+/* Vertical Padding Only */
+.section-padding-y {
+  padding-top: var(--section-padding-y-mobile);
+  padding-bottom: var(--section-padding-y-mobile);
+}
+
+@media (min-width: 640px) {
+  .section-padding-y {
+    padding-top: var(--section-padding-y-tablet);
+    padding-bottom: var(--section-padding-y-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding-y {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+  }
+}
+
+/* Horizontal Padding Only */
+.section-padding-x {
+  padding-left: var(--section-padding-x-mobile);
+  padding-right: var(--section-padding-x-mobile);
+}
+
+@media (min-width: 640px) {
+  .section-padding-x {
+    padding-left: var(--section-padding-x-tablet);
+    padding-right: var(--section-padding-x-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding-x {
+    padding-left: var(--section-padding-x);
+    padding-right: var(--section-padding-x);
+  }
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+.btn-primary {
+  min-width: 145px;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-button);
+  font-size: clamp(15px, 3vw, 17px);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Section Label with Line */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.section-label-line {
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Vertical Divider */
+.vertical-divider {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Primary Color Utilities */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+/* Heading Underline */
+.heading-underline {
+  width: 40px;
   height: 2px;
   background-color: var(--primary-color);
   opacity: 1;
 }
-
-/* ========================================
-   FONT FAMILY UTILITIES
-   ======================================== */
 
 /* Global class for Plus Jakarta Sans font */
 .font-primary {
@@ -237,7 +428,7 @@ body {
    ======================================== */
 
 @utility text-gradient {
-  background: radial-gradient(circle, #FFFFFF 0%, #656565 100%);
+  background: radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

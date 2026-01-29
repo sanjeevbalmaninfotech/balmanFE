@@ -19,7 +19,7 @@ interface WhySection {
     title: string;
     description: string;
     listTitle?: string;
-    points: string[];
+    points?: string[];
     footerText?: string;
 }
 

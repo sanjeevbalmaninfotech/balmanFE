@@ -100,13 +100,9 @@ export default function ServicesCards() {
                 {/* HEADER */}
                 <div className="text-center mb-12">
                     <h2
-                        className="font-bold leading-tight tracking-tight"
+                        className="text-gradient font-bold leading-[110%] tracking-tight"
                         style={{
-                            fontSize: "clamp(30px, 5vw, 36px)",
-                            backgroundImage:
-                                "radial-gradient(18% 410% at 50% 50%, #fff 35%, #656565 100%)",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent",
+                            fontSize: "clamp(32px, 6vw, 36px)",
                         }}
                     >
                         Experience In Different Industries
@@ -133,7 +129,7 @@ export default function ServicesCards() {
                                 onClick={() => router.push(service.url)}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
-                                className="relative group w-full cursor-pointe transition-transform duration-500 ease-out h-auto xl:h-[500px]
+                                className="relative group w-full cursor-pointer transition-transform duration-500 ease-out h-auto xl:h-[500px]
                   [transform:none] xl:[transform:rotateY(var(--rotate-y))]"
                                 style={{
                                     '--rotate-y': `${rotateY}deg`,

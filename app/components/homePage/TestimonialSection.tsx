@@ -39,8 +39,6 @@ const TestimonialSection = () => {
 
     return (
         <>
-
-
             <div className="w-full bg-black flex items-center justify-center section-padding">
                 <div className="w-full max-w-[1680px] flex flex-col lg:flex-row gap-5">
 
@@ -51,14 +49,9 @@ const TestimonialSection = () => {
 
                             {/* Heading */}
                             <h2
-                                className="font-['Plus_Jakarta_Sans'] font-bold leading-[110%] tracking-tight mb-2"
+                                className="text-gradient font-['Plus_Jakarta_Sans'] font-bold leading-[110%] tracking-tight mb-2"
                                 style={{
                                     fontSize: "clamp(32px, 6vw, 36px)",
-                                    backgroundImage:
-                                        "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
-                                    WebkitBackgroundClip: "text",
-                                    WebkitTextFillColor: "transparent",
-                                    backgroundClip: "text",
                                 }}
                             >
                                 WHAT OUR <br />
@@ -214,7 +207,6 @@ const TestimonialSection = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

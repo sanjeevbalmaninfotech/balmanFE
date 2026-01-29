@@ -35,7 +35,12 @@ export default function TeamLeadsSection() {
 
                 {/* Header Section */}
                 <div className="flex flex-col items-center justify-center">
-                    <h2 className="font-['Plus_Jakarta_Sans'] font-bold text-center leading-tight tracking-tight text-[clamp(32px,5vw,42px)] bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent">
+                    <h2
+                        className="text-gradient font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
+                        style={{
+                            fontSize: "clamp(32px, 6vw, 36px)",
+                        }}
+                    >
                         Meet Our Leads
                     </h2>
                     <div className="mt-4 w-16 h-[2px] bg-orange-600"></div>

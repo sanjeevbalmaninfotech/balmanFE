@@ -25,14 +25,9 @@ export default function FAQSection() {
       <div className="relative w-full mx-auto section-padding-x">
 
         <h2
-          className="font-bold text-center leading-[110%] tracking-tight"
+          className="text-gradient font-bold text-center leading-[110%] tracking-tight"
           style={{
-            fontSize: "clamp(24px, 5vw, 36px)",
-            backgroundImage:
-              "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
+            fontSize: "clamp(32px, 6vw, 36px)",
           }}
         >
           Everything You Need To Know Before Starting Your Next Project With Us.

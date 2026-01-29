@@ -9,21 +9,15 @@ export default function AboutSection() {
             <div className="relative lg:w-[30%] lg:pr-8">
               <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start">
                 <h2
-                  className="font-bold leading-[110%] tracking-tight mb-2"
+                  className="text-gradient font-bold leading-[110%] tracking-tight mb-2"
                   style={{
                     fontSize: "clamp(32px, 6vw, 36px)",
-                    backgroundImage:
-                      "radial-gradient(18.08% 413.84% at 51.02% 51.02%, #FFFFFF 35%, #656565 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
                   }}
                 >
                   We&apos;re More Than A <br />
 
                   Digital Agency
-                  <span className="absolute left-0 -bottom-2 heading-underline"></span>
-
+                  <div className="heading-underline mt-2"></div>
                 </h2>
               </div>
             </div>
