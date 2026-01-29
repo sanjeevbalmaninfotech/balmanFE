@@ -43,19 +43,23 @@ export default function TeamLeadsSection() {
                     >
                         Meet Our Leads
                     </h2>
-                    <div className="mt-4 w-16 h-[2px] bg-orange-600"></div>
+                    <div className="heading-underline"></div>
                 </div>
 
                 {/* Slider Container */}
                 <div className="relative">
                     {/* Navigation Arrows - Hidden on mobile */}
                     <button
-                        onClick={() => setCurrentIndex(0)}
+                        onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
+                        disabled={currentIndex === 0}
                         className={`hidden md:flex absolute -left-4 lg:-left-16 top-1/2 -translate-y-1/2 z-30 
-    h-12 w-12 items-center justify-center rounded-full 
-    bg-black/40 backdrop-blur border border-white/10 
-    transition-all duration-300 
-    ${currentIndex === 0 ? 'opacity-20' : 'hover:bg-orange-500 hover:scale-110'}`}
+  h-12 w-12 items-center justify-center rounded-full 
+  bg-black text-white 
+  backdrop-blur border border-white/10 
+  transition-all duration-300 
+  hover:border-[#ff5900]
+  ${currentIndex === 0 ? 'opacity-20 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}
+
                     >
                         <svg
                             className="w-5 h-5 text-white"
@@ -69,12 +73,14 @@ export default function TeamLeadsSection() {
                     </button>
 
                     <button
-                        onClick={() => setCurrentIndex(1)}
+                        onClick={() => setCurrentIndex(Math.min(1, currentIndex + 1))}
+                        disabled={currentIndex === 1}
                         className={`hidden md:flex absolute -right-4 lg:-right-16 top-1/2 -translate-y-1/2 z-30 
     h-12 w-12 items-center justify-center rounded-full 
     bg-black/40 backdrop-blur border border-white/10 
     transition-all duration-300 
-    ${currentIndex === 1 ? 'opacity-20' : 'hover:bg-orange-500 hover:scale-110'}`}
+ hover:border-orange-500
+    ${currentIndex === 1 ? 'opacity-20 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}
                     >
                         <svg
                             className="w-5 h-5 text-white"
@@ -150,41 +156,46 @@ export default function TeamLeadsSection() {
 }
 
 function LeadCard({ lead }: LeadCardProps) {
-    return (
-        <div className="group relative">
-
-            <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-[50px] rounded-full z-0"
-                style={{
-                    background: 'radial-gradient(circle, rgba(255, 89, 0, 0.45) 0%)',
-                    transform: 'scale(1.1)'
-                }}
+  return (
+    /* 1. Outer Wrapper: Ispe shadow lagegi kyunki ispe overflow-hidden nahi hai */
+    <div 
+        className="group relative transition-all duration-500 rounded-[20px] hover:shadow-[0_0_30px_5px_rgba(255,89,0,0.4)]"
+        style={{ 
+            width: '316px', 
+            height: '568px',
+        }}
+    >
+        {/* 2. Main Card: Image aur content yahan clip honge */}
+        <div
+            className="relative z-10 w-full h-full overflow-hidden transition-all duration-500"
+            style={{
+                borderRadius: '20px',
+                border: '1px solid rgba(255, 255, 255, 0.05)',
+                // Hover par border bhi subtle orange karne ke liye (Optional)
+            }}
+        >
+            <img
+                src={lead.image}
+                alt={lead.name}
+                className="w-full h-full object-cover "
             />
 
-            {/* 2. Main Card with User Dimensions */}
-            <div
-                className="relative z-10 overflow-hidden"
-                style={{
-                    width: '316px',
-                    height: '568px',
-                    borderRadius: '20px',
-                    border: '1px solid rgba(255, 255, 255, 0.05)'
-                }}
-            >
-                <img
-                    src={lead.image}
-                    alt={lead.name}
-                    className="w-full h-full object-cover"
-                />
+            {/* Info Overlay Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
 
-                {/* Info Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10" />
-
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="text-[20px] font-bold text-white mb-1 tracking-tight">{lead.name}</h3>
-                    <p className="text-sm text-gray-300 font-medium tracking-widest uppercase opacity-80">{lead.title}</p>
-                </div>
+            {/* Text Content */}
+            <div className="absolute bottom-0 left-0 right-0 p-8">
+                <h3 className="text-[20px] font-bold text-white mb-1 tracking-tight">
+                    {lead.name}
+                </h3>
+                <p className="text-sm text-gray-300 font-medium tracking-widest uppercase opacity-80">
+                    {lead.title}
+                </p>
             </div>
         </div>
-    );
+
+        {/* 3. Subtle Glow Layer (Optional: Pura card glow karne ke liye niche ek layer) */}
+        <div className="absolute inset-0 rounded-[20px] z-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl bg-[#ff5900]" />
+    </div>
+);
 }

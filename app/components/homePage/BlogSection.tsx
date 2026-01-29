@@ -42,16 +42,9 @@ export default function BlogSection() {
           >
             Stay Informed. Stay Inspired.
           </h2>
-          <div className="heading-underline mx-auto mb-12"></div>
+          <div className="heading-underline mx-auto mb-8"></div>
           <button
-            className="
-    mt-4 mx-auto
-    flex items-center gap-2
-    text-white text-sm hover:text-gray-300 transition-colors
-
-    md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2
-  "
-          >
+            className="mt-4 mx-auto flex items-center gap-2 text-white text-sm  md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2">
             See More
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -65,7 +58,7 @@ export default function BlogSection() {
           {blogPosts.map((post) => (
             <div
               key={post.id}
-              className="group cursor-pointer rounded-2xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300"
+              className="group cursor-pointer rounded-2xl overflow-hidden "
             >
               {/* Image Container */}
 
@@ -74,7 +67,7 @@ export default function BlogSection() {
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover"
                   sizes="100vw"
                 />
 

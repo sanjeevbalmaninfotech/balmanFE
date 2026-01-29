@@ -37,7 +37,7 @@ export default function FAQSection() {
         <div className="heading-underline mx-auto mb-12 "></div>
 
         {/* FAQ Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 mt-4 mb-4 lg:mt-12 mb-12">
           {faqs.map((faq, index) => (
             <div key={index} className="space-y-3">
               <h3 className="text-white text-lg sm:text-xl font-semibold">
@@ -56,9 +56,10 @@ export default function FAQSection() {
           <p className="text-white text-base sm:text-lg mb-4">
             Still have questions?
           </p>
-          <button className="bg-primary hover:bg-primary/90 text-white font-medium px-8 py-3 rounded-lg transition-colors duration-300">
-            Contact us
-          </button>
+         
+          <button className="btn-primary touch-manipulation inline-block text-center">
+   Contact us
+</button>
         </div>
       </div>
     </section>

@@ -41,8 +41,8 @@ export default function HeroSection() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
                     style={{
-                        backgroundImage: 'url(/heroImgs/heroOrangeTreelarge.jpg)',
-                        filter: 'brightness(1.3)'
+                        backgroundImage: 'url(/heroImgs/heroOrangeTreelarge.jpeg)',
+                        // filter: 'brightness(1.3)'
                     }}
                 ></div>
 

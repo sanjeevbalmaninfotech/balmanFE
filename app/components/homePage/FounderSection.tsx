@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const FounderSection = () => {
@@ -10,20 +9,21 @@ const FounderSection = () => {
           <div
             className="w-full lg:w-[45%] aspect-[760/852] relative flex-shrink-0 rounded-lg transition-all duration-300"
             style={{
-              boxShadow: '0 0 0 0 rgba(0, 0, 0, 0)'
+              boxShadow: "0 0 0 0 rgba(0, 0, 0, 0)",
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 50px 15px rgba(255, 89, 0, 0.6)';
-            }}
+            // onMouseEnter={(e) => {
+            //   e.currentTarget.style.boxShadow =
+            //     "0 0 50px 15px rgba(255, 89, 0, 0.6)";
+            // }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 0 0 0 rgba(0, 0, 0, 0)';
+              e.currentTarget.style.boxShadow = "0 0 0 0 rgba(0, 0, 0, 0)";
             }}
           >
             <Image
-              src="/oner.png"
+              src="/staff/nav.png"
               alt="Founder Portrait"
               fill
-              className="object-cover rounded-lg"
+              className="object-top rounded-lg"
               priority
               unoptimized
             />
@@ -34,40 +34,78 @@ const FounderSection = () => {
             <div className="flex flex-col gap-6">
               <div>
                 <h2
-                  className="text-gradient font-bold leading-[110%] tracking-tight mb-2 text-left"
+                  className="text-gradient font-bold leading-[110%] tracking-tight text-left"
                   style={{
                     fontSize: "clamp(32px, 6vw, 36px)",
                   }}
                 >
-                  Meet The Mind That Turned A<br className="hidden md:block" />
+                  Meet The Mind That Turned A
+                  <br className="hidden md:block" />
                   Vision Into Reality
                 </h2>
+                <div className="heading-underline-left"></div>
+              </div>
 
-                {/* Orange underline - positioned under second line */}
-                <div className="heading-underline"></div>
+              
+                <div className="max-w-4xl mx-auto">
+                  <div className="font-['Plus_Jakarta_Sans'] font-normal text-lg leading-[145%] tracking-[0%]">
+                    <p className="mb-2 lg:4">
+                      <strong className="font-medium">
+                        Many companies are built on business plans. Balman
+                        Infotech was built on determination.
+                      </strong>
+                    </p>
+
+                    <p className="mb-6">
+                      As a young woman who moved to the UK, Navdeep Bains
+                      learned early on that creativity is a tool for
+                      transformation. Surrounded by diverse cultures,
+                      fast-moving industries, and the global digital shift, she
+                      saw how brands that think differently survive, and those
+                      who fail to evolve disappear. This understanding planted
+                      the seed for Balman Infotech.
+                    </p>
+
+                    <p className="mb-4">Her vision was clear:</p>
+
+                    <ul className="mb-3 space-y-3">
+                      <li className="flex items-start">
+                        <span className="mr-3 mt-1">•</span>
+                        <span>
+                          Build an agency that treats branding as an art form.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-3 mt-1">•</span>
+                        <span>
+                          Craft digital experiences that feel human, intuitive,
+                          and memorable.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-3 mt-1">•</span>
+                        <span>
+                          Help businesses in Mohali compete with brands anywhere
+                          in the world.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-3 mt-1">•</span>
+                        <span>And lead with originality, not imitation.</span>
+                      </li>
+                    </ul>
+
+                    <p className="mb-6">
+                      What began as inspiration grew into an end-to-end Digital
+                      Transformation Partner agency, committed to building,
+                      innovating, and shaping brands with intention.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            {/* Body Text */}
-            <p className="body-text">
-              Balman Infotech was built on a simple vision - to empower
-              businesses through smart, scalable, and future-ready technology.
-              Under the leadership of our founder, the company has grown from a
-              small idea into a trusted digital partner for clients across
-              industries. With a passion for innovation and a deep understanding
-              of emerging technologies, our founder believes in combining
-              creativity with strategy to deliver meaningful results. His
-              approach focuses on building long-term relationships, maintaining
-              transparency, and ensuring every solution adds real value to the
-              client&apos;s business. Driven by integrity, dedication, and
-              continuous learning, he inspires the Balman Infotech team to push
-              boundaries, explore new possibilities, and set higher standards in
-              every project. His vision continues to guide the company toward
-              excellence, shaping Balman Infotech into a brand known for trust,
-              innovation, and technological expertise.
-            </p>
           </div>
-        </div>
+        
       </div>
     </section>
   );

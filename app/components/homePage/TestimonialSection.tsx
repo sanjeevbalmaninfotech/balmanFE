@@ -15,7 +15,7 @@ const TestimonialSection = () => {
         },
         {
             id: 2,
-            text: "Zennial Pro's innovative approach has revolutionized our training programs. Their dedication to optimizing our processes has streamlined our operations significantly. Their team is incredibly responsive and driven to ensure success. We couldn't be happier to achieve such remarkable results. Worth every investment we made.",
+            text: "Zennial Pro's innovative approach has revolutionized our training programs. Their dedication to optimizing our processes has streamlined our operations significantly.",
             name: "John Thompson",
             position: "Senior Manager, Global Solutions",
             image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
@@ -40,30 +40,31 @@ const TestimonialSection = () => {
     return (
         <>
             <div className="w-full bg-black flex items-center justify-center section-padding">
-                <div className="w-full max-w-[1680px] flex flex-col lg:flex-row gap-5">
+                <div className="w-full  flex flex-col lg:flex-row">
 
                     {/* ================= LEFT SIDE ================= */}
                     <div className="relative lg:w-[420px] xl:w-[572px] lg:pr-6 xl:pr-8">
 
-                        <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start gap-8">
+                        <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start">
 
                             {/* Heading */}
                             <h2
-                                className="text-gradient font-['Plus_Jakarta_Sans'] font-bold leading-[110%] tracking-tight mb-2"
+                                className="text-gradient font-['Plus_Jakarta_Sans'] font-bold leading-tight tracking-tight"
                                 style={{
                                     fontSize: "clamp(32px, 6vw, 36px)",
+                                    lineHeight: "1.2",
                                 }}
                             >
                                 WHAT OUR <br />
                                 CLIENT SAYS
-                                <div className="heading-underline mt-2"></div>
                             </h2>
+                            <div className="heading-underline-left "></div>
 
-                            <p className="body-text">
+                            <p className="body-text mt-4 lg:mt-16">
                                 Reviews from all the clients that we&apos;ve helped grow.
                             </p>
 
-                            <div className="flex items-center gap-8 mt-6">
+                            <div className="flex items-center gap-8 mt-6 mb-8">
                                 <div className="flex items-center gap-3">
                                     <div className="w-12 h-12 bg-[#1A1A1A] rounded-xl flex items-center justify-center">
                                         <Hexagon className="w-6 h-6 text-[#3B82F6] fill-[#3B82F6]" />
@@ -94,18 +95,12 @@ const TestimonialSection = () => {
 
                     {/* ================= RIGHT SIDE / CAROUSEL ================= */}
                     <div
-                        className="
-        flex-1 relative flex items-center justify-center
-       min-h-[520px] sm:min-h-[560px] lg:min-h-[520px] xl:h-[495px]
-
-        px-4 lg:px-0
-      "
+                        className="flex-1 relative flex items-center justify-center
+       h-[520px] sm:h-[560px] lg:h-[520px] xl:h-[495px] px-4 lg:px-0 "
                     >
                         {/* ===== LEFT PREVIEW ===== */}
                         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[180px] h-[300px]
-                      rounded-2xl opacity-40 overflow-hidden hidden xl:block
-
-                      scale-90 blur-[1px]">
+                      rounded-2xl opacity-40 overflow-hidden hidden xl:block scale-90 blur-[1px]">
                             <Image
                                 src={testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length].image}
                                 alt=""
@@ -134,27 +129,29 @@ const TestimonialSection = () => {
                         from-primary via-primary/50 to-transparent
                         rounded-[26px] blur-md opacity-80"></div>
 
-                            <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden h-full">
-                                <div className="flex flex-col md:flex-row">
+                            <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden h-[450px] sm:h-[490px] md:h-[440px] lg:h-[460px] xl:h-[430px]">
+                                <div className="flex flex-col md:flex-row h-full">
 
                                     {/* TEXT */}
-                                    <div className="w-full md:w-[55%] p-6 md:p-10 flex flex-col justify-between">
-                                        <span className="text-primary text-6xl">“</span>
-                                        <p className="text-gray-800 my-4 leading-relaxed">
+                                    <div className="w-full md:w-[55%] flex flex-col justify-between overflow-hidden">
+                                   <div className='p-2 sm:p-8 md:p-10 overflow-y-auto custom-scrollbar flex flex-col gap-1 lg:gap-4'>
+                                        <span className="text-primary text-5xl sm:text-6xl leading-none">{`''`}</span>
+                                        <p className="text-gray-800 leading-relaxed text-sm sm:text-base">
                                             {testimonials[currentIndex].text}
                                         </p>
                                         <div>
-                                            <h3 className="font-bold">
+                                            <h3 className="font-bold text-sm sm:text-base">
                                                 {testimonials[currentIndex].name}
                                             </h3>
-                                            <p className="text-sm text-gray-600">
+                                            <p className="text-xs sm:text-sm text-gray-600">
                                                 {testimonials[currentIndex].position}
                                             </p>
+                                        </div>
                                         </div>
                                     </div>
 
                                     {/* IMAGE (FIXED FOR MOBILE) */}
-                                    <div className="w-full md:w-[45%] relative h-[220px] sm:h-[260px] md:h-auto">
+                                    <div className="w-full md:w-[45%] relative h-[220px] sm:h-[260px] md:h-full">
                                         <Image
                                             src={testimonials[currentIndex].image}
                                             alt={testimonials[currentIndex].name}
@@ -169,23 +166,18 @@ const TestimonialSection = () => {
                         {/* ===== NAVIGATION ARROWS ===== */}
                         <button
                             onClick={prevTestimonial}
-                            className="
-          absolute left-1 sm:left-4 md:left-2 lg:left-6 xl:left-12
-          top-1/2 -translate-y-1/2
-          w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12
-          bg-black border border-white/20 rounded-full
-          flex items-center justify-center z-20
-        "
-                        >
+                            className=" absolute -left-1 sm:left-4 md:left-2 lg:left-6 xl:left-12
+          top-1/2 -translate-y-1/2 w-5 h-5 sm:w-10 sm:h-10 lg:w-12 lg:h-12   bg-black border border-white/20 rounded-full
+          flex items-center justify-center z-20 ">
                             <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" />
                         </button>
 
                         <button
                             onClick={nextTestimonial}
                             className="
-          absolute right-1 sm:right-4 md:right-2 lg:right-6 xl:right-12
+          absolute -right-1 sm:right-4 md:right-2 lg:right-6 xl:right-12
           top-1/2 -translate-y-1/2
-          w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12
+          w-5 h-5 sm:w-10 sm:h-10 lg:w-12 lg:h-12
           bg-black border border-white/20 rounded-full
           flex items-center justify-center z-20
         "

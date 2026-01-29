@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <main>
             <Navbar />
-            <HeroImage url="/heroImgs/heroOrangeTreelarge.jpg" />
+            <HeroImage url="/heroImgs/heroOrangeTreelarge.jpeg" />
             <IndividualBlog />
         </main>
     );

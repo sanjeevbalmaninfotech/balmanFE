@@ -7,8 +7,9 @@ export default function BlogPage() {
   return (
     <>
       {/* <Navbar /> */}
-      {/* <TechTreeHero /> */}
-      <HeroImage url="/heroImgs/heroOrangeTreelarge.jpg" />
+      {/* <TechTreeHero /> */} 
+      {/* "C:\repos\balmanFE\public\heroImgs\heroOrangeTreelarge.jpeg" */}
+      <HeroImage url="/heroImgs/heroOrangeTreelarge.jpeg" />
       <BlogList />
     </>
   );

@@ -16,20 +16,16 @@ export default function ServicesSection() {
     <section className="relative w-full bg-black section-padding-y">
       <div className="relative w-full mx-auto section-padding-x">
         {/* Header Section */}
-        <div className="text-center mb-12 md:mb-16">
-
-
-
+        <div className="flex flex-col items-center text-center mb-12 md:mb-16">
           <h2
             className="text-gradient font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
             style={{
               fontSize: "clamp(32px, 6vw, 36px)",
             }}
           >
-            Experience In Different Industries
+ YE use nhi ho rha
           </h2>
-          <div className="heading-underline mx-auto mb-12"></div>
-
+          <div className="heading-underline">dfdfdfdfd</div>
         </div>
 
         {/* Swiper Section */}

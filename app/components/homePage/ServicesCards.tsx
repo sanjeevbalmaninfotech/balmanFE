@@ -23,7 +23,7 @@ export default function ServicesCards() {
                 "Companies and Brands go unnoticed, every day, every year. Your brand is not just how it looks, it’s how it feels. Our job is to give that feeling a voice, a shape, and a story that your audience remembers.",
             leftHeight: 500,
             rightHeight: 460,
-            url: "/services/branding-services",
+            url: "/services/branding",
             icon: "/services/WebDevelopment.png",
         },
         {
@@ -41,7 +41,7 @@ export default function ServicesCards() {
                 "We create content that feels natural yet impactful and designed to stop the scroll, spark conversations, and build loyal communities. Our goal is simple: to organically create trust, attract followers, and leave a lasting impression",
             leftHeight: 420,
             rightHeight: 420,
-            url: "/services/web-designing",
+            url: "/services/organic-growth",
             icon: "/services/OrganicGrowth.png",
         },
         {
@@ -50,7 +50,7 @@ export default function ServicesCards() {
                 "A brand is incomplete without a digital home, and your website is the most powerful representation of who you are. Our expert team of web developers ensure that every website we build is responsive, fast, visually stunning, and aligned with your brand’s identity.",
             leftHeight: 420,
             rightHeight: 460,
-            url: "/services/app-development",
+            url: "/services/web-development",
             icon: "/services/WebDevelopment.png",
         },
         {
@@ -59,7 +59,7 @@ export default function ServicesCards() {
                 "Branding doesn't end after a customer discovers you; it extends to how they feel every time they interact with you. Balman Infotech provides complete Customer Support Services that ensures your customers feel cared for.",
             leftHeight: 460,
             rightHeight: 500,
-            url: "/services/web-development",
+            url: "/services/customer-support",
             icon: "/services/CustomerSupport.png",
         },
     ];
@@ -107,6 +107,7 @@ export default function ServicesCards() {
                     >
                         Experience In Different Industries
                     </h2>
+                     <div className="heading-underline"></div>
                 </div>
 
                 {/* GRID */}

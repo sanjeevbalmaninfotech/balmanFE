@@ -51,7 +51,7 @@ export default function Footer() {
 
                     <Link href="/" className="flex-shrink-0 cursor-pointer">
                       <Image
-                        src="/logo.png"
+                        src="/logo.PNG" // "C:\repos\balmanFE\public\logo.PNG"
                         alt="Logo"
                         width={100}   // control size via width/height
                         height={100}
