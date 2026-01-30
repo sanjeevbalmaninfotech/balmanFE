@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import SectionHeading from "../Common/SectionHeading";
 
 export default function BlogSection() {
   const blogPosts = [
@@ -34,14 +35,9 @@ export default function BlogSection() {
       <div className="relative w-full mx-auto section-padding-x">
         {/* Header */}
         <div className="relative mb-12 text-center">
-          <h2
-            className="text-gradient font-bold text-center leading-[110%] tracking-tight"
-            style={{
-              fontSize: "clamp(32px, 6vw, 36px)",
-            }}
-          >
+          <SectionHeading>
             Stay Informed. Stay Inspired.
-          </h2>
+          </SectionHeading>
           <div className="heading-underline mx-auto mb-8"></div>
           <button
             className="mt-4 mx-auto flex items-center gap-2 text-white text-sm  md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2">

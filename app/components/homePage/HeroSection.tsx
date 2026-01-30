@@ -99,12 +99,15 @@ export default function HeroSection() {
             <AboutSection />
             {/* <OurServices /> */}
             <ServicesCards />
-            <TestimonialSection />
-            <FounderSection />
-            <BrandAnalysisCTA />
-
+            
+            
+        
+<FounderSection />
+<TestimonialSection />
             {/* <TeamSection /> */}
+            <BrandAnalysisCTA />
             <TeamLeadsSection />
+                
             <BlogSection />
             <FAQSection />
             <NewsletterSection />

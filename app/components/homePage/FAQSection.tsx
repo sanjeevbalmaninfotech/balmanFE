@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeading from "../Common/SectionHeading";
 
 export default function FAQSection() {
   const faqs = [
@@ -24,14 +25,9 @@ export default function FAQSection() {
     <section className="relative w-full bg-black section-padding-y">
       <div className="relative w-full mx-auto section-padding-x">
 
-        <h2
-          className="text-gradient font-bold text-center leading-[110%] tracking-tight"
-          style={{
-            fontSize: "clamp(32px, 6vw, 36px)",
-          }}
-        >
+        <SectionHeading>
           Everything You Need To Know Before Starting Your Next Project With Us.
-        </h2>
+        </SectionHeading>
 
 
         <div className="heading-underline mx-auto mb-12 "></div>

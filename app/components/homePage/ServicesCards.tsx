@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import SectionHeading from "../Common/SectionHeading";
 
 interface Service {
     title: string;
@@ -99,14 +100,9 @@ export default function ServicesCards() {
 
                 {/* HEADER */}
                 <div className="text-center mb-12">
-                    <h2
-                        className="text-gradient font-bold leading-[110%] tracking-tight"
-                        style={{
-                            fontSize: "clamp(32px, 6vw, 36px)",
-                        }}
-                    >
+                    <SectionHeading>
                         Experience In Different Industries
-                    </h2>
+                    </SectionHeading>
                      <div className="heading-underline"></div>
                 </div>
 

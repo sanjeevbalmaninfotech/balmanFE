@@ -1,3 +1,5 @@
+import SectionHeading from "../Common/SectionHeading";
+
 export default function AboutSection() {
   return (
     <>
@@ -8,15 +10,10 @@ export default function AboutSection() {
             {/* Left Column - Heading */}
             <div className="relative lg:w-[30%] lg:pr-8">
               <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start">
-                <h2
-                  className="text-gradient font-bold leading-[110%] tracking-tight"
-                  style={{
-                    fontSize: "clamp(32px, 6vw, 36px)",
-                  }}
-                >
+                <SectionHeading align="left">
                   We&apos;re More Than A <br />
                   Digital Agency
-                </h2>
+                </SectionHeading>
                 <div className="heading-underline-left"></div>
               </div>
             </div>

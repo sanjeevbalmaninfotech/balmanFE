@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { LeadCardProps } from '@/app/types/ourTeam';
 import { leads } from '@/app/constants/ourTeam';
+import SectionHeading from "../Common/SectionHeading";
 
 
 
@@ -35,14 +36,9 @@ export default function TeamLeadsSection() {
 
                 {/* Header Section */}
                 <div className="flex flex-col items-center justify-center">
-                    <h2
-                        className="text-gradient font-['Plus_Jakarta_Sans'] font-bold text-center leading-[110%] tracking-tight"
-                        style={{
-                            fontSize: "clamp(32px, 6vw, 36px)",
-                        }}
-                    >
+                    <SectionHeading>
                         Meet Our Leads
-                    </h2>
+                    </SectionHeading>
                     <div className="heading-underline"></div>
                 </div>
 

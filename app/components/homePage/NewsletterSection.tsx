@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import SectionHeading from "../Common/SectionHeading";
 
 export default function NewsletterSection() {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit =  () => {
     if (firstName && email) {
       console.log('Newsletter subscription:', { firstName, email });
       // Handle newsletter subscription logic here
@@ -27,14 +28,9 @@ export default function NewsletterSection() {
 
           {/* Content Container (centered and responsive) */}
           <div className="relative z-10 text-center section-padding-x w-full max-w-7xl">
-            <h2
-              className="text-gradient font-bold text-center leading-[110%] tracking-tight mb-8"
-              style={{
-                fontSize: "clamp(32px, 6vw, 36px)",
-              }}
-            >
+            <SectionHeading className="mb-8">
               Subscribe to our newsletter
-            </h2>
+            </SectionHeading>
 
             {/* Input Group */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-3xl mx-auto">
@@ -45,20 +41,9 @@ export default function NewsletterSection() {
     placeholder="First name"
     value={firstName}
     onChange={(e) => setFirstName(e.target.value)}
-    className="
-      w-full
-      sm:w-[300px]
-      md:w-[320px]
-      px-4 py-3
-      rounded-lg
-      bg-white
-      text-black
-      placeholder-gray-500
-      focus:outline-none
-      focus:ring-2 focus:ring-primary
-      transition-all
-    "
-  />
+    className="w-full sm:w-[300px] md:w-[320px] px-4 py-3 rounded-lg  bg-white text-black  placeholder-gray-500
+      focus:outline-none focus:ring-2 focus:ring-primary
+      transition-all "/>
 
   {/* Email */}
   <input
