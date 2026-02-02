@@ -8,7 +8,7 @@ const WhoWeAreBuiltFor: React.FC = () => {
         {/* Main Title */}
         <div className="text-center mb-4 lg:mb-6">
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white">
-            Who We`re Built For
+            {`Who We're Built For`}
           </h3>
           <div className="heading-underline"></div>
         </div>
@@ -42,7 +42,7 @@ const WhoWeAreBuiltFor: React.FC = () => {
         {/* Main Title */}
         <div className="text-center mb-4 lg:mb-6">
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white">
-            WE DON`T
+            {`WE DON'T`}
           </h3>
           <div className="heading-underline"></div>
         </div>
@@ -64,8 +64,7 @@ const WhoWeAreBuiltFor: React.FC = () => {
         {/* First Heading with Gradient */}
         <div className="text-center mb-4">
           <h2
-            className="
-    text-xl md:text-2xl leading-[100%] capitalize
+            className="text-xl md:text-2xl leading-[120%] capitalize
     font-semibold
     bg-[radial-gradient(69.15%_305.03%_at_28.18%_51.11%,_#FFFFFF_12.92%,_#656565_100%)]
     bg-clip-text text-transparent
@@ -74,7 +73,7 @@ const WhoWeAreBuiltFor: React.FC = () => {
               fontFamily: "Plus Jakarta Sans, sans-serif",
             }}
           >
-            Wondering Whether We`re Right for You?
+          {`Wondering Whether We\'re Right for You?`}
           </h2>
         </div>
 
@@ -94,7 +93,7 @@ const WhoWeAreBuiltFor: React.FC = () => {
         </div>
 
         {/* Buttons Container */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-2 lg:gap-6 max-w-4xl mx-auto">
           {/* Left Button - Filled */}
          <span
             className="w-full md:w-auto px-6 py-3 bg-[#FF5900] border-1 border-[#FF5900]
