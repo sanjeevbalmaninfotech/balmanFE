@@ -12,8 +12,11 @@ type ToggleStates = Record<string, boolean>;
 
 const ConsentPopup: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(() => {
-    const saved = localStorage.getItem("user_cookie_consent");
-    return !saved;
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem("user_cookie_consent");
+      return !saved;
+    }
+    return false;
   });
   const [expandedCategories, setExpandedCategories] = useState<
     Record<string, boolean>

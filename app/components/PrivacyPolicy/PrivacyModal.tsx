@@ -4,8 +4,11 @@ import ConsentPopup from './ConsentPopup';
 
 export default function PrivacyModal() {
     const [isVisible, setIsVisible] = useState(() => {
-        const savedConsent = localStorage.getItem('user_cookie_consent');
-        return !savedConsent;
+        if (typeof window !== 'undefined') {
+            const savedConsent = localStorage.getItem('user_cookie_consent');
+            return !savedConsent;
+        }
+        return false;
     });
     const [showCustomize, setShowCustomize] = useState(false);
 
