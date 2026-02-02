@@ -6,13 +6,12 @@ import SectionHeading from "../Common/SectionHeading";
 export default function ContactUsForm() {
   const [formData, setFormData] = useState({
     fullName: "",
-     phone: "",
+    phone: "",
     conmpanyName: "",
     websiteUrl: "",
     service: "",
     message: "",
-    CompanyType:"",
-  
+    CompanyType: "",
   });
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -76,13 +75,14 @@ export default function ContactUsForm() {
               <div className="flex items-center gap-1 lg:gap-3 mb-1">
                 <img src="/icons/email.png" alt="Email" className="w-8 h-8" />
               </div>
-              <h3 className="text-white text-[20px] font-semibold mb-2">Email</h3>
+              <h3 className="text-white text-[20px] font-semibold mb-2">
+                Email
+              </h3>
               <a
                 href="mailto:contact@balmaninfotech.net"
                 className="text-[#8E8E8E] hover:text-white text-[16px] transition-colors"
                 style={{
                   fontFamily: "Plus Jakarta Sans, sans-serif",
-                 
                 }}
               >
                 contact@balmaninfotech.net
@@ -122,8 +122,8 @@ export default function ContactUsForm() {
                 lineHeight: "150%",
               }}
             >
-             4th floor, F88, Phase 7, Industrial Area, Sector 74, Sahibzada Ajit Singh
-              Nagar, Punjab 160055
+              4th floor, F88, Phase 7, Industrial Area, Sector 74, Sahibzada
+              Ajit Singh Nagar, Punjab 160055
             </p>
             <a
               href="https://maps.app.goo.gl/r5tmo5sUkF5Sb6KG8"
@@ -142,7 +142,7 @@ export default function ContactUsForm() {
         </div>
 
         {/* Right Side - Form Container */}
-    <div className="w-full lg:col-span-7">
+        <div className="w-full lg:col-span-7">
           <div className="space-y-6">
             {/* Name Fields */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -234,7 +234,7 @@ export default function ContactUsForm() {
                   lineHeight: "150%",
                 }}
               >
-               Service Interested In
+                Service Interested In
               </label>
               <div className="relative">
                 <button

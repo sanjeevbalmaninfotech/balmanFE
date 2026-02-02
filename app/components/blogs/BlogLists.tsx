@@ -7,8 +7,10 @@ export default function BlogList() {
       author: "Dasteen 2",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
-      content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80"
+      content:
+        "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
+      image:
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80",
     },
     {
       id: 2,
@@ -16,8 +18,10 @@ export default function BlogList() {
       author: "Dasteen 3",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
-      content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80"
+      content:
+        "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
+      image:
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80",
     },
     {
       id: 3,
@@ -25,8 +29,10 @@ export default function BlogList() {
       author: "Dasteen 4",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
-      content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80"
+      content:
+        "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
+      image:
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80",
     },
     {
       id: 4,
@@ -34,9 +40,11 @@ export default function BlogList() {
       author: "Dasteen 5",
       date: "Jan 10, 2024",
       readTime: "3 Min Read",
-      content: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80"
-    }
+      content:
+        "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet.",
+      image:
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&q=80",
+    },
   ];
 
   return (
@@ -93,7 +101,8 @@ export default function BlogList() {
                   <div className="text-sm sm:text-base">
                     <p className="font-semibold">{post.author}</p>
                     <p className="text-gray-400">
-                      {post.date} <span className="mx-2">•</span> {post.readTime}
+                      {post.date} <span className="mx-2">•</span>{" "}
+                      {post.readTime}
                     </p>
                   </div>
                 </div>

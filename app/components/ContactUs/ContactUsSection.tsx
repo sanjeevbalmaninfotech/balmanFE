@@ -1,46 +1,48 @@
-import React from 'react';
-import SectionHeading from '../Common/SectionHeading';
-
-
-
-
+import React from "react";
+import SectionHeading from "../Common/SectionHeading";
 
 const ContactUsSection: React.FC = () => {
   const ContactUsSection = [
     {
-      title: 'Branding Services',
-      description: 'We help your brand develop a unique identity and enhance its recall value through visual storytelling.',
+      title: "Branding Services",
+      description:
+        "We help your brand develop a unique identity and enhance its recall value through visual storytelling.",
       isHighlighted: false,
     },
     {
-      title: 'Performance Marketing',
-      description: 'We run data-driven campaigns tailored to your brand, designed to generate leads, sales, and a strong return on investment.',
+      title: "Performance Marketing",
+      description:
+        "We run data-driven campaigns tailored to your brand, designed to generate leads, sales, and a strong return on investment.",
       isHighlighted: false,
     },
     {
-      title: 'Organic Growth',
-      description: 'We utilise SEO, high-quality content, and social media strategies to help your brand grow in a sustainable manner.',
+      title: "Organic Growth",
+      description:
+        "We utilise SEO, high-quality content, and social media strategies to help your brand grow in a sustainable manner.",
       isHighlighted: false,
     },
     {
-      title: 'Web Development',
-      description: 'We create digital solutions that boost your visibility and help you convert leads through a smooth and engaging user experience.',
+      title: "Web Development",
+      description:
+        "We create digital solutions that boost your visibility and help you convert leads through a smooth and engaging user experience.",
       isHighlighted: false,
     },
     {
-      title: 'Customer Support',
-      description: 'We provide customer support that makes a positive impression and helps improve your customer retention.',
+      title: "Customer Support",
+      description:
+        "We provide customer support that makes a positive impression and helps improve your customer retention.",
       isHighlighted: false,
     },
     {
-      title: 'Finance & Acc. Management',
-      description: 'We offer professional accounting, financial planning, compliance, and reporting to keep your business on track.',
+      title: "Finance & Acc. Management",
+      description:
+        "We offer professional accounting, financial planning, compliance, and reporting to keep your business on track.",
       isHighlighted: false,
     },
   ];
 
   return (
-   <section className="bg-[#010101] px-4">
+    <section className="bg-[#010101] px-4">
       <div className="mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           {/* Left Side - Info Section (30% width, aligned to top) */}
@@ -52,26 +54,25 @@ const ContactUsSection: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <div className='mb-8'>
-            <SectionHeading align="left">
-              Let`s Build, Grow & Scale Your Brand
-            </SectionHeading>
-</div>
+            <div className="mb-8">
+              <SectionHeading align="left">
+                Let`s Build, Grow & Scale Your Brand
+              </SectionHeading>
+            </div>
             {/* Description */}
-          <p
-  style={{
-    color: "#8E8E8E",
-    fontFamily: "Plus Jakarta Sans, sans-serif",
-    fontWeight: 500,
-    fontSize: "16px",
-    lineHeight: "150%",
-    letterSpacing: "0",
-  }}
->
-  Whether you`re a startup, a growing business, or an established enterprise,
-  we`d love to be your Growth Partners!
-</p>
-
+            <p
+              style={{
+                color: "#8E8E8E",
+                fontFamily: "Plus Jakarta Sans, sans-serif",
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "150%",
+                letterSpacing: "0",
+              }}
+            >
+              Whether you`re a startup, a growing business, or an established
+              enterprise, we`d love to be your Growth Partners!
+            </p>
           </div>
 
           {/* Right Side - Service Cards Grid (70% width) */}
@@ -81,19 +82,19 @@ const ContactUsSection: React.FC = () => {
                 key={index}
                 className={`rounded-2xl p-4 lg:p-12 border ${
                   service.isHighlighted
-                    ? 'bg-[#FF5900] border-[#FF5900]'
-                    : 'bg-transparent border-[#FF5900]'
+                    ? "bg-[#FF5900] border-[#FF5900]"
+                    : "bg-transparent border-[#FF5900]"
                 }`}
               >
                 {/* Service Title */}
                 <h3
                   className="capitalize mb-3 mb-8"
                   style={{
-                    fontFamily: 'Plus Jakarta Sans, sans-serif',
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 600,
-                    fontSize: '24px',
-                    lineHeight: '120%',
-                    color: '#E8E8EA',
+                    fontSize: "24px",
+                    lineHeight: "120%",
+                    color: "#E8E8EA",
                   }}
                 >
                   {service.title}
@@ -102,11 +103,11 @@ const ContactUsSection: React.FC = () => {
                 {/* Service Description */}
                 <p
                   style={{
-                    fontFamily: 'Plus Jakarta Sans, sans-serif',
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 500,
-                    fontSize: '16.27px',
-                    lineHeight: '150%',
-                    color: '#E8E8EA',
+                    fontSize: "16.27px",
+                    lineHeight: "150%",
+                    color: "#E8E8EA",
                   }}
                 >
                   {service.description}

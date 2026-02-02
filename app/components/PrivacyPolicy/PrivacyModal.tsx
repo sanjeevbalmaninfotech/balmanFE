@@ -3,18 +3,13 @@ import React, { useState, useEffect } from 'react';
 import ConsentPopup from './ConsentPopup';
 
 export default function PrivacyModal() {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(() => {
+        const savedConsent = localStorage.getItem('user_cookie_consent');
+        return !savedConsent;
+    });
     const [showCustomize, setShowCustomize] = useState(false);
 
-    // Check storage on load
-    useEffect(() => {
-        const savedConsent = localStorage.getItem('user_cookie_consent');
-        if (!savedConsent) {
-            setIsVisible(true);
-        }
-    }, []);
-
-    const saveAndClose = (data: any) => {
+    const saveAndClose = (data: Record<string, boolean>) => {
         localStorage.setItem('user_cookie_consent', JSON.stringify(data));
         setIsVisible(false);
     };
@@ -60,7 +55,7 @@ export default function PrivacyModal() {
                     We value your privacy
                 </h1>
                 <p className="mb-8 text-[14px] md:text-[15px] text-black leading-relaxed">
-                    We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.
+                    We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking {"Accept All"}, you consent to our use of cookies.
                 </p>
 
                 <div className="flex gap-4 justify-center flex-wrap">

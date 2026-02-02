@@ -31,7 +31,7 @@ const WhatWeActuallyDo: React.FC = () => {
             What We Actually Do{" "}
             <span className="text-white">(Beyond The Labels)</span>
           </h3>
-           <div className="heading-underline"></div>
+          <div className="heading-underline"></div>
         </div>
 
         {/* First Description */}
@@ -51,7 +51,6 @@ const WhatWeActuallyDo: React.FC = () => {
 
         {/* Second Description */}
         <div>
-    
           <div className="max-w-6xl mx-auto">
             <p
               className="text-white text-left text-base leading-[120%] mb-4 lg:mb-6"
@@ -91,8 +90,6 @@ const WhatWeActuallyDo: React.FC = () => {
           </div>
         </div>
       </div>
-
-     
     </section>
   );
 };

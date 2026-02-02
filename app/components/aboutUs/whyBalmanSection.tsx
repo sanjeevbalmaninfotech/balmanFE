@@ -11,7 +11,7 @@ export default function whyBalmanSection() {
             <div className="relative lg:w-[30%] lg:pr-8">
               <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start">
                 <SectionHeading align="left">
-                 Why Balman Infotech?
+                  Why Balman Infotech?
                 </SectionHeading>
                 <div className="heading-underline-left"></div>
               </div>
@@ -24,20 +24,23 @@ export default function whyBalmanSection() {
             <div className="lg:w-[70%] lg:pl-8">
               {/* Paragraph 1 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
-               Businesses usually come to us with pieces: a logo that feels off, a website that is simply existing but isn’t converting, marketing spend that isn’t yielding returns, or systems that work separately but cannot come together to grow the brand.
+                Businesses usually come to us with pieces: a logo that feels
+                off, a website that is simply existing but isn’t converting,
+                marketing spend that isn’t yielding returns, or systems that
+                work separately but cannot come together to grow the brand.
               </p>
 
               {/* Paragraph 2 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
-              We exist to connect those pieces.
+                We exist to connect those pieces.
               </p>
 
               {/* Paragraph 3 */}
               <p className="body-text mb-4 sm:mb-5 md:mb-6">
-                Balman Infotech has expertise in building brands and systems that work together, so you and your company can reach their full potential.
+                Balman Infotech has expertise in building brands and systems
+                that work together, so you and your company can reach their full
+                potential.
               </p>
-
-           
             </div>
           </div>
         </div>

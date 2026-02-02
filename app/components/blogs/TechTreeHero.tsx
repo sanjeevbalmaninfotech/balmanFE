@@ -3,8 +3,7 @@ import Image from "next/image";
 export default function TechTreeHero() {
   return (
     <section className="relative w-full bg-[#010101] overflow-hidden">
-
-      <div className="relative w-full" style={{ aspectRatio: '1680/541' }}>
+      <div className="relative w-full" style={{ aspectRatio: "1680/541" }}>
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/40 via-black to-black"></div>
 

@@ -92,14 +92,10 @@ export default function WhoAreWe() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="heading-underline-left"></div>
-              <span className="sort-main-heading">
-                About Us
-              </span>
+              <span className="sort-main-heading">About Us</span>
             </div>
 
-          <SectionHeading align="left">
-              Who Are We?
-            </SectionHeading>
+            <SectionHeading align="left">Who Are We?</SectionHeading>
 
             <p className="text-gray-400 leading-relaxed text-base">
               Balman Infotech is an end-to-end agency that covers your branding,
