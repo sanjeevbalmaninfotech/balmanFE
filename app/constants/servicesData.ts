@@ -385,37 +385,33 @@ export const servicesData: Record<string, ServiceData> = {
         },
 
         accordionData: {
-            heading: "Complete Customer Support Solutions Designed By Balman Infotech to Grow your Business",
-            description: "",
+            heading: "Web, App & Software Development Solutions by Balman Infotech",
+            description: "We create quick, responsive, conversion-focused websites that effectively engage users and represent your business. The services that we offer include:",
             accordion: [
                 {
-                    title: "Customer Support through Multiple Channels",
-                    content: "Using multiple channels to support your customer helps in preventing customer frustration and ease of contact in case they have a complaint or a query.",
+                    title: "Mobile App Development",
+                    content: "We create user-friendly mobile apps that provide consistent experiences across platforms.",
                     items: []
                 },
                 {
-                    title: "Inbound and Outbound Calls Services",
-                    content: "Inbound Calling services mean when the customers call the brand to satisfy a query, put forward a complaint, but Outbound Calling means when a customer support executive reaches out to a customer. Balman Infotech provides both of these services through our highly trained executives that make sure your brand is heard loud and clear.",
+                    title: "Custom Software Development",
+                    content: "We provide secure, scalable software solutions based on your operational requirements and business procedures.",
 
                 },
                 {
-                    title: "Technical Customer Support",
-                    content: "For companies that rely on tech products and services, we offer trained technical customer support executives.",
+                    title: "UI/UX Design & Front-End Development",
+                    content: "Excellent experience is necessary for outstanding functionality. We create user-friendly, captivating, and conversion-focused interfaces.",
                     items: []
                 }, {
-                    title: "Customer Satisfaction and Retention",
-                    content: "We hold our customer’s satisfaction and retention as our utmost priority. We make sure of these by providing services like:",
+                    title: "Maintenance, Support & Scaling",
+                    content: "Digital products require constant maintenance. We make sure your systems are scalable, safe, and up to date.",
                     items: []
                 },
                 {
                     title: "Email Marketing and Marketing Automation",
                     content: "We design personalized email campaigns that nurture leads and increase customer lifetime value. Our Email marketing services include.",
                     items: []
-                }, {
-                    title: "Conversion Rate Optimization",
-                    content: "Driving Traffic is only half the job. We optimize your website and landing pages to convert visitors into customers.",
-                    items: []
-                }
+                },
 
             ]
         },
@@ -527,7 +523,8 @@ export const servicesData: Record<string, ServiceData> = {
                 "Long-term, sustainable growth focus",
                 "AI-powered tools with human expertise"
             ]
-        }, whySection: {
+        },
+         whySection: {
             title: "Understanding Organic Growth and Its Impact",
             description:
                 "Organic Growth refers to increasing your brand’s visibility, traffic and revenue naturally through search engines, content and brand authority, without relying heavily on paid ads.",
@@ -673,10 +670,10 @@ export const servicesData: Record<string, ServiceData> = {
 
     "customer-support": {
         id: "customer-support",
-        mainHeading: "24/7 Customer Support Services",
-        subHeadings: ["Excellence in Customer Experience"],
+        mainHeading: "Customer Support by Balman Infotech",
+        subHeadings: ["Providing Exceptional Customer Services Tailored to Your Brand’s Needs"],
         descriptions: [
-            "We provide round-the-clock customer support services that enhance customer satisfaction and loyalty.\n\nOur trained support team handles customer inquiries, technical issues, and service requests with professionalism and efficiency.\n\nFrom live chat to phone support, we offer multi-channel customer service solutions that keep your customers happy and your business running smoothly."
+            "Balman Infotech Serves your company with the best 24/7 Customer Support Services across calls, mails and chats. Our highly trained customer support executives make sure to deliver customer satisfaction and retention for local and international businesses. Whether you are a Start-up, SME or Enterprise, our customized customer support solutions are designed scale your operation without compromising the brand tone and voice."
         ],
         image: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=800&h=400&fit=crop",
         leftSideServices: [
@@ -687,7 +684,7 @@ export const servicesData: Record<string, ServiceData> = {
             { label: "Customer Support", path: "/services/customer-support" }
         ],
         mainCta: {
-            text: "Talk to a Customer Support Expert",
+            text: "Talk to our Experts",
             href: "/contact-us"
         },
 
@@ -695,21 +692,100 @@ export const servicesData: Record<string, ServiceData> = {
             heading: "Industries We Support",
             items: [
                 "E-commerce",
-                "SaaS",
                 "Healthcare",
-                "Financial Services",
-                "Telecommunications"
+                " Healthcare",
+                "Real-estate"," Education", "IT and SAAS",
+                "Startups and SMEs"
+
             ]
         },
         whyChooseUs: {
-            heading: "Why Choose Our Customer Support Services?",
+            heading: "Why Choose Balman Infotech as your Customer Support Partner?",
             items: [
-                "24/7 availability",
-                "Multi-channel support",
-                "Trained professionals",
-                "Quick response times",
-                "Scalable solutions"
+                "24/7 Customer Support Team",
+                "Highly trained Team",
+                "Quicker reaction and resolution times",
+                "Open reporting and insights",
+                "Operations for scalable support",
+                "Better Customer Retention "
             ]
-        }
+        },
+          whySection: {
+            title: "Why are Customer Support Services important for Business Growth Today?",
+            description:
+                "Customers are no longer accustomed to long waiting times and non chalant behaviour from a brand. They need answers, quick and solution oriented. They need to feel heard and they need someone answerable for their queries at all time, absence of which results in revenue drainage, wastage of the Customer Acquisition Cost and an overall bad image of the brand.",
+            listTitle: "Customer Support helps your business -",
+            points: [
+                "Improve Brand Image and trust",
+                "Increase in Customer Satisfaction",
+                "Increase in Customer Retention",
+                "Convert support interactions into growth opportunities",
+            
+            ],
+            footerText:
+                "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention."
+        },
+         accordionData: {
+            heading: "Complete Customer Support Solutions Designed By Balman Infotech to Grow your Business",
+            description: "",
+            accordion: [
+                {
+                    title: "Customer Support through Multiple Channels",
+                    content: "Using multiple channels to support your customer helps in preventing customer frustration and ease of contact in case they have a complaint or a query.",
+                    items: []
+                },
+                {
+                    title: "Inbound and Outbound Calls Services",
+                    content: "Inbound Calling services mean when the customers call the brand to satisfy a query, put forward a complaint, but Outbound Calling means when a customer support executive reaches out to a customer. Balman Infotech provides both of these services through our highly trained executives that make sure your brand is heard loud and clear.",
+
+                },
+                {
+                    title: "Technical Customer Support",
+                    content: "For companies that rely on tech products and services, we offer trained technical customer support executives.",
+                    items: []
+                }, {
+                    title: "Customer Satisfaction and Retention",
+                    content: "We hold our customer's satisfaction and retention as our utmost priority. We make sure of these by providing services like:",
+                    items: []
+                },
+                {
+                    title: "Email Marketing and Marketing Automation",
+                    content: "We design personalized email campaigns that nurture leads and increase customer lifetime value. Our Email marketing services include.",
+                    items: []
+                },
+
+            ]
+        },
+          processSection: {
+            mainHeading: "How our Customer Support Setup Works",
+            mainDescription: "We don’t believe in a one for all strategy system. We work individually with each client to make sure they are satisfied as to how their Support System works.",
+            steps: [
+                {
+                    step: "01",
+                    title: "Understanding Your Customer Support Needs",
+                    description: "We understand from you, the needs of your business."
+                },
+                {
+                    step: "02",
+                    title: "Strategy Building",
+                    description: "According to your requirement, we build a strategy that aligns with your needs."
+                },
+                {
+                    step: "03",
+                    title: "Getting the Team Ready",
+                    description: "We get the perfect team ready for you that aligns with your brand voice and also familiar with the industry jargon."
+                },
+                {
+                    step: "04",
+                    title: "Working towards Customer Satisfaction",
+                    description: "We manage customer relations while keeping an eye on satisfaction, response time, and resolution rate."
+                },
+                {
+                    step: "05",
+                    title: "Process Optimization",
+                    description: "As your company expands, we optimise procedures, boost productivity, and help expand operations."
+                }
+            ]
+        },
     }
 };

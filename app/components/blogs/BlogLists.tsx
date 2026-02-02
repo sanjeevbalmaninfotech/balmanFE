@@ -40,7 +40,7 @@ export default function BlogList() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[#010101] text-white">
       {/* Header Section */}
       <header className="section-padding-x pt-8 sm:pt-4 lg:pt-8 pb-8 sm:pb-8">
         <div className="flex items-center gap-3 mb-2 sm:mb-2">

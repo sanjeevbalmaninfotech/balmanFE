@@ -5,7 +5,7 @@ import { ProcessSectionProps } from '@/app/types/servicesPage';
 
 export default function ProcessSection({ data }: ProcessSectionProps) {
     return (
-        <div className="bg-black">
+        <div className="bg-[#010101]">
             <div className="container lg:mt-15">
                 {/* Main Heading */}
                 <h2 className="service-heading-h2 lg:mb-4 text-left">
@@ -33,7 +33,7 @@ export default function ProcessSection({ data }: ProcessSectionProps) {
                                 <div className="relative flex items-center w-full">
                                     {/* Step Number Circle */}
                                     <div
-                                        className="w-16 h-16 rounded-full border-2 border-[#FF5900] flex items-center justify-center font-['Plus Jakarta Sans'] font-bold relative z-10 bg-black"
+                                        className="w-16 h-16 rounded-full border-2 border-[#FF5900] flex items-center justify-center font-['Plus Jakarta Sans'] font-bold relative z-10 bg-[#010101]"
                                         style={{
                                             fontSize: '24px',
                                             color: '#E8E8EA',

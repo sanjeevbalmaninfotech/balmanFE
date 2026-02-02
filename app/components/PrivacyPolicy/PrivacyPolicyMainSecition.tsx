@@ -1,7 +1,7 @@
 
 export default function PrivacyPolicyMainSecition() {
     return (
-        <div className="min-h-screen bg-black py-12 section-padding-x">
+        <div className="min-h-screen bg-[#010101] py-12 section-padding-x">
             <div className="max-w-8xl mx-auto">
                 {/* label */}
                 <div className="mb-6">

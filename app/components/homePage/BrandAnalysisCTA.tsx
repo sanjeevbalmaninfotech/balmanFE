@@ -2,7 +2,7 @@ import SectionHeading from "../Common/SectionHeading";
 
 export default function BrandAnalysisCTA() {
   return (
-    <section className="relative w-full bg-black">
+    <section className="relative w-full bg-[#010101]">
       {/* Full-width border container */}
       <div className="relative w-full mx-auto">
         <div className="relative w-full min-h-[280px] sm:min-h-[320px] md:min-h-[373px] rounded-[20px] border border-white/10 overflow-hidden flex items-center justify-center">

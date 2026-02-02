@@ -95,7 +95,7 @@ export default function ServicesCards() {
     };
 
     return (
-        <section className="min-h-screen bg-black py-10 section-padding-x">
+        <section className="min-h-screen bg-[#010101] py-10 section-padding-x">
             <div className="w-full max-w-[1800px] mx-auto">
 
                 {/* HEADER */}
@@ -160,11 +160,11 @@ export default function ServicesCards() {
                                 </div>
 
                                 {/* NORMAL CARD — MOBILE + TABLET + IPAD */}
-                                <div className="absolute inset-0 xl:hidden bg-black rounded-2xl border border-zinc-800" />
+                                <div className="absolute inset-0 xl:hidden bg-[#010101] rounded-2xl border border-zinc-800" />
 
                                 {/* CONTENT */}
                                 <div className="relative z-10 p-6 xl:p-8 h-full flex flex-col justify-center">
-                                    <div className="w-14 h-14 mb-6 rounded-xl bg-black flex items-center justify-center">
+                                    <div className="w-14 h-14 mb-6 rounded-xl bg-[#010101] flex items-center justify-center">
                                         <img
                                             src={service.icon}
                                             alt={service.title}

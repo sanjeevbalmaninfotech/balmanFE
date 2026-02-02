@@ -40,7 +40,7 @@ export default function TeamSection() {
     ];
 
     return (
-        <section className="relative w-full bg-black section-padding-y">
+        <section className="relative w-full bg-[#010101] section-padding-y">
             <div className="relative w-full mx-auto section-padding-x">
                 {/* Header Section */}
                 <div className="flex flex-col items-center justify-center mb-12 md:mb-16">

@@ -31,7 +31,7 @@ export default function TeamLeadsSection() {
     };
 
     return (
-        <div className="bg-black text-white overflow-hidden py-12 md:py-20">
+        <div className="bg-[#010101] text-white overflow-hidden py-12 md:py-20">
             <div className="max-w-[1200px] mx-auto relative px-4">
 
                 {/* Header Section */}
@@ -49,21 +49,14 @@ export default function TeamLeadsSection() {
                         onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
                         disabled={currentIndex === 0}
                         className={`hidden md:flex absolute -left-4 lg:-left-16 top-1/2 -translate-y-1/2 z-30 
-  h-12 w-12 items-center justify-center rounded-full 
-  bg-black text-white 
-  backdrop-blur border border-white/10 
-  transition-all duration-300 
-  hover:border-[#ff5900]
-  ${currentIndex === 0 ? 'opacity-20 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}
-
-                    >
+  h-12 w-12 items-center justify-center rounded-full   bg-[#010101] text-white   backdrop-blur border border-white/10   transition-all duration-300   hover:border-[#ff5900]
+  ${currentIndex === 0 ? 'opacity-20 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}>
                         <svg
                             className="w-5 h-5 text-white"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"
-                            viewBox="0 0 24 24"
-                        >
+                            viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
@@ -73,11 +66,10 @@ export default function TeamLeadsSection() {
                         disabled={currentIndex === 1}
                         className={`hidden md:flex absolute -right-4 lg:-right-16 top-1/2 -translate-y-1/2 z-30 
     h-12 w-12 items-center justify-center rounded-full 
-    bg-black/40 backdrop-blur border border-white/10 
+    bg-[#010101]/40 backdrop-blur border border-white/10 
     transition-all duration-300 
  hover:border-orange-500
-    ${currentIndex === 1 ? 'opacity-20 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}
-                    >
+    ${currentIndex === 1 ? 'opacity-20 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}>
                         <svg
                             className="w-5 h-5 text-white"
                             fill="none"

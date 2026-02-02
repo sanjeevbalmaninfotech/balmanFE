@@ -3,7 +3,7 @@ import SectionHeading from "../Common/SectionHeading";
 
 const FounderSection = () => {
   return (
-    <section className="w-full bg-black text-white section-padding-y">
+    <section className="w-full bg-[#010101] text-white section-padding-y">
       <div className="w-full mx-auto section-padding-x">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20">
           {/* Image Section - Left Side */}

@@ -2,7 +2,7 @@ import Image from "next/image";
 // Not using this component  now can remove this created new component  in common folder
 export default function TechTreeHero() {
   return (
-    <section className="relative w-full bg-black overflow-hidden">
+    <section className="relative w-full bg-[#010101] overflow-hidden">
 
       <div className="relative w-full" style={{ aspectRatio: '1680/541' }}>
         {/* Background gradient overlay */}

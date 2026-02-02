@@ -4,7 +4,7 @@ import { AIMarketingSectionProps, AIMarketingSection as AIMarketingSectionType }
 
 export default function AISection({ data }: AIMarketingSectionProps) {
     return (
-        <div className="bg-black lg:mt-15">
+        <div className="bg-[#010101] lg:mt-15">
             <div className="container ">
                 {/* Main Heading */}
                 <h2

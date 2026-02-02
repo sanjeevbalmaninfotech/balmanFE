@@ -52,7 +52,7 @@ const ConsentPopup: React.FC = () => {
     if (!isVisible) return null;
 
     return (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-[100]">
+        <div className="fixed inset-0 bg-[#010101]/80 flex items-center justify-center p-4 z-[100]">
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl flex flex-col max-h-[90vh]">
                 <div className="p-8 pb-4">
                     <h2 className=" font-semibold text-[18px] sm:text-[20px] lg:text-[24px]

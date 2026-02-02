@@ -27,74 +27,61 @@ export default function HeroSection() {
 
     return (
         <>
-            <section className="relative w-full min-h-screen md:min-h-[700px] lg:min-h-[860px] bg-black overflow-hidden">
-                {/* Background Image - Mobile */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
-                    style={{
-                        backgroundImage: 'url(/heroImgs/orangetree.jpg)',
-                        filter: 'brightness(1.3)'
-                    }}
-                ></div>
+        <section className="relative w-full min-h-screen bg-[#010101] flex flex-col md:block overflow-hidden">
+            
+            {/* --- MOBILE VIEW: Image on Top --- */}
+            <div className="md:hidden w-full h-[350px] overflow-hidden">
+                <img 
+                    src="/heroImgs/orangetree.jpeg" 
+                    alt="Orange Tree Growth"
+                    className="w-full h-full object-cover object-center brightness-[1.1]"
+                />
+            </div>
 
-                {/* Background Image - MD and above */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
-                    style={{
-                        backgroundImage: 'url(/heroImgs/heroOrangeTreelarge.jpeg)',
-                        // filter: 'brightness(1.3)'
-                    }}
-                ></div>
+            {/* --- DESKTOP VIEW: Background Image --- */}
+            <div className="hidden md:block absolute inset-0 z-0">
+                <img 
+                    src="/heroImgs/heroOrangeTreelarge.jpeg" 
+                    alt="Orange Tree Background"
+                    className="w-full h-full object-top"
+                />
+            </div>
 
+            {/* --- CONTENT LAYER --- */}
+            <div className="relative z-10 w-full ml-4 mr-4 lg:ml-12 lg:mr-12  mx-auto px-6 md:px-12 flex flex-col justify-center min-h-[50vh] md:min-h-screen">
+                
+                <div className="max-w-[683px] py-12 md:py-0">
+                    <h1
+                        className="mb-2 md:mb-4 text-[32px] sm:text-[45px] md:text-[54px] lg:text-[72px] font-light leading-[1.1]"
+                        style={{
+                            fontFamily: 'Montserrat, sans-serif',
+                            background: 'linear-gradient(89.84deg, #FEFEFE 0.23%, #FF5900 90.05%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                        }}>
+                        Your Growth <span className="font-bold">Partner</span>
+                    </h1>
 
-                <div className="relative w-full mx-auto min-h-screen md:min-h-[700px] lg:h-[860px] section-padding-x">
-                    {/* Left Content Container */}
-                    <div
-                        className="absolute section-padding-x left-0 top-[80px] sm:top-[180px] md:top-[240px] lg:top-[304px] max-w-[683px] z-10"
-                        style={{ gap: '45px' }}
-                    >
-                        {/* Heading */}
-                        <h1
-                            className="mb-[15px] sm:mb-[25px] md:mb-[30px] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-light leading-[120%] sm:leading-[115%] md:leading-[110%]"
-                            style={{
-                                fontFamily: 'Montserrat, sans-serif',
-                                letterSpacing: '0%',
-                                background: 'linear-gradient(89.84deg, #FEFEFE 0.23%, #FF5900 90.05%)',
-                                WebkitBackgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent',
-                                backgroundClip: 'text'
-                            }}
-                        >
-                            Your Growth <span className="font-bold">Partner</span>
-                        </h1>
-                        {/* Description */}
-                        <p className="body-text mb-[25px] sm:mb-[35px] md:mb-[45px] max-w-[550px]">
-                            To empower businesses with expressive brand identities and seamless digital experiences by blending creativity, strategy, and technology, delivering quality with consistency and purpose.
-                        </p>
+                    <p className="text-gray-300 text-base md:text-lg mb-8 max-w-[500px] leading-relaxed">
+                        To empower businesses with expressive brand identities and seamless digital experiences by blending creativity, strategy, and technology.
+                    </p>
 
-                        {/* Get Started Button */}
-                        <button className="btn-primary touch-manipulation">
-                            Get Started
-                        </button>
-                    </div>
-
-                    {/* Right Image Container */}
-                    <div
-                        className="absolute right-0 top-[18px] w-full sm:w-[70%] lg:w-[908px] h-[calc(100vh-100px)] sm:h-[600px] md:h-[700px] lg:h-[833px] pointer-events-none z-20"
-                    >
-                        {/* Top Right Tooltip */}
-                        <div className="absolute top-[10%] right-[5%]">
-                            <GlassCard />
-                        </div>
-
-                        {/* Bottom Right Tooltip */}
-                        <div className="absolute bottom-[15%] right-[10%]">
-                            <GlassCardDown />
-                        </div>
-                    </div>
+                    <button className="btn-primary px-10 py-4 bg-[#FF5900] text-white rounded-full font-bold transition-transform active:scale-95">
+                        Get Started
+                    </button>
                 </div>
 
-            </section>
+                {/* Glass Cards - Positioned relative to this container on Desktop */}
+                <div className="absolute inset-0 pointer-events-none hidden md:block">
+                    <div className="absolute top-[15%] right-[5%]">
+                        <GlassCard />
+                    </div>
+                    <div className="absolute bottom-[20%] right-[10%]">
+                        <GlassCardDown />
+                    </div>
+                </div>
+            </div>
+        </section>
 
             <AboutSection />
             {/* <OurServices /> */}

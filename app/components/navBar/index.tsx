@@ -40,7 +40,7 @@ export default function Navbar() {
                         }}
                     />
 
-                    <div className="bg-black rounded-lg">
+                    <div className="bg-[#010101] rounded-lg">
                         <div className="flex items-center justify-between h-[76px] gap-6 section-padding-x">
 
                             {/* Logo */}

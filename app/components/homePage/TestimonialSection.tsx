@@ -45,7 +45,7 @@ const TestimonialSection = () => {
 
   return (
     <>
-      <div className="w-full bg-black flex items-center justify-center section-padding">
+      <div className="w-full bg-[#010101] flex items-center justify-center section-padding">
         <div className="w-full  flex flex-col lg:flex-row">
           {/* ================= LEFT SIDE ================= */}
           <div className="relative lg:w-[420px] xl:w-[572px] lg:pr-6 xl:pr-8">
@@ -186,7 +186,7 @@ const TestimonialSection = () => {
             <button
               onClick={prevTestimonial}
               className=" absolute -left-1 sm:left-4 md:left-2 lg:left-6 xl:left-12
-          top-1/2 -translate-y-1/2 w-5 h-5 sm:w-10 sm:h-10 lg:w-12 lg:h-12   bg-black border border-white/20 rounded-full
+          top-1/2 -translate-y-1/2 w-5 h-5 sm:w-10 sm:h-10 lg:w-12 lg:h-12   bg-[#010101] border border-white/20 rounded-full
           flex items-center justify-center z-20 "
             >
               <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" />
@@ -198,7 +198,7 @@ const TestimonialSection = () => {
           absolute -right-1 sm:right-4 md:right-2 lg:right-6 xl:right-12
           top-1/2 -translate-y-1/2
           w-5 h-5 sm:w-10 sm:h-10 lg:w-12 lg:h-12
-          bg-black border border-white/20 rounded-full
+          bg-[#010101] border border-white/20 rounded-full
           flex items-center justify-center z-20
         "
             >

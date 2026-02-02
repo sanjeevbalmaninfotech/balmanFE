@@ -13,7 +13,7 @@ export default function ServicesSection() {
   const [activeIndex, setActiveIndex] = useState(2);
 
   return (
-    <section className="relative w-full bg-black section-padding-y">
+    <section className="relative w-full bg-[#010101] section-padding-y">
       <div className="relative w-full mx-auto section-padding-x">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-12 md:mb-16">
@@ -79,7 +79,7 @@ export default function ServicesSection() {
               <SwiperSlide key={index}>
                 <div
                   className={`
-                    w-full h-full bg-black border border-primary rounded-2xl 
+                    w-full h-full bg-[#010101] border border-primary rounded-2xl 
                     p-6 md:p-8 flex flex-col justify-start items-start text-left 
                     transition-all duration-300 cursor-pointer relative
                     ${index === activeIndex ? 'active-slide' : ''}

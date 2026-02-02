@@ -35,7 +35,7 @@ export default async function ({ params }: PageProps) {
         <>
 
             <Navbar />
-            <div className="mt-10 section-padding bg-black text-white">
+            <div className="mt-10 section-padding bg-[#010101] text-white">
                 {/* Hero Section */}
                 <div
                     className="relative"
@@ -158,7 +158,7 @@ export default async function ({ params }: PageProps) {
                                     {/* Additional Sections */}
                                     {service?.whySection && (
                                         <div className="lg:mt-15">
-                                            <div className="bg-black">
+                                            <div className="bg-[#010101]">
 
                                                 {/* Title */}
                                                 <h2 className="service-heading-h2 mb-4 lg:mb-6">

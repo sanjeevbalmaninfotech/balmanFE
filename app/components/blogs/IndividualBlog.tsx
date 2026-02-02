@@ -38,7 +38,7 @@ export default function IndividualBlog() {
     return (
         <>
             <>
-                <div className="min-h-screen bg-black text-white font-['Plus_Jakarta_Sans']">
+                <div className="min-h-screen bg-[#010101] text-white font-['Plus_Jakarta_Sans']">
 
 
                     <header className="section-padding-x pt-4 sm:pt-8 lg:pt-6 pb-4 sm:pb-8 lg:pb-6">
@@ -149,7 +149,7 @@ export default function IndividualBlog() {
                     </main>
 
                     {/* ================= ALL CATEGORY SECTION ================= */}
-                    <div className=" bg-black text-white py-2 section-padding-x" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                    <div className=" bg-[#010101] text-white py-2 section-padding-x" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 
                         <div className="mx-auto">
@@ -176,7 +176,7 @@ export default function IndividualBlog() {
                                         className="bg-gray-100 rounded-2xl p-6 sm:p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
                                     >
                                         {/* Icon Circle */}
-                                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-black flex items-center justify-center mb-4 sm:mb-6">
+                                        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#010101] flex items-center justify-center mb-4 sm:mb-6">
                                             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden">
                                                 <svg viewBox="0 0 100 100" className="w-full h-full">
                                                     <defs>

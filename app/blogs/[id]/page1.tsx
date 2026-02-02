@@ -32,7 +32,7 @@ For companies aiming for rapid growth, digital marketing isn't optional-it's the
     ];
 
     return (
-        <div className="relative min-h-screen bg-black text-white" style={{ paddingTop: 'clamp(30px, 5vw, 60px)', paddingBottom: 'clamp(30px, 5vw, 60px)', paddingLeft: 'clamp(16px, 8vw, 120px)', paddingRight: 'clamp(16px, 8vw, 120px)' }}>
+        <div className="relative min-h-screen bg-[#010101] text-white" style={{ paddingTop: 'clamp(30px, 5vw, 60px)', paddingBottom: 'clamp(30px, 5vw, 60px)', paddingLeft: 'clamp(16px, 8vw, 120px)', paddingRight: 'clamp(16px, 8vw, 120px)' }}>
             {/* Top-Right Orange Blur Background */}
             <div
                 className="pointer-events-none absolute -top-20 -right-20 w-72 h-72 lg:w-96 lg:h-96  hidden xl:block"

@@ -31,7 +31,7 @@ export default function BlogSection() {
   ];
 
   return (
-    <section className="relative w-full bg-black section-padding-y">
+    <section className="relative w-full bg-[#010101] section-padding-y">
       <div className="relative w-full mx-auto section-padding-x">
         {/* Header */}
         <div className="relative mb-12 text-center">

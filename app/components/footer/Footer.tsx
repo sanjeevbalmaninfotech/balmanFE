@@ -4,40 +4,51 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
-  const linkColumns = [
-    {
-      heading: 'Services',
-      links: ['Link One', 'Link Two', 'Link Three', 'Link Four', 'Link Five']
-    },
-    {
-      heading: 'Balman Infotech',
-      links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
-    },
-    {
-      heading: 'Legal Information',
-      links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
-    },
-    // {
-    //   heading: 'Extra Column', // optional
-    //   links: ['Link Six', 'Link Seven', 'Link Eight', 'Link Nine', 'Link Ten']
-    // }
-  ];
+
+  
+const linkColumns = [
+  {
+    heading: 'Balman Infotech',
+    links: [
+      { label: 'About Us', path: '/aboutus' },
+      { label: 'Contact Us', path: '/ContactUs' },
+    ],
+  },
+  {
+    heading: 'Services',
+    links: [
+      { label: 'Digital Marketing', path: '/services/digital-marketing' },
+      { label: 'Organic Growth', path: '/services/organic-growth' },
+      { label: 'Branding', path: '/services/branding' },
+      { label: 'Web Development', path: '/services/web-development' },
+      { label: 'Customer Support', path: '/services/customer-support' },
+    ],
+  },
+  {
+    heading: 'Legal Information',
+    links: [
+      { label: 'Terms & Conditions', path: '/TermsAndConditions' },
+      { label: 'Privacy Policy', path: '/PrivacyPolicy' },
+    ],
+  },
+];
+
 
   const quickLinks = [
     // { label: 'Contact Us', href: '/contact' },
-    { label: 'Careers', href: '/careers' },
-    { label: 'Blogs', href: '/blogs' },
-    { label: 'Privacy Policy', href: '/PrivacyPolicy' },
-    { label: 'Terms and Conditions', href: '/TermsAndConditions' }
+    { label: 'Support', href: '/careers' },
+    { label: 'Chat', href: '/blogs' },
+    // { label: 'Privacy Policy', href: '/PrivacyPolicy' },
+    // { label: 'Terms and Conditions', href: '/TermsAndConditions' }
   ];
 
   const contactLinks = [
-    'About',
-    'Support'
+    '',
+    ''
   ];
 
   return (
-    <footer className="bg-black text-white pt-8 pb-8">
+    <footer className="bg-[#010101] text-white pt-8 pb-8">
       <div className=" relative w-full mx-auto section-padding-x">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
@@ -51,7 +62,7 @@ export default function Footer() {
 
                     <Link href="/" className="flex-shrink-0 cursor-pointer">
                       <Image
-                        src="/logo.PNG" // "C:\repos\balmanFE\public\logo.PNG"
+                        src="/logoFooter.png" // "C:\repos\balmanFE\public\logo.PNG" "C:\repos\balmanFE\public\logoFooter.png"
                         alt="Logo"
                         width={100}   // control size via width/height
                         height={100}
@@ -92,28 +103,29 @@ export default function Footer() {
           {/* Link Columns - Middle */}
           <div className="lg:col-span-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {linkColumns.map((column, idx) => (
-                <div key={idx}>
-                  {/* Heading */}
-                  <h3 className="font-sans font-normal text-[14px] leading-[21px] text-white mb-3">
-                    {column.heading}  {/* You can add a `heading` property to each column */}
-                  </h3>
+             {linkColumns.map((column, idx) => (
+  <div key={idx}>
+    {/* Heading */}
+    <h3 className="font-sans font-normal text-[14px] lg:text-[18px] leading-[21px] text-white mb-3">
+      {column.heading}
+    </h3>
 
-                  {/* Links */}
-                  <ul className="space-y-3">
-                    {column.links.map((link, linkIdx) => (
-                      <li key={linkIdx}>
-                        <a
-                          href="#"
-                          className="text-gray-400 hover:text-white text-sm transition-colors"
-                        >
-                          {link}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+    {/* Links */}
+    <ul className="space-y-3">
+      {column.links.map((link, linkIdx) => (
+        <li key={linkIdx}>
+          <a
+            href={link.path}
+            className="text-gray-400 hover:text-white text-sm transition-colors"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+))}
+
             </div>
           </div>
 
@@ -123,7 +135,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-8">
 
               <div>
-                <h3 className="font-semibold mb-4">Quick Links</h3>
+                <h3 className="font-semibold mb-4">Contact</h3>
                 <ul className="space-y-3">
                   <ul className="space-y-3">
                     {quickLinks.map((link, idx) => (
@@ -143,7 +155,7 @@ export default function Footer() {
 
               {/* Contact */}
               <div>
-                <h3 className="font-semibold mb-4">Contact</h3>
+                {/* <h3 className="font-semibold mb-4">Contact</h3> */}
                 <ul className="space-y-3">
                   {contactLinks.map((link, idx) => (
                     <li key={idx}>
@@ -182,12 +194,7 @@ export default function Footer() {
             © 2024 Relume. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="/PrivacyPolicy" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <a href="/TermsAndConditions" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </a>
+           
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
               Cookies Settings
             </a>

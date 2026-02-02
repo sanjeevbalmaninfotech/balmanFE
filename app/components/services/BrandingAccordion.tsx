@@ -8,7 +8,7 @@ export default function BrandingAccordion({ accordionData }: BrandingAccordionPr
     const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
     return (
-        <div className="bg-black mt-15">
+        <div className="bg-[#010101] mt-15">
             <div className="">
                 {/* Dynamic Heading */}
                 <h2

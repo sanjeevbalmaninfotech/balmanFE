@@ -7,7 +7,7 @@ interface SimpleHeroImageProps {
 
 const SimpleHeroImage: React.FC<SimpleHeroImageProps> = ({ url }) => {
     return (
-        <section className="relative w-full min-h-screen mt-10 md:min-h-[320px] lg:min-h-[440px] bg-black overflow-hidden">
+        <section className="relative w-full min-h-screen mt-10 md:min-h-[320px] lg:min-h-[440px] bg-[#010101] overflow-hidden">
 
             <div className="absolute inset-0">
                 <Image

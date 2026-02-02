@@ -1,20 +1,24 @@
-import SectionHeading from "../Common/SectionHeading";
-
 export default function AboutSection() {
   return (
     <>
-      <section className="relative w-full bg-black section-padding-y">
+      <section className="relative w-full bg-[#010101] section-padding-y">
         <div className="relative w-full mx-auto section-padding-x">
           {/* Two Column Layout */}
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
             {/* Left Column - Heading */}
             <div className="relative lg:w-[30%] lg:pr-8">
               <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 w-full flex flex-col items-start">
-                <SectionHeading align="left">
+                <h2
+                  className="text-gradient font-bold leading-[110%] tracking-tight mb-2"
+                  style={{
+                    fontSize: "clamp(32px, 6vw, 36px)",
+                  }}
+                >
                   We&apos;re More Than A <br />
+
                   Digital Agency
-                </SectionHeading>
-                <div className="heading-underline-left"></div>
+                  <div className="heading-underline mt-2"></div>
+                </h2>
               </div>
             </div>
 

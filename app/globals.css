@@ -83,6 +83,74 @@ body {
   font-weight: 400;
 }
 
+/* Sort Main Heading - Reusable Section Heading */
+.sort-main-heading {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: #8E8E8E;
+  line-height: 100%;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+@media (min-width: 640px) {
+  .sort-main-heading {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sort-main-heading {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sort-main-heading {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sort-main-heading {
+    font-size: 28px;
+  }
+}
+
+/* Section Description Text - Responsive Body Text */
+.section-description-text {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  line-height: 120%;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .section-description-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-description-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-description-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-description-text {
+    font-size: 16px;
+  }
+}
+
 /* ========================================
    SECTION SPACING UTILITIES
    ======================================== */
@@ -162,7 +230,7 @@ body {
   height: 48px;
   padding: 12px 24px;
   border-radius: 8px;
-  border: 1px solid black;
+border: 1px solid #FF4900;
   background-color: var(--primary-color);
   color: white;
   font-family: var(--font-button);
@@ -365,26 +433,9 @@ body {
    BUTTON STYLES
    ======================================== */
 
-.btn-primary {
-  min-width: 145px;
-  height: 48px;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1px solid black;
-  background-color: var(--primary-color);
-  color: white;
-  font-family: var(--font-button);
-  font-size: clamp(15px, 3vw, 17px);
-  font-weight: 500;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
 
-.btn-primary:hover {
-  background-color: black;
-  border-color: var(--primary-color);
-  color: white;
-}
+
+
 
 /* ========================================
    UTILITY CLASSES
