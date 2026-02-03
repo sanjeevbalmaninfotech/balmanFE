@@ -22,10 +22,10 @@ export default function Navbar() {
       <div className="relative w-full">
         <div
           className="w-full rounded-lg"
-          // style={{
-          //     border: '3px solid var(--primary-color)',
-          //     position: 'relative'
-          // }}
+        // style={{
+        //     border: '3px solid var(--primary-color)',
+        //     position: 'relative'
+        // }}
         >
           {/* Blue overlay effect */}
           <div
@@ -40,18 +40,19 @@ export default function Navbar() {
             }}
           />
 
-          <div className="bg-[#010101] rounded-lg">
+          <div className="bg-[#010101]  border-b border-[#ff5900]">
             <div className="flex items-center justify-between h-[76px] gap-6 section-padding-x">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <Link href="/" className="flex-shrink-0 cursor-pointer">
+                <Link href="/" className="block relative w-[160px] h-[64px]">
                   <Image
                     src="/logo.PNG"
                     alt="Logo"
-                    width={160}
-                    height={64}
-                    className="h-16 w-auto"
+                    fill // Fill use karein taaki container ke hisab se adjust ho
+                    sizes="160px"
+                    className="object-contain" // Image ko kharab hone se bachayega
                     priority
+                    quality={100} // Quality thodi badha dein
                   />
                 </Link>
               </div>
@@ -66,11 +67,10 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`px-2 py-3 rounded transition-colors duration-200 ${
-                        isActive
-                          ? "text-primary"
-                          : "text-white hover:text-primary"
-                      }`}
+                      className={`px-2 py-3 rounded transition-colors duration-200 ${isActive
+                        ? "text-primary"
+                        : "text-white hover:text-primary"
+                        }`}
                       style={{
                         fontSize: "16px",
                         fontWeight: isActive ? "600" : "400",
@@ -117,11 +117,10 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         onClick={() => setIsMenuOpen(false)}
-                        className={`px-4 py-3 rounded transition-colors duration-200 ${
-                          isActive
-                            ? "text-primary bg-gray-900"
-                            : "text-white hover:text-primary hover:bg-gray-900"
-                        }`}
+                        className={`px-4 py-3 rounded transition-colors duration-200 ${isActive
+                          ? "text-primary bg-gray-900"
+                          : "text-white hover:text-primary hover:bg-gray-900"
+                          }`}
                         style={{
                           fontSize: "16px",
                           fontWeight: isActive ? "600" : "400",
