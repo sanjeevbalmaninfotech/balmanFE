@@ -106,7 +106,7 @@ const TestimonialSection = () => {
               />
             </div>
 
-            {/* MAIN CARD CONTAINER */}
+            {/* MAIN CARD CONTAINER c*/}
             <div className="relative w-full max-w-[680px] z-10 group">
 
               {/* Glow Effect */}
