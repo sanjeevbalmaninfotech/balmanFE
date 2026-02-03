@@ -5,14 +5,8 @@ import Link from "next/link";
 export default function FAQSection() {
   const faqs = [
     {
-      question: "What services does Balman Infotech offer?",
-      answer:
-        "Balman Infotech provides a wide range of IT services including software development, web and mobile app design, cloud solutions, and digital transformation consulting.",
-    },
-    {
-      question: "How can I get a quote for my project?",
-      answer:
-        "You can contact us through our inquiry form or email us directly. Our team will review your requirements and share a detailed proposal based on your goals and timeline.",
+      question: "Do you work with startups or only large companies?",
+      answer: "We collaborate with businesses of all sizes, from startups looking to build their first product to enterprises seeking complex digital solutions.",
     },
     {
       question: "Do you provide post-launch support?",
@@ -20,9 +14,13 @@ export default function FAQSection() {
         "Yes, we offer ongoing maintenance, updates, and technical support to ensure your system continues to perform smoothly after deployment.",
     },
     {
-      question: "Do you work with startups or only large companies?",
+      question: "Is there a package or I can avail the services independently also?",
       answer:
-        "We collaborate with businesses of all sizes - from startups looking to build their first product to enterprises seeking complex digital solutions.",
+        "If you prefer flexibility, you’re welcome to pick and choose individual services. We also offer curated packages designed to give you maximum value and consistent growth.",
+    },
+    {
+      question: "How can I get a quote for my project?",
+      answer: "You can either click on Get a Quote or email us directly. Our team will review your requirements and share a detailed proposal based on your goals and timeline.",
     },
   ];
 

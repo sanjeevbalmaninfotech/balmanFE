@@ -16,6 +16,7 @@ export default function Footer() {
       links: [
         { label: "About Us", path: "/aboutus" },
         { label: "Contact Us", path: "/ContactUs" },
+        { label: "Careers", path: "/careers" },
       ],
     },
     {

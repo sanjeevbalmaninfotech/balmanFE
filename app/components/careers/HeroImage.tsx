@@ -20,7 +20,7 @@ export default function HeroImage() {
                     <div className="bg-white rounded-[24px] px-8 py-6 shadow-lg max-w-4xl mx-auto flex flex-col items-center justify-center">
 
                         {/* Main Heading */}
-                        <h1 className=" font-plus-jakarta text-black text-center font-medium lowercase text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[110%] sm:leading-[105%] lg:leading-[100%] tracking-[-0.01em]">
+                        <h1 className=" font-plus-jakarta text-black text-center font-medium text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[110%] sm:leading-[105%] lg:leading-[100%] tracking-[-0.01em]">
                             There are no current vacancies at this time.
                         </h1>
 
