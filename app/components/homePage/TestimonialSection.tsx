@@ -45,7 +45,7 @@ const TestimonialSection = () => {
 
   return (
     <>
-      <section className="w-full bg-[#010101] py-16 md:py-24 px-4 overflow-hidden">
+      <section className="w-full bg-[#010101] py-4 md:py-24 px-4 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
 
           {/* ================= LEFT SIDE ================= */}
