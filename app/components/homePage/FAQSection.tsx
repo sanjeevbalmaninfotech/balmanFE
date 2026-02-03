@@ -28,7 +28,7 @@ export default function FAQSection() {
     <section className="relative w-full bg-[#010101] section-padding-y">
       <div className="relative w-full mx-auto section-padding-x">
         <SectionHeading>
-          Everything You Need To Know Before Starting Your Next Project With Us.
+          Frequently Asked Questions
         </SectionHeading>
 
         <div className="heading-underline mx-auto mb-12 "></div>
