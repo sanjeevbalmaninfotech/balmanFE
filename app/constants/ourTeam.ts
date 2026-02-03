@@ -23,7 +23,7 @@ export const leads: Lead[] = [
   {
     id: 4,
     name: "Rajat Anand",
-    title: "Operational Head",
+    title: "Marketing Specialist",
     image: "/staff/Rajat.jpeg",
   },
 
