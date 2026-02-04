@@ -62,13 +62,13 @@ export default function PrivacyModal() {
                 </p>
 
                 <div className="flex gap-4 justify-center flex-wrap">
-                    <button onClick={handleCustomize} className="transition-all text-white font-semibold  bg-[#ff5900] w-full sm:w-[123px] h-[45px] rounded-[6.74px]">
+                    <button onClick={handleCustomize} className="btn-primary touch-manipulation inline-block text-center">
                         Customize
                     </button>
-                    <button onClick={handleAccept} className="transition-all text-white font-semibold bg-[#ff5900] w-full sm:w-[123px] h-[45px] rounded-[6.74px]">
+                    <button onClick={handleAccept} className="btn-primary touch-manipulation inline-block text-center">
                         Accept All
                     </button>
-                    <button onClick={handleReject} className="transition-all text-white font-semibold  bg-[#ff5900] w-full sm:w-[123px] h-[45px] rounded-[6.74px]">
+                    <button onClick={handleReject} className="btn-primary touch-manipulation inline-block text-center">
                         Reject All
                     </button>
                 </div>
