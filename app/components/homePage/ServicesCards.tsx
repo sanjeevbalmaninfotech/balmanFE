@@ -21,7 +21,7 @@ export default function ServicesCards() {
         {
             title: "Branding  Services",
             description:
-                "Companies and Brands go unnoticed, every day, every year. Your brand is not just how it looks, it’s how it feels. Our job is to give that feeling a voice, a shape, and a story that your audience remembers.",
+                "Your brand is not just a product or a service; it is about the feelings it evokes in the consumer. Our job is to give that feeling a voice, a shape, and a story that your audience remembers.",
             leftHeight: 500,
             rightHeight: 460,
             url: "/services/branding",
@@ -39,7 +39,7 @@ export default function ServicesCards() {
         {
             title: "Organic Growth",
             description:
-                "We create content that feels natural yet impactful and designed to stop the scroll, spark conversations, and build loyal communities. Our goal is simple: to organically create trust, attract followers, and leave a lasting impression",
+                "We create content that feels natural yet impactful and designed to stop the scroll, spark conversations, and build loyal communities. Our goal is simple: to organically create trust, attract followers, and leave a lasting impression.",
             leftHeight: 420,
             rightHeight: 420,
             url: "/services/organic-growth",
@@ -48,7 +48,7 @@ export default function ServicesCards() {
         {
             title: "Web Development",
             description:
-                "A brand is incomplete without a digital home, and your website is the most powerful representation of who you are. Our expert team of web developers ensure that every website we build is responsive, fast, visually stunning, and aligned with your brand’s identity.",
+                `A brand is incomplete without a digital home, and your website is the most powerful representation of who you are. Our expert team of web developers ensure that every website we build is responsive, fast, visually stunning, and aligned with your brand’s identity.`,
             leftHeight: 420,
             rightHeight: 460,
             url: "/services/web-development",
@@ -57,7 +57,7 @@ export default function ServicesCards() {
         {
             title: "Customer Support Services",
             description:
-                "Branding doesn't end after a customer discovers you; it extends to how they feel every time they interact with you. Balman Infotech provides complete Customer Support Services that ensures your customers feel cared for.",
+                "Branding doesn’t end after a customer discovers you; it extends to how they feel every time they interact with you. Balman Infotech provides complete Customer Support Services that ensure your customers feel heard, valued, and cared for.",
             leftHeight: 460,
             rightHeight: 500,
             url: "/services/customer-support",
@@ -95,7 +95,7 @@ export default function ServicesCards() {
     };
 
     return (
-        <section className="min-h-screen bg-[#010101] py-10 section-padding-x">
+        <section className="min-h-screen bg-[#010101] mt-4 lg:mt-1 py-10 section-padding-x">
             <div className="w-full max-w-[1800px] mx-auto">
 
                 {/* HEADER */}
@@ -103,7 +103,7 @@ export default function ServicesCards() {
                     <SectionHeading>
                         Experience In Different Industries
                     </SectionHeading>
-                     <div className="heading-underline"></div>
+                    <div className="heading-underline"></div>
                 </div>
 
                 {/* GRID */}

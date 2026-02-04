@@ -121,10 +121,11 @@ export default async function ServicePage({ params }: PageProps) {
                           {service?.whyChooseUs?.items?.map((reason, idx) => (
                             <div
                               key={idx}
-                              className="relative border-2 border-orange-600 rounded-lg sm:rounded-xl lg:rounded-2xl p-2 sm:p-3 lg:p-4 text-center mb-4 sm:mb-5 lg:mb-6"
+                              className="relative border-2 border-orange-600 rounded-lg sm:rounded-xl lg:rounded-2xl 
+                               p-2 sm:p-3 lg:p-4 mb-4 sm:mb-5 lg:mb-6 text-[14px] sm:text-[15px] lg:text-[16px] text-center bg-black "
                               style={{ background: "black" }}
                             >
-                              <p className="service-body-text mb-4 sm:mb-5 lg:mb-6 text-white! text-[clamp(10px,3vw,20px)]!">
+                              <p className="service-body-text mb-4 p-2 lg:p-4 sm:mb-5 lg:mb-6 text-white! text-[clamp(10px,3vw,15px)]!">
                                 {reason}
                               </p>
                               <div

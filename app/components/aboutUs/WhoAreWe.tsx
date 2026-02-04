@@ -97,7 +97,7 @@ export default function WhoAreWe() {
 
             <SectionHeading align="left">Who Are We?</SectionHeading>
 
-            <p className="text-gray-400 leading-relaxed text-base">
+            <p className="text-gray-400 leading-relaxed text-base mt-2 lg:mt-4">
               Balman Infotech is an end-to-end agency that covers your branding,
               marketing, and technology needs. We combine strategy, creativity,
               and technology to deliver results to elevate your brand, focusing

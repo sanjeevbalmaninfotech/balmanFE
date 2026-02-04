@@ -164,7 +164,7 @@ const ConsentPopup: React.FC = () => {
           </button>
           <button
             onClick={handleAcceptAll}
-            className="px-8 py-3 text-white rounded-lg font-medium shadow-md  bg-[#ff5900]"
+            className="btn-primary touch-manipulation inline-block text-center"
           >
             Accept All
           </button>
