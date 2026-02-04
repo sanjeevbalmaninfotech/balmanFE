@@ -16,7 +16,7 @@ const WhatWeActuallyDo: React.FC = () => {
       alt: "Brand Icon",
     },
     {
-      icon: "/icons/bulb.png", // Update with your actual strategy icon path
+      icon: "/icons/Bulb.png", // "\public\icons\Bulb.png"
       title: "Strategy and its execution",
       alt: "Strategy Icon",
     },
