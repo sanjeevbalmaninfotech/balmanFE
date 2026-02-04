@@ -4,7 +4,7 @@ import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } f
 // Base configuration for all API calls
 const baseConfig: AxiosRequestConfig = {
   baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
-  timeout: 15000,
+  //timeout: 15000,
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
