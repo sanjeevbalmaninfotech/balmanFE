@@ -1,3 +1,4 @@
+
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
 
 // Base configuration for all API calls
@@ -16,23 +17,18 @@ const axiosInstance: AxiosInstance = axios.create(baseConfig);
 // Request interceptor: attach auth tokens, common headers, logging, etc.
 axiosInstance.interceptors.request.use(
   (config) => {
-    // Example: attach token from localStorage if available
     if (typeof window !== "undefined") {
       const token = localStorage.getItem("accessToken");
       if (token) {
-        config.headers = {
-          ...config.headers,
-          Authorization: `Bearer ${token}`,
-        };
+        config.headers?.set("Authorization", `Bearer ${token}`);
       }
     }
-
     return config;
   },
-  (error: AxiosError) => {
-    return Promise.reject(error);
-  }
+  (error: AxiosError) => Promise.reject(error)
 );
+
+
 
 // Response interceptor: handle common error shapes, logging, etc.
 axiosInstance.interceptors.response.use(
