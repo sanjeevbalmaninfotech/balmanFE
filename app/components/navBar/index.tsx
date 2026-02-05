@@ -44,15 +44,15 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-[76px] gap-6 section-padding-x">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <Link href="/" className="block relative w-[160px] h-[64px]">
+                <Link href="/" className="block relative w-[64px] h-[64px]">
                   <Image
                     src="/logo.PNG"
                     alt="Logo"
-                    fill // Fill use karein taaki container ke hisab se adjust ho
-                    sizes="160px"
-                    className="object-contain" // Image ko kharab hone se bachayega
+                    fill
+                    sizes="64px"
+                    className="object-contain"
                     priority
-                    quality={100} // Quality thodi badha dein
+                    quality={100}
                   />
                 </Link>
               </div>

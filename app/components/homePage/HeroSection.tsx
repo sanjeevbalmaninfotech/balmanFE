@@ -28,11 +28,11 @@ export default function HeroSection() {
     <>
       <section className="relative w-full  bg-[#010101] flex flex-col md:block overflow-hidden">
         {/* --- MOBILE VIEW: Image on Top --- */}
-        <div className="md:hidden w-full flex-none">
+        <div className="md:hidden w-full flex-none mt-20">
           <img
             src="/heroImgs/orangetree.jpeg"
             alt="Orange Tree Growth"
-            // object-contain use kiya hai taaki puri image dikhe, object-cover nahi
+
             className="w-full h-auto max-h-[40vh] object-contain brightness-[1.1] bg-[#010101]"
           />
         </div>
@@ -69,7 +69,7 @@ export default function HeroSection() {
               technology.
             </p>
 
-            <div className="pb-10 md:pb-0"> {/* Extra bottom padding for mobile flow */}
+            <div className="pb-8 md:pb-0"> {/* Extra bottom padding for mobile flow */}
               <button className="btn-primary touch-manipulation inline-block text-center">
                 Get Started
               </button>

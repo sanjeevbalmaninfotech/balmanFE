@@ -15,13 +15,8 @@ export default function PrivacyPolicyMainSecition() {
 
                 {/* Main Heading */}
                 <h1
-                    className="font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[110%] mb-8 lg:mb-12"
-                    style={{
-                        background: 'radial-gradient(circle at center, #656565 10%, #FFFFFF 80%, #656565 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                    }}
+                    className="text-gradient font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[110%] mb-8 lg:mb-12"
+
                 >
                     Last Updated: [27/01/26]
                 </h1>

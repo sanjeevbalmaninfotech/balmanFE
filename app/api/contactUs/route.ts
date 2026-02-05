@@ -6,9 +6,8 @@ import { formSchema } from "@/app/lib/validators/contactForm";
 
 export async function POST(req: NextRequest) {
     try {
-        // 1. Connect to Database
+
         await dbConnect();
-        console.log("Database connected api is hited -----");
         // 2. Parse Request Body
         const body = await req.json();
 
@@ -30,15 +29,4 @@ export async function POST(req: NextRequest) {
     }
 }
 
-// OPTIONS handler for CORS (Next.js 13+ handles basic CORS automatically, 
-// but you can define it explicitly if needed)
-export async function OPTIONS() {
-    return new Response(null, {
-        status: 204,
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
-        },
-    });
-}
+

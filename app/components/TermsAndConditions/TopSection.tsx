@@ -15,14 +15,8 @@ const TopSection = () => {
 
         {/* Main Heading with Radial Gradient */}
         <h1
-          className="font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[110%] mb-8 lg:mb-12"
-          style={{
-            background:
-              "radial-gradient(circle at center, #FFFFFF 20%, #656565 60%, #656565 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-          }}
+          className="text-gradient font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[110%] mb-8 lg:mb-12"
+
         >
           Balman Infotech - Terms and Conditions, Disclaimer and Cookie Policy
         </h1>

@@ -39,14 +39,8 @@ export default function BrandingAccordion({ accordionData }: BrandingAccordionPr
                                 className="w-full pt-6 pb-2 flex items-center justify-between text-left hover:opacity-80 transition-opacity"
                             >
                                 <span
-                                    className="font-['Plus Jakarta Sans']"
-                                    style={{
-                                        color: '#E8E8EA',
-                                        fontSize: '20px',
-                                        fontWeight: 500,
-                                        lineHeight: '24px'
-                                    }}
-                                >
+                                    className="font-['Plus_Jakarta_Sans'] text-[#E8E8EA] font-medium text-sm  leading-5   sm:text-base sm:leading-6 lg:text-[20px] lg:leading-[24px]">
+
                                     {section.title}
                                 </span>
                                 <svg
@@ -65,16 +59,11 @@ export default function BrandingAccordion({ accordionData }: BrandingAccordionPr
                                     }`}
                             >
                                 <p
-                                    className="font-['Plus Jakarta Sans'] mb-3"
-                                    style={{
-                                        color: '#E8E8EA',
-                                        fontSize: '16px',
-                                        fontWeight: 400,
-                                        lineHeight: '24px'
-                                    }}
+                                    className="font-['Plus_Jakarta_Sans'] text-[#E8E8EA] font-normal mb-3 text-sm leading-5 sm:text-[15px] sm:leading-[22px] lg:text-[16px] lg:leading-[24px]"
                                 >
                                     {section.content}
                                 </p>
+
 
                                 {/* Show items only if they exist */}
                                 {section.items && section.items.length > 0 && (

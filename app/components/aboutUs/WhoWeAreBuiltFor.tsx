@@ -64,16 +64,12 @@ const WhoWeAreBuiltFor: React.FC = () => {
         {/* First Heading with Gradient */}
         <div className="text-center mb-4">
           <h2
-            className="text-xl md:text-2xl leading-[120%] capitalize
-    font-semibold
-    bg-[radial-gradient(69.15%_305.03%_at_28.18%_51.11%,_#FFFFFF_12.92%,_#656565_100%)]
-    bg-clip-text text-transparent
-  "
+            className="text-gradient text-xl md:text-2xl leading-[120%] capitalize font-semibold"
             style={{
               fontFamily: "Plus Jakarta Sans, sans-serif",
             }}
           >
-          {`Wondering Whether We\'re Right for You?`}
+            {`Wondering Whether We\'re Right for You?`}
           </h2>
         </div>
 
@@ -95,10 +91,10 @@ const WhoWeAreBuiltFor: React.FC = () => {
         {/* Buttons Container */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 lg:gap-6 max-w-4xl mx-auto">
           {/* Left Button - Filled */}
-         <span
+          <span
             className="w-full md:w-auto px-6 py-3 bg-[#FF5900] border-1 border-[#FF5900]
     text-white text-sm md:text-base rounded-lg ">
-           Just an another agency
+            Just an another agency
           </span>
 
           {/* OR Text */}
