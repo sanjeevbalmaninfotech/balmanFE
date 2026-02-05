@@ -9,7 +9,7 @@ export default function GlassCard() {
 
             <p
                 className=" font-inter text-[#E8E8EA] text-[12px] leading-[130%] font-normal mb-1">
-                Not sure what’s wrong?
+                {` Not sure what’s wrong?`}
             </p>
 
             <p

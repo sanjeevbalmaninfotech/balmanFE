@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/aboutus" },
     { name: "Our Services", href: "/services/web-development" },
-    { name: "Our Portfolio", href: "/portfolio" },
+    // { name: "Our Portfolio", href: "/portfolio" },
     { name: "Contact Us", href: "/ContactUs" },
   ];
 
@@ -84,7 +84,7 @@ export default function Navbar() {
 
               {/* Get a Quote Button */}
               <div className="hidden lg:block flex-shrink-0">
-                <button
+                {/* <button
                   className="px-7 py-3 rounded-lg border border-[#E8E8EA] text-white hover:bg-white hover:text-black transition-all duration-300"
                   style={{
                     fontFamily: "Poppins, sans-serif",
@@ -93,7 +93,7 @@ export default function Navbar() {
                   }}
                 >
                   Get a Quote
-                </button>
+                </button> */}
               </div>
 
               {/* Mobile Menu Button */}

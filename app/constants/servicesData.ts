@@ -10,8 +10,9 @@ export const servicesData: Record<string, ServiceData> = {
     descriptions: [
       "What makes you remember a company? What makes you think of the red colour when you hear Zomato? How do you remember the virtue of being fit when Nike is mentioned? All of this happened due to strong branding done by the company. Rooting your company with fixed values, voice and vision, branding is what decides how the market and the consumer perceives you. Balman Infotech wants to do exactly that.\n\n \n We work with both domestic and foreign clients to develop brands that are not simply aesthetically pleasing but also clear, consistent, and built for long-term growth. Our customised branding solutions are made to fit your company's objectives, audience expectations, and future scalability, regardless of whether you are a start-up, SME, or corporation.",
     ],
+    //"C:\repos\balmanFE\public\service\branding.jpeg"  "C:\Users\Dell\Downloads\digitalmarketing.jpeg"
     image:
-      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=400&fit=crop",
+      "/service/branding.jpeg",
     leftSideServices: [
       { label: "Organic Growth", path: "/services/organic-growth" },
       { label: "Digital Marketing", path: "/services/digital-marketing" },
@@ -193,7 +194,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Balman Infotech is a full-service digital marketing agency helping businesses build strong online visibility, generate qualified leads and scale revenue in complex markets. Our digital marketing strategies combine data, creativity and AI-powered insights to deliver measurable growth for local and international businesses. Whether you are a Start-up, SME or Enterprise, our customized digital marketing solutions are designed to attract the right audience and convert them into loyal customers.",
     ],
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
+      "/service/digitalmarketing.jpeg",
     leftSideServices: [
       { label: "Organic Growth", path: "/services/organic-growth" },
       { label: "Digital Marketing", path: "/services/digital-marketing" },
@@ -371,8 +372,7 @@ export const servicesData: Record<string, ServiceData> = {
     descriptions: [
       "Balman Infotech strives to support businesses in their technological advancements with our end-to-end support in website, app and software development catering to your business needs. \n\nWe help businesses design and develop technology solutions that will help both, local and international clients scale and increase their operational efficiency. \n\n Our tailored development solutions are made to fit your company's objectives, user requirements, and future scalability, regardless of whether you are a start-up, SME, or enterprise.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
+    image: "/service/webdevelopment.jpeg",
     leftSideServices: [
       { label: "Organic Growth", path: "/services/organic-growth" },
       { label: "Digital Marketing", path: "/services/digital-marketing" },
@@ -410,16 +410,10 @@ export const servicesData: Record<string, ServiceData> = {
 
     whySection: {
       title:
-        "Why are Customer Support Services important for Business Growth Today?",
-      description: "Customer Support helps your business -",
-      points: [
-        "Improve Brand Image and trust",
-        "Increase in Customer Satisfaction",
-        "Increase in Customer Retention",
-        "Convert support interactions into growth opportunities",
-      ],
-      footerText:
-        "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention.",
+        "Why is Staying Digitally Updated Important for Businesses in Today’s Time?",
+      description: "In this time and age, your online presence of the brand is mostly the first and the most important touchpoint for the user. How your brand is represented digitally builds accessibility and also represents a premium service. A lack of digital presence not only hampers loss of a huge market share to the competitors who are online, but also hampers easy access and trust on a brand. But what if you have a digital presence already but are still getting poor results? Slow performance, low conversion rates, security threats, and diminished trust are all consequences of a badly constructed website or application. However, a well-thought-out and scalable digital solution can turn into your most powerful growth engine. Connect with Balman for websites, apps and softwares that are not a cash burning machine but your biggest drivers towards growth and expansion.",
+      points: [],
+      footerText: "",
     },
 
     accordionData: {
@@ -541,8 +535,7 @@ export const servicesData: Record<string, ServiceData> = {
     descriptions: [
       "Balman Infotech helps businesses achieve long-term business growth through strategic SEO, Content, Digital PR and Performance Optimization. Unlike short-term paid tactics, organic growth focuses on building trust, visibility, and consistent results without depending on ads.\n\n\n Our Organic Growth Strategies are designed to increase search visibility, attract the right audience and convert traffic into measurable business outcomes, locally and globally",
     ],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+    image: "/service/growth.jpeg",
     leftSideServices: [
       { label: "Organic Growth", path: "/services/organic-growth" },
       { label: "Digital Marketing", path: "/services/digital-marketing" },
@@ -742,11 +735,11 @@ export const servicesData: Record<string, ServiceData> = {
     subHeadings: [
       "Providing Exceptional Customer Services Tailored to Your Brand’s Needs",
     ],
+    image: "/service/customer.jpeg",
     descriptions: [
       "Balman Infotech Serves your company with the best 24/7 Customer Support Services across calls, mails and chats. Our highly trained customer support executives make sure to deliver customer satisfaction and retention for local and international businesses. Whether you are a Start-up, SME or Enterprise, our customized customer support solutions are designed scale your operation without compromising the brand tone and voice.",
     ],
-    image:
-      "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=800&h=400&fit=crop",
+
     leftSideServices: [
       { label: "Organic Growth", path: "/services/organic-growth" },
       { label: "Digital Marketing", path: "/services/digital-marketing" },
@@ -867,6 +860,28 @@ export const servicesData: Record<string, ServiceData> = {
           description:
             "As your company expands, we optimise procedures, boost productivity, and help expand operations.",
         },
+      ],
+    },
+    faqs: {
+      heading: "Frequently Asked Questions",
+      items: [
+        {
+          question: "Do you offer 24/7 customer support services?",
+          answer: "Yes, we offer flexible support models including 24/7 coverage based on business needs.",
+        },
+        {
+          question: "Is customer support a short-term service?",
+          answer: "No. Customer support is an ongoing function that evolves with business growth and customer expectations.",
+        },
+        {
+          question: "Will your agents follow our brand tone and guidelines?",
+          answer: "Absolutely. All agents are trained on your brand voice, values, and processes.",
+        },
+        {
+          question: "Can customer support really impact revenue?",
+          answer: "Yes. Strong customer support improves retention, repeat purchases, and brand loyalty.",
+        },
+
       ],
     },
   },

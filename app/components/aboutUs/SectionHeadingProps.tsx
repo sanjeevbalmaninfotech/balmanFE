@@ -26,11 +26,18 @@ const WhatWeActuallyDo: React.FC = () => {
     <section className=" mx-auto bg-[#010101]">
       <div className="  lg:py-15 py-5 px-0 ml-5 mr-5  lg:ml-[100px] bg-[#010101] lg:mr-[100px]">
         {/* Main Title */}
-        <div className="text-center mb-6">
+
+        {/* <div className="text-center mb-6">
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white">
             What We Actually Do{" "}
             <span className="text-white">(Beyond The Labels)</span>
           </h3>
+          <div className="heading-underline"></div>
+        </div> */}
+        <div className="flex flex-col items-center justify-center lg:mb-6 mb-3">
+          <SectionHeading>
+            What We Actually Do (Beyond The Labels)
+          </SectionHeading>
           <div className="heading-underline"></div>
         </div>
 

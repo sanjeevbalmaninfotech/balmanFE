@@ -5,7 +5,7 @@ export default function NewsletterSection() {
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleSubmit =  () => {
+  const handleSubmit = () => {
     if (firstName && email) {
       console.log('Newsletter subscription:', { firstName, email });
       // Handle newsletter subscription logic here
@@ -28,42 +28,47 @@ export default function NewsletterSection() {
 
           {/* Content Container (centered and responsive) */}
           <div className="relative z-10 text-center section-padding-x w-full max-w-7xl">
-            <SectionHeading className="mb-8">
-              Subscribe to our newsletter
-            </SectionHeading>
 
-            {/* Input Group */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-3xl mx-auto">
 
-  {/* First Name */}
-  <input
-    type="text"
-    placeholder="First name"
-    value={firstName}
-    onChange={(e) => setFirstName(e.target.value)}
-    className="w-full sm:w-[300px] md:w-[320px] px-4 py-3 rounded-lg  bg-white text-black  placeholder-gray-500
+            <div className="flex flex-col items-center justify-center mb-4 lg:mb-8">
+              <SectionHeading>
+                Subscribe to our Newsletter
+              </SectionHeading>
+              <div className="heading-underline"></div>
+            </div>
+
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-3xl mx-auto">
+
+
+              <input
+                type="text"
+                placeholder="First name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                className="w-full sm:w-[300px] md:w-[320px] px-4 py-3 rounded-lg  bg-white text-black  placeholder-gray-500
       focus:outline-none focus:ring-2 focus:ring-primary
       transition-all "/>
 
-  {/* Email */}
-  <input
-    type="email"
-    placeholder="Email address"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    className="w-full sm:w-[300px]
+              {/* Email */}
+              <input
+                type="email"
+                placeholder="Email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full sm:w-[300px]
       md:w-[320px] px-4 py-3 rounded-lg bg-white text-black placeholder-gray-500
       focus:outline-none
       focus:ring-2 focus:ring-primary
       transition-all" />
 
-  {/* Button */}
+              {/* Button */}
 
-  <button className="btn-primary touch-manipulation inline-block text-center">
-  Subscribe
-</button>
+              <button className="btn-primary touch-manipulation inline-block text-center">
+                Subscribe
+              </button>
 
-</div>
+            </div>
 
           </div>
         </div>

@@ -40,8 +40,8 @@ export default function Footer() {
 
   const quickLinks = [
     // { label: 'Contact Us', href: '/contact' },
-    { label: "Support", href: "/careers" },
-    { label: "Chat", href: "/blogs" },
+    { label: "Support", href: "/ContactUs" },
+    { label: "Chat", href: "/ContactUs" },
     // { label: 'Privacy Policy', href: '/PrivacyPolicy' },
     // { label: 'Terms and Conditions', href: '/TermsAndConditions' }
   ];

@@ -14,12 +14,17 @@ export default function PrivacyPolicyMainSecition() {
                 </div>
 
                 {/* Main Heading */}
-                <h1
-                    className="text-gradient font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[110%] mb-8 lg:mb-12"
 
-                >
-                    Last Updated: [27/01/26]
-                </h1>
+                <div className="flex flex-col items-start justify-center">
+                    <h1
+                        className="text-gradient font-bold text-[28px] sm:text-[34px] lg:text-[42px] leading-[110%] mb-8 lg:mb-12"
+
+                    >
+                        Last Updated: [27/01/26]
+                    </h1>
+
+                </div>
+
 
                 {/* Introduction */}
                 <section className="mb-8">

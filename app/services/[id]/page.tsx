@@ -40,10 +40,14 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="relative w-full mx-auto z-10">
             <ServiceHeading />
 
-            {/* Main Heading */}
-            <h1 className="service-heading-h1 mb-4 sm:mb-10 lg:mb-15 text-center">
-              {service.mainHeading}
-            </h1>
+
+
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="service-heading-h1 mb-4 sm:mb-10 lg:mb-15 text-center">
+                {service.mainHeading}
+              </h1>
+
+            </div>
 
             {/* Main Grid Layout */}
             <div className="flex flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-12">

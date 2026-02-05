@@ -57,13 +57,13 @@ export default function AboutSection() {
               </p>
               {/* Paragraph 4 */}
               {/* See More Button */}
-             
-              <button className="flex items-center justify-center gap-2 mx-auto">
+
+              {/* <button className="flex items-center justify-center gap-2 mx-auto">
                 <Link
                   href="/aboutus"
                   className="flex items-center justify-center gap-2"
                 >
-                  <span className="sub-heading">See More</span>
+                  <span className="sub-heading">See More cc</span>
                   <svg
                     width="16"
                     height="16"
@@ -81,7 +81,7 @@ export default function AboutSection() {
                     />
                   </svg>
                 </Link>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

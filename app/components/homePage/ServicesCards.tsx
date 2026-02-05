@@ -95,16 +95,17 @@ export default function ServicesCards() {
     };
 
     return (
-        <section className="min-h-screen bg-[#010101] mt-4 lg:mt-1 py-10 section-padding-x">
-            <div className="w-full max-w-[1800px] mx-auto">
+        <section className=" bg-[#010101] mt-4 lg:mt-1 py-5 lg:py-10 section-padding-x">
+            <div className="w-full  mx-auto">
 
-                {/* HEADER */}
-                <div className="text-center mb-12">
+                <div className="flex flex-col items-center justify-center mb-4 lg:mb-12">
                     <SectionHeading>
-                        Experience In Different Industries
+                        {`Experience In Different Industries`}
                     </SectionHeading>
                     <div className="heading-underline"></div>
                 </div>
+
+
 
                 {/* GRID */}
                 <div
