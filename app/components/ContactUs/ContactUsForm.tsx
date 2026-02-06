@@ -158,7 +158,7 @@ export default function ContactUsForm() {
               Ajit Singh Nagar, Punjab 160055
             </p>
             <a
-              href="https://maps.app.goo.gl/r5tmo5sUkF5Sb6KG8"
+              href="https://shorturl.at/O62Bt"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:opacity-80  transition-opacity inline-flex items-center gap-2"
