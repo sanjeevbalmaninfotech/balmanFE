@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // Custom CSS for Swiper Pagination (Optional: Put this in your global css or keep inline styles below)
-import './swiper-custom.css'; // Agar aap chahein to extra styles alag file me rakh sakte hain
+// import './swiper-custom.css'; // Agar aap chahein to extra styles alag file me rakh sakte hain
 
 export default function TeamLeadsSection() {
     return (
