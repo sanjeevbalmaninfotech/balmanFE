@@ -60,7 +60,7 @@ export default function WhoAreWe() {
                     <TrendingUp className="text-primary" size={24} />
                   </div>
                   <p className="text-gray-400 text-xs mb-4">
-                    Since 1st July 2019, with 5 star ratings and happy customers
+                    Since 2nd February 2024, with 5 star ratings and happy customers
                   </p>
                   {/* Avatar Grid */}
                   <div className="grid grid-cols-4 gap-2">
