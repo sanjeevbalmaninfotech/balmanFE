@@ -86,22 +86,7 @@ export default function ContactUsForm() {
               <span className="sort-main-heading">Contact Us</span>
             </div>
 
-            <div className="mb-8">
-              <SectionHeading align="left">Get in Touch</SectionHeading>
-              <p
-                style={{
-                  color: "#8E8E8E",
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontWeight: 500,
-                  fontSize: "16px",
-                  lineHeight: "150%",
-                  letterSpacing: "0",
-                }}
-              >
-                Fill out the form below and tell us about your project,
-                requirement, or query.
-              </p>
-            </div>
+
 
             {/* Contact Information Section */}
             <div className="flex flex-col md:flex-row gap-4 mb-8">
@@ -148,36 +133,41 @@ export default function ContactUsForm() {
               <div className="flex items-center gap-3 mb-2">
                 <img src="/icons/map.png" alt="Location" className="w-8 h-8" />
               </div>
+
               <h3 className="text-white text-lg font-semibold mb-2">Office</h3>
-              <p
-                className="text-[#8E8E8E] mb-3"
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "15px",
-                  lineHeight: "120%",
-                }}
-              >
-                4th floor, F88, Phase 7, Industrial Area, Sector 74, Sahibzada
-                Ajit Singh Nagar, Punjab 160055
-              </p>
+
               <a
                 href="https://shorturl.at/O62Bt"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:opacity-80  transition-opacity inline-flex items-center gap-2"
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "16px",
-                }}
+                className="block cursor-pointer"
               >
-                Get Directions
-                <span>→</span>
+                <p
+                  className="text-[#8E8E8E] hover:text-white transition-colors"
+                  style={{
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
+                    fontSize: "15px",
+                    lineHeight: "120%",
+                  }}
+                >
+                  4th floor, F88, Phase 7, Industrial Area, Sector 74, Sahibzada
+                  Ajit Singh Nagar, Punjab 160055
+                </p>
               </a>
             </div>
+
           </div>
 
           {/* Right Side - Form Container */}
           <div className="w-full lg:w-[68%]">
+            <div className="mb-8">
+              <SectionHeading align="left">Get in Touch</SectionHeading>
+              <p className="text-[#8E8E8E] font-[500] text-[16px] leading-[120%] mt-3 tracking-[0] font-['Plus_Jakarta_Sans']">
+
+                Fill out the form below and tell us about your project,
+                requirement, or query.
+              </p>
+            </div>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Name and Phone Fields */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
