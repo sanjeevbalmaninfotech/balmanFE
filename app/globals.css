@@ -579,3 +579,17 @@ body {
       var(--primary-color) 100%);
   box-shadow: inset 0 0 8px rgba(255, 89, 0, 0.3);
 }
+
+
+:root {
+  --swiper-theme-color: #ff5900 !important;
+  --swiper-pagination-bullet-inactive-color: #999;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+}
+
+/* Agar bullets ko chota bada karna hai */
+.swiper-pagination-bullet-active {
+  width: 24px !important;
+  border-radius: 8px !important;
+  transition: width 0.3s ease;
+}
