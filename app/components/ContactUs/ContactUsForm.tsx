@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import toast from "react-hot-toast";
 import * as z from "zod";
 import SectionHeading from "../Common/SectionHeading";
 import axiosInstance from "@/app/lib/http/axiosInstance";
@@ -50,6 +51,7 @@ export default function ContactUsForm() {
     setSubmitStatus({ type: null, message: "" });
     try {
       await axiosInstance.post("/api/contactUs", data);
+      toast.success("Your message has been sent successfully!");
       setSubmitStatus({
         type: "success",
         message: "Your message has been sent successfully!",
@@ -57,11 +59,11 @@ export default function ContactUsForm() {
       reset();
     } catch (error: any) {
       console.error("Form submission error:", error);
+      const errorMessage = error.response?.data?.message || "Failed to send message. Please try again later.";
+      toast.error(errorMessage);
       setSubmitStatus({
         type: "error",
-        message:
-          error.response?.data?.message ||
-          "Failed to send message. Please try again later.",
+        message: errorMessage,
       });
     } finally {
       setIsSubmitting(false);

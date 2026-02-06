@@ -82,10 +82,10 @@ export default function HeroSection() {
 
           {/* Glass Cards - Desktop only */}
           <div className="absolute inset-0 pointer-events-none hidden md:block">
-            <div className="absolute top-[15%] right-[5%]">
+            <div className="absolute top-[15%] right-[5%] pointer-events-auto">
               <GlassCard />
             </div>
-            <div className="absolute bottom-[20%] right-[10%]">
+            <div className="absolute bottom-[20%] right-[10%] pointer-events-auto">
               <GlassCardDown />
             </div>
           </div>
