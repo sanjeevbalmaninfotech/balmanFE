@@ -113,7 +113,7 @@ export default function ContactUsForm() {
                 </h3>
                 <a
                   href="mailto:contact@balmaninfotech.net"
-                  className="text-[#8E8E8E] hover:text-white text-[16px] transition-colors"
+                  className="text-[#8E8E8E] hover:text-white text-[15px] transition-colors"
                   style={{
                     fontFamily: "Plus Jakarta Sans, sans-serif",
                   }}
@@ -130,10 +130,10 @@ export default function ContactUsForm() {
                 <h3 className="text-white text-lg font-semibold mb-2">Phone</h3>
                 <a
                   href="tel:+919814097251"
-                  className="text-[#8E8E8E] hover:text-white transition-colors"
+                  className="text-[#8E8E8E] hover:text-white text-[15px] transition-colors"
                   style={{
                     fontFamily: "Plus Jakarta Sans, sans-serif",
-                    fontSize: "16px",
+                    fontSize: "15px",
                   }}
                 >
                   +91 98140 97251
@@ -151,8 +151,8 @@ export default function ContactUsForm() {
                 className="text-[#8E8E8E] mb-3"
                 style={{
                   fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "16px",
-                  lineHeight: "150%",
+                  fontSize: "15px",
+                  lineHeight: "120%",
                 }}
               >
                 4th floor, F88, Phase 7, Industrial Area, Sector 74, Sahibzada
