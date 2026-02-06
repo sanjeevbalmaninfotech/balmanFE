@@ -100,7 +100,7 @@ export default function ServicesCards() {
 
                 <div className="flex flex-col items-center justify-center mb-4 lg:mb-12">
                     <SectionHeading>
-                        {`Experience In Different Industries`}
+                        {`Our Services`}
                     </SectionHeading>
                     <div className="heading-underline"></div>
                 </div>

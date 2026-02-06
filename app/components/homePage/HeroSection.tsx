@@ -22,6 +22,7 @@ import TeamLeadsSection from "./TeamLeadsSection";
 import ServicesCards from "./ServicesCards";
 import GlassCard from "./GlassCard";
 import GlassCardDown from "./GlassCardDown";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -64,15 +65,18 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-gray-400 text-sm md:text-lg mb-6 max-w-[500px] leading-relaxed">
-              To empower businesses with expressive brand identities and
-              seamless digital experiences by blending creativity, strategy, and
-              technology.
+              In a world where the digital space is crowded, an end-to-end digital Growth Partner at your side becomes your biggest advantage.
+            </p>
+            <p className="text-gray-400 text-sm md:text-lg mb-6 max-w-[500px] leading-relaxed">
+              Balman Infotech amalgamates technology, performance-based digital marketing and customer support that helps your brand through an end-to-end customer journey.
             </p>
 
             <div className="pb-8 md:pb-0"> {/* Extra bottom padding for mobile flow */}
-              <button className="btn-primary touch-manipulation inline-block text-center">
-                Get Started
-              </button>
+              <Link href="/ContactUs">
+                <button className="btn-primary touch-manipulation inline-block text-center">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -88,9 +92,10 @@ export default function HeroSection() {
         </div>
       </section>
 
+      <ServicesCards />
       <AboutSection />
       {/* <OurServices /> */}
-      <ServicesCards />
+
 
       <FounderSection />
       {/* <TestimonialSection /> */}
