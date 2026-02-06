@@ -76,9 +76,9 @@ export default function ContactUsForm() {
     <section id="contactForm">
       <div className=" mt-8 p-4 lg:mt-15 mx-auto w-full flex-grow">
         {/* Main Container */}
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 lg:gap-20 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Left Side - Heading */}
-          <div className="w-full lg:col-span-3">
+          <div className="w-full lg:w-[32%] flex-shrink-0">
             <div className="flex items-center gap-3 mb-4">
               <div className="heading-underline-left"></div>
               <span className="sort-main-heading">Contact Us</span>
@@ -102,9 +102,9 @@ export default function ContactUsForm() {
             </div>
 
             {/* Contact Information Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2  gap-2 lg:gap-20 mb-8">
+            <div className="flex flex-col md:flex-row gap-4 mb-8">
               {/* Email */}
-              <div>
+              <div className="w-full md:w-[70%]">
                 <div className="flex items-center gap-1 lg:gap-3 mb-1">
                   <img src="/icons/email.png" alt="Email" className="w-8 h-8" />
                 </div>
@@ -113,7 +113,7 @@ export default function ContactUsForm() {
                 </h3>
                 <a
                   href="mailto:contact@balmaninfotech.net"
-                  className="text-[#8E8E8E] hover:text-white text-[15px] transition-colors"
+                  className="text-[#8E8E8E] hover:text-white text-[16px] transition-colors break-words"
                   style={{
                     fontFamily: "Plus Jakarta Sans, sans-serif",
                   }}
@@ -123,14 +123,14 @@ export default function ContactUsForm() {
               </div>
 
               {/* Phone */}
-              <div>
+              <div className="w-full md:w-[30%]">
                 <div className="flex items-center gap-3 mb-1">
                   <img src="/icons/phone.png" alt="Phone" className="w-8 h-8" />
                 </div>
                 <h3 className="text-white text-lg font-semibold mb-2">Phone</h3>
                 <a
                   href="tel:+919814097251"
-                  className="text-[#8E8E8E] hover:text-white text-[15px] transition-colors"
+                  className="text-[#8E8E8E] hover:text-white text-[15px] transition-colors whitespace-nowrap"
                   style={{
                     fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontSize: "15px",
@@ -175,7 +175,7 @@ export default function ContactUsForm() {
           </div>
 
           {/* Right Side - Form Container */}
-          <div className="w-full lg:col-span-7">
+          <div className="w-full lg:w-[68%]">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Name and Phone Fields */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
