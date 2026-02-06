@@ -34,8 +34,6 @@ export default async function ServicePage({ params }: PageProps) {
       <div className="mt-4 sm:mt-6 lg:mt-10 section-padding bg-[#010101] text-white">
         {/* Hero Section */}
         <div className="relative">
-          {/* Top-Right Orange Blur Background */}
-          {/* <OrangeBlurEffect /> */}
 
           <div className="relative w-full mx-auto z-10">
             <ServiceHeading />
@@ -51,26 +49,8 @@ export default async function ServicePage({ params }: PageProps) {
 
             {/* Main Grid Layout */}
             <div className="flex flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-12">
-              {/* Services List - Top on mobile/tablet, Side on desktop */}
-
-              <div className="w-full xl:w-[320px] 2xl:w-[360px] shrink-0">
-                <div className="border border-gray-700 rounded-lg sm:rounded-xl p-2 sm:p-3 lg:p-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-x-2 sm:gap-x-3 lg:gap-x-4 gap-y-1 sm:gap-y-2">
-                    {service.leftSideServices.map((svc, idx) => (
-                      <Link
-                        key={idx}
-                        href={svc.path}
-                        className="block w-full py-1 sm:py-1.5 lg:py-2 service-list-text text-xs sm:text-sm lg:text-base"
-                      >
-                        {svc.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Left Side - Image + Content */}
-              <div className="flex-1 order-2 ">
+              {/* Main Content - Left on desktop */}
+              <div className="flex-1">
                 {/* IMAGE */}
                 <div className="relative rounded-lg sm:rounded-xl lg:rounded-2xl overflow-hidden h-[clamp(200px,50vw,480px)] mb-4 sm:mb-8 lg:mb-15 w-full">
                   <Image
@@ -126,7 +106,7 @@ export default async function ServicePage({ params }: PageProps) {
                             <div
                               key={idx}
                               className="relative border-2 border-orange-600 rounded-lg sm:rounded-xl lg:rounded-2xl 
-                               p-2 sm:p-3 lg:p-4 mb-4 sm:mb-5 lg:mb-6 text-[14px] sm:text-[15px] lg:text-[16px] text-center bg-black "
+                                p-2 sm:p-3 lg:p-4 mb-4 sm:mb-5 lg:mb-6 text-[14px] sm:text-[15px] lg:text-[16px] text-center bg-black "
                               style={{ background: "black" }}
                             >
                               <p className="service-body-text mb-4 p-2 lg:p-4 sm:mb-5 lg:mb-6 text-white! text-[clamp(10px,3vw,15px)]!">
@@ -237,10 +217,12 @@ export default async function ServicePage({ params }: PageProps) {
 
                 {service?.faqs && service?.faqs?.items?.length > 0 && (
                   <div className="mt-6 sm:mt-8 lg:mt-15">
-                    <h2 className="service-heading-h2 mb-3 sm:mb-4 lg:mb-3 text-left">
-                      {service.faqs.heading}
-                      <div className="heading-underline-left"></div>
-                    </h2>
+                    <div className="flex flex-col items-start justify-center">
+                      <h2 className="service-heading-h2 mb-3 sm:mb-4 lg:mb-3 text-left">
+                        {service.faqs.heading}
+                        <div className="heading-underline-left"></div>
+                      </h2>
+                    </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-x-12 lg:gap-y-3">
                       {service.faqs.items.map((faq, idx) => (
@@ -275,6 +257,30 @@ export default async function ServicePage({ params }: PageProps) {
                     )}
                   </div>
                 )}
+              </div>
+
+              {/* Services List - Right on desktop */}
+              <div className="hidden xl:block w-full xl:w-[260px] 2xl:w-[280px] shrink-0">
+                <div className="border border-gray-700 rounded-lg sm:rounded-xl p-2 sm:p-3 lg:p-4">
+                  <div
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1
+                 place-items-center xl:place-items-start
+                 gap-x-2 sm:gap-x-3 lg:gap-x-4
+                 gap-y-1 sm:gap-y-2"
+                  >
+                    {service.leftSideServices.map((svc, idx) => (
+                      <Link
+                        key={idx}
+                        href={svc.path}
+                        className="block w-full text-center xl:text-left
+                     py-1 sm:py-1.5 lg:py-2
+                     service-list-text text-xs sm:text-sm lg:text-base"
+                      >
+                        {svc.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

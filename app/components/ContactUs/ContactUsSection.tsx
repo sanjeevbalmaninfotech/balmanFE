@@ -34,7 +34,7 @@ const ContactUsSection: React.FC = () => {
       isHighlighted: false,
     },
     {
-      title: "Finance & Acc. Management",
+      title: "Finance Management",
       description:
         "We offer professional accounting, financial planning, compliance, and reporting to keep your business on track.",
       isHighlighted: false,
@@ -80,11 +80,10 @@ const ContactUsSection: React.FC = () => {
             {ContactUsSection.map((service, index) => (
               <div
                 key={index}
-                className={`rounded-2xl p-4 lg:p-12 border ${
-                  service.isHighlighted
-                    ? "bg-[#FF5900] border-[#FF5900]"
-                    : "bg-transparent border-[#FF5900]"
-                }`}
+                className={`rounded-2xl p-4 lg:p-12 border ${service.isHighlighted
+                  ? "bg-[#FF5900] border-[#FF5900]"
+                  : "bg-transparent border-[#FF5900]"
+                  }`}
               >
                 {/* Service Title */}
                 <h3
@@ -92,7 +91,7 @@ const ContactUsSection: React.FC = () => {
                   style={{
                     fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 600,
-                    fontSize: "24px",
+                    fontSize: "20px",
                     lineHeight: "120%",
                     color: "#E8E8EA",
                   }}
@@ -106,7 +105,7 @@ const ContactUsSection: React.FC = () => {
                     fontFamily: "Plus Jakarta Sans, sans-serif",
                     fontWeight: 500,
                     fontSize: "16.27px",
-                    lineHeight: "150%",
+                    lineHeight: "120%",
                     color: "#E8E8EA",
                   }}
                 >

@@ -177,7 +177,7 @@ export default function Footer() {
                     <FaLinkedinIn size={18} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/balmaninfotech"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-primary transition-colors"
@@ -185,21 +185,14 @@ export default function Footer() {
                     <FaInstagram size={18} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/BalmanInfotechMohali"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-primary transition-colors"
                   >
-                    <FaYoutube size={18} />
+                    <FaFacebookF size={18} />
                   </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-primary transition-colors"
-                  >
-                    <FaTwitter size={18} />
-                  </a>
+
                 </div>
               </div>
             </div>
