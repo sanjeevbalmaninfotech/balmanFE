@@ -52,15 +52,16 @@ export default async function ServicePage({ params }: PageProps) {
               {/* Main Content - Left on desktop */}
               <div className="flex-1">
                 {/* IMAGE */}
-                <div className="relative rounded-lg sm:rounded-xl lg:rounded-2xl overflow-hidden h-[clamp(200px,50vw,480px)] mb-4 sm:mb-8 lg:mb-15 w-full">
+                <div className="relative w-full aspect-[1565/573] rounded-2xl sm:rounded-xl lg:rounded-3xl overflow-hidden mb-4 sm:mb-8 lg:mb-15">
                   <Image
                     src={service.image}
                     alt={service.mainHeading}
                     fill
                     className="object-cover"
+                    priority
                   />
-                  <div className="absolute inset-0 rounded-2xl pointer-events-none"></div>
                 </div>
+
 
                 {/* HEADING + DESCRIPTION */}
                 <div className="w-full">
