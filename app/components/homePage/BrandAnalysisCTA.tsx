@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SectionHeading from "../Common/SectionHeading";
 
 export default function BrandAnalysisCTA() {
@@ -22,10 +23,8 @@ export default function BrandAnalysisCTA() {
               <div className="heading-underline"></div>
             </div>
 
-            <p
-              className="text-center leading-[150%] text-[#E8E8EA] mb-3 sm:mb-4 md:mb-6 font-['Plus_Jakarta_Sans']"
-              style={{ fontSize: "clamp(13px, 2.5vw, 16px)" }}
-            >
+            <p className="text-center leading-[150%] text-[#E8E8EA] mb-3 sm:mb-4 md:mb-6 font-['Plus_Jakarta_Sans']"
+              style={{ fontSize: "clamp(13px, 2.5vw, 16px)" }}>
               {`Not sure what’s wrong? Our Experts will give you a detailed analysis of your digital presence.`}
             </p>
 
@@ -34,9 +33,11 @@ export default function BrandAnalysisCTA() {
                             <span className="absolute inset-0 -left-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:left-full transition-all duration-500"></span>
                             <span className="relative">Get Your Free Quote</span>
                         </button> */}
-            <button className="btn-primary touch-manipulation inline-block text-center">
-              Analyse My Brand
-            </button>
+            <Link href="/brand-audit">
+              <button className="btn-primary touch-manipulation inline-block text-center">
+                Analyse My Brand
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -108,7 +108,7 @@ export default function Footer() {
               {linkColumns.map((column, idx) => (
                 <div key={idx}>
                   {/* Heading */}
-                  <h3 className="font-sans font-normal text-[16px] lg:text-[20px] leading-[21px] text-white mb-3">
+                  <h3 className="font-sans font-normal text-[16px] lg:text-[18px] leading-[21px] text-white mb-3">
                     {column.heading}
                   </h3>
 
@@ -118,7 +118,7 @@ export default function Footer() {
                       <li key={linkIdx}>
                         <a
                           href={link.path}
-                          className="text-gray-400 hover:text-white text-[14px] lg:text-[18px] transition-colors"
+                          className="text-gray-400 hover:text-white text-[14px] lg:text-[16px] transition-colors"
                         >
                           {link.label}
                         </a>
@@ -141,8 +141,7 @@ export default function Footer() {
                     <li key={idx}>
                       <a
                         href={link.href}
-                        className="text-gray-400 hover:text-white text-[14px] lg:text-[18px] transition-colors"
-                      >
+                        className="text-gray-400 hover:text-white text-[14px] lg:text-[16px] transition-colors">
                         {link.label}
                       </a>
                     </li>

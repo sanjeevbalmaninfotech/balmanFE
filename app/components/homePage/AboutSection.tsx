@@ -18,7 +18,7 @@ export default function AboutSection() {
                 >
                   We&apos;re More Than A <br />
                   Digital Agency
-                  <div className="heading-underline mt-2"></div>
+                  <div className="heading-underline-left mt-2"></div>
                 </h2>
               </div>
             </div>

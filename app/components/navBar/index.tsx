@@ -67,8 +67,8 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       className={`px-2 py-3 rounded transition-colors duration-200 ${isActive
-                          ? "text-primary"
-                          : "text-white hover:text-primary"
+                        ? "text-primary"
+                        : "text-white hover:text-primary"
                         }`}
                       style={{
                         fontSize: "16px",
@@ -88,8 +88,8 @@ export default function Navbar() {
                 >
                   <button
                     className={`px-2 py-3 rounded transition-colors duration-200 flex items-center gap-1 ${pathname.startsWith("/services")
-                        ? "text-primary"
-                        : "text-white hover:text-primary"
+                      ? "text-primary"
+                      : "text-white hover:text-primary"
                       }`}
                     style={{
                       fontSize: "16px",
@@ -117,8 +117,8 @@ export default function Navbar() {
                               key={service.name}
                               href={service.href}
                               className={`block px-4 py-2 transition-colors duration-200 ${isActive
-                                  ? "text-primary bg-gray-900"
-                                  : "text-white hover:text-primary hover:bg-gray-900"
+                                ? "text-primary bg-gray-900"
+                                : "text-white hover:text-primary hover:bg-gray-900"
                                 }`}
                               style={{
                                 fontSize: "15px",
@@ -137,7 +137,12 @@ export default function Navbar() {
 
               {/* Get a Quote Button */}
               <div className="hidden lg:block flex-shrink-0">
-                {/* Uncomment if needed */}
+                <Link
+                  href="/brand-audit"
+                  className="inline-block px-8 py-4 bg-black text-white text-lg font-semibold rounded-2xl border-2 border-white transition-colors font-['Poppins']"
+                >
+                  Get a Quote
+                </Link>
               </div>
 
               {/* Mobile Menu Button */}
@@ -162,8 +167,8 @@ export default function Navbar() {
                         href={item.href}
                         onClick={() => setIsMenuOpen(false)}
                         className={`px-4 py-3 rounded transition-colors duration-200 ${isActive
-                            ? "text-primary bg-gray-900"
-                            : "text-white hover:text-primary hover:bg-gray-900"
+                          ? "text-primary bg-gray-900"
+                          : "text-white hover:text-primary hover:bg-gray-900"
                           }`}
                         style={{
                           fontSize: "16px",
@@ -180,8 +185,8 @@ export default function Navbar() {
                     <button
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
                       className={`w-full px-4 py-3 rounded transition-colors duration-200 flex items-center justify-between ${pathname.startsWith("/services")
-                          ? "text-primary bg-gray-900"
-                          : "text-white hover:text-primary hover:bg-gray-900"
+                        ? "text-primary bg-gray-900"
+                        : "text-white hover:text-primary hover:bg-gray-900"
                         }`}
                       style={{
                         fontSize: "16px",
@@ -209,8 +214,8 @@ export default function Navbar() {
                               href={service.href}
                               onClick={() => setIsMenuOpen(false)}
                               className={`px-4 py-2 rounded transition-colors duration-200 ${isActive
-                                  ? "text-primary bg-gray-900"
-                                  : "text-white hover:text-primary hover:bg-gray-900"
+                                ? "text-primary bg-gray-900"
+                                : "text-white hover:text-primary hover:bg-gray-900"
                                 }`}
                               style={{
                                 fontSize: "15px",

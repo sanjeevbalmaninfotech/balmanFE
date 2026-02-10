@@ -40,7 +40,7 @@ const FounderSection = () => {
               </div>
 
               <div className="w-full">
-                <div className="font-['Plus_Jakarta_Sans'] font-normal text-base lg:text-lg leading-[160%] tracking-[0%]">
+                <div className="font-['Plus_Jakarta_Sans'] font-normal text-base lg:text-lg leading-[120%] tracking-[0%]">
                   <p className="mb-4 lg:mb-5">
                     <strong className="font-semibold text-lg lg:text-xl">
                       Many companies are built on business plans. Balman
@@ -60,23 +60,23 @@ const FounderSection = () => {
                   <p className="mb-4 lg:mb-5 font-medium text-lg">Her vision was clear:</p>
 
                   <ul className="mb-5 lg:mb-6 space-y-2 list-disc list-inside ml-5">
-                    <li className="leading-relaxed">
+                    <li className="leading-normal">
                       Build an agency that treats branding as an art form.
                     </li>
-                    <li className="leading-relaxed">
+                    <li className="leading-normal">
                       Craft digital experiences that feel human, intuitive,
                       and memorable.
                     </li>
-                    <li className="leading-relaxed">
+                    <li className="leading-normal">
                       Help businesses in Mohali compete with brands anywhere
                       in the world.
                     </li>
-                    <li className="leading-relaxed">
+                    <li className="leading-normal">
                       And lead with originality, not imitation.
                     </li>
                   </ul>
 
-                  <p className="mb-5 lg:mb-6">
+                  <p className="mb-3 lg:mb-4">
                     What began as inspiration grew into an end-to-end Digital
                     Transformation Partner agency, committed to building,
                     innovating, and shaping brands with intention.
