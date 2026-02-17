@@ -124,8 +124,9 @@ export default function HeroSection() {
       </section>
 
 
-      <ServicesCards />
       <AboutSection />
+      <ServicesCards />
+
       {/* <OurServices /> */}
 
 

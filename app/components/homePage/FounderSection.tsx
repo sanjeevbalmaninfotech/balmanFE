@@ -50,40 +50,40 @@ const FounderSection = () => {
                   </p>
 
                   <p className="mb-5 lg:mb-6">
-                    As a young man who moved to the UK, Jasan Sandhu learned early on that creativity is a tool for transformation. Surrounded by diverse cultures, fast-moving industries, and the global digital shift, he saw how brands that think differently survive, and those who fail to evolve disappear. This understanding planted the seed for Balman Infotech.
+                    As a young man who moved to the UK, Jashan Sandhu learned early on that creativity is a tool for transformation. Surrounded by diverse cultures, fast-moving industries, and the global digital shift, he saw how brands that think differently survive, and those who fail to evolve disappear. This understanding planted the seed for Balman Infotech.
 
                   </p>
 
-                  <p className="mb-4 lg:mb-5 font-medium text-lg">Her vision was clear:</p>
+                  <p className="mb-4 lg:mb-5 font-medium text-lg">His vision was clear:</p>
 
                   <ul className="mb-5 lg:mb-6 space-y-2 list-disc list-inside ml-5">
                     <li className="leading-normal">
+
                       Build an agency that treats branding as an art form.
+
                     </li>
                     <li className="leading-normal">
-                      Craft digital experiences that feel human, intuitive,
-                      and memorable.
+                      Craft digital experiences that feel human, intuitive, and memorable.
                     </li>
                     <li className="leading-normal">
-                      Help businesses in Mohali compete with brands anywhere
-                      in the world.
+                      Help businesses in Mohali compete with brands anywhere in the world.
+
                     </li>
                     <li className="leading-normal">
                       And lead with originality, not imitation.
+
                     </li>
                   </ul>
 
                   <p className="mb-3 lg:mb-4">
-                    What began as inspiration grew into an end-to-end Digital
-                    Transformation Partner agency, committed to building,
-                    innovating, and shaping brands with intention.
+
+                    What began as inspiration grew into an end-to-end Digital Transformation Partner agency, committed to building, innovating, and shaping brands with intention.
+
                   </p>
 
                   <p className="text-base lg:text-lg leading-relaxed">
-                    Today, Balman Infotech stands as a trusted partner for businesses
-                    seeking to elevate their digital presence. Under Navdeep's leadership,
-                    the agency has helped countless brands discover their unique voice and
-                    connect meaningfully with their audiences.
+
+                    Today, Balman Infotech stands as a trusted partner for businesses seeking to elevate their digital presence. Under Jashan's leadership, the agency has helped countless brands discover their unique voice and connect meaningfully with their audiences.
                   </p>
                 </div>
               </div>

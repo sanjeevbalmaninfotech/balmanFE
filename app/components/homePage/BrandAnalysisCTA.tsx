@@ -17,7 +17,7 @@ export default function BrandAnalysisCTA() {
             {/* Heading with underline wrapped in a div */}
             <div className="flex flex-col items-center mb-6">
               <SectionHeading>
-                Let&apos;s Analyse Your Brand - For Free!
+                {`Get You Brand Analysed For Free!`}
               </SectionHeading>
 
               <div className="heading-underline"></div>
