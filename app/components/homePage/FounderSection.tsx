@@ -11,14 +11,15 @@ const FounderSection = () => {
           <div className="w-full lg:w-[30%] relative flex-shrink-0 rounded-lg">
             {/* Container with proper aspect ratio for 500x900 image */}
             <div
-              className="relative w-full rounded-lg overflow-hidden max-h-[500px] lg:max-h-[600px]"
+              className="relative w-full rounded-2xl overflow-hidden max-h-[500px] lg:max-h-[600px]"
               style={{
                 aspectRatio: '5/9',
                 boxShadow: "0 0 0 0 rgba(0, 0, 0, 0)",
               }}
             >
+              {/* "C:\repos\balmanFE\public\staff\jashansir.jpeg" */}
               <Image
-                src="/staff/nav.png"
+                src="/staff/jashansir.jpeg"
                 alt="Founder Portrait"
                 fill
                 className="object-cover object-top rounded-lg"
@@ -49,12 +50,8 @@ const FounderSection = () => {
                   </p>
 
                   <p className="mb-5 lg:mb-6">
-                    As a young woman who moved to the UK, Navdeep Bains learned
-                    early on that creativity is a tool for transformation.
-                    Surrounded by diverse cultures, fast-moving industries, and
-                    the global digital shift, she saw how brands that think
-                    differently survive, and those who fail to evolve disappear.
-                    This understanding planted the seed for Balman Infotech.
+                    As a young man who moved to the UK, Jasan Sandhu learned early on that creativity is a tool for transformation. Surrounded by diverse cultures, fast-moving industries, and the global digital shift, he saw how brands that think differently survive, and those who fail to evolve disappear. This understanding planted the seed for Balman Infotech.
+
                   </p>
 
                   <p className="mb-4 lg:mb-5 font-medium text-lg">Her vision was clear:</p>

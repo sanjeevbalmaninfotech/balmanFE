@@ -115,6 +115,15 @@ const WhoWeAreBuiltFor: React.FC = () => {
             A team that thinks like builders?
           </span>
         </div>
+
+        <div className="flex flex-col items-center justify-center  mt-10">
+          <SectionHeading>
+            If you choose Builders
+          </SectionHeading>
+          <div className="lg:mt-5 mt-5">
+            <button className="bg-primary text-white px-6 py-3 rounded-lg">Let's Connect</button>
+          </div>
+        </div>
       </div>
     </section>
   );
