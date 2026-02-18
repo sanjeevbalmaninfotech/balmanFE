@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isLocationsOpen, setIsLocationsOpen] = useState(false);
   const pathname = usePathname();
 
   const navItems = [
@@ -22,7 +23,15 @@ export default function Navbar() {
     { name: "Digital Marketing", href: "/services/digital-marketing" },
     { name: "Branding", href: "/services/branding" },
     { name: "Customer Support", href: "/services/customer-support" },
+    { name: "Software Development", href: "/service/software-development-company-chandigarh" }
   ];
+  // const locationItems = [
+  //   { name: "Mohali", href: "#" },
+  //   { name: "Chandigarh", href: "#" },
+  //   { name: "Panchkula", href: "#" },
+  //   { name: "Zirakpur", href: "#" },
+  //   { name: "Ludhiana", href: "#" },
+  // ]
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
@@ -133,15 +142,70 @@ export default function Navbar() {
                     </div>
                   )}
                 </div>
+
+
+                {/* Locations Dropdown */}
+                {/* <div
+                  className="relative"
+                  onMouseEnter={() => setIsLocationsOpen(true)}
+                  onMouseLeave={() => setIsLocationsOpen(false)}
+                >
+                  <button
+                    className={`px-2 py-3 rounded transition-colors duration-200 flex items-center gap-1 ${pathname.startsWith("/locations")
+                      ? "text-primary"
+                      : "text-white hover:text-primary"
+                      }`}
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: pathname.startsWith("/locations")
+                        ? "600"
+                        : "400",
+                    }}
+                  >
+                    Locations
+                    <ChevronDown
+                      size={16}
+                      className={`transition-transform duration-200 ${isLocationsOpen ? "rotate-180" : ""
+                        }`}
+                    />
+                  </button>
+
+              
+                  {isLocationsOpen && (
+                    <div className="absolute top-full left-0 pt-2">
+                      <div className="bg-[#1a1a1a] rounded-lg shadow-lg min-w-[220px] py-2">
+                        {locationItems.map((location) => {
+                          const isActive = pathname === location.href;
+                          return (
+                            <Link
+                              key={location.name}
+                              href={location.href}
+                              className={`block px-4 py-2 transition-colors duration-200 ${isActive
+                                ? "text-primary bg-gray-900"
+                                : "text-white hover:text-primary hover:bg-gray-900"
+                                }`}
+                              style={{
+                                fontSize: "15px",
+                                fontWeight: isActive ? "600" : "400",
+                              }}
+                            >
+                              {location.name}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div> */}
               </div>
 
               {/* Get a Quote Button */}
               <div className="hidden lg:block flex-shrink-0">
                 <Link
                   href="/brand-audit"
-                  className="inline-block px-8 py-4 bg-black text-white text-lg font-semibold rounded-2xl border-2 border-white transition-colors font-['Poppins']"
+                  className="inline-block px-4 py-2 bg-black text-white text-lg font-semibold rounded-2xl border-2 border-white transition-colors font-['Poppins']"
                 >
-                  Get a Quote
+                  Let's Connect
                 </Link>
               </div>
 
@@ -183,7 +247,10 @@ export default function Navbar() {
                   {/* Mobile Services Section */}
                   <div>
                     <button
-                      onClick={() => setIsServicesOpen(!isServicesOpen)}
+                      onClick={() => {
+                        setIsServicesOpen(!isServicesOpen);
+                        setIsLocationsOpen(false);
+                      }}
                       className={`w-full px-4 py-3 rounded transition-colors duration-200 flex items-center justify-between ${pathname.startsWith("/services")
                         ? "text-primary bg-gray-900"
                         : "text-white hover:text-primary hover:bg-gray-900"
@@ -229,8 +296,62 @@ export default function Navbar() {
                       </div>
                     )}
                   </div>
+
+                  {/* Mobile Locations Section */}
+                  {/* <div>
+                    <button
+                      onClick={() => {
+                        setIsLocationsOpen(!isLocationsOpen);
+                        setIsServicesOpen(false);
+                      }}
+                      className={`w-full px-4 py-3 rounded transition-colors duration-200 flex items-center justify-between ${pathname.startsWith("/locations")
+                        ? "text-primary bg-gray-900"
+                        : "text-white hover:text-primary hover:bg-gray-900"
+                        }`}
+                      style={{
+                        fontSize: "16px",
+                        fontWeight: pathname.startsWith("/locations")
+                          ? "600"
+                          : "400",
+                      }}
+                    >
+                      Locations
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform duration-200 ${isLocationsOpen ? "rotate-180" : ""
+                          }`}
+                      />
+                    </button>
+
+               
+                    {isLocationsOpen && (
+                      <div className="pl-4 mt-1 flex flex-col gap-1">
+                        {locationItems.map((location) => {
+                          const isActive = pathname === location.href;
+                          return (
+                            <Link
+                              key={location.name}
+                              href={location.href}
+                              onClick={() => setIsMenuOpen(false)}
+                              className={`px-4 py-2 rounded transition-colors duration-200 ${isActive
+                                ? "text-primary bg-gray-900"
+                                : "text-white hover:text-primary hover:bg-gray-900"
+                                }`}
+                              style={{
+                                fontSize: "15px",
+                                fontWeight: isActive ? "600" : "400",
+                              }}
+                            >
+                              {location.name}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div> */}
                 </div>
               </div>
+
             )}
           </div>
         </div>
