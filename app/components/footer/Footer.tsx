@@ -27,7 +27,6 @@ export default function Footer() {
         { label: "Branding", path: "/services/branding" },
         { label: "Web Development", path: "/services/web-development" },
         { label: "Customer Support", path: "/services/customer-support" },
-        { label: "Software Development", path: "/service/software-development-company-chandigarh" },
       ],
     },
     {

@@ -9,6 +9,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
+  const [activeLocation, setActiveLocation] = useState<string | null>(null);
+  const [mobileActiveLocation, setMobileActiveLocation] = useState<string | null>(null);
   const pathname = usePathname();
 
   const navItems = [
@@ -23,15 +25,21 @@ export default function Navbar() {
     { name: "Digital Marketing", href: "/services/digital-marketing" },
     { name: "Branding", href: "/services/branding" },
     { name: "Customer Support", href: "/services/customer-support" },
-    { name: "Software Development", href: "/service/software-development-company-chandigarh" }
   ];
-  // const locationItems = [
-  //   { name: "Mohali", href: "#" },
-  //   { name: "Chandigarh", href: "#" },
-  //   { name: "Panchkula", href: "#" },
-  //   { name: "Zirakpur", href: "#" },
-  //   { name: "Ludhiana", href: "#" },
-  // ]
+  const subServiceItems = [
+    // { name: "Web Development", href: "/services/web-development" },
+    { name: "Software Development", href: "/service/software-development-company-chandigarh" },
+    // { name: "Digital Marketing", href: "/services/digital-marketing" },
+    // { name: "Customer Services", href: "/services/customer-support" },
+  ];
+
+  const locationItems = [
+    // { name: "Mohali", services: subServiceItems },
+    { name: "Chandigarh", services: subServiceItems },
+    // { name: "Panchkula", services:  },
+    // { name: "Zirakpur", services:  },
+    // { name: "Ludhiana", services:  },
+  ];
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
@@ -145,10 +153,13 @@ export default function Navbar() {
 
 
                 {/* Locations Dropdown */}
-                {/* <div
+                <div
                   className="relative"
                   onMouseEnter={() => setIsLocationsOpen(true)}
-                  onMouseLeave={() => setIsLocationsOpen(false)}
+                  onMouseLeave={() => {
+                    setIsLocationsOpen(false);
+                    setActiveLocation(null);
+                  }}
                 >
                   <button
                     className={`px-2 py-3 rounded transition-colors duration-200 flex items-center gap-1 ${pathname.startsWith("/locations")
@@ -170,33 +181,69 @@ export default function Navbar() {
                     />
                   </button>
 
-              
+
                   {isLocationsOpen && (
                     <div className="absolute top-full left-0 pt-2">
-                      <div className="bg-[#1a1a1a] rounded-lg shadow-lg min-w-[220px] py-2">
+                      <div className="bg-[#1a1a1a] rounded-lg shadow-lg min-w-[220px] py-2 relative">
                         {locationItems.map((location) => {
-                          const isActive = pathname === location.href;
+                          const isHovered = activeLocation === location.name;
                           return (
-                            <Link
+                            <div
                               key={location.name}
-                              href={location.href}
-                              className={`block px-4 py-2 transition-colors duration-200 ${isActive
-                                ? "text-primary bg-gray-900"
-                                : "text-white hover:text-primary hover:bg-gray-900"
-                                }`}
-                              style={{
-                                fontSize: "15px",
-                                fontWeight: isActive ? "600" : "400",
-                              }}
+                              className="relative"
+                              onMouseEnter={() => setActiveLocation(location.name)}
+                              onMouseLeave={() => setActiveLocation(null)}
                             >
-                              {location.name}
-                            </Link>
+                              <div
+                                className={`flex items-center justify-between px-4 py-2 cursor-pointer transition-colors duration-200 ${isHovered
+                                  ? "text-primary bg-gray-900"
+                                  : "text-white hover:text-primary hover:bg-gray-900"
+                                  }`}
+                                style={{
+                                  fontSize: "15px",
+                                  fontWeight: isHovered ? "600" : "400",
+                                }}
+                              >
+                                {location.name}
+                                <ChevronDown
+                                  size={14}
+                                  className={`-rotate-90 transition-transform duration-200 ${isHovered ? "rotate-0" : ""}`}
+                                />
+                              </div>
+
+                              {/* Sub-menu for Services */}
+                              {isHovered && (
+                                <div className="absolute top-0 left-full pl-2">
+                                  <div className="bg-[#1a1a1a] rounded-lg shadow-lg min-w-[220px] py-2">
+                                    {location.services.map((service) => {
+                                      const isActive = pathname === service.href;
+                                      return (
+                                        <Link
+                                          key={service.name}
+                                          href={service.href}
+                                          className={`block px-4 py-2 transition-colors duration-200 ${isActive
+                                            ? "text-primary bg-gray-900"
+                                            : "text-white hover:text-primary hover:bg-gray-900"
+                                            }`}
+                                          style={{
+                                            fontSize: "15px",
+                                            fontWeight: isActive ? "600" : "400",
+                                          }}
+                                        >
+                                          {service.name}
+                                        </Link>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                              )}
+                            </div>
                           );
                         })}
                       </div>
                     </div>
                   )}
-                </div> */}
+                </div>
               </div>
 
               {/* Get a Quote Button */}
@@ -298,7 +345,7 @@ export default function Navbar() {
                   </div>
 
                   {/* Mobile Locations Section */}
-                  {/* <div>
+                  <div>
                     <button
                       onClick={() => {
                         setIsLocationsOpen(!isLocationsOpen);
@@ -323,32 +370,62 @@ export default function Navbar() {
                       />
                     </button>
 
-               
+
                     {isLocationsOpen && (
                       <div className="pl-4 mt-1 flex flex-col gap-1">
                         {locationItems.map((location) => {
-                          const isActive = pathname === location.href;
+                          const isExpanded = mobileActiveLocation === location.name;
                           return (
-                            <Link
-                              key={location.name}
-                              href={location.href}
-                              onClick={() => setIsMenuOpen(false)}
-                              className={`px-4 py-2 rounded transition-colors duration-200 ${isActive
-                                ? "text-primary bg-gray-900"
-                                : "text-white hover:text-primary hover:bg-gray-900"
-                                }`}
-                              style={{
-                                fontSize: "15px",
-                                fontWeight: isActive ? "600" : "400",
-                              }}
-                            >
-                              {location.name}
-                            </Link>
+                            <div key={location.name} className="flex flex-col">
+                              <button
+                                onClick={() => setMobileActiveLocation(isExpanded ? null : location.name)}
+                                className={`w-full px-4 py-2 rounded transition-colors duration-200 flex items-center justify-between ${isExpanded
+                                  ? "text-primary bg-gray-900"
+                                  : "text-white hover:text-primary hover:bg-gray-900"
+                                  }`}
+                                style={{
+                                  fontSize: "15px",
+                                  fontWeight: isExpanded ? "600" : "400",
+                                }}
+                              >
+                                {location.name}
+                                <ChevronDown
+                                  size={14}
+                                  className={`transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                                />
+                              </button>
+
+                              {/* Mobile Sub-services */}
+                              {isExpanded && (
+                                <div className="pl-4 mt-1 flex flex-col gap-1">
+                                  {location.services.map((service) => {
+                                    const isActive = pathname === service.href;
+                                    return (
+                                      <Link
+                                        key={service.name}
+                                        href={service.href}
+                                        onClick={() => setIsMenuOpen(false)}
+                                        className={`px-4 py-2 rounded transition-colors duration-200 ${isActive
+                                          ? "text-primary bg-gray-900"
+                                          : "text-white hover:text-primary hover:bg-gray-900"
+                                          }`}
+                                        style={{
+                                          fontSize: "14px",
+                                          fontWeight: isActive ? "600" : "400",
+                                        }}
+                                      >
+                                        {service.name}
+                                      </Link>
+                                    );
+                                  })}
+                                </div>
+                              )}
+                            </div>
                           );
                         })}
                       </div>
                     )}
-                  </div> */}
+                  </div>
                 </div>
               </div>
 

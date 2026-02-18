@@ -18,7 +18,6 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Digital Marketing", path: "/services/digital-marketing" },
       { label: "Web Development", path: "/services/web-development" },
       { label: "Customer Support", path: "/services/customer-support" },
-      { label: "Software Development", path: "/service/software-development-company-chandigarh" },
     ],
     mainCta: {
       text: "Talk to an Expert",
@@ -200,7 +199,6 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Branding Services", path: "/services/branding" },
       { label: "Web Development", path: "/services/web-development" },
       { label: "Customer Support", path: "/services/customer-support" },
-      { label: "Software Development", path: "/service/software-development-company-chandigarh" },
     ],
     mainCta: {
       text: "Talk to one of our Marketing Experts",
@@ -378,7 +376,6 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Digital Marketing", path: "/services/digital-marketing" },
       { label: "Branding Services", path: "/services/branding" },
       { label: "Customer Support", path: "/services/customer-support" },
-      { label: "Software Development", path: "/service/software-development-company-chandigarh" },
     ],
     mainCta: {
       text: "Talk to a Development Expert",
@@ -542,7 +539,6 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Branding Services", path: "/services/branding" },
       { label: "Web Development", path: "/services/web-development" },
       { label: "Customer Support", path: "/services/customer-support" },
-      { label: "Software Development", path: "/service/software-development-company-chandigarh" },
     ],
     mainCta: {
       text: "Speak with a Growth Strategist",
@@ -746,7 +742,6 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Digital Marketing", path: "/services/digital-marketing" },
       { label: "Branding Services", path: "/services/branding" },
       { label: "Web Development", path: "/services/web-development" },
-      { label: "Software Development", path: "/service/software-development-company-chandigarh" },
     ],
     mainCta: {
       text: "Talk to our Experts",
