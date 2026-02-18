@@ -1,8 +1,19 @@
 export interface BlogContent {
-    type: 'paragraph' | 'heading' | 'list';
+    type: 'paragraph' | 'heading' | 'list' | 'image';
     text?: string;
     items?: string[];
     level?: 2 | 3 | 4;
+    checkbox?: boolean; // if true, list items use checkbox icon instead of bullet
+    // image fields
+    src?: string;
+    alt?: string;
+    align?: 'left' | 'right' | 'center';
+    width?: 30 | 40 | 50;
+}
+
+export interface SideLink {
+    label: string;
+    path: string;
 }
 
 export interface BlogPost {
@@ -13,13 +24,14 @@ export interface BlogPost {
     content: BlogContent[];
     excerpt: string;
     thumbnailImage: string;
+    sideLinks: SideLink[];
 }
 
 export const blogPosts: BlogPost[] = [
     {
-        id: "web-development",
-        title: "Building High-Performance Android Applications in 2025",
-        date: "10 Aug, 2025",
+        id: "software-development-company-chandigarh",
+        title: "Finding the Best Software Development Company in Chandigarh",
+        date: "",
         heroImage: "/heroImgs/webDevelopment.jpeg",
         thumbnailImage: "/blogs/webdevelopment.jpeg",
         excerpt: "By 2026, North India's technological landscape has changed from one of unrealized promise to one of established reality...",
@@ -64,6 +76,7 @@ export const blogPosts: BlogPost[] = [
             },
             {
                 type: 'list',
+                checkbox: true,
                 items: [
                     "Certification of Delivery: Don't rely just on the webpage. Request case studies with quantifiable return on investment. Has their software improved euser interaction with any other customers? Did it lower the cost of operations? What is their clients' overall return on investment?",
                     "Communication Protocols: A premier company will always employ open-source applications that provide you real-time access to the development board, such as Jira, Slack, and Trello.",
@@ -101,6 +114,13 @@ export const blogPosts: BlogPost[] = [
                 ]
             },
             {
+                type: 'image',
+                src: '/service/softwaredevelopment.png',
+                alt: 'Software Development at Balman Infotech',
+                align: 'right',
+                width: 30,
+            },
+            {
                 type: 'heading',
                 level: 2,
                 text: "Why Balman Infotech is the Best Software Development Company in Chandigarh?"
@@ -110,69 +130,27 @@ export const blogPosts: BlogPost[] = [
                 text: "Finding the ideal partner requires more than just technical proficiency. Clients trust Balman Infotech for the following reasons:"
             },
             {
-                type: 'paragraph',
-                text: "Transparency & Communication: We use approaches that are swift and steady, keeping you informed at all times with frequent updates and biweekly sprints. Industry Expeertise: We possess the domain knowledge to manage industry-specific rules and needs, ranging from Fintech and Healthcare to E-commerce and Logistics. Scalable Solutions: We consider the future when we design. As your user base grows, so too can our architectures. Post-Launch Support: After deployment, our partnership continues. To keep your software up to date, we provide maintenance and update services."
+                type: 'list',
+                checkbox: false,
+                items: [
+                    "Transparency & Communication: We use approaches that are swift and steady, keeping you informed at all times with frequent updates and biweekly sprints.",
+                    "Industry Expertise: We possess the domain knowledge to manage industry-specific rules and needs, ranging from Fintech and Healthcare to E-commerce and Logistics.",
+                    "Scalable Solutions: We consider the future when we design. As your user base grows, so too can our architectures.",
+                    "Post-Launch Support: After deployment, our partnership continues. To keep your software up to date, we provide maintenance and update services."
+                ]
             },
             {
                 type: 'paragraph',
                 text: "It's simple to locate a software development business in Chandigarh, but choosing the best one necessitates carefully examining their technical culture and delivery history. The best software development firm in Chandigarh for your organization will be one that understands your vision and creates the technology to realize it, rather than just writing code, as the area continues to emerge into a major worldwide tech destination. Go no farther than Balman Infotech if you're looking for the top Chandigarh software development firm to realize your idea. Our staff is prepared to provide you with a full-scale digital transformation partner or a specialized custom software development company in Chandigarh. Together, let's construct your company's future."
             }
+        ],
+        sideLinks: [
+            { label: "Organic Growth", path: "/services/organic-growth" },
+            { label: "Digital Marketing", path: "/services/digital-marketing" },
+            { label: "Branding Services", path: "/services/branding" },
+            { label: "Web Development", path: "/services/web-development" },
+            { label: "Customer Support", path: "/services/customer-support" },
         ]
     },
-    {
-        id: "organic-growth",
-        title: "Organic Growth",
-        date: "12 Aug, 2025",
-        heroImage: "/heroImgs/webDevelopment.jpeg",
-        thumbnailImage: "/blogs/growth.jpeg",
-        excerpt: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit...",
-        content: [
-            {
-                type: 'paragraph',
-                text: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet."
-            }
-        ]
-    },
-    {
-        id: "branding-services",
-        title: "Branding Services",
-        date: "15 Aug, 2025",
-        heroImage: "/heroImgs/webDevelopment.jpeg",
-        thumbnailImage: "/blogs/branding.jpeg",
-        excerpt: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit...",
-        content: [
-            {
-                type: 'paragraph',
-                text: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet."
-            }
-        ]
-    },
-    {
-        id: "customer-support",
-        title: "Customer Support",
-        date: "18 Aug, 2025",
-        heroImage: "/heroImgs/webDevelopment.jpeg",
-        thumbnailImage: "/blogs/CustomerSupport.jpeg",
-        excerpt: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit...",
-        content: [
-            {
-                type: 'paragraph',
-                text: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet."
-            }
-        ]
-    },
-    {
-        id: "digital-marketing",
-        title: "Digital Marketing",
-        date: "20 Aug, 2025",
-        heroImage: "/heroImgs/webDevelopment.jpeg",
-        thumbnailImage: "/blogs/digitalMarketing.jpeg",
-        excerpt: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit...",
-        content: [
-            {
-                type: 'paragraph',
-                text: "Lorem Ipsum Dolor Sit Amet Consectetur. Consectetur Risus Quis Diam Hendrerit. Interdum Mattis In Sed Diam Egestas Metus At Duis Commodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet. Ommodo. Cursus Quis Cursus Dignissim Egestas Sollicitudin Tristique Quis. Orci Neque Quis Porttitor Eu Amet."
-            }
-        ]
-    }
+
 ];

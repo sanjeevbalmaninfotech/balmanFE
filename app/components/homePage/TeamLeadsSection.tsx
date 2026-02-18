@@ -30,7 +30,7 @@ export default function TeamLeadsSection() {
     });
 
     return (
-        <div className="bg-[#010101] text-white overflow-hidden py-12 md:py-20">
+        <div className="bg-[#010101] text-white overflow-hidden py-6 md:py-8">
             <div className="max-w-[1200px] mx-auto relative px-4">
 
                 {/* Header Section */}

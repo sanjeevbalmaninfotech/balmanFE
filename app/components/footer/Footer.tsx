@@ -27,6 +27,7 @@ export default function Footer() {
         { label: "Branding", path: "/services/branding" },
         { label: "Web Development", path: "/services/web-development" },
         { label: "Customer Support", path: "/services/customer-support" },
+        { label: "Software Development", path: "/software-development-company-chandigarh" },
       ],
     },
     {
@@ -116,12 +117,12 @@ export default function Footer() {
                   <ul className="space-y-1">
                     {column.links.map((link, linkIdx) => (
                       <li key={linkIdx}>
-                        <a
+                        <Link
                           href={link.path}
                           className="text-gray-400 hover:text-white text-[14px] lg:text-[16px] transition-colors"
                         >
                           {link.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -139,11 +140,11 @@ export default function Footer() {
                 <ul className="space-y-1">
                   {quickLinks.map((link, idx) => (
                     <li key={idx}>
-                      <a
+                      <Link
                         href={link.href}
                         className="text-gray-400 hover:text-white text-[14px] lg:text-[16px] transition-colors">
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
 
@@ -205,12 +206,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">© 2026 All rights reserved.</p>
           <div className="flex gap-6">
-            <a
+            <Link
               href="#"
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Cookies Settings
-            </a>
+            </Link>
           </div>
         </div>
       </div>
