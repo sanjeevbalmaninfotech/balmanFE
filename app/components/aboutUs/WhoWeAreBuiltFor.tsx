@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeading from "../Common/SectionHeading";
+import Link from "next/link";
 
 const WhoWeAreBuiltFor: React.FC = () => {
   return (
@@ -121,7 +122,11 @@ const WhoWeAreBuiltFor: React.FC = () => {
             If you choose Builders
           </SectionHeading>
           <div className="lg:mt-5 mt-5">
-            <button className="bg-primary text-white px-6 py-3 rounded-lg">Let's Connect</button>
+            <Link href="/ContactUs">
+              <button className="btn-primary touch-manipulation inline-block text-center">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>

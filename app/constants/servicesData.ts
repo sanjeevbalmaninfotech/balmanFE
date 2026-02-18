@@ -21,7 +21,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     mainCta: {
       text: "Talk to an Expert",
-      href: "/contact-us",
+      href: "/ContactUs",
     },
 
     accordionData: {
@@ -176,11 +176,11 @@ export const servicesData: Record<string, ServiceData> = {
     ctaButtons: [
       {
         text: "Request a Free Brand Audit",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
       {
         text: "Schedule a Strategy Call Today",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
     ],
   },
@@ -202,7 +202,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     mainCta: {
       text: "Talk to one of our Marketing Experts",
-      href: "/contact-us",
+      href: "/ContactUs",
     },
 
     accordionData: {
@@ -352,11 +352,11 @@ export const servicesData: Record<string, ServiceData> = {
     ctaButtons: [
       {
         text: "Request a Free Marketing Consultant",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
       {
         text: "Schedule a Strategy Call Today",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
     ],
   },
@@ -379,7 +379,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     mainCta: {
       text: "Talk to a Development Expert",
-      href: "/contact-us",
+      href: "/ContactUs",
     },
     industries: {
       heading: "Industries We Serve",
@@ -514,11 +514,11 @@ export const servicesData: Record<string, ServiceData> = {
     ctaButtons: [
       {
         text: "Request a Free Marketing Consultant",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
       {
         text: "Schedule a Strategy Call Today",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
     ],
   },
@@ -530,7 +530,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Sustainable Organic Growth That Builds Authority, Traffic and Revenue",
     ],
     descriptions: [
-      "Balman Infotech helps businesses achieve long-term business growth through strategic SEO, Content, Digital PR and Performance Optimization. Unlike short-term paid tactics, organic growth focuses on building trust, visibility, and consistent results without depending on ads.\n Our Organic Growth Strategies are designed to increase search visibility, attract the right audience and convert traffic into measurable business outcomes, locally and globally",
+      "Balman Infotech helps businesses achieve long-term business growth through strategic SEO, Content, Digital PR and Performance Optimization. Unlike short-term paid tactics, organic growth focuses on building trust, visibility, and consistent results without depending on ads.\n Our Organic Growth Strategies are designed to increase search visibility, attract the right audience and convert traffic into measurable business outcomes, locally and globally.",
     ],
     image: "/service/growth.jpeg",
     leftSideServices: [
@@ -542,7 +542,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     mainCta: {
       text: "Speak with a Growth Strategist",
-      href: "/contact-us",
+      href: "/ContactUs",
     },
     industries: {
       heading: "Industries We Specialize In",
@@ -717,11 +717,11 @@ export const servicesData: Record<string, ServiceData> = {
     ctaButtons: [
       {
         text: "Request a Free Marketing Consultant",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
       {
         text: "Schedule a Strategy Call Today",
-        href: "/contact-us",
+        href: "/ContactUs",
       },
     ],
   },
@@ -745,7 +745,7 @@ export const servicesData: Record<string, ServiceData> = {
     ],
     mainCta: {
       text: "Talk to our Experts",
-      href: "/contact-us",
+      href: "/ContactUs",
     },
 
     industries: {
