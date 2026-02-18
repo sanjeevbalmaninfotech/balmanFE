@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 
-
+// comment 
 export default function PrivacyPolicy() {
     return (
         <div>
