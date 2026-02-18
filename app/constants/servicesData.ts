@@ -8,7 +8,7 @@ export const servicesData: Record<string, ServiceData> = {
     mainHeading: "Branding by Balman Infotech",
     subHeadings: ["Helping You Build a Strong and  Memorable Brand"],
     descriptions: [
-      "What makes you remember a company? What makes you think of the red colour when you hear Zomato? How do you remember the virtue of being fit when Nike is mentioned? All of this happened due to strong branding done by the company. Rooting your company with fixed values, voice and vision, branding is what decides how the market and the consumer perceives you. Balman Infotech wants to do exactly that.\n\n \n We work with both domestic and foreign clients to develop brands that are not simply aesthetically pleasing but also clear, consistent, and built for long-term growth. Our customised branding solutions are made to fit your company's objectives, audience expectations, and future scalability, regardless of whether you are a start-up, SME, or corporation.",
+      "What makes you remember a company? What makes you think of the red colour when you hear Zomato? How do you remember the virtue of being fit when Nike is mentioned? All of this happened due to strong branding done by the company. Rooting your company with fixed values, voice and vision, branding is what decides how the market and the consumer perceives you. Balman Infotech wants to do exactly that. We work with both domestic and foreign clients to develop brands that are not simply aesthetically pleasing but also clear, consistent, and built for long-term growth. Our customised branding solutions are made to fit your company's objectives, audience expectations, and future scalability, regardless of whether you are a start-up, SME, or corporation.",
     ],
     //"C:\repos\balmanFE\public\service\branding.jpeg"  "C:\Users\Dell\Downloads\digitalmarketing.jpeg"
     image:
@@ -368,7 +368,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Build Scalable and User Friendly Websites, Apps and Softwares",
     ],
     descriptions: [
-      "Balman Infotech strives to support businesses in their technological advancements with our end-to-end support in website, app and software development catering to your business needs. \n\nWe help businesses design and develop technology solutions that will help both, local and international clients scale and increase their operational efficiency. \n\n Our tailored development solutions are made to fit your company's objectives, user requirements, and future scalability, regardless of whether you are a start-up, SME, or enterprise.",
+      "Balman Infotech strives to support businesses in their technological advancements with our end-to-end support in website, app and software development catering to your business needs. We help businesses design and develop technology solutions that will help both, local and international clients scale and increase their operational efficiency. Our tailored development solutions are made to fit your company's objectives, user requirements, and future scalability, regardless of whether you are a start-up, SME, or enterprise.",
     ],
     image: "/service/webdevelopment.jpeg",
     leftSideServices: [
@@ -530,7 +530,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Sustainable Organic Growth That Builds Authority, Traffic and Revenue",
     ],
     descriptions: [
-      "Balman Infotech helps businesses achieve long-term business growth through strategic SEO, Content, Digital PR and Performance Optimization. Unlike short-term paid tactics, organic growth focuses on building trust, visibility, and consistent results without depending on ads.\n\n\n Our Organic Growth Strategies are designed to increase search visibility, attract the right audience and convert traffic into measurable business outcomes, locally and globally",
+      "Balman Infotech helps businesses achieve long-term business growth through strategic SEO, Content, Digital PR and Performance Optimization. Unlike short-term paid tactics, organic growth focuses on building trust, visibility, and consistent results without depending on ads.\n Our Organic Growth Strategies are designed to increase search visibility, attract the right audience and convert traffic into measurable business outcomes, locally and globally",
     ],
     image: "/service/growth.jpeg",
     leftSideServices: [
