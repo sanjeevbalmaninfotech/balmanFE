@@ -44,14 +44,12 @@ const FounderSection = () => {
                 <div className="font-['Plus_Jakarta_Sans'] font-normal text-base lg:text-lg leading-[120%] tracking-[0%]">
                   <p className="mb-4 lg:mb-5">
                     <strong className="font-semibold text-lg lg:text-xl">
-                      Many companies are built on business plans. Balman
-                      Infotech was built on determination.
+                      Many companies are built on business plans. Balman Infotech was built on determination.
                     </strong>
                   </p>
 
                   <p className="mb-5 lg:mb-6">
-                    As a young man who moved to the UK, Jashan Sandhu learned early on that creativity is a tool for transformation. Surrounded by diverse cultures, fast-moving industries, and the global digital shift, he saw how brands that think differently survive, and those who fail to evolve disappear. This understanding planted the seed for Balman Infotech.
-                  </p>
+                    As a young man who moved to the UK, Jashan Sandhu learned early on that creativity is a tool for transformation. Surrounded by diverse cultures, fast-moving industries, and the global digital shift, he saw how brands that think differently survive and those who fail to evolve disappear. This understanding planted the seed for Balman Infotech. </p>
 
                   <p className="mb-4 lg:mb-5 font-medium text-lg">
                     His vision was clear:

@@ -92,14 +92,11 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-gray-400 text-sm md:text-lg mb-6 max-w-[500px] leading-relaxed">
-              In a world where the digital space is crowded, an end-to-end digital
-              Growth Partner at your side becomes your biggest advantage.
+              In a world where the digital space is crowded, an end-to-end digital growth partner at your side becomes your biggest advantage.
             </p>
 
             <p className="text-gray-400 text-sm md:text-lg mb-6 max-w-[500px] leading-relaxed">
-              Balman Infotech amalgamates technology, performance-based digital
-              marketing and customer support that helps your brand through an
-              end-to-end customer journey.
+              Balman Infotech amalgamates technology, performance-based digital marketing, and customer support to help your brand navigate the end-to-end customer journey.
             </p>
 
             <div className="pb-8 md:pb-0">

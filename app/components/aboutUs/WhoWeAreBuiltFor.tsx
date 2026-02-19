@@ -12,22 +12,12 @@ const WhoWeAreBuiltFor: React.FC = () => {
           {/* WE DON'T Section - LEFT */}
           <div className="lg:pr-8 xl:pr-12">
             {/* First Heading */}
-            <div className="mb-2">
-              <p
-                className="text-[#8A8A8A]  text-base  leading-[100%] capitalize"
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontWeight: 400,
-                }}
-              >
-                We design the front(& the back)! Most agencies choose one.
-              </p>
-            </div>
+
 
             {/* Main Title */}
             <div className="flex flex-col items-start justify-center mb-4 lg:mb-6">
               <SectionHeading align="left">
-                {`WE DON'T`}
+                {`We design the front (& the back)!`}
               </SectionHeading>
               <div className="heading-underline-left"></div>
             </div>
@@ -94,41 +84,27 @@ const WhoWeAreBuiltFor: React.FC = () => {
 
         {/* Do You Want Text */}
         <div className="text-center mb-4">
-          <p className="text-center font-['Plus_Jakarta_Sans'] text-[16px] font-normal leading-[120%] capitalize bg-gradient-to-r from-[#656565] via-[#FFFFFF] to-[#656565] bg-[length:200%_100%] bg-clip-text
+          <p className="text-center font-['Plus_Jakarta_Sans'] text-[16px] font-normal leading-[120%] bg-gradient-to-r from-[#656565] via-[#FFFFFF] to-[#656565] bg-[length:200%_100%] bg-clip-text
     text-transparent"         >
-            Do you want: Just an another agency
+            Do you want: Just an another agency or a team that thinks like builders?
           </p>
 
         </div>
 
-        {/* Buttons Container */}
-        <div className="flex flex-col md:flex-col items-center justify-center gap-2 lg:gap-6 max-w-4xl mx-auto">
-          {/* Left Button - Filled */}
 
 
-          {/* OR Text */}
-          <span className="text-white text-xl font-medium">or</span>
-
-          {/* Right Button - Outlined */}
-          <span
-            className="w-full md:w-auto px-6 py-3 bg-transparent border-1 border-[#FF5900]
-    text-white text-sm md:text-base rounded-lg ">
-            A team that thinks like builders?
-          </span>
-        </div>
-
-        <div className="flex flex-col items-center justify-center  mt-10">
+        <div className="flex flex-row gap-16 justify-center items-center mt-10">
           <SectionHeading>
-            If you choose Builders
+            If you choose builders
           </SectionHeading>
-          <div className="lg:mt-5 mt-5">
-            <Link href="/ContactUs">
-              <button className="btn-primary touch-manipulation inline-block text-center">
-                Contact Us
-              </button>
-            </Link>
-          </div>
+
+          <Link href="/ContactUs">
+            <button className="btn-primary touch-manipulation inline-block text-center">
+              Let's Connect
+            </button>
+          </Link>
         </div>
+
       </div>
     </section>
   );

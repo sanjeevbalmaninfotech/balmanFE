@@ -118,7 +118,7 @@ export default function IndividualBlog({ blog }: IndividualBlogProps) {
             </div>
 
             {/* ================= BLOG CONTENT ================= */}
-            <main className="w-full pb-10 sm:pb-15 lg:pb-20">
+            <main className="w-full pb-4 sm:pb-12 lg:pb-8">
                 <div className="section-padding-x">
                     <div className="max-w-none">
                         {blog?.date && <p className="text-gray-400 text-sm mb-6">{blog?.date}</p>}

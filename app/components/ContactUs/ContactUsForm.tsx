@@ -185,7 +185,7 @@ export default function ContactUsForm() {
                   <input
                     type="text"
                     {...register("fullName")}
-                    className={`w-full bg-transparent border ${errors.fullName ? "border-red-500" : "border-gray-700"
+                    className={`w-full bg-transparent border ${errors.fullName ? "border-red-500" : "border-[#8a8a8a]"
                       } rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base`}
                   />
                   {errors.fullName && (
@@ -208,7 +208,7 @@ export default function ContactUsForm() {
                   <input
                     type="tel"
                     {...register("phone")}
-                    className={`w-full bg-transparent border ${errors.phone ? "border-red-500" : "border-gray-700"
+                    className={`w-full bg-transparent border ${errors.phone ? "border-red-500" : "border-[#8a8a8a]"
                       } rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base`}
                   />
                   {errors.phone && (
@@ -235,7 +235,7 @@ export default function ContactUsForm() {
                   <input
                     type="text"
                     {...register("conmpanyName")}
-                    className={`w-full bg-transparent border ${errors.conmpanyName ? "border-red-500" : "border-gray-700"
+                    className={`w-full bg-transparent border ${errors.conmpanyName ? "border-red-500" : "border-[#8a8a8a]"
                       } rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base`}
                   />
                   {errors.conmpanyName && (
@@ -259,7 +259,7 @@ export default function ContactUsForm() {
                     type="text"
                     {...register("websiteUrl")}
                     placeholder="https://example.com"
-                    className={`w-full bg-transparent border ${errors.websiteUrl ? "border-red-500" : "border-gray-700"
+                    className={`w-full bg-transparent border ${errors.websiteUrl ? "border-red-500" : "border-[#8a8a8a]"
                       } rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base`}
                   />
                   {errors.websiteUrl && (
@@ -286,7 +286,7 @@ export default function ContactUsForm() {
                   <button
                     type="button"
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className={`w-full bg-transparent border ${errors.service ? "border-red-500" : "border-gray-700"
+                    className={`w-full bg-transparent border ${errors.service ? "border-red-500" : "border-[#8a8a8a]"
                       } rounded px-4 py-3 text-left ${selectedService ? "text-white" : "text-gray-400"
                       } focus:outline-none focus:border-primary transition-colors flex justify-between items-center text-sm md:text-base`}
                   >
@@ -307,7 +307,7 @@ export default function ContactUsForm() {
                   </button>
 
                   {dropdownOpen && (
-                    <div className="absolute z-10 w-full mt-1 bg-[#1a1a1a] border border-gray-700 rounded shadow-lg max-h-60 overflow-y-auto">
+                    <div className="absolute z-10 w-full mt-1 bg-[#1a1a1a] border border-[#8a8a8a] rounded shadow-lg max-h-60 overflow-y-auto">
                       {services?.map((service, index) => (
                         <button
                           key={index}
@@ -358,7 +358,7 @@ export default function ContactUsForm() {
                 <input
                   type="text"
                   {...register("CompanyType")}
-                  className={`w-full bg-transparent border ${errors.CompanyType ? "border-red-500" : "border-gray-700"
+                  className={`w-full bg-transparent border ${errors.CompanyType ? "border-red-500" : "border-[#8a8a8a]"
                     } rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors text-sm md:text-base`}
                 />
                 {errors.CompanyType && (
@@ -384,7 +384,7 @@ export default function ContactUsForm() {
                   {...register("message")}
                   rows={4}
                   placeholder="Type your message..."
-                  className={`w-full bg-transparent border ${errors.message ? "border-red-500" : "border-gray-700"
+                  className={`w-full bg-transparent border ${errors.message ? "border-red-500" : "border-[#8a8a8a]"
                     } rounded px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors resize-none text-sm md:text-base`}
                 ></textarea>
                 {errors.message && (

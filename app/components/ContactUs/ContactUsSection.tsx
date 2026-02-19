@@ -70,8 +70,7 @@ const ContactUsSection: React.FC = () => {
                 letterSpacing: "0",
               }}
             >
-              Whether you`re a startup, a growing business, or an established
-              enterprise, we`d love to be your Growth Partners!
+              Whether you’re a startup, a growing business, or an established enterprise, we’d love to be your growth partners.
             </p>
           </div>
 

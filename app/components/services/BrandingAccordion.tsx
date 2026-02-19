@@ -58,10 +58,13 @@ export default function BrandingAccordion({ accordionData }: BrandingAccordionPr
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openAccordion === idx ? 'max-h-96 pb-6' : 'max-h-0'
                                     }`}
                             >
-                                <p
-                                    className="font-['Plus_Jakarta_Sans'] text-[#E8E8EA] font-normal mb-3 text-sm leading-5 sm:text-[15px] sm:leading-[22px] lg:text-[16px] lg:leading-[24px]"
-                                >
-                                    {section.content}
+                                <p className="font-['Plus_Jakarta_Sans'] text-[#E8E8EA] font-normal mb-3 text-[16px] leading-5 sm:text-[15px] sm:leading-[22px] lg:text-[16px] lg:leading-[24px]">
+                                    {section.content.split('\n').map((line, i) => (
+                                        <span key={i}>
+                                            {line}
+                                            {i < section.content.split('\n').length - 1 && <br />}
+                                        </span>
+                                    ))}
                                 </p>
 
 
@@ -74,7 +77,7 @@ export default function BrandingAccordion({ accordionData }: BrandingAccordionPr
                                                 className="font-['Plus Jakarta Sans'] flex items-start"
                                                 style={{
                                                     color: '#E8E8EA',
-                                                    fontSize: '14px',
+                                                    fontSize: '16px',
                                                     fontWeight: 400,
                                                     lineHeight: '20px'
                                                 }}

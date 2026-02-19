@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
+import MobileCallButton from "./components/Common/MobileCallButton";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-primary",
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body className={`${plusJakartaSans.variable} antialiased`}>
         <Toaster position="top-right" reverseOrder={false} />
         {children}
+        <MobileCallButton />
       </body>
     </html>
   );

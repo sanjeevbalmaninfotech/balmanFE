@@ -27,6 +27,7 @@ export default function Footer() {
         { label: "Branding", path: "/services/branding" },
         { label: "Web Development", path: "/services/web-development" },
         { label: "Customer Support", path: "/services/customer-support" },
+        { label: "Software Development", path: "/services/custom-software-development" }
       ],
     },
     {
@@ -108,7 +109,7 @@ export default function Footer() {
               {linkColumns.map((column, idx) => (
                 <div key={idx}>
                   {/* Heading */}
-                  <h3 className="font-sans font-normal text-[16px] lg:text-[18px] leading-[21px] text-white mb-3">
+                  <h3 className="font-sans font-normal text-[16px] lg:text-[18px] leading-[21px] text-[#e8e8e8] mb-3">
                     {column.heading}
                   </h3>
 
@@ -171,7 +172,7 @@ export default function Footer() {
                     href="https://www.linkedin.com/company/balmaninfotech"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white  transition-colors"
                   >
                     <FaLinkedinIn size={18} />
                   </a>
@@ -179,7 +180,7 @@ export default function Footer() {
                     href="https://www.instagram.com/balmaninfotech"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white  transition-colors"
                   >
                     <FaInstagram size={18} />
                   </a>
@@ -187,7 +188,7 @@ export default function Footer() {
                     href="https://www.facebook.com/BalmanInfotechMohali"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white  transition-colors"
                   >
                     <FaFacebookF size={18} />
                   </a>

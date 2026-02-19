@@ -21,7 +21,7 @@ export default function ServicesCards() {
         {
             title: "Branding  Services",
             description:
-                "Your brand is not just a product or a service; it is about the feelings it evokes in the consumer. Our job is to give that feeling a voice, a shape, and a story that your audience remembers.",
+                "Your brand is not just a product or a service; it is about the feelings it evokes in consumers. Our job is to give that feeling a voice, a shape, and a story that your audience remembers.",
             leftHeight: 500,
             rightHeight: 460,
             url: "/services/branding",
@@ -48,16 +48,16 @@ export default function ServicesCards() {
         {
             title: "Web Development",
             description:
-                `A brand is incomplete without a digital home, and your website is the most powerful representation of who you are. Our expert team of web developers ensure that every website we build is responsive, fast, visually stunning, and aligned with your brand’s identity.`,
+                `A brand is incomplete without a digital home, and your website is the most powerful representation of who you are. Our expert team of web developers ensures that every website we build is responsive, fast, visually stunning.`,
             leftHeight: 420,
             rightHeight: 460,
             url: "/services/web-development",
             icon: "/services/WebDevelopment.png",
         },
         {
-            title: "Customer Support Services",
+            title: "Customer Support",
             description:
-                "Branding doesn’t end after a customer discovers you; it extends to how they feel every time they interact with you. Balman Infotech provides complete Customer Support Services that ensure your customers feel heard, valued, and cared for.",
+                "Branding doesn’t end after a customer discovers you; it extends to how they feel every time they interact with you. Balman Infotech provides complete Customer Support Services that ensure your customers.",
             leftHeight: 460,
             rightHeight: 500,
             url: "/services/customer-support",

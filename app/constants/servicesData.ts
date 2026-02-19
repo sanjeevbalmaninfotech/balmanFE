@@ -18,6 +18,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Digital Marketing", path: "/services/digital-marketing" },
       { label: "Web Development", path: "/services/web-development" },
       { label: "Customer Support", path: "/services/customer-support" },
+      { label: "Software Development", path: "/services/custom-software-development" }
     ],
     mainCta: {
       text: "Talk to an Expert",
@@ -30,9 +31,9 @@ export const servicesData: Record<string, ServiceData> = {
         "We create quick, responsive, conversion-focused websites that effectively engage users and represent your business. The services that we offer include:",
       accordion: [
         {
-          title: "Brand Strategy & Positioning",
+          title: "Brand Strategy & Positioning ",
           content:
-            "To guarantee clarity and consistency over all touchpoints, we establish the core of your brand.",
+            "To guarantee clarity and consistency over all touchpoints, we establish the core of your brand. \n Our brand strategy services include:",
           items: [
             "Brand discovery & research",
             "Market and competitor analysis",
@@ -44,7 +45,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Brand Identity Design",
           content:
-            "We design graphic identities that capture the essence of your brand.",
+            "We design graphic identities that capture the essence of your brand.\n Our brand identity services include",
           items: [
             "Logo design & visual systems",
             "Colour palette & typography",
@@ -74,8 +75,12 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Brand Consistency",
           content:
-            "We make sure your brand is applied uniformly on every platform.",
-          items: [],
+            "We make sure your brand is applied uniformly on every platform. \n Our brand application services include:",
+          items: ["Website & digital branding alignment",
+            "Social media brand guidelines",
+            "Marketing collateral branding",
+            "Presentation & document branding",
+            "Customer touchpoint consistency",],
         },
       ],
     },
@@ -199,6 +204,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Branding Services", path: "/services/branding" },
       { label: "Web Development", path: "/services/web-development" },
       { label: "Customer Support", path: "/services/customer-support" },
+      { label: "Software Development", path: "/services/custom-software-development" }
     ],
     mainCta: {
       text: "Talk to one of our Marketing Experts",
@@ -213,37 +219,64 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Search Engine Optimization (SEO)",
           content:
-            "We improve your website visibility on search engines to drive long-term, high-quality organic traffic.",
-          items: [],
+            "We improve your website visibility on search engines to drive long-term, high-quality organic traffic. \n Our SEO services include –",
+          items: ["Website audit and competitor analysis",
+            "Keyword research and strategy",
+            "On-Page and Technical SEO",
+            "Content Optimization",
+            "Link Building and authority growth",],
         },
         {
           title: "Pay Per Click Advertising (PPC)",
           content:
-            "Our PPC experts create and manage high-performing paid ad campaigns that deliver instant visibility and leads.",
+            "Our PPC experts create and manage high-performing paid ad campaigns that deliver instant visibility and leads. \n Our PPC Services include –",
+          items: [
+            "Google Ads and Bing Ads",
+            "Keyword Targeting and bid optimization",
+            "Landing Page optimization",
+            "Ad Copy creation and A/B Testing",
+            "Conversion Tracking and ROI analysis"
+          ]
         },
         {
           title: "Social Media Marketing (SMM)",
           content:
-            "We help brands build strong relationships with their audience through strategic social media marketing.",
-          items: [],
+            "We help brands build strong relationships with their audience through strategic social media marketing. \n Our Social Media Services include –",
+          items: ["Social Media Strategy and Planning",
+            "Content Creation and Scheduling",
+            "Paid Social Advertising",
+            "Performance Tracking and Reporting",
+            "Audience Engagement and Growth"],
         },
         {
           title: "Content Marketing",
           content:
-            "Content is the foundation of online growth and success. We create content that attracts, educates and converts.",
-          items: [],
+            "Content is the foundation of online growth and success. We create content that attracts, educates and converts. \n Our Content Marketing Services include –",
+          items: ["Blog writing",
+            "Website and landing page content",
+            "Video content strategy",
+            "Infographics and visual content",
+            "Content Distribution and Promotion"],
         },
         {
           title: "Email Marketing and Marketing Automation",
           content:
-            "We design personalized email campaigns that nurture leads and increase customer lifetime value. Our Email marketing services include.",
-          items: [],
+            "We design personalized email campaigns that nurture leads and increase customer lifetime value. \n  Our Email marketing services include.",
+          items: ["Email Campaign Strategy",
+            "Automation workflows",
+            "Lead nurturing sequences",
+            "Newsletter design",
+            "Performance tracking",],
         },
         {
           title: "Conversion Rate Optimization",
           content:
-            "Driving Traffic is only half the job. We optimize your website and landing pages to convert visitors into customers.",
-          items: [],
+            "Driving Traffic is only half the job. We optimize your website and landing pages to convert visitors into customers. \n Our CRO Services include -",
+          items: ["User Behaviour analysis",
+            "Funnel Optimization",
+            "A/B Testing",
+            "Landing Page Optimization",
+            "Conversion Tracking",],
         },
       ],
     },
@@ -376,6 +409,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Digital Marketing", path: "/services/digital-marketing" },
       { label: "Branding Services", path: "/services/branding" },
       { label: "Customer Support", path: "/services/customer-support" },
+      { label: "Software Development", path: "/services/custom-software-development" }
     ],
     mainCta: {
       text: "Talk to a Development Expert",
@@ -425,7 +459,7 @@ export const servicesData: Record<string, ServiceData> = {
           items: [],
         },
         {
-          title: "Custom Software Development",
+          title: "Custom Software Development ",
           content:
             "We provide secure, scalable software solutions based on your operational requirements and business procedures.",
         },
@@ -539,6 +573,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Branding Services", path: "/services/branding" },
       { label: "Web Development", path: "/services/web-development" },
       { label: "Customer Support", path: "/services/customer-support" },
+      { label: "Software Development", path: "/services/custom-software-development" }
     ],
     mainCta: {
       text: "Speak with a Growth Strategist",
@@ -590,31 +625,41 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Organic SEO Growth Strategy",
           content:
-            "We create comprehensive SEO growth strategies focused on rankings, traffic quality and conversions.",
-          items: [],
+            "We create comprehensive SEO growth strategies focused on rankings, traffic quality and conversions. \n Includes:",
+          items: ["Technical SEO Foundation", "Keyword and intent mapping", "On-Page and content optimization", "Authority and Trust Building"],
         },
         {
           title: "Content Lead Growth",
           content:
-            "High-quality content is the backbone of content growth. We build a tropical authority that search engines as well as users trust.",
+            "High-quality content is the backbone of content growth. We build a tropical authority that search engines as well as users trust. \n Content Growth services include –",
+          items: ["SEO Blogs and Pillar Content",
+            "Service and Landing Page optimization",
+            "Topical Cluster creation",
+            "Content refresh and optimization"]
         },
         {
           title: "Authority Building and Digital PR",
           content:
-            "We strengthen your brand's online authority through ethical off-page strategies that include:",
-          items: [],
+            "We strengthen your brand's online authority through ethical off-page strategies that \n include:",
+          items: ["High-quality backlink acquisition",
+            "Brand Mentions and Citations",
+            "Reputation and Trust Building",
+            "Digital PR Campaigns"],
         },
         {
           title: "Local Organic Growth",
           content:
-            "For locally based businesses, we drive organic visibility through Local SEO. Our Local Organic Growth Services include:",
-          items: [],
+            "For locally based businesses, we drive organic visibility through Local SEO. \n Our Local Organic Growth Services include",
+          items: ["Google My Business Profile Optimization",
+            "Local Keyword Targeting",
+            "Local Content strategy",
+            "Reviews and citation management",],
         },
         {
           title: "Organic Conversion Optimization",
           content:
-            "Traffic alone doesn't grow business. We optimize your users’ journey to convert visitors into leads and customers with the help of.",
-          items: [],
+            "Traffic alone doesn't grow business. We optimize your users’ journey to convert visitors into leads and customers. \n Includes:",
+          items: ["UX and Behaviour analysis", "Conversion Funnel Optimization", "Landing Page improvements", "CRO recommendations",],
         },
       ],
     },
@@ -742,6 +787,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Digital Marketing", path: "/services/digital-marketing" },
       { label: "Branding Services", path: "/services/branding" },
       { label: "Web Development", path: "/services/web-development" },
+      { label: "Software Development", path: "/services/custom-software-development" }
     ],
     mainCta: {
       text: "Talk to our Experts",
@@ -794,31 +840,60 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Customer Support through Multiple Channels",
           content:
-            "Using multiple channels to support your customer helps in preventing customer frustration and ease of contact in case they have a complaint or a query.",
-          items: [],
+            "Using multiple channels to support your customer helps in preventing customer frustration and ease of contact in case they have a complaint or a query. \n Channels thrush which we provide Customer Support – ",
+          items: ["Email support",
+            "Live chat support",
+            "WhatsApp & messaging apps",
+            "Social media support",
+            "Phone support",],
         },
         {
           title: "Inbound and Outbound Calls Services",
           content:
-            "Inbound Calling services mean when the customers call the brand to satisfy a query, put forward a complaint, but Outbound Calling means when a customer support executive reaches out to a customer. Balman Infotech provides both of these services through our highly trained executives that make sure your brand is heard loud and clear.",
+            "Inbound Calling services mean when the customers call the brand to satisfy a query, put forward a complaint, but Outbound Calling means when a customer support executive reaches out to a customer. Balman Infotech provides both of these services through our highly trained executives that make sure your brand is heard loud and clear. \n These Services include – ",
+          items: ["Query resolution & troubleshooting",
+            "Order & account assistance",
+            "Follow-ups and callbacks",
+            "Feedback collection",
+            "Customer retention outreach",]
         },
         {
           title: "Technical Customer Support",
           content:
-            "For companies that rely on tech products and services, we offer trained technical customer support executives.",
-          items: [],
+            "For companies that rely on tech products and services, we offer trained technical customer support executives. \n Services from our Technical Customer support will include – ",
+          items: ["Explanation of the usage of the product or the service",
+            "Guidance on how to use the Software/App",
+            "Issue escalation"],
         },
         {
           title: "Customer Satisfaction and Retention",
           content:
-            "We hold our customer's satisfaction and retention as our utmost priority. We make sure of these by providing services like:",
-          items: [],
+            "We hold our customer's satisfaction and retention as our utmost priority. \n We make sure of these by providing services like:",
+          items: ["Onboarding support",
+            "Proactive engagement",
+            "Renewal & retention support",
+            "Customer satisfaction tracking",
+            "Long-term relationship management"],
         },
         {
           title: "Email Marketing and Marketing Automation",
           content:
-            "We design personalized email campaigns that nurture leads and increase customer lifetime value. Our Email marketing services include.",
-          items: [],
+            "We design personalized email campaigns that nurture leads and increase customer lifetime value. \n Our Email marketing services include.",
+          items: ["Email Campaign Strategy",
+            "Automation workflows",
+            "Lead nurturing sequences",
+            "Newsletter design",
+            "Performance tracking"],
+        },
+        {
+          title: "Conversion Rate Optimization",
+          content:
+            "Driving Traffic is only half the job. We optimize your website and landing pages to convert visitors into customers. \nOur CRO Services include ",
+          items: ["User Behaviour analysis",
+            "Funnel Optimization",
+            "A/B Testing",
+            "Landing Page Optimization",
+            "Conversion Tracking"],
         },
       ],
     },
@@ -881,4 +956,161 @@ export const servicesData: Record<string, ServiceData> = {
       ],
     },
   },
+
+  "custom-software-development": {
+    id: "custom-software-development",
+    mainHeading: "Custom Software Development by Balman Infotech",
+    subHeadings: [
+      "Build Systems That Scale With Your Business",
+    ],
+    image: "/service/customer.jpeg",
+    descriptions: [
+      "At Balman Infotech, we develop custom software solutions that help businesses operate at a digitally smarter level. \n Software should not complicate the growth of a company. It should simplify it. \n We have been building software tailored to the company’s operational needs, the ever-increasing industry requirements, and long-term vision. It does not matter if you are a startup building your first internal system or an enterprise trying to adapt with the increasing demands; we are here to be a part of your growth.",
+    ],
+
+    leftSideServices: [
+      { label: "Organic Growth", path: "/services/organic-growth" },
+      { label: "Digital Marketing", path: "/services/digital-marketing" },
+      { label: "Branding Services", path: "/services/branding" },
+      { label: "Customer Support", path: "/services/customer-support" },
+      { label: "Web Development", path: "/services/web-development" },
+    ],
+    mainCta: {
+      text: "Talk to our Experts",
+      href: "/ContactUs",
+    },
+
+
+    whyChooseUs: {
+      heading: "Why Choose Balman Infotech for Software Development?",
+      items: [
+        "Experienced software architects and developers",
+        "Secure and scalable development practices",
+        "Performance-focused system design",
+        "Transparent communication and reporting",
+        "Long-term maintenance and support",
+        "Growth-aligned technology strategy",
+      ],
+    },
+    whySection: {
+      title:
+        "Why Custom Software Matters",
+      description:
+        "Off-the-shelf tools can work temporarily. Subscription-based models risk data leakage to third-party applications or software. But growing businesses eventually outgrow the generic solutions.",
+      listTitle: "Custom software helps you:",
+      points: [
+        "Automate manual processes",
+        "Reduce operational errors",
+        "Improve team efficiency",
+        "Centralise business data", "Enhance reporting and decision-making", "Strengthen security and compliance", "Scale without friction"
+      ],
+      footerText:
+        "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention.",
+    },
+    accordionData: {
+      heading:
+        "Our Software Development Services",
+      description: "",
+      accordion: [
+        {
+          title: "Custom Business Software Development",
+          content:
+            "We build software catered specifically for your internal operations, business logic, and growth plans.",
+          items: ["System designs driven by processes", "Workflow automation - So that the progress is transparent", "Role-based access systems - So your confidential data is protected, and not everyone has access to everything", "Dashboard and reporting systems- Be on top of the company’s data at anytime", "Cloud-based applications - No fear of losing your data"],
+        },
+        {
+          title: "SaaS Product Development",
+          content:
+            "Launching a digital product? No worries, we help you design, build, and scale SaaS platforms from their concept to deployment.",
+          items: ["MVP development - Complete your Minimum Viable Product with a clear focus",
+
+            "Subscription model integration - No worries regarding payment plans and memberships",
+
+            "Multi-user architecture - Can be used and controlled by multiple people",
+
+            "Secure cloud deployment - Reliable hosting with a strong security sense",
+            "Scalable backend infrastructure - Want to grow? No problem, we are here to help you grow without compromising performance."
+          ]
+        },
+
+        {
+          title: "CRM & ERP Solutions",
+          content:
+            "Manage your operations, customer relationships, and resources efficiently with integrated systems.",
+          items: ["Custom CRM development - Your customers and their needs need to be kept in mind first, always!",
+
+            "ERP system integration - Combining all your operations and connecting them in one common space",
+
+            "Inventory and finance management modules - Keep control over all the billing, sales, and miscellaneous finances.",
+
+            "Process automation tools - Minimise human interference and automate work ",
+
+            "Data analytics and reporting dashboards - Make decisions based on Structured Data available on your software"],
+        },
+        {
+          title: "API Development & Integrations",
+          content:
+            "We connect your systems, so they communicate seamlessly.",
+          items: ["Third-party API integrations - Do collaborations with third-party applications seamlessly",
+            "Payment gateway integrations - Help your customers pay with the payment mode of their choice",
+            "CRM integrations - Sync all the data across platforms for consistency",
+            "Marketing automation integration - Align your marketing tools with the backend Secure data exchange solutions - Your data stays safe - Always"
+          ],
+        },
+        {
+          title: "Enterprise Software Modernisation",
+          content:
+            "Outdated systems slow growth. We help modernise legacy software for improved performance and scalability.",
+          items: ["System architecture redesign - Build newer pathways and update your old systems.", "Code optimisation - Newer and more efficient resolution with better and faster codes", "Cloud migration - Cloning and transferring all of your data safely and efficiently", "Performance enhancement", "Security upgrades - Better security for your datasets"
+
+          ],
+        },
+      ],
+    },
+    processSection: {
+      mainHeading: "Our Development Approach",
+      mainDescription:
+        "At Balman Infotech, we follow a structured, transparent process.",
+      steps: [
+        {
+          step: "01",
+          title: "Discovery & Business Analysis",
+          description: "We understand your business model, operational workflows,the pain points, and scalability goals.",
+        },
+        {
+          step: "02",
+          title: "Architecture & Planning",
+          description:
+            "We define the technology stack, system architecture, and the final roadmap for development that we’ll be using to cater to your needs.",
+        },
+        {
+          step: "03",
+          title: "UI/UX Design",
+          description:
+            "We design intuitive, user-friendly interfaces aligned with your workflows.",
+        },
+        {
+          step: "04",
+          title: "Agile Development",
+          description:
+            "We build in structured sprints, ensuring flexibility and performance.",
+        },
+        {
+          step: "05",
+          title: "Testing & Quality Assurance",
+          description:
+            "We conduct a rigorous amount of testing for security, seamless performance, and compatibility.",
+        },
+        // {
+        //   step: "06",
+        //   title: "Deployment & Support",
+        //   description:
+        //     "We launch, monitor, and support your software for continuous growth and optimisation too(as you grow). ",
+        // },
+      ],
+    },
+
+  },
+
+
 };

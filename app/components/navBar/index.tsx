@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: "Digital Marketing", href: "/services/digital-marketing" },
     { name: "Branding", href: "/services/branding" },
     { name: "Customer Support", href: "/services/customer-support" },
+    { name: "Software Development", href: "/services/custom-software-development" },
   ];
   const subServiceItems = [
     // { name: "Web Development", href: "/services/web-development" },
@@ -58,13 +59,13 @@ export default function Navbar() {
             }}
           />
 
-          <div className="bg-[#010101] border-b border-[#ff5900]">
+          <div className="bg-[#010101] border-b border-[#8a8a8a]">
             <div className="flex items-center justify-between h-[76px] gap-6 section-padding-x">
-              {/* Logo */}
+              {/* Logo  "C:\repos\balmanFE\public\logo.svg" */}
               <div className="flex-shrink-0">
-                <Link href="/" className="block relative w-[64px] h-[64px]">
+                <Link href="/" className="block relative w-[76px] h-[76px]">
                   <Image
-                    src="/logo.PNG"
+                    src="/logo.svg"
                     alt="Logo"
                     fill
                     sizes="64px"
@@ -249,8 +250,8 @@ export default function Navbar() {
               {/* Get a Quote Button */}
               <div className="hidden lg:block flex-shrink-0">
                 <Link
-                  href="/brand-audit"
-                  className="inline-block px-4 py-2 bg-black text-white text-lg font-semibold rounded-2xl border-2 border-white transition-colors font-['Poppins']"
+                  href="/ContactUs"
+                  className="inline-block px-4 py-2 bg-black text-white text-lg font-semibold rounded-lg border-2 border-white transition-colors font-['Plus Jakarta']"
                 >
                   Let's Connect
                 </Link>
