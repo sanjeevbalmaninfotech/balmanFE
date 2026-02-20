@@ -181,7 +181,7 @@ export const servicesData: Record<string, ServiceData> = {
     ctaButtons: [
       {
         text: "Request a Free Brand Audit",
-        href: "/ContactUs",
+        href: "/brand-audit",
       },
       {
         text: "Talk to an Expert",
