@@ -210,7 +210,7 @@ export default async function ServicePage({ params }: PageProps) {
                     {service.faqs.heading}
                     <div className="heading-underline-left"></div>
                   </h2>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
                     {service.faqs.items.map((faq, idx) => (
                       <div key={idx} className="space-y-1">
                         <h3 className="service-heading-h3 text-sm sm:text-lg">{faq.question}</h3>
