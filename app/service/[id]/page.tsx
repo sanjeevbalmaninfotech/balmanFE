@@ -5,12 +5,12 @@ import { blogPosts } from "@/app/constants/blogsData";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-export const metadata: Metadata = {
-    robots: {
-        index: false,
-        follow: false,
-    },
-};
+// export const metadata: Metadata = {
+//     robots: {
+//         index: false,
+//         follow: false,
+//     },
+// };
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
