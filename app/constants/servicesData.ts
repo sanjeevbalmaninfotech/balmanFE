@@ -384,7 +384,7 @@ export const servicesData: Record<string, ServiceData> = {
     },
     ctaButtons: [
       {
-        text: "Request a Free Marketing Consultant",
+        text: "Schedule a Consultation",
         href: "/ContactUs",
       },
       {
@@ -547,7 +547,7 @@ export const servicesData: Record<string, ServiceData> = {
     },
     ctaButtons: [
       {
-        text: "Request a Free Marketing Consultant",
+        text: "Schedule a Consultation",
         href: "/ContactUs",
       },
       {
@@ -761,7 +761,7 @@ export const servicesData: Record<string, ServiceData> = {
     },
     ctaButtons: [
       {
-        text: "Request a Free Marketing Consultant",
+        text: "Schedule a Consultation",
         href: "/ContactUs",
       },
       {
@@ -963,7 +963,7 @@ export const servicesData: Record<string, ServiceData> = {
     subHeadings: [
       "Build Systems That Scale With Your Business",
     ],
-    image: "/service/customer.jpeg",
+    image: "/heroImgs/webDevelopment.jpeg",
     descriptions: [
       "At Balman Infotech, we develop custom software solutions that help businesses operate at a digitally smarter level. \n Software should not complicate the growth of a company. It should simplify it. \n We have been building software tailored to the company’s operational needs, the ever-increasing industry requirements, and long-term vision. It does not matter if you are a startup building your first internal system or an enterprise trying to adapt with the increasing demands; we are here to be a part of your growth.",
     ],
