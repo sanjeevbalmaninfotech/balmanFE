@@ -9,9 +9,15 @@ export interface BlogContent {
     alt?: string;
     align?: 'left' | 'right' | 'center';
     width?: 30 | 40 | 50;
+    buttons?: BlogButton[];
 }
 
 export interface SideLink {
+    label: string;
+    path: string;
+}
+
+export interface BlogButton {
     label: string;
     path: string;
 }
@@ -124,6 +130,7 @@ export const blogPosts: BlogPost[] = [
                 type: 'heading',
                 level: 2,
                 text: "Why Balman Infotech is the Best Software Development Company in Chandigarh?"
+
             },
             {
                 type: 'paragraph',
@@ -141,7 +148,11 @@ export const blogPosts: BlogPost[] = [
             },
             {
                 type: 'paragraph',
-                text: "It's simple to locate a software development business in Chandigarh, but choosing the best one necessitates carefully examining their technical culture and delivery history. The best software development firm in Chandigarh for your organization will be one that understands your vision and creates the technology to realize it, rather than just writing code, as the area continues to emerge into a major worldwide tech destination. Go no farther than Balman Infotech if you're looking for the top Chandigarh software development firm to realize your idea. Our staff is prepared to provide you with a full-scale digital transformation partner or a specialized custom software development company in Chandigarh. Together, let's construct your company's future."
+                text: "It's simple to locate a software development business in Chandigarh, but choosing the best one necessitates carefully examining their technical culture and delivery history. The best software development firm in Chandigarh for your organization will be one that understands your vision and creates the technology to realize it, rather than just writing code, as the area continues to emerge into a major worldwide tech destination. Go no farther than Balman Infotech if you're looking for the top Chandigarh software development firm to realize your idea. Our staff is prepared to provide you with a full-scale digital transformation partner or a specialized custom software development company in Chandigarh. Together, let's construct your company's future.",
+                buttons: [
+                    { label: "Contact Us", path: "/ContactUs" },
+                    // { label: "Explore Services", path: "/services" }
+                ]
             }
         ],
         sideLinks: [

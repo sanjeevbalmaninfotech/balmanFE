@@ -2,6 +2,7 @@ import { BlogPost, BlogContent } from "@/app/constants/blogsData";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PrimaryButton from "@/app/components/Common/PrimaryButton";
 
 interface IndividualBlogProps {
     blog: BlogPost;
@@ -9,52 +10,76 @@ interface IndividualBlogProps {
 
 type RenderedContent = BlogContent & { __rendered?: boolean };
 
+// Helper to render buttons for any section
+function renderButtons(buttons: { label: string; path: string }[] | undefined) {
+    if (!buttons || buttons.length === 0) return null;
+    return (
+        <div className="flex flex-wrap gap-4 mt-6 mb-8 justify-start">
+            {buttons.map((btn, i) => (
+                <PrimaryButton key={i} text={btn.label} href={btn.path} />
+            ))}
+        </div>
+    );
+}
+
 function renderBlock(section: BlogContent, key: number, isFirst = false): React.ReactNode {
+    const buttons = renderButtons(section.buttons);
+
     switch (section.type) {
         case 'paragraph':
             return (
-                <p key={key} className="text-[#E8E8EA] text-base leading-[120%] font-normal mb-4">
-                    {section.text}
-                </p>
+                <div key={key} className="mb-4">
+                    <p className="text-[#E8E8EA] text-base leading-[120%] font-normal mb-4">
+                        {section.text}
+                    </p>
+                    {buttons}
+                </div>
             );
         case 'heading': {
             const level = section.level || 2;
             const Tag = `h${level}` as "h2" | "h3" | "h4";
             return (
-                <Tag
-                    key={key}
-                    className={`
-      text-[#E8E8EA]  font-bold leading-tight tracking-tight mb-4 text-xl
-      sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
-      ${isFirst ? 'mt-0' : 'mt-6 sm:mt-8 md:mt-10'}    `}
-                >
-                    {section.text}
-                </Tag>
+                <div key={key} className={isFirst ? 'mt-0' : 'mt-6 sm:mt-8 md:mt-10'}>
+                    <Tag
+                        className={`
+          text-[#E8E8EA]  font-bold leading-tight tracking-tight mb-4 text-xl
+          sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl
+          `}
+                    >
+                        {section.text}
+                    </Tag>
+                    {buttons}
+                </div>
             );
 
         }
         case 'list':
-            return section.checkbox ? (
-                <ul key={key} className="space-y-4 text-[#E8E8EA] text-base leading-[120%] font-normal mb-8">
-                    {section.items?.map((item: string, i: number) => (
-                        <li key={i} className="flex items-start gap-3">
-                            <Image
-                                src="/service/checkbox.png"
-                                alt="checked"
-                                width={18}
-                                height={18}
-                                className="mt-[2px] shrink-0"
-                            />
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
-            ) : (
-                <ul key={key} className="space-y-4 text-[#E8E8EA] text-base leading-[120%] font-normal list-disc pl-5 mb-8">
-                    {section.items?.map((item: string, i: number) => (
-                        <li key={i} className="pl-2">{item}</li>
-                    ))}
-                </ul>
+            return (
+                <div key={key} className="mb-8">
+                    {section.checkbox ? (
+                        <ul className="space-y-4 text-[#E8E8EA] text-base leading-[120%] font-normal">
+                            {section.items?.map((item: string, i: number) => (
+                                <li key={i} className="flex items-start gap-3">
+                                    <Image
+                                        src="/service/checkbox.png"
+                                        alt="checked"
+                                        width={18}
+                                        height={18}
+                                        className="mt-[2px] shrink-0"
+                                    />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <ul className="space-y-4 text-[#E8E8EA] text-base leading-[120%] font-normal list-disc pl-5">
+                            {section.items?.map((item: string, i: number) => (
+                                <li key={i} className="pl-2">{item}</li>
+                            ))}
+                        </ul>
+                    )}
+                    {buttons}
+                </div>
             );
         default:
             return null;
@@ -139,6 +164,7 @@ export default function IndividualBlog({ blog }: IndividualBlogProps) {
                                             <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: '350 / 430' }}>
                                                 <Image src={section.src || ''} alt={section.alt || ''} fill className="object-cover" />
                                             </div>
+                                            {renderButtons(section.buttons)}
                                         </div>
                                     );
                                 }
@@ -179,8 +205,9 @@ export default function IndividualBlog({ blog }: IndividualBlogProps) {
                                     >
                                         {align === 'right' ? (
                                             <>
-                                                <div className="flex-1 min-w-0 order-last md:order-first w-full">
+                                                <div className="flex-1 min-w-0 order-last md:order-first w-full flex flex-col">
                                                     {siblings}
+                                                    {renderButtons(section.buttons)}
                                                 </div>
                                                 <div
                                                     className="w-full md:flex-shrink-0 order-first md:order-last"
@@ -197,8 +224,9 @@ export default function IndividualBlog({ blog }: IndividualBlogProps) {
                                                 >
                                                     {imgBlock}
                                                 </div>
-                                                <div className="flex-1 min-w-0 w-full">
+                                                <div className="flex-1 min-w-0 w-full flex flex-col">
                                                     {siblings}
+                                                    {renderButtons(section.buttons)}
                                                 </div>
                                             </>
                                         )}
