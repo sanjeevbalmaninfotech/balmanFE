@@ -10,8 +10,18 @@ import ServiceHeading from "@/app/components/services/Heading";
 import PrimaryButton from "@/app/components/Common/PrimaryButton";
 import AISection from "@/app/components/services/AISection";
 import ProcessSection from "@/app/components/services/ProcessSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export function generateStaticParams() {
+
+
   return Object.keys(servicesData).map((id) => ({
     id: id,
   }));
