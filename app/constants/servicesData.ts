@@ -520,6 +520,10 @@ export const servicesData: Record<string, ServiceData> = {
             "We launch, oversee, manage, and expand your digital product as your company expands.",
         },
       ],
+      // cta: {
+      //   text: "Talk to a Development Expert",
+      //   href: "/ContactUs",
+      // },
     },
     faqs: {
       heading: "Frequently Asked Questions",
@@ -616,6 +620,10 @@ export const servicesData: Record<string, ServiceData> = {
       ],
       footerText:
         "At Balman Infotech, we focus on organic strategies that compound results month after month.",
+      // cta: {
+      //   text: "Speak with a Growth Strategist",
+      //   href: "/ContactUs",
+      // },
     },
 
     accordionData: {
@@ -733,6 +741,10 @@ export const servicesData: Record<string, ServiceData> = {
             "We track traffic, rankings, conversions, and continuously refine strategies.",
         },
       ],
+      cta: {
+        text: "Scale Your Growth Today",
+        href: "/ContactUs",
+      },
     },
     faqs: {
       heading: "Frequently Asked Questions",
@@ -831,6 +843,10 @@ export const servicesData: Record<string, ServiceData> = {
       ],
       footerText:
         "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention.",
+      cta: {
+        text: "Talk to our Experts",
+        href: "/ContactUs",
+      },
     },
     accordionData: {
       heading:
@@ -953,8 +969,20 @@ export const servicesData: Record<string, ServiceData> = {
           answer: "Yes. Strong customer support improves retention, repeat purchases, and brand loyalty.",
         },
 
+
       ],
+
     },
+    ctaButtons: [
+      {
+        text: "Schedule a Consultation",
+        href: "/ContactUs",
+      },
+      {
+        text: "Talk to an Expert",
+        href: "/ContactUs",
+      },
+    ],
   },
 
   "custom-software-development": {
@@ -1004,8 +1032,8 @@ export const servicesData: Record<string, ServiceData> = {
         "Improve team efficiency",
         "Centralise business data", "Enhance reporting and decision-making", "Strengthen security and compliance", "Scale without friction"
       ],
-      footerText:
-        "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention.",
+      footerText: "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention.",
+
     },
     accordionData: {
       heading:
@@ -1108,6 +1136,10 @@ export const servicesData: Record<string, ServiceData> = {
         //     "We launch, monitor, and support your software for continuous growth and optimisation too(as you grow). ",
         // },
       ],
+      cta: {
+        text: "Talsk to an Export",
+        href: "/ContactUs",
+      },
     },
 
   },

@@ -157,6 +157,14 @@ export default async function ServicePage({ params }: PageProps) {
                       <li key={idx} className="service-body-text">{point}</li>
                     ))}
                   </ul>
+                  {service.whySection.footerText && (
+                    <p className="service-body-text mt-4 mb-4">{service.whySection.footerText}</p>
+                  )}
+                  {service.whySection.cta && (
+                    <div className="mt-4">
+                      <PrimaryButton text={service.whySection.cta.text} href={service.whySection.cta.href} />
+                    </div>
+                  )}
                 </div>
               )}
             </div>

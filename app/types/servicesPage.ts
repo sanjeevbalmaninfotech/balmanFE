@@ -21,6 +21,10 @@ interface WhySection {
     listTitle?: string;
     points?: string[];
     footerText?: string;
+    cta?: {
+        text: string;
+        href: string;
+    };
 }
 
 interface ServiceItem {
@@ -36,6 +40,10 @@ export interface ProcessSection {
         title: string;
         description: string;
     }[];
+    cta?: {
+        text: string;
+        href: string;
+    };
 }
 
 export interface AIMarketingSection {

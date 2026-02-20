@@ -1,5 +1,5 @@
-"use client";
 import { ProcessSectionProps } from "@/app/types/servicesPage";
+import PrimaryButton from "../Common/PrimaryButton";
 
 export default function ProcessSection({ data }: ProcessSectionProps) {
   return (
@@ -67,6 +67,13 @@ export default function ProcessSection({ data }: ProcessSectionProps) {
           </div>
         ))}
       </div>
+
+      {/* Optional CTA */}
+      {data.cta && (
+        <div className="mt-2 lg:mt-2 flex justify-start">
+          <PrimaryButton text={data.cta.text} href={data.cta.href} />
+        </div>
+      )}
     </div>
 
   );
