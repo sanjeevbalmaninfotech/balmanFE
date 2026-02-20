@@ -2,9 +2,3 @@ User-agent: *
 Allow: /
 Disallow: /PrivacyPolicy
 Disallow: /TermsAndConditions
-Disallow: /services/organic-growth
-Disallow: /services/digital-marketing
-Disallow: /services/branding
-Disallow: /services/customer-support
-Disallow:/services/custom-software-development
-Allow: /service/software-development-company-chandigarh

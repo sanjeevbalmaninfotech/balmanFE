@@ -184,7 +184,7 @@ export const servicesData: Record<string, ServiceData> = {
         href: "/ContactUs",
       },
       {
-        text: "Talk to an expert",
+        text: "Talk to an Expert",
         href: "/ContactUs",
       },
     ],
@@ -388,7 +388,7 @@ export const servicesData: Record<string, ServiceData> = {
         href: "/ContactUs",
       },
       {
-        text: "Talk to an expert",
+        text: "Talk to an Expert",
         href: "/ContactUs",
       },
     ],
@@ -551,7 +551,7 @@ export const servicesData: Record<string, ServiceData> = {
         href: "/ContactUs",
       },
       {
-        text: "Talk to an expert",
+        text: "Talk to an Expert",
         href: "/ContactUs",
       },
     ],
@@ -765,7 +765,7 @@ export const servicesData: Record<string, ServiceData> = {
         href: "/ContactUs",
       },
       {
-        text: "Talk to an expert",
+        text: "Talk to an Expert",
         href: "/ContactUs",
       },
     ],
