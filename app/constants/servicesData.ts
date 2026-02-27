@@ -70,7 +70,9 @@ export const servicesData: Record<string, ServiceData> = {
           title: "Rebranding",
           content:
             "We assist companies that are changing or repositioning in aligning their brand identity with their new objectives.",
-          items: [],
+          items: ["Relaunching the brand with a newer and modern outlook",
+            "Internal Brand Alignment",
+            "Redesign website and other digital assets"],
         },
         {
           title: "Brand Consistency",
