@@ -1137,7 +1137,7 @@ export const servicesData: Record<string, ServiceData> = {
         // },
       ],
       cta: {
-        text: "Talsk to an Export",
+        text: "Talk to an Expert",
         href: "/ContactUs",
       },
     },
