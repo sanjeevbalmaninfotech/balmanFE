@@ -221,7 +221,7 @@ const TopSection = () => {
             </p>
 
             <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%]">
-              <span className="font-bold">Website –</span>{" "}
+              <span className="font-bold">Website -</span>{" "}
               <a
                 href="https://www.balmaninfotech.net"
                 target="_blank"

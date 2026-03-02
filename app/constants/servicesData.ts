@@ -225,7 +225,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Search Engine Optimization (SEO)",
           content:
-            "We improve your website visibility on search engines to drive long-term, high-quality organic traffic. \n Our SEO services include –",
+            "We improve your website visibility on search engines to drive long-term, high-quality organic traffic. \n Our SEO services include -",
           items: ["Website audit and competitor analysis",
             "Keyword research and strategy",
             "On-Page and Technical SEO",
@@ -235,7 +235,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Pay Per Click Advertising (PPC)",
           content:
-            "Our PPC experts create and manage high-performing paid ad campaigns that deliver instant visibility and leads. \n Our PPC Services include –",
+            "Our PPC experts create and manage high-performing paid ad campaigns that deliver instant visibility and leads. \n Our PPC Services include -",
           items: [
             "Google Ads and Bing Ads",
             "Keyword Targeting and bid optimization",
@@ -247,7 +247,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Social Media Marketing (SMM)",
           content:
-            "We help brands build strong relationships with their audience through strategic social media marketing. \n Our Social Media Services include –",
+            "We help brands build strong relationships with their audience through strategic social media marketing. \n Our Social Media Services include -",
           items: ["Social Media Strategy and Planning",
             "Content Creation and Scheduling",
             "Paid Social Advertising",
@@ -257,7 +257,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Content Marketing",
           content:
-            "Content is the foundation of online growth and success. We create content that attracts, educates and converts. \n Our Content Marketing Services include –",
+            "Content is the foundation of online growth and success. We create content that attracts, educates and converts. \n Our Content Marketing Services include -",
           items: ["Blog writing",
             "Website and landing page content",
             "Video content strategy",
@@ -290,7 +290,7 @@ export const servicesData: Record<string, ServiceData> = {
       title: "Why is Digital Marketing important for Business Growth Today?",
       description:
         "Customers no longer rely on traditional marketing alone. They research, compare and make decisions online. However, if your brand is not visible across digital channels, you are losing opportunities every day.",
-      listTitle: "Digital Marketing helps your business –",
+      listTitle: "Digital Marketing helps your business -",
       points: [
         "Reach the right audience at the correct time",
         "Increase brand awareness and trust",
@@ -637,7 +637,7 @@ export const servicesData: Record<string, ServiceData> = {
     },
 
     accordionData: {
-      heading: "Our Organic Growth Services – Built for Long-term success",
+      heading: "Our Organic Growth Services - Built for Long-term success",
       description: "",
       accordion: [
         {
@@ -649,7 +649,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Content Lead Growth",
           content:
-            "High-quality content is the backbone of content growth. We build a tropical authority that search engines as well as users trust. \n Content Growth services include –",
+            "High-quality content is the backbone of content growth. We build a tropical authority that search engines as well as users trust. \n Content Growth services include -",
           items: ["SEO Blogs and Pillar Content",
             "Service and Landing Page optimization",
             "Topical Cluster creation",
@@ -868,7 +868,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Customer Support through Multiple Channels",
           content:
-            "Using multiple channels to support your customer helps in preventing customer frustration and ease of contact in case they have a complaint or a query. \n Channels thrush which we provide Customer Support – ",
+            "Using multiple channels to support your customer helps in preventing customer frustration and ease of contact in case they have a complaint or a query. \n Channels thrush which we provide Customer Support - ",
           items: ["Email support",
             "Live chat support",
             "WhatsApp & messaging apps",
@@ -878,7 +878,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Inbound and Outbound Calls Services",
           content:
-            "Inbound Calling services mean when the customers call the brand to satisfy a query, put forward a complaint, but Outbound Calling means when a customer support executive reaches out to a customer. Balman Infotech provides both of these services through our highly trained executives that make sure your brand is heard loud and clear. \n These Services include – ",
+            "Inbound Calling services mean when the customers call the brand to satisfy a query, put forward a complaint, but Outbound Calling means when a customer support executive reaches out to a customer. Balman Infotech provides both of these services through our highly trained executives that make sure your brand is heard loud and clear. \n These Services include - ",
           items: ["Query resolution & troubleshooting",
             "Order & account assistance",
             "Follow-ups and callbacks",
@@ -888,7 +888,7 @@ export const servicesData: Record<string, ServiceData> = {
         {
           title: "Technical Customer Support",
           content:
-            "For companies that rely on tech products and services, we offer trained technical customer support executives. \n Services from our Technical Customer support will include – ",
+            "For companies that rely on tech products and services, we offer trained technical customer support executives. \n Services from our Technical Customer support will include - ",
           items: ["Explanation of the usage of the product or the service",
             "Guidance on how to use the Software/App",
             "Issue escalation"],

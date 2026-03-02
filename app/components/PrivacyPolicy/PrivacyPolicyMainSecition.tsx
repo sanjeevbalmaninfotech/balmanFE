@@ -67,16 +67,16 @@ export default function PrivacyPolicyMainSecition() {
                             GSTIN: 03AAJCB0650RIZJ
                         </p>
                         <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%] font-bold">
-                            Registered Address –
+                            Registered Address -
                         </p>
                         <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%]">
-                            4th Floor, Verma Tech Park, Plot No. 88, Sector 73, SAS Nagar Mohali - 140308, Punjab, India.
+                            4th Floor, Verma Tech Park, Plot No. 88, Sector 73, SAS Nagar Mohali - 160055, Punjab, India.
                         </p>
                         <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%]">
                             <span className="font-bold">Phone -</span> +91-9814097251
                         </p>
                         <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%]">
-                            <span className="font-bold">Email –</span> <a href="mailto:contact@balmaninfotech.net" className="underline decoration-solid">contact@balmaninfotech.net</a>
+                            <span className="font-bold">Email -</span> <a href="mailto:contact@balmaninfotech.net" className="underline decoration-solid">contact@balmaninfotech.net</a>
                         </p>
                     </div>
                 </section>
