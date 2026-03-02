@@ -2,9 +2,10 @@ import Navbar from "../components/navBar";
 import Footer from "../components/footer/Footer";
 import ContactUsSection from "../components/ContactUs/ContactUsSection";
 import ContactUsForm from "../components/ContactUs/ContactUsForm";
+import { Metadata } from "next";
 
 
-const metadata = {
+export const metadata: Metadata = {
   title: "Contact Balman Infotech | Dial +91 9814097251",
   description: "Get in touch with Balman Infotech for expert branding and advertising solutions. Contact our team today to discuss your business growth strategy.",
 }
