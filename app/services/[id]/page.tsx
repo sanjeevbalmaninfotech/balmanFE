@@ -12,12 +12,23 @@ import AISection from "@/app/components/services/AISection";
 import ProcessSection from "@/app/components/services/ProcessSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  robots: {
-    index: true,
-    follow: true,
-  },
+type MetadataProps = {
+  params: Promise<{ id: string }>;
 };
+
+export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
+  const { id } = await params;
+  const service = servicesData[id];
+
+  return {
+    title: service?.metaTitle || service?.mainHeading || "Services | Balman Infotech",
+    description: service?.metaDescription || service?.descriptions?.[0]?.substring(0, 160) || "",
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export function generateStaticParams() {
 

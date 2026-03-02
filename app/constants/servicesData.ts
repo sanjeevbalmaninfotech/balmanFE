@@ -5,6 +5,8 @@ import { ServiceData } from "../types/servicesPage";
 export const servicesData: Record<string, ServiceData> = {
   branding: {
     id: "branding",
+    metaTitle: "Careers at Balman Infotech - Join Our Branding & Digital Team",
+    metaDescription: "Explore career opportunities at Balman Infotech, grow your skills in branding, digital marketing, tech strategy, and creative services. Apply now",
     mainHeading: "Branding by Balman Infotech",
     subHeadings: ["Helping You Build a Strong and  Memorable Brand"],
     descriptions: [
@@ -194,6 +196,8 @@ export const servicesData: Record<string, ServiceData> = {
 
   "digital-marketing": {
     id: "digital-marketing",
+    metaTitle: "Digital Marketing Services | Balman Infotech",
+    metaDescription: "Boost your online presence with Balman Infotech’s Digital Marketing services, SEO, PPC, SMM, and performance campaigns that drive results.",
     mainHeading: "Digital Marketing Balman Infotech",
     subHeadings: ["Strategic Digital Growth"],
     descriptions: [
@@ -398,6 +402,8 @@ export const servicesData: Record<string, ServiceData> = {
 
   "web-development": {
     id: "web-development",
+    metaTitle: "Web Development Services | Balman Infotech",
+    metaDescription: "Build powerful, responsive websites & web applications with our Web Development services - custom design & optimised performance for your business.",
     mainHeading: "Web Development Balman Infotech",
     subHeadings: [
       "Build Scalable and User Friendly Websites, Apps and Softwares",
@@ -565,6 +571,8 @@ export const servicesData: Record<string, ServiceData> = {
 
   "organic-growth": {
     id: "organic-growth",
+    metaTitle: "Organic Growth Services | Balman Infotech",
+    metaDescription: "Accelerate your business with our Organic Growth Services — strategic SEO, content marketing, and data-driven growth for lasting results.",
     mainHeading: "Organic Growth by Balman Infotech",
     subHeadings: [
       "Sustainable Organic Growth That Builds Authority, Traffic and Revenue",
@@ -787,6 +795,8 @@ export const servicesData: Record<string, ServiceData> = {
 
   "customer-support": {
     id: "customer-support",
+    metaTitle: "Customer Support Services | Balman Infotech",
+    metaDescription: "Explore Balman Infotech's Customer Support Services, delivering seamless support strategy & customer experience solutions to elevate business growth.",
     mainHeading: "Customer Support by Balman Infotech",
     subHeadings: [
       "Providing Exceptional Customer Services Tailored to Your Brand’s Needs",
@@ -804,7 +814,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Software Development", path: "/services/custom-software-development" }
     ],
     mainCta: {
-      text: "Talk to our Experts",
+      text: "Talk to our Expert",
       href: "/ContactUs",
     },
 
@@ -846,7 +856,7 @@ export const servicesData: Record<string, ServiceData> = {
       footerText:
         "At Balman Infotech, we focus on customer support strategies that directly impact business growth and customer retention.",
       cta: {
-        text: "Talk to our Experts",
+        text: "Talk to our Expert",
         href: "/ContactUs",
       },
     },
@@ -989,6 +999,8 @@ export const servicesData: Record<string, ServiceData> = {
 
   "custom-software-development": {
     id: "custom-software-development",
+    metaTitle: "Custom Software Development Services | Balman Infotech",
+    metaDescription: "Transform your business with custom software development by Balman Infotech - expert design, scalable apps & tailored solutions built for performance.",
     mainHeading: "Custom Software Development by Balman Infotech",
     subHeadings: [
       "Build Systems That Scale With Your Business",
@@ -1006,7 +1018,7 @@ export const servicesData: Record<string, ServiceData> = {
       { label: "Web Development", path: "/services/web-development" },
     ],
     mainCta: {
-      text: "Talk to our Experts",
+      text: "Talk to our Expert",
       href: "/ContactUs",
     },
 

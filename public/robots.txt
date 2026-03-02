@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /PrivacyPolicy
 Disallow: /TermsAndConditions
+
+Sitemap: https://balmaninfotech.com/sitemap.xml

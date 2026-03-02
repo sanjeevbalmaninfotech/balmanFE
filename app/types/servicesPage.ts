@@ -61,6 +61,8 @@ export interface AIMarketingSection {
 }
 export interface ServiceData {
     id: string;
+    metaTitle?: string;
+    metaDescription?: string;
     mainHeading: string;
     subHeadings: string[];
     descriptions: string[];

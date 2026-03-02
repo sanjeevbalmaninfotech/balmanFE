@@ -13,8 +13,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Balman Infotech - Your Growth Partner",
-  description: "Balman Infotech - Your Growth Partner",
+  title: "Balman Infotech - Branding and Advertising Agency",
+  description: "Balman Infotech is a results-driven branding and advertising agency offering creative strategy, & performance campaigns to help businesses grow & scale.",
   icons: {
     icon: "/icon.png",
   },

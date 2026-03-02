@@ -148,7 +148,7 @@ export default function AuditForm() {
                                 className={`${inputClasses} appearance-none cursor-pointer`}
                                 defaultValue=""
                             >
-                                <option value="" disabled>Select Service</option>
+                                <option value="" disabled>Numbers of Employees</option>
                                 <option value="1-10">1-10 employees</option>
                                 <option value="11-50">11-50 employees</option>
                                 <option value="51-200">51-200 employees</option>
