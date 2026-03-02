@@ -70,7 +70,7 @@ export default function PrivacyPolicyMainSecition() {
                             Registered Address –
                         </p>
                         <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%]">
-                            4th Floor, Verma Tech Park, Plot No. 88, Sector 73, SAS Nagar Patiala – 140308, Punjab, India.
+                            4th Floor, Verma Tech Park, Plot No. 88, Sector 73, SAS Nagar Mohali - 140308, Punjab, India.
                         </p>
                         <p className="body-text text-left lg:text-justify leading-snug lg:leading-[150%]">
                             <span className="font-bold">Phone -</span> +91-9814097251
