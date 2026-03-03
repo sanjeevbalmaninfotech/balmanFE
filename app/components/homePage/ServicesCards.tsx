@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import SectionHeading from "../Common/SectionHeading";
 
 interface Service {
@@ -166,10 +167,12 @@ export default function ServicesCards() {
                                 {/* CONTENT */}
                                 <div className="relative z-10 p-6 xl:p-8 h-full flex flex-col justify-center">
                                     <div className="w-14 h-14 mb-6 rounded-xl bg-[#010101] flex items-center justify-center">
-                                        <img
+                                        <Image
                                             src={service.icon}
                                             alt={service.title}
-                                            className="w-10 h-10 object-contain"
+                                            width={40}
+                                            height={40}
+                                            className="object-contain"
                                         />
                                     </div>
 

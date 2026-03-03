@@ -1,5 +1,3 @@
-"use client"; // Agar aap Next.js App Router use kar rahe hain toh
-
 import React from "react";
 import SectionHeading from "../Common/SectionHeading";
 import Link from "next/link";

@@ -23,8 +23,6 @@ const FounderSection = () => {
                 alt="Founder Portrait"
                 fill
                 className="object-cover object-top rounded-lg"
-                priority
-                unoptimized
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 40vw, 30vw"
               />
             </div>

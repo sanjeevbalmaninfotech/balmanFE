@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-// import Image from 'next/image'; // Agar zaroorat ho to uncomment karein
+import Image from 'next/image';
 import { LeadCardProps } from '@/app/types/ourTeam';
 import { leads } from '@/app/constants/ourTeam';
 import SectionHeading from "../Common/SectionHeading";
@@ -169,10 +169,12 @@ function LeadCard({ lead }: LeadCardProps) {
                     border: '1px solid rgba(255, 255, 255, 0.05)',
                 }}
             >
-                <img
+                <Image
                     src={lead.image}
                     alt={lead.name}
-                    className="w-full h-full object-cover "
+                    fill
+                    className="object-cover"
+                    sizes="316px"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
